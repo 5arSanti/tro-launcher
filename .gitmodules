@@ -1,0 +1,4 @@
+[submodule "yolo-train-routes-optimization"]
+	path = yolo-train-routes-optimization
+	url = https://github.com/5arSanti/yolo-train-routes-optimization.git
+	branch = main
