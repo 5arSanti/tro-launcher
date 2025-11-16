@@ -2,3 +2,7 @@
 	path = yolo-train-routes-optimization
 	url = https://github.com/5arSanti/yolo-train-routes-optimization.git
 	branch = main
+[submodule "tro-frontend"]
+	path = tro-frontend
+	url = https://github.com/5arSanti/tro-frontend.git
+	branch = main
