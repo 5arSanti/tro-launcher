@@ -6,3 +6,7 @@
 	path = tro-frontend
 	url = https://github.com/5arSanti/tro-frontend.git
 	branch = main
+[submodule "tro-backend"]
+	path = tro-backend
+	url = https://github.com/5arSanti/tro-backend.git
+	branch = main
