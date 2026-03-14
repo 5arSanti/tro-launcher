@@ -6,7 +6,7 @@
 >
 > ### 🔗 Acceso
 >
-> **[→ Abrir documentación y gestión del proyecto (SharePoint)](https://unilibrebog-my.sharepoint.com/:f:/g/personal/johels-ariasb_unilibre_edu_co/IgCuRW-UlYeYQoEApT1fHPAYAQ5AC7MmEHk0lmBVdvbJ4UM?e=hG9Lbs)**
+> **[→ Abrir documentación y gestión del proyecto (SharePoint)](https://unilibrebog-my.sharepoint.com/:f:/g/personal/johels-ariasb_unilibre_edu_co/IgCuRW-UlYeYQoEApT1fHPAYAXikoZaWWGJgzJoFa5vS-8Q?e=ZhIlv0)**
 >
 > En ese espacio podrás encontrar, entre otros:
 > - Documentación técnica y de diseño del sistema
