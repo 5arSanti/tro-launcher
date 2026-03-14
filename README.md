@@ -1,5 +1,20 @@
 # Sistema TRO (Train Routes Optimization)
 
+> ## 📁 Documentación y gestión del proyecto
+>
+> **Toda la documentación y la gestión del proyecto** se centraliza en el siguiente enlace de **SharePoint**. Desde allí se accede a la información oficial del equipo y a los recursos compartidos.
+>
+> ### 🔗 Acceso
+>
+> **[→ Abrir documentación y gestión del proyecto (SharePoint)](https://unilibrebog-my.sharepoint.com/:f:/g/personal/johels-ariasb_unilibre_edu_co/IgCuRW-UlYeYQoEApT1fHPAYAQ5AC7MmEHk0lmBVdvbJ4UM?e=hG9Lbs)**
+>
+> En ese espacio podrás encontrar, entre otros:
+> - Documentación técnica y de diseño del sistema
+> - Planificación, cronogramas y entregables
+> - Recursos compartidos y materiales de referencia
+
+---
+
 ## Descripción General
 
 **TRO-Launcher** es un sistema integral de optimización de rutas de trenes basado en **reconocimiento de personas mediante visión por computadora**. El objetivo principal es detectar y contabilizar la cantidad de usuarios que demandan el servicio de transporte metro para **optimizar la asignación de recursos** (número de vagones, frecuencia de trenes) en tiempo real.
