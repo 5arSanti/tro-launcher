@@ -10,3 +10,6 @@
 	path = tro-backend
 	url = https://github.com/5arSanti/tro-backend.git
 	branch = main
+[submodule "lirn-web-main"]
+	path = lirn-web-main
+	url = https://github.com/5arSanti/lirn-web-main.git
