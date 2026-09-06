@@ -6,10 +6,10 @@ colors:
   white: "#ffffff"
   graphite: "#6b7280"
   activity: "#00A8FF"
-  torns-deep: "#0a3a5c"
-  torns-mid: "#135a84"
-  torns-panel: "#1c7aad"
-  torns-air: "#e8f4fb"
+  torns-deep: "#0b4f78"
+  torns-mid: "#1480b8"
+  torns-panel: "#3aa8dc"
+  torns-air: "#f3f9fd"
 typography:
   display:
     fontFamily: "Manrope, sans-serif"
@@ -38,10 +38,10 @@ vision occupy two distinct cards. The official wordmark leads the hero at
 display size. The home panel that introduces TORNS uses the TORNS palette
 so the jump into `/torns` is continuous.
 
-`/torns` is a chapter film. Product first, then the system (four acts, pipeline,
-prototype, expected/real bridge), then the Transmilenio case (problem, frame,
-controller turns, one survey question at a time), then close. Grounds use the
-lifted TORNS blues, air, and white.
+`/torns` is a chapter film. Product first (full-bleed hero with signal field),
+then the system on white, then alternating white and blue case bands (problem,
+case frame, discovery, validation), then close. Grounds use open TORNS blues,
+air, and white as the primary surface.
 
 ## Color
 
@@ -50,9 +50,11 @@ lifted TORNS blues, air, and white.
 - **Graphite** is reserved for labels, notes, and secondary information.
 - **Activity blue** (`#00A8FF`) is the tertiary signal on LIRN (lines, nodes,
   cuts, hovers) and the energy color on TORNS.
-- **TORNS deep / mid / panel / air** (`#0a3a5c`, `#135a84`, `#1c7aad`,
-  `#e8f4fb`) are product grounds. White remains a TORNS surface. The LIRN
-  home teaser may use the TORNS palette because it introduces the product.
+- **TORNS deep / mid / panel / air** (`#0b4f78`, `#1480b8`, `#3aa8dc`,
+  `#f3f9fd`) are product grounds. White is the primary TORNS surface for
+  system, problem, discovery, and validation. Blue is secondary for the hero
+  and the case frame. The LIRN home teaser may use the TORNS palette because
+  it introduces the product.
 
 Do not paint other LIRN firm sections with a full activity-blue fill. Do not
 reintroduce the retired amber, navy, coral, or marketing civic-blue skin.
@@ -88,12 +90,12 @@ Do not distort, redraw, recolor, or replace the official logo assets.
 ## Interaction
 
 Links transition their text color over `160ms` with the shared easing curve.
-Hover and focus use activity blue. Survey charts interpolate bar width (and
-peak height) from the previous question to the next (400–700 ms). Reduced
-motion jumps to the final values with no interpolation. Acts, pipeline steps,
-interview turns, and survey questions advance with previous and next buttons.
-Photo-cut transitions and pipeline ignition are not shipped. No particles,
-decorative glows, or ambient motion.
+Hover and focus use activity blue. Stage changes use the Motion library:
+slides enter and exit with opacity, horizontal travel, and a short blur so the
+item change is unmistakable. Survey charts animate bar width, peak height, and
+hero percentages (400–700 ms). Reduced motion swaps content instantly and
+lands charts on final values. Acts, pipeline, interview, and survey advance
+with previous and next buttons. No particles or ambient loops.
 
 ## Components
 
@@ -111,7 +113,7 @@ decorative glows, or ambient motion.
 ## Rules
 
 1. LIRN structure is black and white, with activity blue as a tertiary signal.
-2. TORNS structure is lifted deep / mid / panel / air / white. `#00A8FF` is energy.
+2. TORNS structure is white-first with open deep / mid / panel / air blues. `#00A8FF` is energy.
 3. Keep buttons square and content hierarchy typographic.
 4. Preserve real evidence labels and do not imply a signed operator pilot.
 5. Keep the commercial site distinct from the civic-blue `tro-frontend` UI.

@@ -24,18 +24,23 @@ if (lower.includes("--amber") || lower.includes("#f59e0b")) {
   process.exit(1);
 }
 
-if (!lower.includes("--torns-air") || !lower.includes("#e8f4fb")) {
-  console.error("FAIL: --torns-air #e8f4fb missing");
+if (!lower.includes("--torns-air") || !lower.includes("#f3f9fd")) {
+  console.error("FAIL: --torns-air #f3f9fd missing");
   process.exit(1);
 }
 
-if (!lower.includes("#0a3a5c") || !lower.includes("#135a84") || !lower.includes("#1c7aad")) {
-  console.error("FAIL: lifted TORNS deep/mid/panel missing");
+if (!lower.includes("#0b4f78") || !lower.includes("#1480b8") || !lower.includes("#3aa8dc")) {
+  console.error("FAIL: open TORNS deep/mid/panel missing");
   process.exit(1);
 }
 
-if (lower.includes("#031422") || lower.includes("#06263d")) {
-  console.error("FAIL: cave TORNS blues remain");
+if (
+  lower.includes("#031422") ||
+  lower.includes("#06263d") ||
+  lower.includes("#0a3a5c") ||
+  lower.includes("#135a84")
+) {
+  console.error("FAIL: prior TORNS cave or mid blues remain");
   process.exit(1);
 }
 
