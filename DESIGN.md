@@ -88,11 +88,12 @@ Do not distort, redraw, recolor, or replace the official logo assets.
 ## Interaction
 
 Links transition their text color over `160ms` with the shared easing curve.
-Hover and focus use activity blue. Survey charts interpolate from the previous
-question's values to the next (400–700 ms) and respect reduced-motion
-preferences. Photo cuts between acts and interview turns use the logo geometry
-(`--cut`). Pipeline nodes ignite in a short chain. No particles, decorative
-glows, or ambient motion.
+Hover and focus use activity blue. Survey charts interpolate bar width (and
+peak height) from the previous question to the next (400–700 ms). Reduced
+motion jumps to the final values with no interpolation. Acts, pipeline steps,
+interview turns, and survey questions advance with previous and next buttons.
+Photo-cut transitions and pipeline ignition are not shipped. No particles,
+decorative glows, or ambient motion.
 
 ## Components
 
@@ -101,7 +102,9 @@ glows, or ambient motion.
 - **Primary CTA:** white on black bands; black on white bands.
 - **Secondary CTA:** transparent with a white border on black.
 - **Geometry frame:** clipped lower-right corner using `--cut`.
-- **Evidence:** graphite labels, ruled interview rows, activity-blue survey bars.
+- **Evidence:** one interview turn and one survey question at a time, with
+  previous/next buttons. Charts use a hero number, dual bars, two vertical
+  peaks, or a numbered ranking. Research labels stay uppercase and tracked.
 - **Footer:** black band with the official icon, firm name, product line, and
   TORNS link.
 
