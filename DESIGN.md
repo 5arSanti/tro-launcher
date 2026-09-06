@@ -6,6 +6,9 @@ colors:
   white: "#ffffff"
   graphite: "#6b7280"
   activity: "#00A8FF"
+  torns-deep: "#031422"
+  torns-mid: "#06263d"
+  torns-panel: "#0a3350"
 typography:
   display:
     fontFamily: "Manrope, sans-serif"
@@ -28,25 +31,29 @@ spacing:
 
 ## Direction
 
-LIRN and TORNS use an Architectural Tech Corporate system. Black and white
-full-width bands create the structure. Official LIRN marks, hard edges, dense
-Manrope display type, and clipped photography connect the site to infrastructure
-and station operations.
+LIRN and TORNS use an Architectural Tech Corporate system. LIRN is a
+black-and-white firm with a stronger activity-blue tertiary. Mission and
+vision occupy two distinct cards. The official wordmark leads the hero at
+display size. The home panel that introduces TORNS uses the TORNS palette
+so the jump into `/torns` is continuous.
 
-The home presents LIRN as the firm and points to TORNS. `/torns` presents the
-product, the Transmilenio applied prototype, the system pipeline, and the
-team's research evidence.
+`/torns` is the product story: problem, Transmilenio case, four acts from
+station to dispatch, pipeline, prototype facts, interview, and survey.
+Its grounds alternate deep blue, mid blue, and white.
 
 ## Color
 
 - **Black** is the primary dark ground and dark control fill.
 - **White** is the primary light ground and dark-ground text.
 - **Graphite** is reserved for labels, notes, and secondary information.
-- **Activity blue** (`#00A8FF`) is activity only: links on hover, measured
-  values, focus rings, selection, pipeline markers, and survey bars.
+- **Activity blue** (`#00A8FF`) is the tertiary signal on LIRN (lines, nodes,
+  cuts, hovers) and the energy color on TORNS.
+- **TORNS deep / mid / panel** are product grounds. White is a TORNS
+  surface too (problem, story, interview, close). The LIRN home teaser
+  may use the TORNS palette because it introduces the product.
 
-Never use activity blue as a page, hero, section, card, or navigation fill.
-Do not reintroduce the retired amber, navy, coral, or marketing civic-blue skin.
+Do not paint other LIRN firm sections with a full activity-blue fill. Do not
+reintroduce the retired amber, navy, coral, or marketing civic-blue skin.
 
 `tro-frontend` is outside this commercial-site redesign and remains on its
 civic-blue Operate skin. Its existing token assertion remains unchanged.
@@ -97,8 +104,8 @@ motion are part of this system.
 
 ## Rules
 
-1. Use only black and white for structural fills.
-2. Use `#00A8FF` only when something is active, measured, focused, or hovered.
+1. LIRN structure is black and white, with activity blue as a tertiary signal.
+2. TORNS structure is deep blue, mid blue, and white. `#00A8FF` is energy.
 3. Keep buttons square and content hierarchy typographic.
 4. Preserve real evidence labels and do not imply a signed operator pilot.
 5. Keep the commercial site distinct from the civic-blue `tro-frontend` UI.

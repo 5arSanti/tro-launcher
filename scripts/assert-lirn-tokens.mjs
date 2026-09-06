@@ -30,8 +30,17 @@ const rulePattern = /([^{}]+)\{([^{}]*)\}/g;
 for (const match of css.matchAll(rulePattern)) {
   const selector = match[1]?.trim() ?? "";
   const declarations = match[2] ?? "";
+  const tornsSurface =
+    selector.includes("page-torns") ||
+    selector.includes("data-skin=\"torns\"") ||
+    selector.includes("hero-torns") ||
+    selector.includes("torns-");
   const isAllowedSignal =
-    selector.includes(".survey-bar-fill") || selector.includes("::selection");
+    tornsSurface ||
+    selector.includes(".survey-bar-fill") ||
+    selector.includes("::selection") ||
+    selector.includes(".signal-node") ||
+    selector.includes(".signal-field");
   const usesActivityFill =
     /background(?:-color)?\s*:\s*(?:#00a8ff|var\(--activity\))/.test(
       declarations,

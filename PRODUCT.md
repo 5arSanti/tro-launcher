@@ -79,7 +79,7 @@ La documentación académica en `docs/torns-doc.md` describe un planteamiento pr
 ## Brand Commitments
 
 - LIRN and TORNS remain endorsed brands. TORNS has its own face; “by LIRN” is manufacturer mark.
-- Visual direction (2026-09-06): Architectural Tech Corporate on the commercial site. Black and white structure. `#00A8FF` is an activity signal only. Official LIRN logo files. Logo geometry for cuts and masks. Not luxury serif. Not the amber/navy brochure.
+- Visual direction (2026-09-06): Architectural Tech Corporate. LIRN is black/white with a stronger `#00A8FF` tertiary (grid, cuts, mission card, hovers). The home TORNS panel uses the TORNS palette. TORNS itself alternates deep blue, mid blue, and white. Official LIRN marks stay prominent. Not luxury serif. Not the amber/navy brochure.
 - `tro-frontend` stays on the 2026-09-05 civic-blue Operate skin until a later cycle. Dashboard still forbids TRO cyan fills.
 - CTA Hablemos / Contacto allowed. No comprar, fake demo, invented logos, impact metrics, testimonials, or third-party clients.
 - Spanish. Do not reuse TRO / Sistema de Vigilancia / Transport Route Optimization.
@@ -88,7 +88,7 @@ La documentación académica en `docs/torns-doc.md` describe un planteamiento pr
 
 **Autorizado en `/torns`:** el párrafo de problema de Transmilenio; la etiqueta “caso de estudio y prototipo aplicado”; la entrevista al controlador SITP; la encuesta del 17 de agosto de 2026 (n=20), siempre con la leyenda de investigación del equipo. No es resultado de un operador. No es piloto firmado.
 
-**Autorizado como contexto de producto:** capacidades del prototipo (cámaras, YOLOv11, WebSocket, recomendaciones).
+**Autorizado como contexto de producto:** capacidades del prototipo (cámaras, YOLOv11, WebSocket, recomendaciones). En `/torns` se puede contar la historia estación → cámara → conteo → recomendación, sin inventar impacto comercial.
 
 **No autorizado:** clientes, contratos, piloto firmado, alianza con TransMilenio S.A., Metro/APCA como cliente, métricas de impacto comercial, testimonios, logos de terceros.
 
