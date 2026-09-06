@@ -12,9 +12,9 @@ if (css.includes("#00a8ff")) {
   process.exit(1);
 }
 
-if (!css.includes("#c4a574") && !css.includes("var(--metro-accent)") && !css.includes("var(--champagne)")) {
-  console.error("FAIL: champagne accent unused");
+if (!css.includes("#3d8ec4") && !css.includes("#1b4d73") && !css.includes("var(--metro-accent)")) {
+  console.error("FAIL: civic blue unused");
   process.exit(1);
 }
 
-console.log("PASS: TRO cyan removed; editorial accent present");
+console.log("PASS: TRO cyan removed; civic blue present");

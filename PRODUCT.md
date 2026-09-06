@@ -78,14 +78,13 @@ La documentación académica en `docs/torns-doc.md` describe un planteamiento pr
 
 ## Brand Commitments
 
-- LIRN y TORNS son identidades distintas. Relación: marca avalada. TORNS tiene cara propia; “by LIRN” aparece como fabricante. LIRN es la empresa; TORNS es el producto que LIRN oferta.
-- Dirección visual anclada por el equipo (2026-09-05): **luxury editorial + minimalist corporate**, adaptada a movilidad/LIRN (no plantilla SaaS ni consultora genérica). Instructivo de referencia: `landing-instructions.md`. Anti-referencia: el look plano de “red nocturna” / diagramas SVG como único hero.
-- CTA comercial permitido: contacto / Hablemos. Prohibido inventar demo, “comprar”, clientes, métricas de impacto, testimonios o logos de terceros.
-- La autoridad visual se documenta en DESIGN.md tras el build. No hay manual PDF de papelería.
-- Familia reconocible en sitio LIRN, landing TORNS y dashboard `tro-frontend` (parientes, no clones). Se rechazan cian/glow TRO, rojo TransMilenio, vidrio, neón y default “SaaS gris + acento”. Wordmark LIRN (lettering), no isotipo.
-- Habrá prompt de logotipo LIRN y de infografía TORNS tras el sistema de marca; URL del QR cuando exista Pages.
-- Voces: LIRN habla de ciudad y movilidad; TORNS habla al centro de control. Idioma: español.
-- No reutilizar "TRO", "Sistema de Vigilancia" ni "Transport Route Optimization" como nombre oficial.
+- LIRN and TORNS remain endorsed brands. TORNS has its own face; “by LIRN” is manufacturer mark.
+- Visual direction (2026-09-05 redesign): vibrant corporate brochure language (bold sans, solid blocks, rounded CTAs) adapted from the etraining reference structure — not a purple/orange clone, not luxury serif/champagne editorial.
+- LIRN skin: navy/charcoal + amber CTAs; coral only on hover / rare emphasis.
+- TORNS skin + `tro-frontend`: civic blues (~`#1B4D73` / `#3D8EC4`); denser product microsite with labeled synthetic ProductStory.
+- Anti-reference: Bodoni/champagne cluster, night network SVG as hero, frosted glass as brand, TRO cyan/glow.
+- CTA Hablemos / Contacto allowed. No comprar, fake demo, invented logos/metrics/testimonials/cases/team.
+- Spanish. Do not reuse TRO / Sistema de Vigilancia / Transport Route Optimization.
 
 ## Evidence on Hand
 
