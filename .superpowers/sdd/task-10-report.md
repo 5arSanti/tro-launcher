@@ -1,29 +1,50 @@
-# Task 10: Dashboard visual restyle
+# Task 10 Report: Product and design truth
 
 ## Status
 
-Complete. The dashboard, monitoring, cameras, routing, and App.css leftovers now use the TORNS night tokens, 2px geometry, civic-blue accents, and no glow. JSX structure was not changed.
+Complete. `PRODUCT.md` and `DESIGN.md` now record the lifted TORNS chapter-film palette, page spine, and interaction rules already shipped in `lirn-web-main`. No new product claims. `tro-frontend` untouched.
 
-## Verification
+## Pre-edit site tests
 
-- `node scripts/assert-no-legacy-brand.mjs` — PASS
-- `node scripts/assert-torns-tokens.mjs` — PASS
-- `cd tro-frontend && npm run build` — PASS
-- CSS detector reports one intentional exception: the required 4px left filete on `.dashboard-hero`.
+```
+cd lirn-web-main && npm test
+```
+
+Result: **PASS** — 19 test files, 38 tests passed.
+
+## Doc changes
+
+### PRODUCT.md
+
+Replaced the Brand Commitments visual-direction bullet with the chapter-film spine and lifted grounds (`#0a3a5c`, `#135a84`, `#1c7aad`, `#e8f4fb`, white).
+
+### DESIGN.md
+
+- Frontmatter: updated `torns-deep`, `torns-mid`, `torns-panel`; added `torns-air`.
+- Direction: `/torns` described as chapter film (product → system → Transmilenio case → close).
+- Color: TORNS deep / mid / panel / air bullet with hex values.
+- Layout: staged evidence (one interview turn, one survey question, morphing chart; pipeline track with one active step).
+- Interaction: chart interpolation (400–700 ms), photo cuts via `--cut`, pipeline ignition chain; reduced-motion respected.
+- Rules: rule 2 updated to lifted deep / mid / panel / air / white.
+
+## Token asserts
+
+```
+node scripts/assert-lirn-tokens.mjs
+```
+
+Result: **PASS** — `PASS: LIRN tokens are black/white with activity blue`
+
+```
+node scripts/assert-torns-tokens.mjs
+```
+
+Result: **PASS** — `PASS: TRO cyan removed; civic blue present`
+
+## Commits
+
+- Parent (`tro-launcher`): `9e3b313` — Record the TORNS chapter-film palette and page spine.
 
 ## Concerns
 
-`npm install` reports 15 existing dependency vulnerabilities (1 low, 2 moderate, 12 high). No dependency upgrades were made.
-
-## Follow-up (App.css Task 10 findings)
-
-- Removed `box-shadow` from `.camera-card.selected` (no glow on selected camera).
-- Changed remaining `border-radius: 4px` in `App.css` to `2px` (`.camera-card`, `.camera-preview`, `.stat-card`).
-- tro-frontend commit: `79a53a5` — Remove selected camera glow and align App.css radii to 2px.
-- Parent submodule pointer updated; not pushed.
-
-### Verification (follow-up)
-
-- `node scripts/assert-no-legacy-brand.mjs` — PASS
-- `node scripts/assert-torns-tokens.mjs` — PASS
-- `cd tro-frontend && npm run build` — PASS
+None. Docs align with shipped tokens and page structure; asserts and pre-edit site tests pass.
