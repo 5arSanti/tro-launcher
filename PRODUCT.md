@@ -79,25 +79,23 @@ La documentación académica en `docs/torns-doc.md` describe un planteamiento pr
 ## Brand Commitments
 
 - LIRN and TORNS remain endorsed brands. TORNS has its own face; “by LIRN” is manufacturer mark.
-- Visual direction (2026-09-05 redesign): vibrant corporate brochure language (bold sans, solid blocks, rounded CTAs) adapted from the etraining reference structure — not a purple/orange clone, not luxury serif/champagne editorial.
-- LIRN skin: navy/charcoal + amber CTAs; coral only on hover / rare emphasis.
-- TORNS skin + `tro-frontend`: civic blues (~`#1B4D73` / `#3D8EC4`); denser product microsite with labeled synthetic ProductStory.
-- Anti-reference: Bodoni/champagne cluster, night network SVG as hero, frosted glass as brand, TRO cyan/glow.
-- CTA Hablemos / Contacto allowed. No comprar, fake demo, invented logos/metrics/testimonials/cases/team.
+- Visual direction (2026-09-06): Architectural Tech Corporate on the commercial site. Black and white structure. `#00A8FF` is an activity signal only. Official LIRN logo files. Logo geometry for cuts and masks. Not luxury serif. Not the amber/navy brochure.
+- `tro-frontend` stays on the 2026-09-05 civic-blue Operate skin until a later cycle. Dashboard still forbids TRO cyan fills.
+- CTA Hablemos / Contacto allowed. No comprar, fake demo, invented logos, impact metrics, testimonials, or third-party clients.
 - Spanish. Do not reuse TRO / Sistema de Vigilancia / Transport Route Optimization.
 
 ## Evidence on Hand
 
-**Autorizado para citar como contexto:** el problema público de congestión y desajuste de oferta en Transmilenio (Bogotá). No presentarlo como implementación, cliente o resultado medido.
+**Autorizado en `/torns`:** el párrafo de problema de Transmilenio; la etiqueta “caso de estudio y prototipo aplicado”; la entrevista al controlador SITP; la encuesta del 17 de agosto de 2026 (n=20), siempre con la leyenda de investigación del equipo. No es resultado de un operador. No es piloto firmado.
 
-**No autorizado como prueba de mercado o de impacto:** clientes, contratos, pilotos, testimonios, logos de terceros, cifras de reducción de espera o de eficiencia. No fabricarlos. Las secciones del instructivo que dependen de esa prueba (trust bar, métricas, casos, equipo, testimonios) se **omiten** hasta existir material real — no se publican como placeholders.
+**Autorizado como contexto de producto:** capacidades del prototipo (cámaras, YOLOv11, WebSocket, recomendaciones).
 
-**Existe en el repositorio y no es caso de estudio de un tercero:** el prototipo (frontend, backend, YOLO), capturas en `tro-docs/Assets/`, y el planteamiento en `docs/torns-doc.md`. Pueden mostrar qué es el producto. No pueden usarse como evidencia de adopción real.
+**No autorizado:** clientes, contratos, piloto firmado, alianza con TransMilenio S.A., Metro/APCA como cliente, métricas de impacto comercial, testimonios, logos de terceros.
 
 ## Product Principles
 
 1. La demanda medida en estación manda sobre el horario histórico cuando hay que decidir oferta.
-2. LIRN vende un producto para cualquier sistema masivo con estaciones; Transmilenio es el problema de referencia, no un cliente.
+2. LIRN vende un producto para cualquier sistema masivo con estaciones. Transmilenio es el caso de estudio y el prototipo aplicado, no un cliente ni un piloto firmado.
 3. TORNS se diseña primero para el centro de control: ocupación, cámaras y recomendación de frecuencia.
 4. No se inventa prueba. El problema público es contexto; el prototipo es el producto; nada más se afirma como hecho.
 5. Empresa y producto no se mezclan: LIRN es quién vende; TORNS es qué se opera.
