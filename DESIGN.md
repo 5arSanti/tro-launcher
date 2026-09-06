@@ -1,228 +1,234 @@
 ---
 name: LIRN
-description: Luxury editorial + minimalist corporate mobility house for LIRN and TORNS
+description: Vibrant corporate brochure for LIRN and denser civic-blue TORNS microsite
 colors:
-  night: "#0B1220"
-  night-soft: "#121A2B"
-  paper: "#F7F5F0"
-  ink: "#141820"
-  mute: "#6B7280"
-  mute-on-night: "#A8B0BD"
-  champagne: "#C4A574"
-  paper-pure: "#FFFFFF"
-  ok: "#2F7D4A"
-  warn: "#C4922A"
-  fail: "#B33A32"
+  navy: "#0b1f3a"
+  navy-deep: "#071526"
+  paper: "#ffffff"
+  ink: "#0f172a"
+  mute: "#5b6575"
+  amber: "#f59e0b"
+  coral: "#e86b5a"
+  civic: "#1b4d73"
+  civic-strong: "#3d8ec4"
+  surface-dark: "#0a1628"
+  ok: "#2f7d4a"
+  warn: "#c4922a"
+  fail: "#b33a32"
 typography:
   display:
-    fontFamily: "Bodoni Moda, Times New Roman, serif"
-    fontSize: "clamp(2rem, 4.5vw, 3.5rem)"
-    fontWeight: 500
-    lineHeight: 1.08
-    letterSpacing: "-0.025em"
-  display-hero-brand:
-    fontFamily: "Bodoni Moda, Times New Roman, serif"
-    fontSize: "clamp(3.5rem, 12vw, 7rem)"
-    fontWeight: 600
-    lineHeight: 0.92
-    letterSpacing: "-0.03em"
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "clamp(2.25rem, 5vw, 4.5rem)"
+    fontWeight: 800
+    lineHeight: 1.02
+    letterSpacing: "-0.04em"
   headline:
-    fontFamily: "Bodoni Moda, Times New Roman, serif"
-    fontSize: "clamp(2rem, 5.5vw, 3.75rem)"
-    fontWeight: 500
-    lineHeight: 1.05
-    letterSpacing: "-0.02em"
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "clamp(3rem, 8vw, 6rem)"
+    fontWeight: 800
+    lineHeight: 0.98
+    letterSpacing: "-0.04em"
+  brand-lead:
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "clamp(1rem, 2vw, 1.35rem)"
+    fontWeight: 800
+    lineHeight: 1
+    letterSpacing: "0.12em"
   title:
-    fontFamily: "Bodoni Moda, Times New Roman, serif"
-    fontSize: "clamp(1.25rem, 2.4vw, 1.75rem)"
-    fontWeight: 500
-    lineHeight: 1.3
-    letterSpacing: "-0.015em"
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "clamp(1.75rem, 4vw, 2.5rem)"
+    fontWeight: 800
+    lineHeight: 1.1
+    letterSpacing: "-0.02em"
   body:
-    fontFamily: "Public Sans, sans-serif"
-    fontSize: "1.05rem"
-    fontWeight: 300
-    lineHeight: 1.55
-  label:
-    fontFamily: "Public Sans, sans-serif"
-    fontSize: "0.72rem"
-    fontWeight: 600
-    letterSpacing: "0.16em"
-  nav:
-    fontFamily: "Public Sans, sans-serif"
-    fontSize: "0.8rem"
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "clamp(1.05rem, 1.7vw, 1.25rem)"
     fontWeight: 500
-    letterSpacing: "0.08em"
+    lineHeight: 1.65
+  label:
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "0.88rem"
+    fontWeight: 800
+    letterSpacing: "-0.01em"
+  nav:
+    fontFamily: "Manrope, sans-serif"
+    fontSize: "0.875rem"
+    fontWeight: 700
+    letterSpacing: "-0.01em"
 rounded:
-  none: "0"
+  cta: "999px"
+  block: "clamp(1.5rem, 4vw, 3rem)"
+  operate: "2px"
 spacing:
   gutter: "clamp(1.25rem, 4vw, 4rem)"
-  rail: "4.25rem"
-  section-y: "clamp(4rem, 10vh, 7rem)"
-  measure: "68ch"
-  gap-actions: "1.25rem"
+  rail: "4.5rem"
+  section-y: "clamp(4rem, 9vw, 7.5rem)"
+  section-y-torns: "clamp(3.25rem, 7vw, 5.5rem)"
+  measure: "65ch"
+  gap-actions: "0.75rem"
+  container: "76rem"
 components:
   button-primary:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.night}"
-    rounded: "{rounded.none}"
-    padding: "0.85rem 1.5rem"
+    backgroundColor: "{colors.amber}"
+    textColor: "{colors.navy}"
+    rounded: "{rounded.cta}"
+    padding: "0.8rem 1.4rem"
     typography: "{typography.label}"
+    height: "3rem"
   button-primary-hover:
-    backgroundColor: "{colors.paper-pure}"
-    textColor: "{colors.night}"
-  button-nav-outline:
+    backgroundColor: "{colors.coral}"
+    textColor: "{colors.paper}"
+  button-secondary:
     backgroundColor: "transparent"
     textColor: "{colors.paper}"
-    rounded: "{rounded.none}"
-    padding: "0.55rem 1rem"
-  button-nav-outline-hover:
+    rounded: "{rounded.cta}"
+    padding: "0.8rem 1.4rem"
+  button-secondary-hover:
+    textColor: "{colors.amber}"
+  button-torns-primary:
     backgroundColor: "{colors.paper}"
-    textColor: "{colors.night}"
-  button-contact-pending:
-    backgroundColor: "transparent"
-    textColor: "{colors.mute-on-night}"
-    rounded: "{rounded.none}"
-    padding: "0.85rem 1.5rem"
-  link-quiet:
-    backgroundColor: "transparent"
-    textColor: "{colors.mute-on-night}"
+    textColor: "{colors.civic}"
+    rounded: "{rounded.cta}"
+    padding: "0.8rem 1.4rem"
+  button-torns-primary-hover:
+    backgroundColor: "{colors.civic-strong}"
+    textColor: "{colors.surface-dark}"
+  button-nav-cta:
+    backgroundColor: "{colors.amber}"
+    textColor: "{colors.navy}"
+    rounded: "{rounded.cta}"
+    padding: "0.7rem 1.2rem"
+  button-nav-cta-hover:
+    backgroundColor: "{colors.coral}"
+    textColor: "{colors.paper}"
+  card-esencia:
+    backgroundColor: "{colors.amber}"
+    textColor: "{colors.navy}"
+    rounded: "{rounded.block}"
+    padding: "clamp(2.5rem, 6vw, 5rem)"
+  card-product-story:
+    backgroundColor: "{colors.civic}"
+    textColor: "{colors.paper}"
+    padding: "clamp(1.5rem, 4vw, 3rem)"
 ---
 
 # Design System: LIRN
 
 ## Overview
 
-**Creative North Star: "Editorial de despacho cívico"**
+**Creative North Star: "The Vibrant Corporate Brochure"**
 
-LIRN’s commercial surface reads as an executive mobility house: deep navy cyclorama, warm off-white paper, Bodoni Moda editorial display, and Public Sans as the quiet UI voice. Sections alternate night / paper / night-soft like a printed dossier, not a SaaS dashboard. Photography is cinematic and full-bleed; champagne is a sparse signal, never a theme wash.
+LIRN and TORNS share one bold Manrope face and a language of solid color blocks, not luxury serif champagne or frosted glass. LIRN reads as an etraining-like commercial brochure: white nav, navy hero, amber CTAs, alternating paper / navy / tinted / coral bands. TORNS is the denser product microsite in civic blues, with a labeled synthetic ProductStory that shows ocupación → cámara → recomendación. The Operate skin in `tro-frontend` keeps the civic palette for control-room density and sharpens corners to 2px.
 
-Primary system of record: `lirn-web-main` (LIRN home + `/torns`). The TORNS Operate dashboard in `tro-frontend` inherits the same token family (night, paper, ink, champagne) with operational status colors; it is a sibling skin, not a clone of the landing composition.
-
-Rejected by the build and brand commitments: flat night network diagrams as hero, cyan/glow TRO, TransMilenio red as brand, glass/neon, generic consulting templates, and invented clients, metrics, or testimonials.
+Depth comes from block contrast and a single amber ring on the LIRN hero, not from layered shadows or glass. Marketing CTAs are always pills; brochure copy stays sentence case.
 
 **Key Characteristics:**
-- Luxury editorial + minimalist corporate on a night/paper rhythm
-- Bodoni Moda display + Public Sans UI; sharp corners; hairline rules
-- Champagne as scarce accent; paper-filled primary CTA (Hablemos)
-- Full-bleed cinematic hero with dual gradients; no card chrome
-- Same token family across LIRN site and TORNS Operate mode
+- One family: Manrope 400–800; display and CTA weight is 800
+- Dual skins via `data-theme`: LIRN navy/amber/coral; TORNS civic `#1b4d73` / `#3d8ec4`
+- Solid section fills; pill CTAs (`999px`); soft rounded Esencia shell
+- LIRN first viewport: light nav, navy hero, amber brand lead + huge slogan, amber Hablemos + outline Ver TORNS
+- TORNS denser scroll with ProductStory synthetic UI; Operate dashboard = same civic blues, sharper chrome
 
 ## Colors
 
-Neutrals carry architecture; champagne appears only as a discrete accent on first instruments, mission labels, and focus.
+Two endorsed skins on shared neutrals: LIRN leads with amber on navy; TORNS leads with civic blue on deep surface.
 
 ### Primary
-- **Deep navy night** (`{colors.night}`): Default site soil, dark sections, footer, Operate console ground.
-- **Night soft** (`{colors.night-soft}`): Mid-band sections and instrument cells — a step up from night without leaving the cyclorama.
+- **LIRN Navy** (`{colors.navy}`): Hero, product band, footer family, default body chrome under `[data-theme="lirn"]`.
+- **Amber CTA** (`{colors.amber}`): Primary marketing fills, hero brand lead, product mark, Esencia shell, decorative hero ring.
 
 ### Secondary
-- **Champagne** (`{colors.champagne}`): Sparse accent — first board cell, first instrument label, mission kicker tint, focus ring, selection wash, 404 links. Not a fill for large regions or primary buttons.
+- **Civic Blue** (`{colors.civic}`): TORNS hero and capabilities band; ProductStory panel ground; Operate nav accents.
+- **Civic Strong** (`{colors.civic-strong}`): TORNS accent, hover fill, capability list markers, limit band, synthetic UI highlights.
+
+### Tertiary
+- **Coral Emphasis** (`{colors.coral}`): LIRN CTA / nav-CTA hover; solid signal strip; full contact band; hero-route connector. Used as a loud block, not only as hover tint.
+- **Operate status** (`{colors.ok}` / `{colors.warn}` / `{colors.fail}`): Dashboard health and alerts only.
 
 ### Neutral
-- **Paper** (`{colors.paper}`): Light section soil and primary button fill.
-- **Ink** (`{colors.ink}`): Primary text on paper.
-- **Mute / mute-on-night** (`{colors.mute}`, `{colors.mute-on-night}`): Secondary copy and nav links by ground.
-- **Hairlines**: `color-mix` of paper ~18% on night, ink ~14% on paper — dividers, boards, product-band tops.
+- **Paper** (`{colors.paper}`): White brochure grounds, light nav, TORNS problem/infographic bands, TORNS primary CTA fill.
+- **Ink** (`{colors.ink}`): Body text on paper.
+- **Mute** (`{colors.mute}`): Context footnotes and secondary prose.
+- **Navy Deep** (`{colors.navy-deep}`): Footer.
+- **Surface Dark** (`{colors.surface-dark}`): TORNS page ground and close band (token `#0a1628` under `[data-theme="torns"]`).
+- **Line**: `color-mix` ink or paper at low opacity for hairline borders — not a hard hex token.
 
-### Operate-only (TORNS dashboard)
-- **Ok / warn / fail** (`{colors.ok}`, `{colors.warn}`, `{colors.fail}`): Operational status only — never brand accents on commercial pages.
+### Named Rules
+**The Dual Skin Rule.** LIRN accents are amber → coral. TORNS accents are civic → civic-strong. Do not paint amber CTAs on TORNS product chrome or civic fills on the LIRN brochure hero.
 
-**The Scarce Champagne Rule.** Champagne marks a first signal in a set (board, instrument triad, mission). It must stay rare: if removing it would not change hierarchy, it should not be there.
-
-**The Night/Paper Rule.** Commercial pages alternate `section-dark`, `section-paper`, and `section-soft`. Do not flatten the whole site to one ground.
+**The Solid Block Rule.** Sections earn contrast from full-bleed fills (navy, paper, amber, coral, civic), not from cards-in-cards or frosted overlays.
 
 ## Typography
 
-**Display Font:** Bodoni Moda (with Times New Roman, serif)
-**Body Font:** Public Sans (with sans-serif)
-**Operate numerals:** `ui-monospace, "Fragment Mono", monospace` with tabular nums where counts matter
+**Display Font:** Manrope (sans-serif fallback)
+**Body Font:** Manrope (sans-serif fallback)
 
-**Character:** High-contrast editorial serif for house and product names; light sans for lede and UI. Display never competes with a second decorative face.
+**Character:** One confident grotesque at high weight for slogans and CTAs; mid weight for ledes. No second display serif.
 
 ### Hierarchy
-- **Display brand** (600, `clamp(3.5rem, 12vw, 7rem)`, lh 0.92): Hero LIRN word as lettering-scale type.
-- **Headline** (500, `clamp(2rem, 5.5vw, 3.75rem)`, lh 1.05): Hero editorial line; keep measure short (~14ch).
-- **Display** (500, `clamp(2rem, 4.5vw, 3.5rem)`, lh 1.08): Section titles.
-- **Title** (500, mission/vision and instrument copy sizes): Editorial statements inside pairs and boards.
-- **Body** (300, ~1.05rem, lh 1.55, max `{spacing.measure}`): Lede and prose.
-- **Label / nav** (600–500, uppercase, wide tracking): Nav links, CTA caps, discrete board cells.
+- **Headline** (800, `clamp(3rem, 8vw, 6rem)`, lh 0.98): LIRN hero slogan; short measure (~11ch).
+- **TORNS brand** (800, `clamp(3.5rem, 11vw, 7.5rem)`): Product name as hero-scale wordmark with small “by LIRN”.
+- **Display** (800, `clamp(2.25rem, 5vw, 4.5rem)`): Section titles on alternating grounds.
+- **Brand lead** (800, tracked `0.12em`): LIRN name above the hero slogan — brand signal, not a generic section eyebrow.
+- **Body** (500, `clamp(1.05rem, 1.7vw, 1.25rem)`, lh ~1.65): Lede and prose to ~65ch.
+- **Label / CTA** (800, ~0.88rem, slight negative tracking): Pill buttons and nav CTA; sentence case.
+- **Nav** (700): Light-nav links; coral on hover/active.
 
-**The Two-Voice Rule.** Bodoni Moda owns brand, product mark, and section headlines. Public Sans owns navigation, buttons, labels, and body. Do not invert.
+### Named Rules
+**The One Face Rule.** Marketing and microsite type is Manrope only. Do not reintroduce Bodoni, champagne pairing, or Public Sans as the house face.
+
+**The Sentence-Case CTA Rule.** Buttons and nav links stay sentence case (`Hablemos`, `Ver TORNS`). Do not uppercase marketing CTAs.
 
 ## Layout
 
-Fixed transparent nav height `{spacing.rail}` over full-bleed hero. Horizontal rhythm from `{spacing.gutter}`. Sections use `{spacing.section-y}` vertical padding. Recurring grid: narrow label column (~0.35fr) + content (1fr) collapsing to one column below 52rem. Hero board and instrument triad: three equal cells separated by 1px hairline; stack on small screens. Body measure caps at `{spacing.measure}`.
-
-**The First-Viewport Rule.** Hero contains brand, one headline, one support line, Hablemos + TORNS, and an optional discrete demand/estación/oferta board — not stats, trust bars, or card grids.
+Brochure rhythm: sticky light nav (`--rail` 4.5rem), full-bleed section bands, content capped near 76rem, gutters `clamp(1.25rem, 4vw, 4rem)`. LIRN section padding is taller (`clamp(4rem, 9vw, 7.5rem)`); TORNS is denser (`clamp(3.25rem, 7vw, 5.5rem)`). Two-column `section-grid` collapses to one column below 52rem. Hero route labels hide below 52rem; LIRN hero min-height softens below 36rem.
 
 ## Elevation & Depth
 
-No drop shadows on the commercial system. Depth comes from photography, dual hero gradients (vertical night wash + horizontal side veil), tonal section shifts, and 1px hairline boards.
+Mostly flat. Depth is tonal block stacking plus one signature amber ring behind the LIRN hero. ProductStory panels use flat civic fills and thin civic-strong borders, not soft drop shadows. Operate dashboard may keep utility shadows for ops chrome; marketing surfaces do not lead with shadow hierarchy.
 
-### Shadow Vocabulary
-Operate dashboard may use restrained functional shadows for panels (`0 2px 4px` / `0 4px 8px` / `0 8px 16px` rgba black); commercial landings stay flat.
-
-**The Flat Editorial Rule.** Landings: no ambient card lift. If a surface needs separation, use hairline or night/paper contrast — not blur or glow.
+### Named Rules
+**The Flat Brochure Rule.** Prefer solid fills and borders over ambient shadow stacks on LIRN/TORNS marketing pages.
 
 ## Shapes
 
-All interactive and structural corners are sharp (`{rounded.none}`). Boards and instrument rows are rectangles divided by 1px gutters, not rounded cards. Primary buttons and nav CTA are square-edged fills or strokes.
-
-**The Sharp Edge Rule.** Do not introduce soft radii, pills, or floating rounded media cards on LIRN commercial surfaces.
+- **Pill CTAs** (`{rounded.cta}` / `999px`): All marketing primary/secondary/nav CTAs.
+- **Soft block** (`{rounded.block}`): Esencia amber shell.
+- **Hero ring**: Large circular amber stroke anchored bottom-right on the LIRN navy hero.
+- **Operate sharp** (`{rounded.operate}` / `2px`): Dashboard nav items, panels, and chips — density over brochure softness.
+- Hairline dividers via `--line` mixes; capability list uses small civic-strong squares as end markers.
 
 ## Components
 
 ### Buttons
-- **Shape:** Sharp rectangle (`0` radius)
-- **Primary:** Paper fill on night (or night-ink on paper contexts via same class), uppercase Public Sans ~0.85rem / 600, padding `0.85rem 1.5rem`; hover lifts 1px and goes pure white
-- **Nav outline:** Transparent with paper stroke; hover inverts to paper fill / night text
-- **Contact pending:** Outline only, mute text, non-interactive until a real channel exists
-- **Quiet link:** Mute-on-night text; underline on hover — secondary path (e.g. TORNS)
+- **Shape:** Full pill (`999px`); min-height 3rem; padding ~0.8rem 1.4rem; weight 800.
+- **Primary (LIRN):** Amber fill, navy text → coral fill, paper text on hover.
+- **Secondary (LIRN hero):** Transparent with light border → amber border/text on hover.
+- **Primary (TORNS):** Paper fill, civic text → civic-strong fill on hover.
+- **Nav CTA:** Same amber→coral pill language as primary, slightly tighter padding.
 
 ### Cards / Containers
-- **Not card chrome.** Use section grounds, hairline-top product bands, editorial lists with top borders, and 1px instrument/board grids.
-- **Internal padding:** Instrument cells ~`1.5rem 1.25rem`; board cells ~`0.85rem 1rem`
-
-### Inputs / Fields
-- Commercial site has no form fields yet. When added: stroke hairline, sharp corners, champagne focus ring (`2px`, offset `3px`) matching `:focus-visible`.
+- **Esencia:** Soft-rounded amber block on paper shell; navy type; primary inside flips to navy fill.
+- **ProductStory panel:** Civic rectangle, thin civic-strong border, synthetic visuals (occupation bar, camera grid, recommendation rail). Always labeled as synthetic UI.
+- **Signal / contact / limit:** Full-bleed solid strips (coral or civic-strong) — not card chrome.
 
 ### Navigation
-- Fixed, transparent over hero; hairline bottom in paper ~12%. Brand in Bodoni Moda. Links uppercase Public Sans mute; active/hover to paper. Trailing outline CTA → Contacto.
+- **Marketing:** White bar, navy wordmark (800), ink links (700), amber pill Hablemos; coral for hover/active text and CTA hover.
+- **Operate:** Night-panel bar, civic-strong active/hover borders, 2px corners, denser item padding.
 
-### Signature: Demand board / instrument triad
-- Three-cell hairline grid. First cell’s label may use champagne; others stay mute. Labels uppercase, tracked — a discrete instrument, not a metric strip with invented numbers.
-
-### Endorsement
-- TORNS product mark in Bodoni; `by LIRN` as small uppercase Public Sans mute beside or under the mark — never a second logo.
+### ProductStory (signature)
+Three-step tablist (ocupación / cámara / recomendación) beside a civic synthetic panel. Panel copy is large Manrope; chrome labels may track uppercase inside the instrument only. Include the synthetic disclaimer; never present figures as live customer metrics.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep Hablemos as the primary commercial CTA and TORNS as secondary navigation/product path.
-- **Do** alternate night / paper / night-soft sections with hairline rules and cinematic photography.
-- **Do** reuse night, paper, ink, champagne tokens in TORNS Operate so the family reads as one house.
-- **Do** treat Transmilenio (or any operator) as public problem context — never as client proof.
+- **Do** switch skins with `data-theme="lirn"` / `data-theme="torns"` and keep accent tokens on `--accent` / `--accent-hover`.
+- **Do** use Manrope 800 for slogans, product marks, and CTAs; keep body at 500.
+- **Do** alternate solid brochure bands and pill CTAs; keep Operate corners at 2px.
+- **Do** treat coral as LIRN’s loud emphasis (hover + signal + contact), and civic-strong as TORNS’s loud emphasis.
 
 ### Don't:
-- **Don't** use network/diagram SVG, cyan glow, or “red nocturna” flat maps as the hero idea.
-- **Don't** invent clients, metrics, testimonials, trust logos, or fake demos.
-- **Don't** flood screens with champagne or use status red/green as brand color on landings.
-- **Don't** ship rounded cards, glassmorphism, neon, or Inter/Roboto/system display stacks as the house face.
-
-## Mission justification
-
-Public mission: Hacer que el transporte masivo ajuste su oferta a la demanda real de cada estación, midiendo quién espera ahora y no solo lo que el horario predijo.
-
-| Pregunta | Respuesta |
-|---|---|
-| ¿Qué hacemos? | Medimos demanda en estación y la convertimos en decisión de oferta. |
-| ¿Cuál es nuestro negocio? | Movilidad operativa para sistemas masivos con estaciones. |
-| ¿A qué nos dedicamos? | A que frecuencia y capacidad sigan a quien está en el andén. |
-| ¿Razón de ser? | Evitar que la oferta viva del promedio cuando la estación ya cambió. |
-| ¿Público? | Centros de control y despacho. |
-| ¿Ámbito? | Cualquier sistema con estaciones. Transmilenio es problema de referencia, no territorio comercial. |
-| ¿Ventaja? | Demanda medida + recomendación al control. |
-| ¿Diferencia? | No vendemos cámaras ni horarios fijos. Vendemos la estación como dato vivo. |
-
-Public vision: Que cada estación de un sistema masivo opere con la demanda que ocurre, no con la que se supuso.
+- **Don't** revive Bodoni, champagne, warm paper `#F7F5F0`, or square uppercase editorial CTAs.
+- **Don't** use frosted glass, night-network SVG heroes, or TRO cyan/glow as brand materials.
+- **Don't** put amber marketing CTAs on TORNS product sections or civic fills on the LIRN hero CTA pair.
+- **Don't** invent metrics, testimonials, client logos, or “live” ProductStory numbers — keep the synthetic label.

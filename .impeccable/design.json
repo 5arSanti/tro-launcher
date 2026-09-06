@@ -1,248 +1,245 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-06T03:07:53Z",
+  "generatedAt": "2026-09-06T04:30:00Z",
   "title": "Design System: LIRN",
   "extensions": {
     "colorMeta": {
-      "night": {
+      "navy": {
         "role": "primary",
-        "displayName": "Deep navy night",
-        "canonical": "#0B1220",
-        "tonalRamp": ["#05080F", "#0B1220", "#121A2B", "#1C2538", "#2A3448", "#4A5568", "#8B93A3", "#D4D8DE"]
+        "displayName": "LIRN Navy",
+        "canonical": "#0b1f3a",
+        "tonalRamp": ["#040a14", "#071526", "#0b1f3a", "#163456", "#2a4f78", "#4a7299", "#8aa8c0", "#d6e0ea"]
       },
-      "night-soft": {
-        "role": "primary",
-        "displayName": "Night soft",
-        "canonical": "#121A2B",
-        "tonalRamp": ["#080C14", "#0B1220", "#121A2B", "#1A2438", "#2C3850", "#4E5A70", "#8E96A6", "#D6DAE0"]
+      "navy-deep": {
+        "role": "neutral",
+        "displayName": "Navy Deep",
+        "canonical": "#071526",
+        "tonalRamp": ["#03070e", "#071526", "#0b1f3a", "#142f52", "#274870", "#4a6b90", "#8aa0b8", "#d4dee8"]
       },
       "paper": {
         "role": "neutral",
-        "displayName": "Warm paper",
-        "canonical": "#F7F5F0",
-        "tonalRamp": ["#2A2824", "#4A4640", "#6B655C", "#8C867A", "#A8A297", "#C9C4BA", "#E4E0D8", "#F7F5F0"]
+        "displayName": "Paper White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#2a2a2a", "#4a4a4a", "#6a6a6a", "#8a8a8a", "#aaaaaa", "#cccccc", "#eeeeee", "#ffffff"]
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Charcoal ink",
-        "canonical": "#141820",
-        "tonalRamp": ["#0A0C10", "#141820", "#242830", "#3A404C", "#5A6270", "#8A909C", "#C4C8CE", "#E8EAED"]
+        "displayName": "Slate Ink",
+        "canonical": "#0f172a",
+        "tonalRamp": ["#070b14", "#0f172a", "#1e293b", "#334155", "#64748b", "#94a3b8", "#cbd5e1", "#f1f5f9"]
       },
       "mute": {
         "role": "neutral",
-        "displayName": "Soft gray",
-        "canonical": "#6B7280",
-        "tonalRamp": ["#1F2228", "#2F343C", "#454B56", "#6B7280", "#8B929E", "#A8AEB8", "#C9CDD4", "#E8EAED"]
+        "displayName": "Mute Gray",
+        "canonical": "#5b6575",
+        "tonalRamp": ["#1c2028", "#2e3540", "#444c5a", "#5b6575", "#7a8494", "#9aa3b0", "#c4cad3", "#e8eaed"]
       },
-      "mute-on-night": {
-        "role": "neutral",
-        "displayName": "Mute on night",
-        "canonical": "#A8B0BD",
-        "tonalRamp": ["#2A3038", "#3E4652", "#5A6472", "#7A8494", "#A8B0BD", "#C0C6D0", "#D8DCE4", "#EEF0F4"]
+      "amber": {
+        "role": "primary",
+        "displayName": "Amber CTA",
+        "canonical": "#f59e0b",
+        "tonalRamp": ["#3d2804", "#6b4508", "#9a640b", "#c47e0c", "#f59e0b", "#f7b544", "#facc78", "#fde9c4"]
       },
-      "champagne": {
+      "coral": {
+        "role": "tertiary",
+        "displayName": "Coral Emphasis",
+        "canonical": "#e86b5a",
+        "tonalRamp": ["#3a1510", "#6a2a22", "#a04438", "#c45548", "#e86b5a", "#ee9184", "#f4b7ae", "#fae0dc"]
+      },
+      "civic": {
         "role": "secondary",
-        "displayName": "Champagne",
-        "canonical": "#C4A574",
-        "tonalRamp": ["#3A2E1C", "#5C4A2E", "#7A6340", "#9A7D54", "#C4A574", "#D4BC94", "#E4D4B8", "#F2EAE0"]
+        "displayName": "Civic Blue",
+        "canonical": "#1b4d73",
+        "tonalRamp": ["#071420", "#0f2a40", "#1b4d73", "#276691", "#3d8ec4", "#6aabd4", "#9cc8e4", "#d6e8f4"]
       },
-      "paper-pure": {
+      "civic-strong": {
+        "role": "secondary",
+        "displayName": "Civic Strong",
+        "canonical": "#3d8ec4",
+        "tonalRamp": ["#0c2438", "#163a58", "#1b4d73", "#2a6fa0", "#3d8ec4", "#68abd4", "#98c8e4", "#d4e8f4"]
+      },
+      "surface-dark": {
         "role": "neutral",
-        "displayName": "Pure paper",
-        "canonical": "#FFFFFF",
-        "tonalRamp": ["#2A2A2A", "#4A4A4A", "#6A6A6A", "#8A8A8A", "#AAAAAA", "#CCCCCC", "#EEEEEE", "#FFFFFF"]
+        "displayName": "TORNS Surface Dark",
+        "canonical": "#0a1628",
+        "tonalRamp": ["#040a12", "#0a1628", "#12263f", "#1e3a58", "#3a5570", "#6a8098", "#a0b0c0", "#d8e0e8"]
       },
       "ok": {
         "role": "tertiary",
-        "displayName": "Operate ok",
-        "canonical": "#2F7D4A",
-        "tonalRamp": ["#0F2A18", "#1A4A2C", "#2F7D4A", "#3E9A5C", "#5BB574", "#84C99A", "#B5DFC4", "#E0F2E6"]
+        "displayName": "Operate OK",
+        "canonical": "#2f7d4a",
+        "tonalRamp": ["#0f2a18", "#1a4a2c", "#2f7d4a", "#3e9a5c", "#5bb574", "#84c99a", "#b5dfc4", "#e0f2e6"]
       },
       "warn": {
         "role": "tertiary",
-        "displayName": "Operate warn",
-        "canonical": "#C4922A",
-        "tonalRamp": ["#3A2A0C", "#6A4E16", "#C4922A", "#D4A83E", "#E0BC62", "#EAD08A", "#F2E2B4", "#F8F0D8"]
+        "displayName": "Operate Warn",
+        "canonical": "#c4922a",
+        "tonalRamp": ["#3a2a0c", "#6a4e16", "#c4922a", "#d4a83e", "#e0bc62", "#ead08a", "#f2e2b4", "#f8f0d8"]
       },
       "fail": {
         "role": "tertiary",
-        "displayName": "Operate fail",
-        "canonical": "#B33A32",
-        "tonalRamp": ["#3A1210", "#6A221C", "#B33A32", "#C85048", "#D87068", "#E49892", "#EEC4C0", "#F8E6E4"]
+        "displayName": "Operate Fail",
+        "canonical": "#b33a32",
+        "tonalRamp": ["#3a1210", "#6a221c", "#b33a32", "#c85048", "#d87068", "#e49892", "#eec4c0", "#f8e6e4"]
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Section titles on alternating grounds." },
-      "display-hero-brand": { "displayName": "Hero brand", "purpose": "LIRN word at hero scale." },
-      "headline": { "displayName": "Headline", "purpose": "Hero editorial line; short measure." },
-      "title": { "displayName": "Title", "purpose": "Mission, vision, instrument statements." },
-      "body": { "displayName": "Body", "purpose": "Lede and prose up to 68ch." },
-      "label": { "displayName": "Label", "purpose": "Uppercase tracked section and CTA caps." },
-      "nav": { "displayName": "Nav", "purpose": "Transparent nav links." }
-    },
-    "shadows": [
-      {
-        "name": "operate-sm",
-        "value": "0 2px 4px rgba(0, 0, 0, 0.1)",
-        "purpose": "TORNS Operate panel lift only; not used on commercial landings."
+      "display": {
+        "displayName": "Display",
+        "purpose": "Section titles on alternating brochure and TORNS grounds."
       },
-      {
-        "name": "operate-md",
-        "value": "0 4px 8px rgba(0, 0, 0, 0.15)",
-        "purpose": "TORNS Operate mid elevation."
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "LIRN hero slogan; short measure."
       },
-      {
-        "name": "operate-lg",
-        "value": "0 8px 16px rgba(0, 0, 0, 0.2)",
-        "purpose": "TORNS Operate high elevation."
+      "brand-lead": {
+        "displayName": "Brand lead",
+        "purpose": "LIRN name above the hero slogan — brand signal only."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Secondary block titles (Esencia, compact bands)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Lede and prose up to ~65ch."
+      },
+      "label": {
+        "displayName": "Label / CTA",
+        "purpose": "Pill button and nav CTA type; sentence case."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "Light-nav link labels."
       }
-    ],
+    },
+    "shadows": [],
     "motion": [
       {
-        "name": "ease",
+        "name": "ease-standard",
         "value": "cubic-bezier(0.22, 1, 0.36, 1)",
-        "purpose": "Hero rise, media scale-in, button hover."
-      },
-      {
-        "name": "rise",
-        "value": "0.9s cubic-bezier(0.22, 1, 0.36, 1)",
-        "purpose": "Hero copy fade/translateY enter."
-      },
-      {
-        "name": "media-in",
-        "value": "1.2s cubic-bezier(0.22, 1, 0.36, 1)",
-        "purpose": "Hero image scale 1.04 → 1."
-      },
-      {
-        "name": "btn-hover",
-        "value": "160ms cubic-bezier(0.22, 1, 0.36, 1)",
-        "purpose": "Primary button background and translateY(-1px)."
+        "purpose": "Token ease for brochure state transitions when used."
       }
     ],
     "breakpoints": [
-      { "name": "nav-compact", "value": "36rem" },
-      { "name": "stack-grids", "value": "52rem" }
+      { "name": "compact", "value": "52rem" },
+      { "name": "narrow", "value": "36rem" }
     ]
   },
   "components": [
     {
-      "name": "Primary Button",
+      "name": "Primary Button (LIRN)",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Paper-filled uppercase CTA for Hablemos and product paths.",
-      "html": "<button class=\"ds-btn-primary\">Hablemos</button>",
-      "css": ".ds-btn-primary { display: inline-flex; align-items: center; padding: 0.85rem 1.5rem; background: #F7F5F0; color: #0B1220; font-family: \"Public Sans\", sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; border: none; border-radius: 0; cursor: pointer; transition: transform 160ms cubic-bezier(0.22, 1, 0.36, 1), background 160ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-primary:hover { background: #FFFFFF; transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid #C4A574; outline-offset: 3px; }"
+      "description": "Amber pill CTA; coral on hover.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Hablemos</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: 0.8rem 1.4rem; border: 0; border-radius: 999px; background: #f59e0b; color: #0b1f3a; font-family: Manrope, sans-serif; font-size: 0.88rem; font-weight: 800; letter-spacing: -0.01em; text-transform: none; cursor: pointer; transition: background 160ms cubic-bezier(0.22, 1, 0.36, 1), color 160ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-primary:hover { background: #e86b5a; color: #ffffff; } .ds-btn-primary:focus-visible { outline: 2px solid #f59e0b; outline-offset: 3px; }"
     },
     {
-      "name": "Nav Outline CTA",
+      "name": "Secondary Button (LIRN hero)",
       "kind": "button",
-      "refersTo": "button-nav-outline",
-      "description": "Trailing nav Contacto control; inverts on hover.",
-      "html": "<a class=\"ds-btn-nav\" href=\"#contacto\">Contacto</a>",
-      "css": ".ds-btn-nav { display: inline-flex; align-items: center; padding: 0.55rem 1rem; border: 1px solid color-mix(in srgb, #F7F5F0 55%, transparent); color: #F7F5F0; font-family: \"Public Sans\", sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 0; background: transparent; transition: background 160ms cubic-bezier(0.22, 1, 0.36, 1), color 160ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-nav:hover { background: #F7F5F0; color: #0B1220; border-color: #F7F5F0; } .ds-btn-nav:focus-visible { outline: 2px solid #C4A574; outline-offset: 3px; }"
+      "refersTo": "button-secondary",
+      "description": "Outline pill on navy hero for Ver TORNS.",
+      "html": "<button class=\"ds-btn-secondary\" type=\"button\">Ver TORNS</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: 0.8rem 1.4rem; border: 1px solid color-mix(in srgb, #ffffff 55%, transparent); border-radius: 999px; background: transparent; color: #ffffff; font-family: Manrope, sans-serif; font-size: 0.88rem; font-weight: 800; letter-spacing: -0.01em; cursor: pointer; transition: border-color 160ms cubic-bezier(0.22, 1, 0.36, 1), color 160ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-secondary:hover { border-color: #f59e0b; color: #f59e0b; } .ds-btn-secondary:focus-visible { outline: 2px solid #f59e0b; outline-offset: 3px; }"
     },
     {
-      "name": "Contact Pending",
+      "name": "Primary Button (TORNS)",
       "kind": "button",
-      "refersTo": "button-contact-pending",
-      "description": "Non-interactive placeholder until a real contact channel ships.",
-      "html": "<span class=\"ds-contact-pending\">Hablemos · pendiente</span>",
-      "css": ".ds-contact-pending { display: inline-flex; align-items: center; padding: 0.85rem 1.5rem; border: 1px solid color-mix(in srgb, #F7F5F0 35%, transparent); color: #A8B0BD; font-family: \"Public Sans\", sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; border-radius: 0; cursor: default; user-select: none; }"
+      "refersTo": "button-torns-primary",
+      "description": "Paper-on-civic pill for the product microsite.",
+      "html": "<button class=\"ds-btn-torns\" type=\"button\">Hablemos</button>",
+      "css": ".ds-btn-torns { display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: 0.8rem 1.4rem; border: 0; border-radius: 999px; background: #ffffff; color: #1b4d73; font-family: Manrope, sans-serif; font-size: 0.88rem; font-weight: 800; letter-spacing: -0.01em; cursor: pointer; transition: background 160ms cubic-bezier(0.22, 1, 0.36, 1), color 160ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-torns:hover { background: #3d8ec4; color: #0a1628; } .ds-btn-torns:focus-visible { outline: 2px solid #3d8ec4; outline-offset: 3px; }"
     },
     {
-      "name": "Quiet Link",
-      "kind": "button",
-      "refersTo": "link-quiet",
-      "description": "Secondary text path beside primary CTA.",
-      "html": "<a class=\"ds-link-quiet\" href=\"/torns\">TORNS</a>",
-      "css": ".ds-link-quiet { color: #A8B0BD; font-family: \"Public Sans\", sans-serif; font-size: 0.9rem; letter-spacing: 0.02em; text-decoration: none; text-underline-offset: 0.3em; } .ds-link-quiet:hover { color: #F7F5F0; text-decoration: underline; } .ds-link-quiet:focus-visible { outline: 2px solid #C4A574; outline-offset: 3px; }"
-    },
-    {
-      "name": "Site Navigation",
+      "name": "Site Nav",
       "kind": "nav",
-      "refersTo": "button-nav-outline",
-      "description": "Fixed transparent rail with Bodoni brand and uppercase links.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><a class=\"ds-nav-brand\" href=\"/\">LIRN</a><div class=\"ds-nav-links\"><a href=\"#empresa\">Empresa</a><a href=\"/torns\">TORNS</a><a class=\"ds-btn-nav\" href=\"#contacto\">Contacto</a></div></nav>",
-      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; height: 4.25rem; padding: 0 clamp(1.25rem, 4vw, 4rem); background: transparent; border-bottom: 1px solid color-mix(in srgb, #F7F5F0 12%, transparent); } .ds-nav-brand { font-family: \"Bodoni Moda\", \"Times New Roman\", serif; font-size: 1.35rem; font-weight: 600; letter-spacing: -0.02em; color: #F7F5F0; text-decoration: none; } .ds-nav-links { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2rem); } .ds-nav-links a { color: #A8B0BD; font-family: \"Public Sans\", sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em; text-decoration: none; text-transform: uppercase; } .ds-nav-links a:hover { color: #F7F5F0; } .ds-btn-nav { display: inline-flex; align-items: center; padding: 0.55rem 1rem; border: 1px solid color-mix(in srgb, #F7F5F0 55%, transparent); color: #F7F5F0 !important; letter-spacing: 0.06em; } .ds-btn-nav:hover { background: #F7F5F0; color: #0B1220 !important; border-color: #F7F5F0; }"
+      "refersTo": "button-nav-cta",
+      "description": "White brochure nav with navy wordmark and amber Hablemos pill.",
+      "html": "<nav class=\"ds-site-nav\" aria-label=\"Principal\"><a class=\"ds-site-nav-brand\" href=\"/\">LIRN</a><div class=\"ds-site-nav-links\"><a href=\"/#empresa\">Empresa</a><a href=\"/torns\">TORNS</a><a class=\"ds-site-nav-cta\" href=\"/#contacto\">Hablemos</a></div></nav>",
+      "css": ".ds-site-nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.85rem clamp(1.25rem, 4vw, 4rem); background: #ffffff; border-bottom: 1px solid color-mix(in srgb, #0f172a 12%, transparent); color: #0f172a; font-family: Manrope, sans-serif; } .ds-site-nav-brand { color: #0b1f3a; font-weight: 800; letter-spacing: -0.04em; text-decoration: none; } .ds-site-nav-links { display: flex; align-items: center; gap: 1rem; } .ds-site-nav-links a { color: #0f172a; font-weight: 700; letter-spacing: -0.01em; text-decoration: none; text-transform: none; } .ds-site-nav-links a:hover { color: #e86b5a; } .ds-site-nav-cta { padding: 0.7rem 1.2rem !important; border-radius: 999px; background: #f59e0b; color: #0b1f3a !important; } .ds-site-nav-cta:hover { background: #e86b5a; color: #ffffff !important; } .ds-site-nav a:focus-visible { outline: 2px solid #f59e0b; outline-offset: 3px; }"
     },
     {
-      "name": "Demand Board",
-      "kind": "custom",
-      "refersTo": "button-primary",
-      "description": "Discrete three-cell hero instrument; first label may use champagne.",
-      "html": "<div class=\"ds-board\" aria-hidden=\"true\"><span>Demanda</span><span>Estación</span><span>Oferta</span></div>",
-      "css": ".ds-board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; max-width: 48rem; background: color-mix(in srgb, #F7F5F0 18%, transparent); border: 1px solid color-mix(in srgb, #F7F5F0 18%, transparent); } .ds-board span { padding: 0.85rem 1rem; background: color-mix(in srgb, #0B1220 55%, transparent); color: #A8B0BD; font-family: \"Public Sans\", sans-serif; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; } .ds-board span:first-child { color: #C4A574; } @media (max-width: 52rem) { .ds-board { grid-template-columns: 1fr; } }"
+      "name": "Esencia Block",
+      "kind": "card",
+      "refersTo": "card-esencia",
+      "description": "Soft-rounded amber mission/vision shell on the LIRN brochure.",
+      "html": "<section class=\"ds-esencia\"><h2>Esencia</h2><p class=\"ds-esencia-slogan\">Demanda real en estación. Oferta que responde.</p><a class=\"ds-esencia-cta\" href=\"/torns\">Ver TORNS</a></section>",
+      "css": ".ds-esencia { max-width: 76rem; padding: clamp(2.5rem, 6vw, 5rem); border-radius: clamp(1.5rem, 4vw, 3rem); background: #f59e0b; color: #0b1f3a; font-family: Manrope, sans-serif; } .ds-esencia h2 { margin: 0 0 0.75rem; max-width: 12ch; font-size: clamp(2.4rem, 6vw, 4.75rem); font-weight: 800; letter-spacing: -0.04em; line-height: 1.02; } .ds-esencia-slogan { margin: 0 0 2rem; max-width: 31ch; color: #0f172a; font-size: clamp(1.15rem, 2vw, 1.45rem); font-weight: 700; } .ds-esencia-cta { display: inline-flex; align-items: center; min-height: 3rem; padding: 0.8rem 1.4rem; border-radius: 999px; background: #0b1f3a; color: #ffffff; font-size: 0.88rem; font-weight: 800; text-decoration: none; } .ds-esencia-cta:hover { background: #e86b5a; } .ds-esencia-cta:focus-visible { outline: 2px solid #0b1f3a; outline-offset: 3px; }"
     },
     {
-      "name": "Instrument Triad",
+      "name": "ProductStory Panel",
       "kind": "custom",
-      "refersTo": "button-primary",
-      "description": "Hairline three-cell proof row on soft night.",
-      "html": "<div class=\"ds-instruments\"><div class=\"ds-instrument\"><strong>Demanda</strong><p>Quién espera ahora</p></div><div class=\"ds-instrument\"><strong>Estación</strong><p>Nodo medido</p></div><div class=\"ds-instrument\"><strong>Oferta</strong><p>Frecuencia propuesta</p></div></div>",
-      "css": ".ds-instruments { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: color-mix(in srgb, #F7F5F0 18%, transparent); border: 1px solid color-mix(in srgb, #F7F5F0 18%, transparent); } .ds-instrument { padding: 1.5rem 1.25rem; background: #121A2B; } .ds-instrument strong { display: block; margin-bottom: 0.5rem; font-family: \"Public Sans\", sans-serif; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: #A8B0BD; } .ds-instrument:first-child strong { color: #C4A574; } .ds-instrument p { margin: 0; font-family: \"Bodoni Moda\", \"Times New Roman\", serif; font-size: 1.25rem; font-weight: 500; line-height: 1.25; color: #F7F5F0; } @media (max-width: 52rem) { .ds-instruments { grid-template-columns: 1fr; } }"
+      "refersTo": "card-product-story",
+      "description": "Labeled synthetic TORNS instrument panel (ocupación act).",
+      "html": "<div class=\"ds-story-panel\"><p>La ocupación en estación se estima en vivo.</p><div class=\"ds-story-visual\" aria-hidden=\"true\"><span class=\"ds-occupation-value\">72%</span><span class=\"ds-occupation-track\"><span></span></span><span class=\"ds-occupation-caption\">Ocupación estimada</span></div><small>Interfaz sintética</small></div>",
+      "css": ".ds-story-panel { display: grid; align-content: space-between; min-height: 24rem; padding: clamp(1.5rem, 4vw, 3rem); background: #1b4d73; border: 1px solid color-mix(in srgb, #3d8ec4 55%, transparent); color: #ffffff; font-family: Manrope, sans-serif; overflow: hidden; } .ds-story-panel > p { max-width: 14ch; margin: 0; font-size: clamp(1.75rem, 4vw, 3.25rem); font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; } .ds-story-panel > small { color: color-mix(in srgb, #ffffff 60%, transparent); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; } .ds-story-visual { display: grid; gap: 0.65rem; margin: 2rem 0; } .ds-occupation-value { font-size: clamp(3rem, 8vw, 6rem); font-weight: 800; letter-spacing: -0.05em; line-height: 1; } .ds-occupation-track { height: 0.75rem; background: color-mix(in srgb, #0a1628 70%, transparent); } .ds-occupation-track span { display: block; width: 72%; height: 100%; background: #3d8ec4; } .ds-occupation-caption { color: color-mix(in srgb, #ffffff 70%, transparent); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; }"
     },
     {
-      "name": "Editorial List Row",
+      "name": "Signal Strip",
       "kind": "custom",
-      "refersTo": "button-primary",
-      "description": "Numbered hairline list for approach and capabilities.",
-      "html": "<ul class=\"ds-elist\"><li><span class=\"ds-num\">01</span><div><h3>Medir</h3><p>Demanda en estación, no solo horario.</p></div></li></ul>",
-      "css": ".ds-elist { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; } .ds-elist li { display: grid; grid-template-columns: 3.5rem 1fr; gap: 1rem; padding: 1.35rem 0; border-top: 1px solid color-mix(in srgb, #141820 14%, transparent); } .ds-num { color: #6B7280; font-family: \"Public Sans\", sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; } .ds-elist h3 { margin: 0 0 0.35rem; font-family: \"Public Sans\", sans-serif; font-size: 1.15rem; font-weight: 600; letter-spacing: -0.02em; color: #141820; } .ds-elist p { margin: 0; opacity: 0.72; font-family: \"Public Sans\", sans-serif; font-weight: 300; line-height: 1.45; color: #141820; }"
+      "refersTo": null,
+      "description": "Full-bleed coral emphasis band under the LIRN hero.",
+      "html": "<section class=\"ds-signal\" aria-label=\"Alcance\"><p>Para sistemas masivos con estaciones — metro, BRT, tren.</p></section>",
+      "css": ".ds-signal { padding: 1.4rem clamp(1.25rem, 4vw, 4rem); background: #e86b5a; color: #ffffff; text-align: center; font-family: Manrope, sans-serif; } .ds-signal p { margin: 0; font-size: clamp(0.9rem, 1.8vw, 1.08rem); font-weight: 800; letter-spacing: 0.02em; }"
+    },
+    {
+      "name": "Operate Nav Item",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Civic-blue Operate dashboard nav chip; sharp 2px corners.",
+      "html": "<a class=\"ds-operate-nav\" href=\"#\">Monitoreo</a>",
+      "css": ".ds-operate-nav { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; color: #c5c8ce; background: transparent; border: 1px solid transparent; border-radius: 2px; font-family: \"Schibsted Grotesk\", sans-serif; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.5px; text-decoration: none; transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease; } .ds-operate-nav:hover { color: #3d8ec4; background: color-mix(in srgb, #3d8ec4 10%, transparent); border-color: #3d8ec4; } .ds-operate-nav:focus-visible { outline: 2px solid #3d8ec4; outline-offset: 3px; } .ds-operate-nav[aria-current=\"page\"] { color: #ffffff; background: color-mix(in srgb, #3d8ec4 20%, transparent); border-color: #3d8ec4; }"
     }
   ],
   "narrative": {
-    "northStar": "Editorial de despacho cívico",
-    "overview": "LIRN’s commercial surface reads as an executive mobility house: deep navy cyclorama, warm off-white paper, Bodoni Moda editorial display, and Public Sans as the quiet UI voice. Sections alternate night / paper / night-soft like a printed dossier, not a SaaS dashboard. Photography is cinematic and full-bleed; champagne is a sparse signal, never a theme wash.\n\nPrimary system of record: `lirn-web-main` (LIRN home + `/torns`). The TORNS Operate dashboard in `tro-frontend` inherits the same token family (night, paper, ink, champagne) with operational status colors; it is a sibling skin, not a clone of the landing composition.\n\nRejected by the build and brand commitments: flat night network diagrams as hero, cyan/glow TRO, TransMilenio red as brand, glass/neon, generic consulting templates, and invented clients, metrics, or testimonials.",
+    "northStar": "The Vibrant Corporate Brochure",
+    "overview": "LIRN and TORNS share one bold Manrope face and a language of solid color blocks, not luxury serif champagne or frosted glass. LIRN reads as an etraining-like commercial brochure: white nav, navy hero, amber CTAs, alternating paper / navy / tinted / coral bands. TORNS is the denser product microsite in civic blues, with a labeled synthetic ProductStory that shows ocupación → cámara → recomendación. The Operate skin in `tro-frontend` keeps the civic palette for control-room density and sharpens corners to 2px.\n\nDepth comes from block contrast and a single amber ring on the LIRN hero, not from layered shadows or glass. Marketing CTAs are always pills; brochure copy stays sentence case.",
     "keyCharacteristics": [
-      "Luxury editorial + minimalist corporate on a night/paper rhythm",
-      "Bodoni Moda display + Public Sans UI; sharp corners; hairline rules",
-      "Champagne as scarce accent; paper-filled primary CTA (Hablemos)",
-      "Full-bleed cinematic hero with dual gradients; no card chrome",
-      "Same token family across LIRN site and TORNS Operate mode"
+      "One family: Manrope 400–800; display and CTA weight is 800",
+      "Dual skins via `data-theme`: LIRN navy/amber/coral; TORNS civic `#1b4d73` / `#3d8ec4`",
+      "Solid section fills; pill CTAs (`999px`); soft rounded Esencia shell",
+      "LIRN first viewport: light nav, navy hero, amber brand lead + huge slogan, amber Hablemos + outline Ver TORNS",
+      "TORNS denser scroll with ProductStory synthetic UI; Operate dashboard = same civic blues, sharper chrome"
     ],
     "rules": [
       {
-        "name": "The Scarce Champagne Rule",
-        "body": "Champagne marks a first signal in a set (board, instrument triad, mission). It must stay rare: if removing it would not change hierarchy, it should not be there.",
+        "name": "The Dual Skin Rule",
+        "body": "LIRN accents are amber → coral. TORNS accents are civic → civic-strong. Do not paint amber CTAs on TORNS product chrome or civic fills on the LIRN brochure hero.",
         "section": "colors"
       },
       {
-        "name": "The Night/Paper Rule",
-        "body": "Commercial pages alternate section-dark, section-paper, and section-soft. Do not flatten the whole site to one ground.",
+        "name": "The Solid Block Rule",
+        "body": "Sections earn contrast from full-bleed fills (navy, paper, amber, coral, civic), not from cards-in-cards or frosted overlays.",
         "section": "colors"
       },
       {
-        "name": "The Two-Voice Rule",
-        "body": "Bodoni Moda owns brand, product mark, and section headlines. Public Sans owns navigation, buttons, labels, and body. Do not invert.",
+        "name": "The One Face Rule",
+        "body": "Marketing and microsite type is Manrope only. Do not reintroduce Bodoni, champagne pairing, or Public Sans as the house face.",
         "section": "typography"
       },
       {
-        "name": "The First-Viewport Rule",
-        "body": "Hero contains brand, one headline, one support line, Hablemos + TORNS, and an optional discrete demand/estación/oferta board — not stats, trust bars, or card grids.",
-        "section": "layout"
+        "name": "The Sentence-Case CTA Rule",
+        "body": "Buttons and nav links stay sentence case (`Hablemos`, `Ver TORNS`). Do not uppercase marketing CTAs.",
+        "section": "typography"
       },
       {
-        "name": "The Flat Editorial Rule",
-        "body": "Landings: no ambient card lift. If a surface needs separation, use hairline or night/paper contrast — not blur or glow.",
+        "name": "The Flat Brochure Rule",
+        "body": "Prefer solid fills and borders over ambient shadow stacks on LIRN/TORNS marketing pages.",
         "section": "elevation"
-      },
-      {
-        "name": "The Sharp Edge Rule",
-        "body": "Do not introduce soft radii, pills, or floating rounded media cards on LIRN commercial surfaces.",
-        "section": "shapes"
       }
     ],
     "dos": [
-      "Do keep Hablemos as the primary commercial CTA and TORNS as secondary navigation/product path.",
-      "Do alternate night / paper / night-soft sections with hairline rules and cinematic photography.",
-      "Do reuse night, paper, ink, champagne tokens in TORNS Operate so the family reads as one house.",
-      "Do treat Transmilenio (or any operator) as public problem context — never as client proof."
+      "Do switch skins with `data-theme=\"lirn\"` / `data-theme=\"torns\"` and keep accent tokens on `--accent` / `--accent-hover`.",
+      "Do use Manrope 800 for slogans, product marks, and CTAs; keep body at 500.",
+      "Do alternate solid brochure bands and pill CTAs; keep Operate corners at 2px.",
+      "Do treat coral as LIRN’s loud emphasis (hover + signal + contact), and civic-strong as TORNS’s loud emphasis."
     ],
     "donts": [
-      "Don't use network/diagram SVG, cyan glow, or “red nocturna” flat maps as the hero idea.",
-      "Don't invent clients, metrics, testimonials, trust logos, or fake demos.",
-      "Don't flood screens with champagne or use status red/green as brand color on landings.",
-      "Don't ship rounded cards, glassmorphism, neon, or Inter/Roboto/system display stacks as the house face."
+      "Don't revive Bodoni, champagne, warm paper `#F7F5F0`, or square uppercase editorial CTAs.",
+      "Don't use frosted glass, night-network SVG heroes, or TRO cyan/glow as brand materials.",
+      "Don't put amber marketing CTAs on TORNS product sections or civic fills on the LIRN hero CTA pair.",
+      "Don't invent metrics, testimonials, client logos, or “live” ProductStory numbers — keep the synthetic label."
     ]
   }
 }
