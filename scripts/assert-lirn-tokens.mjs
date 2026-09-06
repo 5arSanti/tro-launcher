@@ -24,6 +24,21 @@ if (lower.includes("--amber") || lower.includes("#f59e0b")) {
   process.exit(1);
 }
 
+if (!lower.includes("--torns-air") || !lower.includes("#e8f4fb")) {
+  console.error("FAIL: --torns-air #e8f4fb missing");
+  process.exit(1);
+}
+
+if (!lower.includes("#0a3a5c") || !lower.includes("#135a84") || !lower.includes("#1c7aad")) {
+  console.error("FAIL: lifted TORNS deep/mid/panel missing");
+  process.exit(1);
+}
+
+if (lower.includes("#031422") || lower.includes("#06263d")) {
+  console.error("FAIL: cave TORNS blues remain");
+  process.exit(1);
+}
+
 const css = `${tokenCss}\n${siteCss}`.toLowerCase();
 const rulePattern = /([^{}]+)\{([^{}]*)\}/g;
 
