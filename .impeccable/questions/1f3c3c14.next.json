@@ -1,0 +1,33 @@
+{
+  "title": "Product truth before redesign",
+  "question": "Night-network is discarded. Luxury editorial + minimalist corporate is the pinned visual brief — adapted for LIRN/TORNS, not generic consulting. Pick the product package that locks CTA, evidence, and scope.",
+  "options": [
+    {
+      "id": "pkg-contact-honest",
+      "label": "Contacto + prueba honesta",
+      "kicker": "RECOMMENDED",
+      "thesis": "Sell to real operators. Primary CTA: Hablemos / Contacto. Cut logos, metrics, testimonials, cases, and team until real. Show mission, vision, problem, TORNS mechanism, and prototype capabilities only. Scope: LIRN home + /torns + tro-frontend family restyle.",
+      "viewport": "Editorial hero → mission/vision → problem → TORNS product path → closing conversation. No fake trust bar.",
+      "risk": "Needs a real contact path (mailto or form) when you have it."
+    },
+    {
+      "id": "pkg-torns-first",
+      "label": "TORNS primero",
+      "kicker": "PRODUCT-LED",
+      "thesis": "Primary action is understand TORNS (/torns). Contact is secondary in footer. Same honest evidence rule. Same three-surface scope.",
+      "viewport": "LIRN introduces company + points to TORNS; TORNS carries depth; contact stays quiet.",
+      "risk": "Less ‘executive consultation’ than the instructivo template."
+    },
+    {
+      "id": "pkg-placeholders",
+      "label": "Contacto + shells pendientes",
+      "kicker": "TEMPLATE-FULL",
+      "thesis": "Contact CTA plus instructivo section shells (metrics, cases, testimonials) clearly marked [PENDIENTE]. Same three-surface scope.",
+      "viewport": "Fuller consulting skeleton with labeled gaps for you to fill.",
+      "risk": "Weak labels can be misread as real claims."
+    }
+  ],
+  "steer": true,
+  "canon": false,
+  "buildPath": { "value": "code", "toggle": false }
+}

@@ -1,0 +1,172 @@
+{
+  "title": "Rediseño visual LIRN / TORNS",
+  "question": "El roll asignó Diagrama de red nocturno. ¿Lo mantienes, tomas una alternativa o re-tiras?",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Diagrama de red nocturno",
+      "kicker": "THE ROLL",
+      "lineage": "planos de red de metro y señalética de estaciones, de noche",
+      "thesis": "LIRN es el mapa de la ciudad a escala de marca; TORNS es el nodo que se enciende.",
+      "palette": ["#0B1220", "#E8EEF6", "#1B4D73", "#3D8EC4", "#8A93A3"],
+      "materials": ["tinta de plano", "vidrio de andén", "filetes de red", "tipografía de destino"],
+      "viewport": "Nav mínima. LIRN enorme sobre un diagrama de red a sangre. Abajo, dos módulos: misión/visión y TORNS by LIRN con enlace a /torns.",
+      "risk": "Si el diagrama se queda decorativo, parece un poster de metro genérico.",
+      "raised": [
+        { "from": "brief-arketra-ui", "raise": "Nav mínima, hero tipográfico a escala de marca y módulos inferiores fijos — el lenguaje de UI que pediste, no la arquitectura de lujo." },
+        { "from": "challenger-neon", "raise": "El wordmark LIRN es un trazo continuo de lettering (puntas, I-nodo), no un glow." },
+        { "from": "challenger-brick", "raise": "Los módulos inferiores se leen en secuencia 1 empresa → 2 producto, sin CTA de conversión." },
+        { "from": "challenger-cutting-bench", "raise": "Una raíl horizontal fija la altura de nav y de los módulos; el scroll no desordena la composición." }
+      ],
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "nav LIRN | TORNS", "x": 0, "y": 0, "w": 12, "h": 1, "accent": true },
+          { "label": "LIRN hero type", "x": 1, "y": 2, "w": 7, "h": 3, "accent": true },
+          { "label": "network diagram field", "x": 0, "y": 1, "w": 12, "h": 6 },
+          { "label": "misión / visión", "x": 1, "y": 7, "w": 5, "h": 3 },
+          { "label": "TORNS by LIRN → /torns", "x": 7, "y": 7, "w": 4, "h": 3, "accent": true }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/assigned.webp"
+    },
+    {
+      "id": "model-pick",
+      "label": "Presentación nocturna",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "landings de presentación arquitectónica (Arketra) adaptadas a ciudad/estación",
+      "thesis": "Una sola composición a sangre: marca LIRN como protagonista, ciudad como plano, producto como módulo.",
+      "palette": ["#0A0E16", "#F4F6F8", "#1B4D73", "#C5C9C4"],
+      "materials": ["fotografía de estación/ciudad", "vidrio", "tipo display", "módulos semitranslúcidos"],
+      "viewport": "Full-bleed de estación o ciudad al anochecer. LIRN enorme. Oficio a la izquierda. Abajo: módulo misión/visión y módulo TORNS by LIRN.",
+      "risk": "Es la dirección más familiar para landings premium; si la foto es genérica, se parece a cualquier marca dark.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "nav", "x": 0, "y": 0, "w": 12, "h": 1, "accent": true },
+          { "label": "photo full-bleed", "x": 0, "y": 0, "w": 12, "h": 10 },
+          { "label": "LIRN", "x": 1, "y": 2, "w": 8, "h": 3, "accent": true },
+          { "label": "oficio", "x": 1, "y": 5, "w": 5, "h": 1 },
+          { "label": "misión/visión", "x": 1, "y": 7, "w": 5, "h": 3 },
+          { "label": "TORNS by LIRN", "x": 7, "y": 7, "w": 4, "h": 3, "accent": true }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/model-pick.webp"
+    },
+    {
+      "id": "challenger-datamatics",
+      "label": "Campo de datos",
+      "verdict": "competitive",
+      "lineage": "data-sublime / datamatics (Ikeda)",
+      "thesis": "La demanda es un campo de datos puro: LIRN firma; TORNS es la columna que se enfoca.",
+      "palette": ["#000000", "#FFFFFF"],
+      "materials": ["barras pixel-crisp", "monospace tabular", "inversión de frame"],
+      "viewport": "Campo de barras a sangre. LIRN en blanco. Un módulo TORNS selecciona una columna de demanda.",
+      "case": "Gana claridad de mecanismo (demanda como dato); pierde identificación con empresa de movilidad cívica.",
+      "risk": "Lee como arte digital, no como casa de movilidad.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "barcode field", "x": 0, "y": 0, "w": 12, "h": 10 },
+          { "label": "LIRN", "x": 1, "y": 1, "w": 4, "h": 2, "accent": true },
+          { "label": "TORNS column", "x": 8, "y": 3, "w": 3, "h": 6, "accent": true }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/challenger-datamatics.webp",
+      "hero": "https://impeccable.style/worlds/cards/ikeda-datamatics-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/ikeda-datamatics.webp"
+    },
+    {
+      "id": "challenger-obi",
+      "label": "Faja / Obi",
+      "verdict": "competitive",
+      "lineage": "sleeve boutique con faja de créditos densos",
+      "thesis": "Cara casi vacía con LIRN; una faja densa carga misión, visión y TORNS by LIRN.",
+      "palette": ["#F3F4F2", "#1B4D73", "#141714"],
+      "materials": ["papel", "faja impresa", "marca geométrica mínima"],
+      "viewport": "Campo vacío + LIRN. Faja inferior densa: misión, visión, enlace a TORNS.",
+      "case": "Gana identificación de marca (presencia tipográfica); pierde dramatización del mecanismo de estación.",
+      "risk": "Puede sentirse packaging, no ciudad.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "empty face + LIRN", "x": 0, "y": 0, "w": 12, "h": 7, "accent": true },
+          { "label": "dense obi band", "x": 0, "y": 7, "w": 12, "h": 3, "accent": true }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/challenger-obi.webp",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-shibuya-boutique-sleeve-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/posters-covers-sleeves-shibuya-boutique-sleeve.webp"
+    },
+    {
+      "id": "challenger-neon",
+      "label": "Circuito de neón",
+      "verdict": "declined",
+      "lineage": "lettering de neón doblado a mano",
+      "palette": ["#0A0A0A", "#1B4D73", "#B33A32"],
+      "materials": ["tubo de vidrio", "descarga de gas"],
+      "case": "Falla identificación y claridad: el brief rechaza neón/glow.",
+      "kept": "Lettering como trazo continuo.",
+      "hero": "https://impeccable.style/worlds/cards/magnetism-electricity-plasma-hand-bent-neon-circuit-hero.webp"
+    },
+    {
+      "id": "challenger-brick",
+      "label": "Manual de ensamble",
+      "verdict": "declined",
+      "lineage": "instrucciones de construcción de ladrillos",
+      "palette": ["#87CEEB", "#000000", "#C41E3A"],
+      "materials": ["líneas de ensamble", "flechas mudas"],
+      "case": "Falla identificación: el jurado y el operador no se ven en un juguete.",
+      "kept": "Secuencia numerada empresa → producto.",
+      "hero": "https://impeccable.style/worlds/cards/games-toys-physics-play-brick-build-instructions-hero.webp"
+    },
+    {
+      "id": "challenger-cutting-bench",
+      "label": "Mesa de montaje",
+      "verdict": "declined",
+      "lineage": "banco de corte de film",
+      "palette": ["#000000", "#E85D04"],
+      "materials": ["grano de film", "perforaciones", "banderas de cinta"],
+      "case": "Falla identificación en home de empresa; es lenguaje de edición, no de movilidad.",
+      "kept": "Raíl horizontal fijo para nav y módulos.",
+      "hero": "https://impeccable.style/worlds/cards/operate-a-cutting-bench-select-rail-hero.webp"
+    },
+    {
+      "id": "challenger-coffeehouse",
+      "label": "Identidad 90s",
+      "verdict": "declined",
+      "lineage": "identidad corporativa terrosa de los 90",
+      "palette": ["#8B4513", "#556B2F", "#D2B48C"],
+      "materials": ["kraft", "woodcut"],
+      "case": "Falla ambos ejes: tono equivocado para control de transporte.",
+      "kept": "Nada que elevar sin romper el brief.",
+      "hero": "https://impeccable.style/worlds/cards/brand-identity-canon-village-coffeehouse-identity-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "steer": true,
+  "canon": true,
+  "canonCard": {
+    "label": "Estándar de categoría",
+    "thesis": "Landing SaaS de movilidad: hero tipográfico, screenshot del dashboard, CTA azul.",
+    "palette": ["#ffffff", "#111827", "#2563eb"],
+    "materials": ["grid limpio", "mockup de producto"],
+    "viewport": "Hero + captura del panel TORNS + botón primario.",
+    "risk": "Indistinguible de cualquier SaaS de transporte.",
+    "wireframe": {
+      "cols": 12,
+      "rows": 10,
+      "regions": [
+        { "label": "nav", "x": 0, "y": 0, "w": 12, "h": 1 },
+        { "label": "headline + CTA", "x": 1, "y": 2, "w": 5, "h": 4, "accent": true },
+        { "label": "dashboard mock", "x": 7, "y": 2, "w": 4, "h": 5 }
+      ]
+    },
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  }
+}

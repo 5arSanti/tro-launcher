@@ -12,7 +12,7 @@ Sitio comercial LIRN (`lirn-web-main`): React + Vite, decisión explícita del e
 
 ## Users
 
-**Visitante de LIRN y de la landing de TORNS.** Público mixto: el jurado o evaluador académico es el primer lector, pero el discurso debe servir también a un operador o decisor de transporte masivo. Llega a decidir si LIRN es una empresa creíble y si TORNS es un producto ofertarable, no a operar el sistema.
+**Visitante de LIRN y de la landing de TORNS.** Decisor o operador de transporte masivo (y evaluador académico como lector secundario). Llega a creer que LIRN es una empresa creíble, entender TORNS como producto ofertarable, y poder iniciar una conversación comercial. No opera el sistema desde el sitio.
 
 **Usuario de la aplicación TORNS.** Personal de centro de control o despacho. En un turno mira ocupación por estación, cámaras y recomendaciones de frecuencia para ajustar la operación.
 
@@ -28,7 +28,7 @@ TORNS detecta, cuantifica y analiza la demanda real de pasajeros en estaciones d
 
 Éxito operativo: un operador puede ver demanda real por estación y actuar sobre la oferta, en lugar de operar solo con horarios e históricos. LIRN existe para vender esa capacidad como producto, no solo como prototipo de aula.
 
-Éxito del sitio comercial: el visitante entiende quién es LIRN, qué es TORNS y por qué existe. No hay conversión: ni demo, ni contacto, ni “comprar”.
+Éxito del sitio comercial: el visitante entiende quién es LIRN, qué es TORNS y por qué existe, y puede iniciar contacto comercial (CTA primario: Hablemos / Contacto). No hay “comprar” ni demo falsa. La ruta de contacto concreta (mailto, formulario o canal) queda abierta hasta que el equipo la entregue; el sitio reserva el CTA.
 
 ## Positioning
 
@@ -46,7 +46,7 @@ La aplicación operativa actual vive en `tro-frontend` (React + Vite): Inicio, M
 
 La presencia comercial de LIRN (empresa madre que presenta TORNS como producto) vive en un sitio propio, repositorio previsto `lirn-web-main`: landing comercial completa, no una sola pantalla de misión/visión. El dashboard TORNS y el sitio LIRN no comparten repositorio.
 
-Arquitectura del sitio: home institucional de LIRN (nombre, logo, misión, visión). TORNS es el bloque de producto principal en ese home, y tiene página propia de detalle (`/torns` o equivalente) si el visitante quiere profundizar.
+Arquitectura del sitio: home institucional de LIRN (nombre, logo, misión, visión, problema, camino a TORNS, cierre de contacto). TORNS tiene página propia (`/torns`) en la misma familia de diseño. El dashboard en `tro-frontend` se restylea en la misma familia (modo Operate: mismos flujos, otra piel).
 
 La documentación académica en `docs/torns-doc.md` describe un planteamiento previo centrado en Metro de Bogotá y APCA Transmimetro. Ese recorte queda superado por este registro: la oferta es genérica para sistemas con estaciones; el problema de referencia es Transmilenio.
 
@@ -79,19 +79,19 @@ La documentación académica en `docs/torns-doc.md` describe un planteamiento pr
 ## Brand Commitments
 
 - LIRN y TORNS son identidades distintas. Relación: marca avalada. TORNS tiene cara propia; “by LIRN” aparece como fabricante. LIRN es la empresa; TORNS es el producto que LIRN oferta.
-- La autoridad visual se documenta en DESIGN.md (legible para agentes, subagentes y humanos): justificación de marca, identidad, color, tipografía y estructura visual. No hay manual PDF de papelería o merchandising.
-- Distancia visual: familia reconocible (parientes, no clones). LIRN es casa corporativa elegante: papel, grafito, tinta; un azul de tinta cívica puede ocupar una región, no un acento cian. TORNS es la misma tinta a más croma sobre suelo de consola. El gris es el registro de confianza, no el límite de la paleta. Se rechazan el cian y el glow del TRO actual, TransMilenio rojo, vidrio, neón y el default “SaaS gris + acento”. El logotipo de LIRN es lettering del nombre (wordmark), no un isotipo. Versión maestra en blanco; puntas; I como nodo; R/N pueden compartir trazo.
-- Habrá un prompt de logotipo LIRN y un prompt de infografía con la base de diseño de TORNS. Esos prompts se escriben después del sistema de marca, no antes.
-- La infografía cuenta problema → solución: el desajuste de oferta (contexto Transmilenio) y lo que TORNS cambia. Lleva un código QR que abre la landing `/torns` en GitHub Pages. El prompt se escribe completo en la spec; la URL del QR se inserta cuando el usuario la entregue. No es un diagrama de stack.
-- Voces: LIRN habla de ciudad y movilidad; TORNS habla al centro de control, preciso y operativo.
-- Idioma de producto y de marca: español, alineado a la UI y a la documentación actuales.
+- Dirección visual anclada por el equipo (2026-09-05): **luxury editorial + minimalist corporate**, adaptada a movilidad/LIRN (no plantilla SaaS ni consultora genérica). Instructivo de referencia: `landing-instructions.md`. Anti-referencia: el look plano de “red nocturna” / diagramas SVG como único hero.
+- CTA comercial permitido: contacto / Hablemos. Prohibido inventar demo, “comprar”, clientes, métricas de impacto, testimonios o logos de terceros.
+- La autoridad visual se documenta en DESIGN.md tras el build. No hay manual PDF de papelería.
+- Familia reconocible en sitio LIRN, landing TORNS y dashboard `tro-frontend` (parientes, no clones). Se rechazan cian/glow TRO, rojo TransMilenio, vidrio, neón y default “SaaS gris + acento”. Wordmark LIRN (lettering), no isotipo.
+- Habrá prompt de logotipo LIRN y de infografía TORNS tras el sistema de marca; URL del QR cuando exista Pages.
+- Voces: LIRN habla de ciudad y movilidad; TORNS habla al centro de control. Idioma: español.
 - No reutilizar "TRO", "Sistema de Vigilancia" ni "Transport Route Optimization" como nombre oficial.
 
 ## Evidence on Hand
 
 **Autorizado para citar como contexto:** el problema público de congestión y desajuste de oferta en Transmilenio (Bogotá). No presentarlo como implementación, cliente o resultado medido.
 
-**No autorizado como prueba de mercado o de impacto:** clientes, contratos, pilotos, testimonios, logos de terceros, cifras de reducción de espera o de eficiencia. No fabricarlos.
+**No autorizado como prueba de mercado o de impacto:** clientes, contratos, pilotos, testimonios, logos de terceros, cifras de reducción de espera o de eficiencia. No fabricarlos. Las secciones del instructivo que dependen de esa prueba (trust bar, métricas, casos, equipo, testimonios) se **omiten** hasta existir material real — no se publican como placeholders.
 
 **Existe en el repositorio y no es caso de estudio de un tercero:** el prototipo (frontend, backend, YOLO), capturas en `tro-docs/Assets/`, y el planteamiento en `docs/torns-doc.md`. Pueden mostrar qué es el producto. No pueden usarse como evidencia de adopción real.
 
