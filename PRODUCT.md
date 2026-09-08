@@ -28,7 +28,7 @@ TORNS detecta, cuantifica y analiza la demanda real de pasajeros en estaciones d
 
 Éxito operativo: un operador puede ver demanda real por estación y actuar sobre la oferta, en lugar de operar solo con horarios e históricos. LIRN existe para vender esa capacidad como producto, no solo como prototipo de aula.
 
-Éxito del sitio comercial: el visitante entiende quién es LIRN, qué es TORNS y por qué existe, y puede iniciar contacto comercial (CTA primario: Hablemos / Contacto). No hay “comprar” ni demo falsa. La ruta de contacto concreta (mailto, formulario o canal) queda abierta hasta que el equipo la entregue; el sitio reserva el CTA.
+Éxito del sitio comercial: el visitante entiende quién es LIRN, qué es TORNS y por qué existe, y puede iniciar contacto comercial (CTA primario: Hablemos / Contacto). No hay “comprar” ni demo falsa. El formulario en vivo en `/torns#contacto` envía a Google Sheets vía Apps Script cuando `VITE_CONTACT_ENDPOINT` está configurado; el `#contacto` del home queda como nota reservada hasta que el equipo publique otro canal.
 
 ## Positioning
 
@@ -86,7 +86,7 @@ La documentación académica en `docs/torns-doc.md` describe un planteamiento pr
 
 ## Evidence on Hand
 
-**Autorizado en `/torns`:** el párrafo de problema de Transmilenio; la etiqueta “caso de estudio y prototipo aplicado”; la entrevista al controlador SITP; la encuesta del 17 de agosto de 2026 (n=20), siempre con la leyenda de investigación del equipo. No es resultado de un operador. No es piloto firmado.
+**Autorizado en `/torns`:** el párrafo de problema de Transmilenio; la etiqueta “caso de estudio y prototipo aplicado”; la entrevista al controlador SITP; la encuesta del 17 de agosto de 2026 (n=20), siempre con la leyenda de investigación del equipo; los tres nombres del equipo (Johel Santiago Arias, Rebeca Pedrozo, Hanna Cerinza), solo nombre, sin cargo ni foto. No es resultado de un operador. No es piloto firmado.
 
 **Autorizado como contexto de producto:** capacidades del prototipo (cámaras, YOLOv11, WebSocket, recomendaciones). En `/torns` se puede contar la historia estación → cámara → conteo → recomendación, sin inventar impacto comercial.
 

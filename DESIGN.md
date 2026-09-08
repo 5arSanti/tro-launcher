@@ -39,9 +39,12 @@ display size. The home panel that introduces TORNS uses the TORNS palette
 so the jump into `/torns` is continuous.
 
 `/torns` is a chapter film. Product first (full-bleed hero with signal field),
-then the system on white, then alternating white and blue case bands (problem,
-case frame, discovery, validation), then close. Grounds use open TORNS blues,
-air, and white as the primary surface.
+then a white team band (Quiénes somos, three names only), then the system on
+white, then alternating white and blue case bands (problem, case frame,
+discovery, validation), then close, then a civic-blue contact band with the
+live form. Grounds use open TORNS blues, air, and white as the primary
+surface. Section rhythm uses `--torns-block-gap` (`clamp(2.5rem, 6vw, 4.5rem)`)
+for team list spacing, contact form stack, and Cómo funciona gaps.
 
 ## Color
 
@@ -100,7 +103,7 @@ with previous and next buttons. No particles or ambient loops.
 ## Components
 
 - **Navigation:** fixed white bar, black official wordmark, compact links, sharp
-  black-on-white contact CTA.
+  black-on-white contact CTA. Contacto and Hablemos link to `/torns#contacto`.
 - **Primary CTA:** white on black bands; black on white bands.
 - **Secondary CTA:** transparent with a white border on black.
 - **Geometry frame:** clipped lower-right corner using `--cut`.
