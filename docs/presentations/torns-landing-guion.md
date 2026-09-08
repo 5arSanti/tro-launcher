@@ -1,39 +1,85 @@
 # Guion de presentación — Landing TORNS
 
-Duración orientativa: 6–8 minutos. Tono conversacional. Producto primero.
+Duración orientativa: 6–8 minutos.  
+Tono: conversacional, claro, sin vender de más.  
+Orden: presentación → equipo → recorrido de la landing.
 
 ---
 
-Buenas. Esta es la landing de **TORNS**, el producto de LIRN para el centro de control.
+## 1. Apertura
 
-La idea de fondo es simple: la demanda en estación ocurre ahora, no solo en el horario. TORNS mide esa demanda y propone oferta — frecuencia, capacidad, asignación — a quien opera. En el hero lo ven de golpe: nombre del producto, **by LIRN**, una foto de estación a sangre, y una entrada al sistema. No es un catálogo; es una película corta por capítulos.
+Buenas. Gracias por el tiempo.
 
-Diseño, en una frase: tipografía Manrope, azules cívicos de TORNS sobre aire blanco, y un corte geométrico que recorta la foto. El negro de LIRN queda en la firma; aquí manda el producto.
+Hoy les vamos a mostrar **TORNS**: un producto para el centro de control de transporte masivo. La idea es sencilla. Hoy mucha operación sigue el horario o la predicción. En la estación, la demanda real ocurre **ahora**. TORNS mide esa demanda y propone oferta — frecuencia, capacidad, asignación — a quien decide.
 
----
-
-Justo después del hero está **Quiénes somos**. No repetimos la home entera. Decimos quién fabrica TORNS: LIRN es una firma de movilidad; un producto; sistemas masivos con estaciones. Y nombramos al equipo: **Johel Santiago Arias**, **Rebeca Pedrozo** y **Hanna Cerinza**. Solo nombres — sin cargos ni biografías — porque en esta página el foco sigue siendo el sistema.
+Esta página no es un catálogo. Es una historia corta: primero quiénes somos, después cómo funciona el sistema, luego el caso con evidencia, y al final cómo contactarnos.
 
 ---
 
-En **Sistema** contamos el arco *de la estación al despacho*. Cuatro actos — espera, ve, mide, actúa — con foto y texto, uno a la vez. Después, **Cómo funciona**: el pipeline hasta la recomendación. Luego el prototipo: cámaras, detección YOLOv11, métricas por WebSocket, recomendación de despacho.
+## 2. Quiénes somos
 
-Aquí el UX importa: no apilamos diez mensajes. El visitante avanza con Anterior y Siguiente. El aire entre títulos — por ejemplo entre el relato y “Cómo funciona” — evita que la página se sienta como un documento corrido.
+TORNS lo desarrolla **LIRN**, una firma de movilidad. Un producto. Sistemas masivos con estaciones — metro, BRT, tren.
 
----
+Somos el equipo detrás de esto:
 
-**El problema** abre el caso Transmilenio con el párrafo real de congestión y desajuste oferta–demanda. El **caso** lo enmarca con claridad: es caso de estudio y prototipo aplicado. **No es un piloto firmado con el operador.** Esa frase no es letra chica; es honestidad de producto.
+- **Johel Santiago Arias**
+- **Rebeca Pedrozo**
+- **Hanna Cerinza**
 
----
-
-**Descubrimiento** trae la entrevista al controlador SITP — rol, no nombre personal — y **Validación** la encuesta del 17 de agosto de 2026, n=20, con la leyenda: investigación del equipo, no resultado de un operador. Cada pregunta de la encuesta es un momento: copy a un lado, gráfico al otro, y el gráfico cambia con la pregunta. Eso es deliberado: una pregunta importa más que una tabla.
-
----
-
-Cerramos con la frase de alcance — cualquier sistema masivo con estaciones — y el puente a LIRN. Después, **Contacto**: nombre, email, organización opcional y mensaje. Ese formulario es el canal vivo; llega a nuestra hoja de seguimiento.
+En la landing aparecen solo los nombres. El foco de la página es el producto; la firma se presenta breve, como fabricante de TORNS — **by LIRN**.
 
 ---
 
-Si miran la página completa, la disposición cuenta una historia: producto, firma breve, sistema, problema, evidencia, cierre, conversación. El color alterna bandas para respirar. La forma geométrica da carácter sin adorno vacío. El motion explica cambio de estado — slide, revelado al scroll, barra que crece — y se apaga si la persona pide menos movimiento.
+## 3. El producto en el hero
 
-Eso es TORNS en esta landing: demanda real en estación, recomendación al control, presentada con evidencia que tenemos y sin inventar lo que no tenemos.
+En la primera pantalla ven el nombre, la marca, una foto de estación a sangre y una entrada al sistema. Ahí queda el mensaje: demanda real en estación, recomendación al control.
+
+Un detalle de diseño: tipografía Manrope, azules cívicos de TORNS sobre blanco, y un corte geométrico en la foto. El negro de LIRN queda en la firma; aquí manda el producto.
+
+---
+
+## 4. Cómo funciona el sistema
+
+En **Sistema** contamos el arco *de la estación al despacho* en cuatro actos: espera, ve, mide, actúa. Uno a la vez, con foto y texto.
+
+Después viene **Cómo funciona**: el pipeline hasta la recomendación. Y el prototipo: cámaras, detección YOLOv11, métricas por WebSocket y recomendación de despacho.
+
+Aquí el UX es deliberado. No apilamos diez mensajes. El visitante avanza con Anterior y Siguiente. Dejamos aire entre títulos — por ejemplo entre el relato y “Cómo funciona” — para que no se sienta un documento corrido.
+
+---
+
+## 5. Problema y caso Transmilenio
+
+**El problema** abre el contexto de Bogotá: congestión, espera y desajuste entre oferta y demanda real en Transmilenio.
+
+El **caso** lo enmarca con honestidad: es caso de estudio y prototipo aplicado. **No es un piloto firmado con el operador.** Esa frase no es letra chica; es la verdad del producto.
+
+---
+
+## 6. Evidencia: descubrimiento y validación
+
+En **Descubrimiento** está la entrevista al controlador SITP — hablamos del rol, no del nombre personal.
+
+En **Validación**, la encuesta del 17 de agosto de 2026, n=20, con esta leyenda: investigación del equipo; no es resultado de un operador.
+
+Cada pregunta de la encuesta es un momento: texto a un lado, gráfico al otro. El gráfico cambia con la pregunta. Una pregunta importa más que una tabla larga.
+
+---
+
+## 7. Cierre y contacto
+
+Cerramos con el alcance: cualquier sistema masivo con estaciones. Hay un puente de vuelta a LIRN.
+
+Después, **Contacto**: nombre, email, organización (opcional) y mensaje. Ese formulario es el canal vivo; los mensajes llegan a nuestra hoja de seguimiento.
+
+---
+
+## 8. Cierre de la presentación (diseño y verdad)
+
+Si miran la página completa, el orden cuenta la historia: presentarnos, mostrar el producto, explicar el sistema, anclar el problema, mostrar evidencia, y abrir la conversación.
+
+El color alterna bandas blanco y azul para respirar. El corte geométrico da carácter sin adorno vacío. El movimiento — slides, revelado al bajar, barras que crecen — explica cambio de estado, y se reduce si la persona pide menos animación.
+
+Eso es TORNS en esta landing: demanda real en estación, recomendación al control, con la evidencia que tenemos y sin inventar lo que no tenemos.
+
+¿Preguntas?

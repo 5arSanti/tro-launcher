@@ -1,26 +1,58 @@
 import { readFileSync } from "node:fs";
-const text = readFileSync(new URL("../docs/brand/torns-infographic-prompt.md", import.meta.url), "utf8");
+
+const text = readFileSync(
+  new URL("../docs/brand/torns-infographic-prompt.md", import.meta.url),
+  "utf8",
+);
+
 const required = [
-  "{{TORNS_LANDING_URL}}",
+  "https://5arsanti.github.io/lirn-web-main/torns",
   "TORNS",
   "by LIRN",
-  "Demanda real en estación. Oferta ajustada al control.",
-  "PROBLEMA",
-  "La oferta no sigue a la estación",
-  "SOLUCIÓN",
-  "TORNS mide la estación y recomienda la oferta",
-  "Ve la ocupación.",
-  "Prototipo. No hay piloto firmado.",
+  "EL PROYECTO",
+  "MANUAL DE MARCA",
+  "#0b4f78",
+  "#00A8FF",
+  "#f3f9fd",
+  "Manrope",
+  "radio 0",
+  "clip geométrico",
+  "Capítulo-film",
+  "n=20",
+  "No es un piloto firmado",
   "Abrir la landing de TORNS",
+  "teoría del color",
+  "UX/UI",
   "Cualquier sistema masivo con estaciones.",
+  "5arsanti",
 ];
+
 const missing = required.filter((item) => !text.includes(item));
 if (missing.length) {
   console.error("FAIL: " + missing.join(" | "));
   process.exit(1);
 }
-if (text.includes("https://")) {
-  console.error("FAIL: prompt contains a real URL");
+
+if (text.includes("{{TORNS_LANDING_URL}}")) {
+  console.error("FAIL: placeholder still present; use the public Pages URL");
   process.exit(1);
 }
-console.log("PASS: infographic prompt template");
+
+if (/Sarsanti/i.test(text) && !text.includes("5arsanti")) {
+  console.error("FAIL: QR host must be 5arsanti");
+  process.exit(1);
+}
+
+const body = text.split("## Prohibido")[0] ?? text;
+const banned = [
+  "Implementado en TransMilenio",
+  "$50.000",
+  "Train Routes Optimization System",
+];
+const hit = banned.filter((item) => body.includes(item));
+if (hit.length) {
+  console.error("FAIL: banned claims present: " + hit.join(" | "));
+  process.exit(1);
+}
+
+console.log("PASS: infographic prompt v2 (brand + intro + UX)");
