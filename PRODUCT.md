@@ -79,7 +79,7 @@ La documentación académica en `docs/torns-doc.md` describe un planteamiento pr
 ## Brand Commitments
 
 - LIRN and TORNS remain endorsed brands. TORNS has its own face; “by LIRN” is manufacturer mark.
-- Visual direction (2026-09-06): Architectural Tech Corporate. LIRN is black/white with a stronger `#00A8FF` tertiary (grid, cuts, mission card, hovers). The home TORNS panel uses the TORNS palette. TORNS `/torns` is a chapter film: product hero, system on white, then alternating white/blue case bands. Grounds use `#0b4f78`, `#1480b8`, `#3aa8dc`, `#f3f9fd`, and white as primary. Motion library drives stage slides and chart transitions. Official LIRN marks stay prominent. Not luxury serif. Not the amber/navy brochure.
+- Visual direction (2026-09-06): Architectural Tech Corporate. LIRN is black/white with a stronger `#00A8FF` tertiary (grid, cuts, mission card, hovers). The home TORNS panel uses the TORNS palette. TORNS `/torns` is a chapter film: product hero, then a white team band (Quiénes somos, three names only), system on white, then alternating white/blue case bands, then close, then a civic-blue contact band with the live form. Grounds use `#0b4f78`, `#1480b8`, `#3aa8dc`, `#f3f9fd`, and white as primary. Motion library drives stage slides and chart transitions. Official LIRN marks stay prominent. Not luxury serif. Not the amber/navy brochure.
 - `tro-frontend` stays on the 2026-09-05 civic-blue Operate skin until a later cycle. Dashboard still forbids TRO cyan fills.
 - CTA Hablemos / Contacto allowed. No comprar, fake demo, invented logos, impact metrics, testimonials, or third-party clients.
 - Spanish. Do not reuse TRO / Sistema de Vigilancia / Transport Route Optimization.
