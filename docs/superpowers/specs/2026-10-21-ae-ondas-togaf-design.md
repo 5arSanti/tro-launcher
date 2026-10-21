@@ -1,7 +1,7 @@
 # Diseño: ondas TOGAF del taller de Arquitectura Empresarial
 
 Fecha: 2026-10-21  
-Estado: pendiente de revisión del usuario  
+Estado: aprobado (scaffold de ondas listo para ejecutar / ejecutado)  
 Alcance: sistema de trabajo M1 a M5, Registro de Empresa y reglas de coherencia. No redacta el informe único ni los puntos del taller.
 
 ## Objetivo
