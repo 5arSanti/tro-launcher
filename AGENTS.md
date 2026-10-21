@@ -82,6 +82,10 @@ Hechos de producto y marca: `PRODUCT.md`, `DESIGN.md`.
 
 Espacio único: `docs/ae-final-project/`. Índice: `docs/ae-final-project/README.md`. Enunciado: `docs/ae-final-project/docs/definicion-taller-final.md`.
 
+Tablero de empresa: `docs/ae-final-project/registro-empresa.md`.
+
+Marcas de hecho: Observado, Diseñado AS-IS, Objetivo TO-BE. Un Objetivo no se afirma como hoy. Si el hecho no está en este archivo ni en el registro, escribir `NO CONFIRMADO`.
+
 Hitos: M0 fundación (hecho). M1 negocio. M2 datos. M3 aplicaciones. M4 tecnología. M5 roadmap e informe único.
 
 Cada hito M1 a M5 requiere spec y plan antes de redactar. El informe no cita archivos `.md`. Cita entregables por nombre y URL. Tono formal TOGAF, orientado a un decisor de negocio.
@@ -93,6 +97,7 @@ Procesos de empresa: `docs/ae-final-project/procesos/` (P-01 a P-05).
 | Fuente | Autoridad |
 |--------|-----------|
 | Este archivo | Identidad, equipo, mapa técnico y forma de trabajo |
+| `docs/ae-final-project/registro-empresa.md` | Hechos bloqueados de empresa para el taller |
 | `PRODUCT.md` | Misión, visión, posicionamiento y claims |
 | `DESIGN.md` | Identidad visual |
 | `docs/ae-final-project/` | Taller TOGAF |

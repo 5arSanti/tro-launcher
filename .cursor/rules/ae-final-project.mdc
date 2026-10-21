@@ -8,8 +8,10 @@ alwaysApply: false
 
 Trabajar solo en `docs/ae-final-project/`.
 
-Seguir `docs/ae-final-project/README.md` y el enunciado del taller.
+Leer `registro-empresa.md` antes de redactar. Marcas: Observado, Diseñado AS-IS, Objetivo TO-BE.
 
-No crear el informe único ni borradores de los puntos 1 a 5 durante M0.
+Seguir `docs/ae-final-project/README.md` y las playbooks en `ondas/`.
 
-Al redactar M1 a M5, contrastar con código y con las fuentes canónicas. Hecho ausente: `NO CONFIRMADO`.
+No crear el informe único ni redactar los puntos 1 a 5 fuera de su onda.
+
+Al redactar, contrastar con código y con el registro. Hecho ausente: `NO CONFIRMADO`.
