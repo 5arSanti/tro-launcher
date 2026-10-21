@@ -1,0 +1,15 @@
+---
+description: El taller TOGAF vive solo en docs/ae-final-project.
+globs: docs/ae-final-project/**
+alwaysApply: false
+---
+
+# Espacio AE
+
+Trabajar solo en `docs/ae-final-project/`.
+
+Seguir `docs/ae-final-project/README.md` y el enunciado del taller.
+
+No crear el informe único ni borradores de los puntos 1 a 5 durante M0.
+
+Al redactar M1 a M5, contrastar con código y con las fuentes canónicas. Hecho ausente: `NO CONFIRMADO`.

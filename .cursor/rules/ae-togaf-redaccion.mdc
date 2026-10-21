@@ -1,0 +1,17 @@
+---
+description: Redacción TOGAF formal para el taller AE.
+globs: docs/ae-final-project/**
+alwaysApply: false
+---
+
+# Redacción TOGAF
+
+Usar vocabulario TOGAF: AS-IS, TO-BE, capacidades de negocio, partes interesadas, datos, aplicaciones, tecnología, brechas, portafolio y hoja de ruta.
+
+Tono formal y empresarial. El lector es un decisor o evaluador de negocio.
+
+El informe único no menciona rutas de repositorio ni archivos `.md`.
+
+Citar entregables por nombre y URL.
+
+Frases cortas. Sin marketing vacío. Sin raya como conector.
