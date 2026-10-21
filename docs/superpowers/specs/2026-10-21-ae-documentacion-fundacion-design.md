@@ -1,7 +1,7 @@
 # Diseño: fundación documental del taller de Arquitectura Empresarial
 
 Fecha: 2026-10-21  
-Estado: pendiente de revisión del usuario  
+Estado: aprobado (M0 listo para ejecutar / ejecutado)  
 Alcance: organización de documentación, AGENTS.md, rules y archivo de fuentes superadas. No escribe los puntos TOGAF ni el informe único.
 
 ## Objetivo
