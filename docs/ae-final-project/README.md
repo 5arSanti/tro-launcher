@@ -6,10 +6,11 @@ Este árbol es el único espacio de trabajo del taller TOGAF. El informe único 
 
 ## Fuentes canónicas
 
-Estas rutas son autoridad para agentes. No se copian ni se citan como archivos en el informe único.
+`AGENTS.md` es la fuente de verdad coherente (negocio, equipo y mapa técnico). Estas rutas la detallan. No se copian ni se citan como archivos en el informe único.
 
 | Fuente | Qué autoriza |
 |--------|----------------|
+| `AGENTS.md` | Identidad, equipo (Johel Arias), mapa técnico AS-IS y forma de trabajo |
 | `PRODUCT.md` | Misión, visión, separación LIRN/TORNS, capacidades del prototipo y claims prohibidos |
 | `DESIGN.md` | Identidad visual. No es fuente de arquitectura empresarial |
 | `docs/ae-final-project/docs/definicion-taller-final.md` | Enunciado y estructura de la entrega |

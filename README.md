@@ -4,6 +4,7 @@ LIRN es una firma de movilidad. TORNS es su único producto: un prototipo que mi
 
 ## Producto
 
+- Fuente de verdad (negocio y técnica): [AGENTS.md](AGENTS.md)
 - Hechos de producto: [PRODUCT.md](PRODUCT.md)
 - Identidad visual: [DESIGN.md](DESIGN.md)
 

@@ -86,7 +86,9 @@ La documentación académica en `docs/torns-doc.md` describe un planteamiento pr
 
 ## Evidence on Hand
 
-**Autorizado en `/torns`:** el párrafo de problema de Transmilenio; la etiqueta “caso de estudio y prototipo aplicado”; la entrevista al controlador SITP; la encuesta del 17 de agosto de 2026 (n=20), siempre con la leyenda de investigación del equipo; los tres nombres del equipo (Johel Santiago Arias, Rebeca Pedrozo, Hanna Cerinza), solo nombre, sin cargo ni foto. No es resultado de un operador. No es piloto firmado.
+**Equipo actual:** Johel Arias. Una persona. Los dueños de proceso son roles futuros, no gerencias ocupadas.
+
+**Autorizado en `/torns`:** el párrafo de problema de Transmilenio; la etiqueta “caso de estudio y prototipo aplicado”; la entrevista al controlador SITP; la encuesta del 17 de agosto de 2026 (n=20), con la leyenda de investigación del equipo. La banda pública “Quiénes somos” puede seguir mostrando tres nombres; eso no actualiza el equipo vigente. No es resultado de un operador. No es piloto firmado.
 
 **Autorizado como contexto de producto:** capacidades del prototipo (cámaras, YOLOv11, WebSocket, recomendaciones). En `/torns` se puede contar la historia estación → cámara → conteo → recomendación, sin inventar impacto comercial.
 

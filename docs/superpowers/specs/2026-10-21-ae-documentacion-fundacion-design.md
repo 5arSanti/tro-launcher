@@ -120,7 +120,7 @@ Documento corto para cualquier agente del repo. Secciones:
 1. LIRN es la firma. TORNS es el único producto.
 2. El prototipo no es piloto firmado. Transmilenio es caso de estudio, no cliente.
 3. Claims prohibidos: clientes, contratos, alianzas, KPIs de impacto, TRO como identidad.
-4. Equipo actual: Johel Santiago Arias, Rebeca Pedrozo, Hanna Cerinza. Dueños de proceso: roles futuros, no gerencias ocupadas.
+4. Equipo actual: Johel Santiago Arias. Dueños de proceso: roles futuros, no gerencias ocupadas.
 5. Puntero a `PRODUCT.md` y a `docs/ae-final-project/README.md`.
 6. Trabajo AE: leer el spec del hito antes de redactar. Hecho ausente = `NO CONFIRMADO`.
 
