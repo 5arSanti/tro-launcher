@@ -27,6 +27,7 @@ const m1Files = [
   "docs/ae-final-project/ondas/M1-negocio/02-organigrama-y-stakeholders.md",
   "docs/ae-final-project/ondas/M1-negocio/03-activos-procesos-capacidades.md",
   "docs/ae-final-project/ondas/M1-negocio/04-arquitectura-negocio-as-is.md",
+  "docs/ae-final-project/ondas/M1-negocio/entregable-punto-1.md",
 ];
 
 for (const rel of m1Files) {
@@ -81,6 +82,26 @@ const fileNeedles = {
     "Gestión de inventarios",
     "Gestión de talento humano",
     "Brecha",
+  ],
+  "docs/ae-final-project/ondas/M1-negocio/entregable-punto-1.md": [
+    "Portada",
+    "Introducción",
+    "Descripción de la organización",
+    "Arquitectura de Negocio",
+    "Misión actual",
+    "Visión actual",
+    "Organigrama",
+    "Activos de información",
+    "Mapa de procesos",
+    "Mapa de capacidades",
+    "Partes interesadas",
+    "Arquitectura de Negocio (AS-IS)",
+    "Ley 1581 de 2012",
+    "P-01",
+    "P-05",
+    "Johel Arias",
+    "n=20",
+    "https://lucid.app/lucidchart/4bc5f4f1-c350-40a4-b752-63eb17d2cb77/edit",
   ],
   "docs/ae-final-project/ondas/M1-negocio/04-arquitectura-negocio-as-is.md": [
     "Arquitectura de Negocio (AS-IS)",

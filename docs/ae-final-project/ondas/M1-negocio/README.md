@@ -4,6 +4,12 @@ Estado: **completada**. Hechos de negocio bloqueados en `docs/ae-final-project/r
 
 Fuente de coherencia: `docs/ae-final-project/registro-empresa.md` y el enunciado del taller (`docs/ae-final-project/docs/definicion-taller-final.md`). Spec y plan de esta onda: `docs/superpowers/specs/2026-10-21-ae-m1-negocio-design.md` y `docs/superpowers/plans/2026-10-21-ae-m1-negocio.md`.
 
+## Documento de lectura y entrega
+
+El Punto 1 consolidado, en el orden de la entrega del taller (portada, introducción, descripción de la organización y arquitectura de negocio, con el detalle de cada documento exigido), está en [entregable-punto-1.md](entregable-punto-1.md).
+
+Los archivos numerados de esta carpeta conservan el mismo contenido por apartado. El documento consolidado no los reemplaza como fuente de trabajo.
+
 ## Entregables del Punto 1 (Arquitectura de Negocio)
 
 | Subpunto del enunciado | Archivo entregable en esta carpeta | Contenido principal |
