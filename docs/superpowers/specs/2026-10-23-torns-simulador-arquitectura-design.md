@@ -1,7 +1,7 @@
 # Diseño: base técnica del simulador de arquitecturas TORNS
 
 Fecha: 2026-10-23  
-Estado: pendiente de revisión del usuario  
+Estado: aprobado  
 Curso: Ingeniería Aplicada, Universidad Libre, Actividad 9 (2026-2)  
 Alcance: requisitos 1 a 4 de la guía (ficha de proyecto, tres alternativas, tres entradas, modelo computacional). Es la base para que otro integrante programe el aplicativo. No cubre interfaz, gráficos, alojamiento ni acoplamiento a `tro-backend`.
 
