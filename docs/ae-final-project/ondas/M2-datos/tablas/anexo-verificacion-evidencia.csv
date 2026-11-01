@@ -1,7 +1,7 @@
 Tabla,Id,Evidencia en código o registro
 E-01-inventario-datos,D-01,AP-01:src/components/ContactForm.tsx:L40; AP-01:src/lib/submitContact.ts:L6-L24; AP-01:.env.example:L1
 E-01-inventario-datos,D-02,"AP-01:src/content/copy.ts:L90 (texto de validación con n=20); registro de empresa, sección 7"
-E-01-inventario-datos,D-03,Registro de empresa y onda M1 (el soporte no está en el repositorio)
+E-01-inventario-datos,D-03,Registro de empresa y Arquitectura de Negocio (el soporte no está en el repositorio)
 E-01-inventario-datos,D-04,"AP-03:src/app/video/video_service.py:L25,L54,L128"
 E-01-inventario-datos,D-05,"AP-03:src/app/video/services/video_stream_service.py:L47,L112"
 E-01-inventario-datos,D-06,"AP-03:src/app/video/services/metrics_service.py:L31,L45; AP-03:src/app/video/interfaces/detection_metrics.py:L19-L32"
