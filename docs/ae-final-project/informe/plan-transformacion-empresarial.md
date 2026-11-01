@@ -44,7 +44,7 @@ La pregunta que guía el documento es: ¿cómo ayuda la Arquitectura Empresarial
 | Producto | TORNS: detección y conteo de pasajeros con YOLO11s (Ultralytics, s. f.) y recomendación determinista de despacho | Observado |
 | Clientes | Ninguno; no hay piloto ni contrato | Observado |
 | Caso de estudio | El sistema TransMilenio y el SITP de Bogotá se usan como caso de estudio, no como cliente | Observado |
-| Evidencia de mercado | Encuesta del 17 de agosto de 2026 (n=20, formulario anónimo en Google Forms, que sigue en uso) y entrevista a un controlador del SITP, citado por su rol. El 65 % de los encuestados sufre demoras varias veces por semana y el 40 % atribuye el problema al desajuste entre oferta y demanda | Observado (cifras agregadas); uso del formulario: Observado por declaración del dueño (1 de noviembre de 2026) |
+| Evidencia de mercado | Encuesta del 17 de agosto de 2026 (n=20, formulario anónimo en Google Forms, que sigue en uso) y entrevista a un controlador del SITP, citado por su rol. El 80 % dejó pasar buses llenos dentro del último mes, al 65 % le pasa varias veces por semana y el 40 % se identifica con el desbalance entre oferta y demanda (Equipo TORNS, 2026) | Observado (cifras agregadas); uso del formulario: Observado por declaración del dueño (1 de noviembre de 2026) |
 
 La misión, la visión y los objetivos estratégicos OE-01 a OE-05 están en el entregable «Arquitectura de Negocio (Punto 1)». En síntesis: OE-01 convertir TORNS en un producto demostrable y controlado para un centro de control; OE-02 abrir un canal comercial honesto hacia operadores B2B y B2G; OE-03 proteger datos personales y evidencia según la Ley 1581 de 2012 (Congreso de la República de Colombia, 2012); OE-04 cerrar la brecha entre demanda medida y oferta recomendada; OE-05 preparar la firma para un primer piloto pagado.
 
@@ -218,7 +218,9 @@ Congreso de la República de Colombia. (2012, 17 de octubre). *Ley Estatutaria 1
 
 Dirección de Impuestos y Aduanas Nacionales. (2021, 11 de febrero). *Resolución 000013 de 2021, por la cual se implementa y desarrolla en el sistema de facturación electrónica la funcionalidad del documento soporte de pago de nómina electrónica y se adopta el anexo técnico*. https://www.dian.gov.co/normatividad/Normatividad/Resoluci%C3%B3n%20000013%20de%2011-02-2021.pdf
 
-Dirección de Impuestos y Aduanas Nacionales. (2023, 1 de noviembre). *Resolución 000165 de 2023, por la cual se desarrolla el sistema de facturación, los proveedores tecnológicos y se adopta la versión 1.9 del anexo técnico de factura electrónica de venta*. https://www.dian.gov.co/normatividad/Normatividad/Resoluci%C3%B3n%20000165%20de%2001-11-2023.pdf
+Dirección de Impuestos y Aduanas Nacionales. (2023, 1 de noviembre). *Resolución 000165 de 2023, por la cual se desarrolla el sistema de facturación, los proveedores tecnológicos, se adopta la versión 1.9 del anexo técnico de factura electrónica de venta, se expide el anexo técnico 1.0 del documento equivalente electrónico, y se dictan otras disposiciones en materia del sistema de facturación*. https://www.dian.gov.co/normatividad/Normatividad/Resoluci%C3%B3n%20000165%20de%2001-11-2023.pdf
+
+Equipo TORNS. (2026). *Guía Actividad 2, Ingeniería Aplicada* [Documento interno no publicado].
 
 Object Management Group. (2014). *Business Process Model and Notation (BPMN), Version 2.0.2*. https://www.omg.org/spec/BPMN/2.0.2/
 

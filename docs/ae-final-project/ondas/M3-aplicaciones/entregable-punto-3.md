@@ -118,7 +118,7 @@ Todo este apartado es Objetivo TO-BE. Horizonte, prioridad y costo los define el
 | N-04 | Persistencia de conteos, estado y planes de despacho | PR-05 | Historial de conteos y recomendaciones por estación y fecha | Arquitectura de Datos (modelo lógico), Arquitectura Tecnológica (base de datos) |
 | N-05 | Registro versionado del modelo | PR-07 | Versionado de modelo antes de cada entrega (P-03) | Arquitectura Tecnológica |
 | N-06 | Facturación electrónica y contabilidad mínima (SaaS) | PR-15 | Contratos, actas y facturación del piloto; servicio de aplicación de P-08, Gestión financiera y facturación (CAP-09) | Formalización legal ante Cámara de Comercio y DIAN (C-01); fuente normativa: Resolución DIAN 000165 de 2023 |
-| N-07 | Gestión de personal y nómina (SaaS) | Ninguno (necesidad TO-BE; no hay personal vinculado) | Servicio de aplicación de P-09, Gestión del talento humano (CAP-10); se activa solo cuando haya personal que vincular | Arquitectura de Datos (entidades colaborador y contrato_laboral, condicionales); fuentes normativas: Resolución DIAN 000013 de 2021 (nómina electrónica), Ley 100 de 1993 y Decreto 1072 de 2015 (seguridad social, afiliaciones y PILA) |
+| N-07 | Gestión de personal y nómina (SaaS) | Ninguno (necesidad TO-BE; no hay personal vinculado) | Servicio de aplicación de P-09, Gestión del talento humano (CAP-10); se activa solo cuando haya personal que vincular | Arquitectura de Datos (entidades colaborador y contrato_laboral, condicionales); fuentes normativas: Resolución DIAN 000013 de 2021 (nómina electrónica), Ley 100 de 1993 (afiliación y aportes a seguridad social) y Decreto 1072 de 2015 (PILA para teletrabajadores) |
 
 ### Integraciones recomendadas
 
