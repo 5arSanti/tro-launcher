@@ -1,0 +1,14 @@
+flowchart LR
+  W[AP-01 Sitio] -- "IT-01 API con acuse y consentimiento" --> CRM[N-01 Gestor de leads]
+  F[AP-02 Consola] -- "IT-02 OIDC" --> ID[N-02 Identidad]
+  F -- "REST autenticado" --> A[AP-03a API de plan de despacho]
+  CAM[Fuentes de video por estación] --> INF[AP-03b Servicio de inferencia]
+  INF -- "IT-07 evento de conteo" --> A
+  INF -- "IT-07 evento de conteo" --> DB[N-04 Persistencia]
+  INF -- "video anotado" --> F
+  A -- "IT-04 planes" --> DB
+  REG[N-05 Registro del modelo] -- "IT-05 artefacto versionado" --> INF
+  T[AP-04 Entrenamiento] -- "IT-05 publicación" --> REG
+  A -. "IT-06 recomendación autenticada" .-> CC[Centro de control del operador]
+  classDef tobe fill:#dcfce7,stroke:#166534;
+  class CRM,ID,INF,A,DB,REG,CC tobe;
