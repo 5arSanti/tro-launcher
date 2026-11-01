@@ -1,7 +1,5 @@
 # Arquitectura Tecnológica de LIRN S.A.S. (Fase D del ADM, Punto 4 del taller)
 
-Borrador de apoyo. Santiago redacta el texto final. Escala de riesgos cualitativa: Alta, Media, Baja. No contiene cifras de costo ni proveedores sin fuente.
-
 ## 1. Alcance y punto de partida
 
 LIRN no opera servidores ni GPU de producción. TORNS es un prototipo que se ejecuta en la estación de trabajo del fundador y en servicios de terceros. Marca: Observado (el código no contiene despliegue de backend). La inexistencia de despliegues fuera de la estación y de respaldos: Observado por declaración del dueño (1 de noviembre de 2026).
@@ -70,7 +68,7 @@ La Arquitectura Tecnológica traduce las necesidades de la Arquitectura de Aplic
 Las dos mediciones se reportan por separado y no se combinan:
 
 1. Recall 0,55 en la última época de entrenamiento (entrenamiento del 15 de noviembre de 2025). Marca: Observado.
-2. Validación final de los mejores pesos: P 0.74, R 0.541, mAP50 0.635, mAP50-95 0.373. Marca: Observado.
+2. Validación final de los mejores pesos: P 0,74, R 0,541, mAP50 0,635, mAP50-95 0,373. Marca: Observado.
 
 El conjunto de validación es una muestra del mismo dataset genérico de personas, sin imágenes de estaciones; Observado por declaración del dueño (1 de noviembre de 2026). Ninguna de las dos cifras anticipa el desempeño en andenes.
 
@@ -126,6 +124,7 @@ flowchart LR
 | RT-10 | Dependencia de GitHub y Google | Publicación y leads en cuentas de terceros | Media | Media | Observado | Espejo de repositorios y N-01 |
 | RT-11 | Cámara USB no equivale a cámara de campo | Solo usb0 y usb1 | Alta | Media | Observado por declaración del dueño (1 de noviembre de 2026) | Fuente de campo definida con un operador |
 | RT-12 | Gestión de secretos | Plantilla presente; manejo real sin evidencia | Media | Media | NO CONFIRMADO | Gestor de secretos por entorno |
+| RT-13 | Brecha: equipos obsoletos | GPU GTX 1050 Ti de 4 GB y disco al 85 % de ocupación en la única estación | Alta | Media | Observado | GPU bajo demanda para entrenamiento e inferencia y almacén de objetos fuera de la estación |
 
 Las valoraciones son juicio de arquitectura y no medición. Marca: Diseñado AS-IS.
 
@@ -187,7 +186,7 @@ Cada componente TO-BE se despliega por separado. Sin cifras ni proveedores.
 | AP-12 Google Fonts | SaaS externo | Fuente servida desde el nodo público | Objetivo TO-BE |
 | AP-13 Google Forms | SaaS, uso NO CONFIRMADO | SaaS de apoyo mientras se use | Objetivo TO-BE |
 | N-06 Facturación (P-08, CAP-09) | No existe | Nodo SaaS administrativo, componente separado; se implanta después de C-01 | Objetivo TO-BE |
-| N-07 Personal y nómina (P-09, CAP-10) | No existe | Nodo SaaS administrativo, componente separado; condicional a que haya personal que vincular y a C-01 | Objetivo TO-BE |
+| N-07 Personal y nómina (P-09, CAP-10) | No existe | Nodo SaaS administrativo, componente separado; condicional a que haya personal que vincular y a C-01 | Objetivo TO-BE, condicional |
 
 Las obligaciones de facturación electrónica ante la DIAN, nómina electrónica y seguridad social: NO CONFIRMADO, sin fuente normativa revisada.
 
@@ -208,9 +207,11 @@ Marca: Objetivo TO-BE.
 
 ```mermaid
 flowchart LR
+  OPE["Operador de estación"]
+  VIS["Visitante o lead"]
   subgraph PUB["Nodo público (Objetivo TO-BE)"]
-    WEB["AP-01 sitio comercial"]
-    CRM["N-01 gestor de leads"]
+    WEB["AP-01 sitio comercial con fuente propia en lugar de AP-12"]
+    CRM["N-01 gestor de leads, reemplaza AP-06"]
   end
   subgraph IDP["Nodo de identidad (Objetivo TO-BE)"]
     ID["N-02 proveedor de identidad y roles"]
@@ -231,11 +232,21 @@ flowchart LR
   subgraph LAB["Nodo de laboratorio aislado (Objetivo TO-BE)"]
     TR["AP-04 entrenamiento y AP-08 etiquetado"]
   end
-  subgraph ADM["Nodo SaaS administrativo (Objetivo TO-BE, condicional)"]
-    FAC["N-06 facturación"]
-    NOM["N-07 personal y nómina, condicional a C-01 y personal"]
+  subgraph SAAS["SaaS de apoyo (Objetivo TO-BE)"]
+    GH["AP-07 GitHub con espejo"]
+    LC["AP-09 Lucidchart"]
+    SP["AP-10 SharePoint"]
+    CO["AP-11 Correo"]
+    GFO["AP-13 Google Forms, uso NO CONFIRMADO"]
   end
+  subgraph ADM["Nodo SaaS administrativo (Objetivo TO-BE, condicional)"]
+    FAC["N-06 facturación, condicional a C-01"]
+    NOM["N-07 personal y nómina, condicional a C-01 y a personal"]
+  end
+  LEY["Leyenda: línea punteada = componente condicional"]
   CAMS["Fuentes de video por estación"] --> INFS
+  VIS -->|HTTPS| WEB
+  OPE -->|HTTPS| CON
   CON -->|HTTPS| DES
   CON --> ID
   DES --> ID
@@ -247,7 +258,13 @@ flowchart LR
   TR --> REG
   TR --> OBJ
   WEB --> CRM
+  GH -->|publicación| WEB
+  SP -.->|respaldo documental| OBJ
+  DES -.->|condicional| FAC
+  OPE -.->|condicional| NOM
 ```
+
+Leyenda: las líneas punteadas indican componentes condicionales. N-06 se implanta después de C-01; N-07 solo si hay personal que vincular y después de C-01. Marca: Objetivo TO-BE, condicional.
 
 ## 10. Trazabilidad
 
@@ -259,3 +276,6 @@ flowchart LR
 | Brecha: sin respaldos | Almacén de objetos y política de respaldo |
 | Brecha: configuración de desarrollo expuesta | Imagen mínima y entornos separados |
 | Brecha: leads en hoja personal | N-01 |
+| Brecha: modelo copiado a mano sin versionado (DF-08, P-03) | N-05 registro versionado del modelo en el nodo de datos |
+| Brecha: sin aplicación de facturación (DF-08, P-08) | N-06 en el nodo SaaS administrativo, Objetivo TO-BE, condicional a C-01 |
+| Brecha: equipos obsoletos (RT-13) | GPU bajo demanda y almacén de objetos fuera de la estación |
