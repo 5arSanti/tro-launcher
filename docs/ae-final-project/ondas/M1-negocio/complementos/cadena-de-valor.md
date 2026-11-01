@@ -10,15 +10,15 @@ flowchart TB
         A2["Evidencia, calidad y mejora (P-05)<br/>Observado"]
         A3["Infraestructura: estación de trabajo, repositorio, sitio estático<br/>Observado"]
         A4["Desarrollo tecnológico: entrenamiento y versionado del modelo<br/>Observado"]
-        A5["Finanzas y facturación (CAP-09)<br/>Ausente hoy (Observado)"]
-        A6["Talento humano (CAP-10)<br/>Ausente hoy (Observado)"]
+        A5["Finanzas y facturación (CAP-09)<br/>Ausente hoy (Observado)<br/>Objetivo TO-BE: P-08"]
+        A6["Talento humano (CAP-10)<br/>Ausente hoy (Observado)<br/>Objetivo TO-BE: P-09"]
     end
     subgraph PRIM["Actividades primarias"]
         direction LR
         B1["Captación de interés<br/>P-02, SN-01<br/>Diseñado AS-IS"]
         B2["Realización del producto TORNS<br/>P-03, SN-02<br/>Observado"]
         B3["Acompañamiento y demostración<br/>P-04, SN-02<br/>Observado"]
-        B4["Propuesta, contrato y piloto pagado<br/>Sin proceso hoy<br/>Objetivo TO-BE"]
+        B4["Propuesta, contrato y piloto pagado<br/>Sin proceso hoy<br/>Objetivo TO-BE: P-06 y SN-04"]
         B5["Soporte técnico y mejora con el operador<br/>Sin proceso hoy<br/>Objetivo TO-BE: P-04 extendido con SN-05"]
         B1 --> B2 --> B3 --> B4 --> B5
     end
@@ -32,7 +32,7 @@ Disposición: dos bloques apilados, apoyo arriba y primarias abajo. El resultado
 - Resultado declarado: oferta ajustada a la demanda medida en estación (Objetivo TO-BE, no entregado hoy).
 - B1 a B3 existen como proceso documentado (Observado o Diseñado AS-IS). B4 y B5 no existen: LIRN no tiene clientes ni pilotos (Observado) y se proyectan solo como TO-BE.
 - El valor que se declara como resultado final es objetivo. No se afirma como entregado hoy.
-- A5 y A6 no existen hoy, según el mapa de capacidades (Observado).
+- A5 y A6 no existen hoy, según el mapa de capacidades (Observado). En el TO-BE aprobado por Santiago el 1 de noviembre de 2026 los cubren P-08 y P-09, respectivamente (Objetivo TO-BE).
 - No hay cifras ni costos por actividad. Si el docente exige análisis de margen, queda NO CONFIRMADO.
 
 ## Pendiente para Santiago

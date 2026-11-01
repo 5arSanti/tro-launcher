@@ -34,7 +34,7 @@ Principios que gobiernan el TO-BE: PN-01 a PN-08 del catálogo de principios (bo
 
 ## 3. Procesos TO-BE
 
-Se conservan P-01 a P-05 y se proponen procesos nuevos solo donde una capacidad ausente lo exige (PN-08). Los identificadores P-06 a P-08 son propuestos y quedan pendientes de decisión de Santiago.
+Se conservan P-01 a P-05 y se proponen procesos nuevos solo donde una capacidad ausente lo exige (PN-08). Los identificadores P-06 a P-09 fueron aprobados por Santiago el 1 de noviembre de 2026; la gestión de talento humano se separó de P-08 como P-09. Siguen siendo Objetivo TO-BE porque no existen hoy.
 
 | Proceso | Tipo | Cambio TO-BE (Objetivo TO-BE) | Capacidades |
 |---------|------|-------------------------------|-------------|
@@ -43,12 +43,13 @@ Se conservan P-01 a P-05 y se proponen procesos nuevos solo donde una capacidad 
 | P-03 Realización del producto | Misional | Incluye evaluación en estación y versionado de modelo y regla antes de cada entrega | CAP-04, CAP-05, CAP-08 |
 | P-04 Acompañamiento | Misional | Se extiende de la demostración al acompañamiento de piloto con registro de incidencias | CAP-06 |
 | P-05 Evidencia, calidad y mejora | Apoyo | Custodia la evidencia del piloto y verifica que todo indicador publicado tenga fuente | CAP-02 |
-| P-06 Contratación y piloto (propuesto, pendiente de decisión de Santiago) | Misional | Desde la propuesta aprobada hasta el acta de inicio y cierre del piloto. Condición de entrada: evaluar el modelo con video de estación y acordar con el operador la fuente de video y la red (Objetivo TO-BE) | CAP-03, CAP-06, CAP-09 |
-| P-07 Integración con el centro de control (propuesto, pendiente de decisión de Santiago) | Misional | Acuerdo técnico y operativo de intercambio con el operador; operador humano en el circuito | CAP-07 |
-| P-08 Gestión administrativa y financiera (propuesto, pendiente de decisión de Santiago) | Apoyo | Facturación, contabilidad, contratos y vinculación de personal | CAP-09, CAP-10 |
+| P-06 Contratación y piloto (aprobado por Santiago el 1 de noviembre de 2026) | Misional | Desde la propuesta aprobada hasta el acta de inicio y cierre del piloto. Condición de entrada: evaluar el modelo con video de estación y acordar con el operador la fuente de video y la red (Objetivo TO-BE) | CAP-03, CAP-06, CAP-09 |
+| P-07 Integración con el centro de control (aprobado por Santiago el 1 de noviembre de 2026) | Misional | Acuerdo técnico y operativo de intercambio con el operador; operador humano en el circuito | CAP-07 |
+| P-08 Gestión financiera y facturación (aprobado por Santiago el 1 de noviembre de 2026) | Apoyo | Facturación electrónica, contabilidad y contratos comerciales. Entradas: NIT y matrícula de C-01 y contratos de P-06 | CAP-09 |
+| P-09 Gestión del talento humano (aprobado por Santiago el 1 de noviembre de 2026; resulta de separar P-08) | Apoyo | Vinculación, nómina, seguridad social y desvinculación (fuente normativa de seguridad social y afiliaciones NO CONFIRMADO); trata datos personales de empleados bajo la Ley 1581. Entradas: necesidad de personal y NIT de C-01 | CAP-10 |
 
 <!-- reescribir Santiago -->
-Cadena de valor TO-BE: las actividades primarias "Propuesta, contrato y piloto pagado" y "Soporte técnico y mejora con el operador", que hoy no tienen proceso (Observado), quedan cubiertas por P-06 y por P-04 extendido con SN-05, respectivamente (Objetivo TO-BE). P-07 habilita CAP-07.
+Cadena de valor TO-BE: las actividades primarias "Propuesta, contrato y piloto pagado" y "Soporte técnico y mejora con el operador", que hoy no tienen proceso (Observado), quedan cubiertas por P-06 y por P-04 extendido con SN-05, respectivamente (Objetivo TO-BE). P-07 habilita CAP-07; P-08 habilita CAP-09 y P-09 habilita CAP-10.
 
 ## 4. Servicios de negocio TO-BE
 
@@ -57,8 +58,8 @@ Cadena de valor TO-BE: las actividades primarias "Propuesta, contrato y piloto p
 | SN-01 Información institucional y recepción de interés | Diseñado AS-IS; en la práctica el interés se recibe y no se responde (Observado) | Con aviso de privacidad, autorización de tratamiento y respuesta trazable bajo CAP-03 |
 | SN-02 Demostración guiada de medición y recomendación | Observado | Se mantiene como paso previo a la propuesta |
 | SN-03 Verificación de evidencia y control de no-claims | Observado | Se aplica también a los informes del piloto |
-| SN-04 Piloto de medición de demanda en estación (propuesto, pendiente de decisión de Santiago) | No existe (Observado) | Servicio pagado y acotado en tiempo y estaciones, con informe de resultados. Condición previa: evaluación del modelo con video de estación y acuerdo con el operador sobre fuente de video y red |
-| SN-05 Soporte y mejora del servicio (propuesto, pendiente de decisión de Santiago) | No existe (Observado) | Atención de incidencias y ajustes acordados con el operador |
+| SN-04 Piloto de medición de demanda en estación (aprobado por Santiago el 1 de noviembre de 2026) | No existe (Observado) | Servicio pagado y acotado en tiempo y estaciones, con informe de resultados. Condición previa: evaluación del modelo con video de estación y acuerdo con el operador sobre fuente de video y red |
+| SN-05 Soporte y mejora del servicio (aprobado por Santiago el 1 de noviembre de 2026) | No existe (Observado) | Atención de incidencias y ajustes acordados con el operador |
 
 Sin precio, duración ni número de estaciones: NO CONFIRMADO, lo define el Roadmap de Transformación.
 
@@ -69,7 +70,8 @@ Nota sobre el desempeño del modelo (Observado): el recall de 0,55 es la métric
 
 - Historial de conteos y recomendaciones por estación y fecha (CAP-05, SN-04).
 - Registro de leads con autorización de tratamiento (CAP-02, CAP-03).
-- Contratos, actas y facturación del piloto (AI-07 deja de ser brecha).
+- Contratos, actas y facturación del piloto (AI-07 deja de ser brecha; P-08).
+- Contratos laborales y registros de nómina de empleados, datos personales bajo la Ley 1581 (P-09, CAP-10).
 - Evidencia de resultados del piloto con fuente y alcance (CAP-02, P-05).
 El modelo de datos, la clasificación y los flujos se desarrollan en la Arquitectura de Datos.
 
@@ -81,6 +83,7 @@ El modelo de datos, la clasificación y los flujos se desarrollan en la Arquitec
 - Gestor de leads en reemplazo de la hoja de la cuenta personal, con registro de autorización de tratamiento (CAP-02, CAP-03).
 - Registro versionado de modelos de detección, necesidad de aplicación enlazada a P-03 y a CAP-04 y CAP-08 (Objetivo TO-BE; DF-08 de la Arquitectura de Aplicaciones).
 - Facturación, necesidad de aplicación enlazada a P-08 y CAP-09 (Objetivo TO-BE; DF-08 de la Arquitectura de Aplicaciones).
+- Gestión de personal y nómina, necesidad de aplicación enlazada a P-09 y CAP-10, con controles de acceso para datos personales de empleados (Objetivo TO-BE; la selección corresponde a la Arquitectura de Aplicaciones).
 La selección y el diseño son de Aplicaciones y Tecnología; aquí solo se declara la necesidad de negocio.
 
 ## 7. Organización TO-BE
@@ -97,11 +100,11 @@ Punto de partida: una persona, Johel Arias, autor único, cubre las cinco áreas
 | G-N03 | Brecha | Leads en hoja de la cuenta Google personal de Santiago, sin respuesta y sin política publicada; riesgo Ley 1581/2012 (Observado) | Embudo con gestor y política Ley 1581 | C-03: Política Ley 1581 y gestor de leads |
 | G-N04 | Brecha | Conteos solo en memoria (Observado) | Historial comparable por estación | C-04: Persistencia histórica |
 | G-N05 | Brecha | Modelo evaluado solo en validación de entrenamiento sobre imágenes genéricas, recall 0,55 (Observado) | Evaluación en estación | C-05: Desacople y evaluación en estación |
-| G-N06 | Brecha | CAP-07, CAP-09 y CAP-10 ausentes (Observado) | Capacidades con proceso (P-07, P-08) | C-06: Capacidades ausentes |
+| G-N06 | Brecha | CAP-07, CAP-09 y CAP-10 ausentes (Observado) | Capacidades con proceso (P-07, P-08, P-09) | C-06: Capacidades ausentes |
 | G-N07 | Brecha | Sin proceso de contratación ni piloto (Observado). Riesgo de continuidad: no hay copias de respaldo y todo se despliega solo en el equipo de Santiago, Observado por declaración del dueño (1 de noviembre de 2026), con detalle en la Arquitectura Tecnológica | P-06 y SN-04, con respaldo y entorno de piloto separado | C-08 y C-07: Primer piloto pagado; respaldo y separación de entornos |
 
 ## Pendientes para Santiago
-1. Aprobar o descartar P-06, P-07, P-08, SN-04 y SN-05 (propuestos).
+1. Resuelto: P-06 a P-09, SN-04 y SN-05 aprobados por Santiago el 1 de noviembre de 2026; P-09 resulta de separar P-08.
 2. Confirmar que el piloto pagado es el único hito comercial del horizonte TO-BE.
 3. Metas, plazos y costos: NO CONFIRMADO, se definen en el Roadmap de Transformación.
 
@@ -110,5 +113,5 @@ Punto de partida: una persona, Johel Arias, autor único, cubre las cinco áreas
 - SN-04 y P-06: condición de piloto y nota sobre el recall de 0,55.
 - CAP-03, SN-01 y G-N03: leads recopilados sin respuesta en cuenta personal; riesgo Ley 1581/2012; seguimiento con autorización como objetivo.
 - Sección 6: autenticación con roles en AP-02 y AP-03a (DF-05); AP-03a y AP-03b con IT-07; registro versionado de modelos y facturación (DF-08).
-- P-06 a P-08, SN-04 y SN-05 marcados como propuestos pendientes de decisión de Santiago.
+- P-06 a P-09, SN-04 y SN-05 aprobados por Santiago el 1 de noviembre de 2026; P-09 resulta de separar P-08. Marca Objetivo TO-BE. P-08 queda como gestión financiera y facturación (CAP-09) y se crea P-09, gestión del talento humano (CAP-10).
 - Hechos confirmados: autor único, nombres tro-* en AS-IS, cámaras usb0 y usb1, clasificación de Label Studio, SharePoint y correo.
