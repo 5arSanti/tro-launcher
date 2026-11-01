@@ -20,9 +20,9 @@ Leyenda: P = proceso principal que ejerce la capacidad (fuente: mapa de capacida
 - Tres capacidades ausentes (CAP-07, CAP-09, CAP-10) no tienen proceso ni servicio. Alimentan C-06.
 - Los dueños funcionales de cada proceso (Dirección, Comercial, Producto, Operación, Calidad) hoy son una sola persona, Johel Arias (Diseñado AS-IS). No se afirma como hoy que existan áreas separadas.
 
-## Servicios de negocio AS-IS (de M1)
+## Servicios de negocio AS-IS (de la Arquitectura de Negocio)
 - SN-01 Información institucional y recepción de interés comercial (P-02).
 - SN-02 Demostración guiada de medición de demanda y recomendación de oferta (P-03 y P-04).
 - SN-03 Verificación de evidencia y control de no-claims (P-01 y P-05).
 
-Nota: los nombres de capacidad se alinearon con los del diagrama del mapa de capacidades de M1 (28 oct 2026).
+Nota: los nombres de capacidad se alinearon con los del diagrama del mapa de capacidades de la Arquitectura de Negocio (28 oct 2026).

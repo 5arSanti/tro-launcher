@@ -17,5 +17,5 @@ Formato TOGAF: nombre, enunciado, justificación, implicaciones. Cada principio 
 
 ## Pendientes para Santiago
 1. Confirmar cuáles de los ocho principios adopta y si desea añadir uno de cumplimiento regulatorio general.
-2. PN-04 y PN-08 son principios propuestos; el repositorio no las enuncia como principios.
+2. PN-04 y PN-08 son principios propuestos; el repositorio no los enuncia como principios.
 3. El taller no exige un catálogo de principios por nombre; es insumo del Roadmap de Transformación. NO CONFIRMADO si el docente lo pide en el informe.

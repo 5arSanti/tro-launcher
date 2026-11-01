@@ -21,4 +21,4 @@ Revisé visualmente cada imagen y la comparé con su guía BPMN. Marca de todo l
 3. Sugerencia de redacción: en el informe, describir cada proceso con lo que muestra la imagen, no con lo que dice la guía.
 
 ## Resolución (1 de noviembre de 2026)
-Santiago decidió que la imagen publicada prevalece. Los ajustes de guía para P-02, P-04 y P-05 quedan redactados en el documento de ajustes a las guías BPMN; su integración en las guías corresponde al Líder o a Santiago porque están fuera de la carpeta de la onda M1.
+Santiago decidió que la imagen publicada prevalece. Los ajustes de guía para P-02, P-04 y P-05 quedan redactados en el documento de ajustes a las guías BPMN; su integración en las guías corresponde a la integración del Roadmap de Transformación o a Santiago porque están fuera de la carpeta de la onda M1.
