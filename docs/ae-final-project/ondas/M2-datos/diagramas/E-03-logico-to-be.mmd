@@ -106,7 +106,7 @@ erDiagram
     }
     contrato }o--|| cliente : "cliente_id"
     acta_piloto }o--|| contrato : "contrato_id"
-    factura }o--|| contrato : "contrato_id"
+    factura }o--|| contrato : "contrato_id (factura)"
     contacto }o--|| organizacion : "organizacion_id"
     autorizacion_titular }o--|| contacto : "contacto_id"
     solicitud_derechos }o--|| contacto : "contacto_id"
@@ -115,5 +115,5 @@ erDiagram
     fuente_video }o--|| estacion : "estacion_id"
     observacion_conteo }o--|| fuente_video : "fuente_id"
     observacion_conteo }o--|| version_modelo : "version_modelo_id"
-    recomendacion_despacho }o--|| observacion_conteo : "observacion_id"
+    recomendacion_despacho }o--|| observacion_conteo : "observacion_id (IT-07)"
     recomendacion_despacho }o--|| modelo_tren : "modeltren_id"

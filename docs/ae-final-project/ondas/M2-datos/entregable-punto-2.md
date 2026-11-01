@@ -82,7 +82,7 @@ Los flujos se agrupan en tres familias: técnico (FL-T, procesos P-03 y P-04), c
 | F-12 | AP-05 (my_model.pt) | Archivo de pesos, leído por ruta; el archivo se obtiene por copia manual de best.pt desde AP-04 | AP-03 | I-06, I-11 | Persistente | Observado |
 | F-13 | Equipo del fundador | Código y artefactos, incluida la base de AP-08 | Repositorio público en AP-07 | I-13 | Persistente | Observado |
 | F-14 | Encuestados | Respuestas recogidas en AP-13 Google Forms | Resumen agregado | I-16 | Persistente | Observado (registro) / NO CONFIRMADO (uso vigente de AP-13 Google Forms) |
-| F-15 | Controlador SITP | Notas por rol | Documento de evidencia | I-16 | Persistente | Observado (registro) / NO CONFIRMADO (soporte) |
+| F-15 | Controlador SITP | Notas por rol | Documento de evidencia | I-16 (fuera de aplicación) | Persistente | Observado (registro) / NO CONFIRMADO (soporte) |
 | F-16 | Evidencia agregada | Resultados agregados | Visitantes y evaluadores, vía AP-01 | I-12 | Persistente | Observado |
 | F-17 | AP-03, lectura de D-04 | Identificador, archivo y nombre visible de cada fuente | AP-02 | I-01 | No | Observado |
 
@@ -152,7 +152,7 @@ Se aplican los criterios de la Arquitectura de Negocio: seguridad corporativa en
 
 ### 6.1 Requisitos de datos
 
-Los requisitos citados se definen así. El Líder los enlaza con los requisitos de la hoja de ruta.
+Los requisitos citados se definen así y se enlazan con los requisitos de la hoja de ruta.
 
 | Código | Requisito de datos | Problema que cierra | Marca |
 |---|---|---|---|
