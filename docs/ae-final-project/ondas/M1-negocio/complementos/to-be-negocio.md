@@ -4,7 +4,7 @@ Versión 0.2, 1 de noviembre de 2026 (cambios frente a 0.1 al final del document
 
 Alcance según el enunciado del taller: capacidades, procesos, servicios, información y recursos tecnológicos del negocio TO-BE. Información y tecnología se describen aquí solo como requisito de negocio; el detalle está en la Arquitectura de Datos (Punto 2) y en la Arquitectura Tecnológica (Punto 4).
 
-Hechos confirmados por el dueño (Observado por declaración del dueño, 1 de noviembre de 2026): LIRN tiene un autor único, Johel Santiago Arias; los tres nombres de la página de TORNS son de presentación y no corresponden a un equipo. Los nombres técnicos tro-* se mantienen en la descripción AS-IS. Las pruebas de captura se hicieron con dos cámaras USB (usb0 y usb1). Label Studio se considera aplicación (AP-08 en la Arquitectura de Aplicaciones); SharePoint y el correo son herramientas de apoyo.
+Hechos confirmados por el dueño, Observado por declaración del dueño (1 de noviembre de 2026): LIRN tiene un autor único, Johel Santiago Arias; los tres nombres de la página de TORNS son de presentación y no corresponden a un equipo. Los nombres técnicos tro-* se mantienen en la descripción AS-IS. Las pruebas de captura se hicieron con dos cámaras USB (usb0 y usb1). Label Studio se considera aplicación (AP-08 en la Arquitectura de Aplicaciones); SharePoint y el correo son herramientas de apoyo.
 
 Nombres de superficies aprobados por Santiago: AP-01 Sitio web comercial de LIRN y TORNS, AP-02 Consola de operación de estaciones, AP-03 Servicio de detección de pasajeros y plan de despacho, que en el TO-BE se divide en AP-03a (API de despacho) y AP-03b (servicio de inferencia), AP-04 Entrenamiento del modelo de detección. El inventario completo de aplicaciones (AP-01 a AP-13, incluidas AP-12 Google Fonts y AP-13 Google Forms) y las diferencias DF-01 a DF-10 están en el entregable de Aplicaciones (Punto 3); el modelo de datos, los flujos y el tratamiento Ley 1581 están en el entregable de Datos (Punto 2).
 
@@ -63,7 +63,7 @@ Cadena de valor TO-BE: las actividades primarias "Propuesta, contrato y piloto p
 Sin precio, duración ni número de estaciones: NO CONFIRMADO, lo define el Roadmap de Transformación.
 
 <!-- reescribir Santiago -->
-Nota sobre el desempeño del modelo (Observado): el recall de 0,55 es la métrica de entrenamiento de la última época, medida sobre 1.000 imágenes de validación del COCO Person Dataset de Roboflow, sin imágenes de TransMilenio ni de estaciones; el entrenamiento se realizó el 15 de noviembre de 2025 (Observado por declaración del dueño, 1 de noviembre de 2026). No anticipa el desempeño en plataforma; por eso SN-04 y P-06 exigen la evaluación previa con video de estación.
+Nota sobre el desempeño del modelo (Observado): el recall de 0,55 es la métrica de entrenamiento de la última época, medida sobre 1.000 imágenes de validación del COCO Person Dataset de Roboflow, sin imágenes de TransMilenio ni de estaciones; el entrenamiento se realizó el 15 de noviembre de 2025 (Observado por declaración del dueño (1 de noviembre de 2026)). No anticipa el desempeño en plataforma; por eso SN-04 y P-06 exigen la evaluación previa con video de estación.
 
 ## 5. Información requerida por el negocio TO-BE (insumo para la Arquitectura de Datos)
 
@@ -98,7 +98,7 @@ Punto de partida: una persona, Johel Arias, autor único, cubre las cinco áreas
 | G-N04 | Brecha | Conteos solo en memoria (Observado) | Historial comparable por estación | C-04: Persistencia histórica |
 | G-N05 | Brecha | Modelo evaluado solo en validación de entrenamiento sobre imágenes genéricas, recall 0,55 (Observado) | Evaluación en estación | C-05: Desacople y evaluación en estación |
 | G-N06 | Brecha | CAP-07, CAP-09 y CAP-10 ausentes (Observado) | Capacidades con proceso (P-07, P-08) | C-06: Capacidades ausentes |
-| G-N07 | Brecha | Sin proceso de contratación ni piloto (Observado). Riesgo de continuidad: no hay copias de respaldo y todo se despliega solo en el equipo de Santiago (Observado por declaración del dueño, 1 de noviembre de 2026; detalle en la Arquitectura Tecnológica) | P-06 y SN-04, con respaldo y entorno de piloto separado | C-08 y C-07: Primer piloto pagado; respaldo y separación de entornos |
+| G-N07 | Brecha | Sin proceso de contratación ni piloto (Observado). Riesgo de continuidad: no hay copias de respaldo y todo se despliega solo en el equipo de Santiago (Observado por declaración del dueño (1 de noviembre de 2026); detalle en la Arquitectura Tecnológica) | P-06 y SN-04, con respaldo y entorno de piloto separado | C-08 y C-07: Primer piloto pagado; respaldo y separación de entornos |
 
 ## Pendientes para Santiago
 1. Aprobar o descartar P-06, P-07, P-08, SN-04 y SN-05 (propuestos).
