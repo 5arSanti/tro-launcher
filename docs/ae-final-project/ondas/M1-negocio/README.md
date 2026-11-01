@@ -22,3 +22,7 @@ Los archivos numerados de esta carpeta conservan el mismo contenido por apartado
 ## Bloqueo aplicado al cerrar M1
 
 Secciones 1 a 7, 10 y 11 de `docs/ae-final-project/registro-empresa.md` actualizadas y bloqueadas como entrada obligatoria para la Onda M2 (Arquitectura de Datos).
+
+## Complementos de la entrega final (1 de noviembre de 2026)
+
+La subcarpeta [complementos](complementos/) reúne los borradores de apoyo de la entrega final: catálogo de principios, cadena de valor, matriz capacidad x proceso x servicio, TO-BE de negocio v0.2 (insumo del Punto 5), cotejo BPMN (B-06) con los ajustes propuestos a las guías de P-02, P-04 y P-05, identificadores C-01 a C-08, lista de ajustes y diagramas exportados (imagenes/mmd e imagenes/png). Santiago redacta el texto final.
