@@ -104,6 +104,20 @@ erDiagram
         fecha fecha
         decimal valor
     }
+    colaborador {
+        id id PK
+        texto nombre
+        texto documento_identidad
+        fecha fecha_vinculacion
+    }
+    contrato_laboral {
+        id id PK
+        id colaborador_id FK
+        texto tipo
+        fecha inicio
+        fecha fin
+    }
+    contrato_laboral }o--|| colaborador : "colaborador_id"
     contrato }o--|| cliente : "cliente_id"
     acta_piloto }o--|| contrato : "contrato_id"
     factura }o--|| contrato : "contrato_id (factura)"
