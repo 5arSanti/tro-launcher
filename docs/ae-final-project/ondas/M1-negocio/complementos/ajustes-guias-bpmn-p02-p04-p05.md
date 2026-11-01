@@ -1,6 +1,6 @@
 # Ajustes propuestos a las guías BPMN de P-02, P-04 y P-05
 
-Decisión de Santiago (1 de noviembre de 2026): la imagen BPMN publicada prevalece sobre la guía. Las guías viven fuera de la carpeta de la onda M1, por lo que aquí se deja el texto de ajuste para que el Líder de Transformación o Santiago lo integren. Marca de todo lo siguiente: Observado (imagen publicada).
+Decisión de Santiago (1 de noviembre de 2026): la imagen BPMN publicada prevalece sobre la guía. Las guías viven fuera de la carpeta de la onda M1, por lo que aquí se deja el texto de ajuste para que Santiago lo integre. Marca de todo lo siguiente: Observado (imagen publicada).
 
 ## P-02 Relación comercial y partes interesadas
 - Carriles: Persona interesada, Comercial, Canal de contacto (sin cambio).

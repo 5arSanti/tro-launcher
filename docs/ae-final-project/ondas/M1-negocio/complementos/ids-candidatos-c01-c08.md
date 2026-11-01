@@ -1,6 +1,6 @@
-# B-08. Identificadores de los candidatos de la sección de brechas y proyectos del registro
+# Identificadores de los candidatos de la sección de brechas y proyectos del registro
 
-Se asignan en el orden en que aparecen en el registro. El texto es el del registro, abreviado sin cambiar su sentido. Son candidatos, no portafolio cerrado: M5 decide. Marca: Objetivo TO-BE (candidatos de proyecto).
+Se asignan en el orden en que aparecen en el registro. El texto es el del registro, abreviado sin cambiar su sentido. Son candidatos, no portafolio cerrado: el Roadmap de Transformación decide. Marca: Objetivo TO-BE (candidatos de proyecto).
 
 | ID | Candidato | Capacidad o activo relacionado | Objetivo estratégico relacionado |
 |----|-----------|--------------------------------|----------------------------------|
@@ -14,6 +14,6 @@ Se asignan en el orden en que aparecen en el registro. El texto es el del regist
 | C-08 | Primer piloto pagado con un operador B2B o entidad B2G (solo horizonte TO-BE) | Todas | OE-05 |
 
 Notas:
-- Las columnas de capacidad y objetivo son una propuesta mía derivada de las tablas de M1 y deben confirmarse; el registro no las asigna.
-- C-06 agrupa tres brechas en un solo candidato porque así figura en el registro. M5 puede separarlo en C-06a, C-06b y C-06c sin cambiar el identificador base.
-- Aclaración DF-07 (Observado): el recall de 0,55 citado en C-05 es la métrica de entrenamiento de la última época sobre 1.000 imágenes del COCO Person Dataset de Roboflow, sin imágenes de TransMilenio ni de estaciones; no anticipa el desempeño en plataforma.
+- Las columnas de capacidad y objetivo son propuestas a partir de las tablas de la Arquitectura de Negocio y deben confirmarse; el registro no las asigna.
+- C-06 agrupa tres brechas en un solo candidato porque así figura en el registro. El Roadmap de Transformación puede separarlo en C-06a, C-06b y C-06c sin cambiar el identificador base.
+- Aclaración (Observado; DF-07 de la Arquitectura de Aplicaciones): el recall de 0,55 citado en C-05 es la métrica de entrenamiento de la última época sobre 1.000 imágenes del COCO Person Dataset de Roboflow, sin imágenes de TransMilenio ni de estaciones; no anticipa el desempeño en plataforma.

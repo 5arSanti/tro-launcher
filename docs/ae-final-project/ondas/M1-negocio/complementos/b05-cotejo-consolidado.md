@@ -12,7 +12,7 @@ Resultado: no hay identificadores, cifras ni años que aparezcan en un apartado 
 
 ## Alcance y límite del cotejo (Observado)
 - La comparación de texto literal no sirve porque el consolidado reescribe y condensa los apartados. Lo que se verificó es la coherencia de hechos, no la igualdad de redacción.
-- Una lectura frase por frase del consolidado completo (unas 60 mil caracteres) queda pendiente si Santiago la quiere antes de reescribir. Lo marco como no verificado.
+- Una lectura frase por frase del consolidado completo (unos 60 mil caracteres) queda pendiente si Santiago la quiere antes de reescribir. Lo marco como no verificado.
 
 ## Hallazgos para decisión
 | N.º | Hallazgo | Marca | Acción propuesta |

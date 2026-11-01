@@ -9,7 +9,7 @@ Borrador de apoyo para Santiago. No es texto final del informe. Marcas: Observad
 | B-03 | Portada con autor, fecha y grupo | Cerrado (decisión de Santiago, 28 oct 2026) | Autor único, ya definido en la documentación del proyecto. No se pide más. | Observado |
 | B-04 | Bibliografía con URL | Cerrado en borrador | Ver archivo de bibliografía. Dos URL oficiales de leyes del Senado dieron error de servidor en la verificación; se usó el Gestor Normativo de la Función Pública. | Observado |
 | B-10 | Nombre de las superficies sin identidad TRO | Cerrado (aprobado por Santiago, 28 oct 2026) | Se aplica la tabla vigente de abajo, que reemplaza la propuesta inicial. | Objetivo TO-BE |
-| B-06 | Diagramas Mermaid y cotejo de las cinco imágenes BPMN | Cerrado (decisión de Santiago, 1 nov 2026: la imagen prevalece) | PNG revisados (02-1, 02-2, 03-1, 04-1). Los desajustes de P-02, P-04 y P-05 se resuelven a favor de la imagen; el ajuste de las guías queda redactado y su integración está pendiente del Líder o de Santiago (fuera de la carpeta M1). | Observado |
+| B-06 | Diagramas Mermaid y cotejo de las cinco imágenes BPMN | Cerrado (decisión de Santiago, 1 nov 2026: la imagen prevalece) | Revisados visualmente los diez PNG (02-1, 02-2, 03-1, 03-2, 04-1, cadena de valor, cons-1 a cons-4); cons-5 era copia idéntica de 04-1 y se eliminó; los SVG pasan a imagenes/svg. Los desajustes de P-02, P-04 y P-05 se resuelven a favor de la imagen; el ajuste de las guías queda redactado y su integración está pendiente del Líder o de Santiago (fuera de la carpeta M1). | Observado |
 | B-08 | IDs C-01 a C-08 | Cerrado en borrador | Añadida la aclaración DF-07 sobre el recall de 0,55. | Objetivo TO-BE |
 
 ## B-02. Nota histórica, ya cerrado por Santiago: banda pública de tres nombres y residuos tro-*
@@ -24,7 +24,6 @@ Decisión propuesta para que Santiago confirme o corrija (no la tomo yo):
 2. La landing se alinea como proyecto del portafolio (candidato C-02), no como hecho cumplido.
 3. Los nombres tro-* se conservan únicamente como nombres técnicos de repositorio en el inventario de aplicaciones de M3, y en el cuerpo del informe se usan los nombres funcionales de B-10.
 
-Pregunta abierta para Santiago: ¿la banda de tres nombres se retira de la landing antes de la entrega, o se deja y se documenta como brecha? Responder esto cambia el texto de AS-IS y el portafolio de M5.
 
 ## B-10. Nombres de superficies en el informe
 

@@ -1,4 +1,4 @@
-# Bibliografía de apoyo (B-04)
+# Bibliografía de apoyo
 
 Borrador de apoyo. Formato APA 7 simplificado. Las URL se verificaron el 28 de octubre de 2026 salvo donde se indica. No incluye rutas de archivos .md.
 
@@ -22,6 +22,6 @@ Borrador de apoyo. Formato APA 7 simplificado. Las URL se verificaron el 28 de o
 
 ## Observaciones para Santiago
 
-1. Según el Gestor Normativo, el Decreto 1377 de 2013 figura como derogado parcialmente por el Decreto 1081 de 2015, y ambos reglamentan la Ley 1581. Conviene verificar con el docente si se cita el decreto de 2013, el compilado, o ambos.
+1. En todo el informe se cita como Decreto 1377 de 2013, compilado en el Decreto 1074 de 2015, igual que en la Arquitectura de Datos.
 2. El Decreto 957 de 2019 clasifica el tamaño empresarial por ingresos anuales y sector, no por número de personas. El registro bloquea "microempresa unipersonal" con la marca Observado (equipo) y Diseñado AS-IS (marco). Como los ingresos de LIRN no están confirmados, la clasificación como micro es una hipótesis de diseño. No se modifica el hecho bloqueado; se sugiere redactarlo así.
 3. Las URL del Senado de la República para las leyes 1258 y 1581 respondieron con error de servidor en la verificación. Se prefirió el Gestor Normativo.
