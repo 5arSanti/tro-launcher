@@ -184,10 +184,10 @@ N-02 precede a IT-06. N-04 precede a cualquier análisis histórico. AP-03b prec
 
 | ID | Arquitectura | Diferencia | Estado |
 |---|---|---|---|
-| DF-01 | Arquitectura de Datos | F-01 no precisa que el cuerpo viaja como JSON en texto plano ni que el éxito se infiere de HTTP 200 sin acuse | Abierta en el lado de Datos (ajuste aprobado; autor y fecha NO CONFIRMADO) |
-| DF-02 | Arquitectura de Datos | La cita de la carga del modelo en F-12 no coincide con las líneas del código | Abierta en el lado de Datos (ajuste aprobado; autor y fecha NO CONFIRMADO) |
+| DF-01 | Arquitectura de Datos | F-01 no precisa que el cuerpo viaja como JSON en texto plano ni que el éxito se infiere de HTTP 200 sin acuse | Abierta en el lado de Datos (aprobado por Santiago el 1 de noviembre de 2026) |
+| DF-02 | Arquitectura de Datos | La cita de la carga del modelo en F-12 no coincide con las líneas del código | Abierta en el lado de Datos (aprobado por Santiago el 1 de noviembre de 2026) |
 | DF-03 | Arquitectura de Datos | La hoja de cálculo figuraba como NO CONFIRMADO | Cerrada: Observado por declaración del dueño (1 de noviembre de 2026) |
-| DF-04 | Arquitectura de Datos | La cámara en vivo figura sin matiz; las pruebas con usb0 y usb1 no están documentadas | Abierta en el lado de Datos (ajuste aprobado; autor y fecha NO CONFIRMADO) |
+| DF-04 | Arquitectura de Datos | La cámara en vivo figura sin matiz; las pruebas con usb0 y usb1 no están documentadas | Abierta en el lado de Datos (aprobado por Santiago el 1 de noviembre de 2026) |
 | DF-05 | Arquitectura de Negocio | La autenticación se pedía solo en AP-02; esta arquitectura la extiende a AP-03a | Cerrada: el TO-BE de negocio la incluye en AP-03a |
 | DF-06 | Arquitectura de Negocio | Posible afirmación de un límite de tamaño de solicitud activo | Cerrada: no se afirma ese límite |
 | DF-07 | Arquitectura de Negocio | El recall de 0,55 se citaba sin indicar que es métrica de entrenamiento | Cerrada: se precisa como métrica de la última época de entrenamiento |
