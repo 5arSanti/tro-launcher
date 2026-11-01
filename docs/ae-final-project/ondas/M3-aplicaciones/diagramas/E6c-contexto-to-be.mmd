@@ -1,9 +1,11 @@
-flowchart TB
+flowchart LR
   subgraph Comercial["Comercial (Objetivo TO-BE)"]
+    direction TB
     AP01[AP-01 Sitio web comercial con aviso Ley 1581]
     N01[N-01 Gestor de leads o CRM ligero]
   end
   subgraph Producto["Producto TORNS (Objetivo TO-BE)"]
+    direction TB
     N02[N-02 Identidad y control de acceso]
     AP02[AP-02 Consola de operación]
     AP03[AP-03a API de plan de despacho]
@@ -14,6 +16,7 @@ flowchart TB
     AP08[AP-08 Label Studio]
   end
   subgraph Admin["Administración (Objetivo TO-BE)"]
+    direction TB
     N06[N-06 Facturación y contabilidad mínima]
     N07[N-07 Personal y nómina, condicional]
   end
