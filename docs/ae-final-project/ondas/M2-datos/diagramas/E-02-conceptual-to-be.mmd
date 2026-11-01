@@ -1,3 +1,6 @@
+---
+title: "E-02 Modelo conceptual TO-BE (Objetivo TO-BE)"
+---
 flowchart LR
     Organizacion["Organización"]
     Contacto["Contacto"]
@@ -6,6 +9,7 @@ flowchart LR
     Lead["Lead"]
     Cliente["Cliente<br/>(solo con contrato)"]
     Contrato["Contrato"]
+    Acta["Acta del piloto"]
     Factura["Factura"]
     Colaborador["Colaborador"]
     ContratoLab["Contrato laboral"]
@@ -25,6 +29,7 @@ flowchart LR
     Organizacion -.->|"puede ser"| Cliente
     Cliente -.->|"firma"| Contrato
     Contrato -.->|"genera"| Factura
+    Contrato -.->|"se documenta en"| Acta
     Colaborador -.->|"suscribe"| ContratoLab
     Linea -->|"agrupa"| Estacion
     Estacion -->|"dispone de"| Fuente
@@ -39,3 +44,6 @@ flowchart LR
     style Factura stroke-dasharray: 5 5
     style Colaborador stroke-dasharray: 5 5
     style ContratoLab stroke-dasharray: 5 5
+    Leyenda["Leyenda: trazo continuo, entidad Objetivo TO-BE;<br/>trazo punteado, entidad condicional Objetivo TO-BE<br/>(P-08 facturación, P-09 talento humano)"]
+    style Acta stroke-dasharray: 5 5
+    style Leyenda fill:#f3f4f6,stroke:#9ca3af
