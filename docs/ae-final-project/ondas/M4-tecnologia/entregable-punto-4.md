@@ -16,7 +16,7 @@ La Arquitectura Tecnológica traduce las necesidades de la Arquitectura de Aplic
 | IT-EQ-01 | Estación del fundador | Intel Core i5-10400 a 2,90 GHz, 48 GB de RAM, NVIDIA GeForce GTX 1050 Ti de 4 GB, 1,14 TB de almacenamiento con 975 GB usados (cerca del 85 %), Windows de 64 bits | Observado por declaración del dueño (1 de noviembre de 2026) |
 | IT-EQ-02 | GPU de entrenamiento | La misma GTX 1050 Ti; la salida del cuaderno registra PyTorch 2.7.1 con CUDA 11.8 y Ultralytics 8.3.228 | Observado |
 | IT-EQ-03 | Cámaras | Cámara integrada usb0 y cámara USB externa usb1 | Observado por declaración del dueño (1 de noviembre de 2026) |
-| IT-EQ-04 | Pruebas con cámaras | Sin sesión documentada | NO CONFIRMADO |
+| IT-EQ-04 | Pruebas con cámaras | Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1); no hay fechas ni resultados registrados | Observado por declaración del dueño (1 de noviembre de 2026); fechas y resultados NO CONFIRMADO |
 | IT-EQ-05 | Servidores de producción | No existen | Observado |
 | IT-EQ-06 | GPU de producción | No existe | Observado |
 
@@ -29,7 +29,7 @@ La Arquitectura Tecnológica traduce las necesidades de la Arquitectura de Aplic
 | IT-RD-03 | Puerto de etiquetado | 8080 para Label Studio | Observado |
 | IT-RD-04 | Transporte de video y métricas | MJPEG sobre HTTP y métricas por WebSocket, sin cifrado propio | Observado |
 | IT-RD-05 | Fuente RTSP | Soportada por el backend; no hay cámara de campo instalada | Observado |
-| IT-RD-06 | Segmentación, firewall o VPN | Sin evidencia | NO CONFIRMADO |
+| IT-RD-06 | Segmentación, firewall o VPN | No existen actualmente segmentación de red, firewall ni VPN | Observado por declaración del dueño (1 de noviembre de 2026) |
 
 ### 2.3 Plataformas y software base
 
@@ -121,7 +121,7 @@ Escala de riesgos cualitativa: Alta, Media, Baja.
 | RT-03 | Disco cerca de su capacidad | 975 GB usados de 1,14 TB | Media | Alta | Observado por declaración del dueño (1 de noviembre de 2026) | Almacén de objetos y retiro de duplicados |
 | RT-04 | Límite de medición del modelo | Recall bajo sobre imágenes genéricas, sin evaluación en estación | Alta | Media | Observado | Evaluación con fuente de estación antes de un piloto |
 | RT-05 | Brecha de autenticación | La consola y la API no autentican | Media | Alta | Observado | N-02 en AP-02 y AP-03a |
-| RT-06 | Configuración de desarrollo expuesta | CORS abierto, depuración y recarga activas, puerto 5678 publicado | Media | Alta | Observado | Imagen mínima y perfiles de entorno |
+| RT-06 | Configuración de desarrollo expuesta | CORS abierto, depuración y recarga activas, puerto 5678 publicado; sin segmentación de red, firewall ni VPN (IT-RD-06) | Media | Alta | Observado; IT-RD-06 Observado por declaración del dueño (1 de noviembre de 2026) | Imagen mínima y perfiles de entorno |
 | RT-07 | Brecha de pruebas del backend | Configuración de pytest sin carpeta de pruebas ni integración continua | Alta | Media | Observado | Pruebas de contrato e integración continua |
 | RT-08 | Estado volátil | Conteos en memoria | Alta | Media | Observado | N-04 |
 | RT-09 | Datos personales en el laboratorio | Cuenta de anotador e imágenes de personas en repositorio | Media | Alta | Observado | Laboratorio aislado y tratamiento conforme a la Ley 1581 de 2012 |
@@ -146,7 +146,7 @@ Marca de toda la sección: Objetivo TO-BE.
 2. Entorno de entrenamiento y etiquetado reproducible, independiente de la instalación manual de la estación.
 
 ### 5.3 Cloud
-1. Nodos de aplicación, datos e identidad alojables en nube; proveedor sin elegir.
+1. Nodos de aplicación, datos e identidad alojables en nube; Azure y GCP se mantienen como alternativas, con decisión pendiente (Objetivo TO-BE, alternativas declaradas por el dueño el 1 de noviembre de 2026). Costos: NO CONFIRMADO.
 2. GPU bajo demanda para entrenamiento e inferencia, no permanente.
 3. Almacén de objetos versionado para pesos, videos y exportes.
 
@@ -188,11 +188,11 @@ Cada componente TO-BE se despliega por separado. Sin cifras ni proveedores.
 | AP-10 SharePoint | SaaS | SaaS de apoyo y destino de respaldo documental | Objetivo TO-BE |
 | AP-11 Correo | SaaS | SaaS de apoyo, sin cambio | Objetivo TO-BE |
 | AP-12 Google Fonts | SaaS externo | Fuente servida desde el nodo público | Objetivo TO-BE |
-| AP-13 Google Forms | SaaS, uso NO CONFIRMADO | SaaS de apoyo mientras se use | Objetivo TO-BE |
+| AP-13 Google Forms | SaaS. Sigue en uso. Observado por declaración del dueño (1 de noviembre de 2026). | SaaS de apoyo mientras se use | Objetivo TO-BE |
 | N-06 Facturación (P-08, CAP-09) | No existe | Nodo SaaS administrativo, componente separado; se implanta después de C-01 | Objetivo TO-BE |
 | N-07 Personal y nómina (P-09, CAP-10) | No existe | Nodo SaaS administrativo, componente separado; condicional a que haya personal que vincular y a C-01 | Objetivo TO-BE, condicional |
 
-Las obligaciones de facturación electrónica ante la DIAN, nómina electrónica y seguridad social: NO CONFIRMADO, sin fuente normativa revisada.
+Fuentes normativas revisadas el 1 de noviembre de 2026 para N-06 y N-07 (Objetivo TO-BE, condicional a C-01): la Resolución DIAN 000165 de 2023 desarrolla el sistema de facturación electrónica y los proveedores tecnológicos; la Resolución DIAN 000013 de 2021 implementa el documento soporte de pago de nómina electrónica; la Ley 100 de 1993 hace obligatoria la afiliación al Sistema General de Pensiones de quienes tienen contrato de trabajo (art. 15) y responsabiliza al empleador del pago de los aportes (art. 22); el Decreto 1072 de 2015, Único Reglamentario del Sector Trabajo, compila las reglas de la relación laboral y prevé el pago de aportes mediante la Planilla Integrada de Liquidación de Aportes, PILA (art. 2.2.1.5.7, para teletrabajadores). Las resoluciones que modifiquen la 000013 de 2021 y el calendario aplicable a LIRN: NO CONFIRMADO.
 
 ## 8. Tecnología de cola para IT-07
 
@@ -241,7 +241,7 @@ flowchart LR
     LC["AP-09 Lucidchart"]
     SP["AP-10 SharePoint"]
     CO["AP-11 Correo"]
-    GFO["AP-13 Google Forms, uso NO CONFIRMADO"]
+    GFO["AP-13 Google Forms, en uso"]
   end
   subgraph ADM["Nodo SaaS administrativo (Objetivo TO-BE, condicional)"]
     FAC["N-06 facturación, condicional a C-01"]

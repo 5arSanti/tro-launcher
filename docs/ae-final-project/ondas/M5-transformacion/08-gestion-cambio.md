@@ -4,7 +4,7 @@
 
 | Disparador | Efecto |
 |------------|--------|
-| Elección de proveedor de nube, de cola IT-07 o de gestor de secretos (NO CONFIRMADO en la Arquitectura Tecnológica) | Se revisan B-T01 a B-T06, los costos relativos de PY-04, PY-05 y PY-07 y los criterios RQ-11, RQ-12 y RQ-14 |
+| Elección entre Azure y GCP (alternativas declaradas, decisión pendiente), de cola IT-07 o de gestor de secretos | Se revisan B-T01 a B-T06, los costos relativos de PY-04, PY-05 y PY-07 y los criterios RQ-11, RQ-12 y RQ-14 |
 | Formalización legal (PY-01) | Se actualiza el registro de empresa y se habilitan PY-09 y PY-10 |
 | Firma de un piloto | Se activan P-06, SN-04 e indicadores de campo |
 | Necesidad de vincular personal | Se activa PY-10 |

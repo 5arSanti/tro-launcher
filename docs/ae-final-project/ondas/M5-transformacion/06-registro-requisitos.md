@@ -17,9 +17,9 @@
 | RQ-13 | Aplicaciones | AP-02 y AP-03 deben autenticar con roles y CORS restringido | PR-03; RT-05, RT-06 | Objetivo TO-BE | PY-07 | Acceso anónimo rechazado |
 | RQ-14 | Tecnología | Entornos de demostración, laboratorio y piloto separados | PR-13; B-T01; tabla de entornos | Objetivo TO-BE | PY-07 | Laboratorio, demostración y piloto operan separados con el acceso definido en la tabla de entornos |
 | RQ-15 | Datos | Ningún dato personal en repositorios públicos | PI-13; PR-14 | Objetivo TO-BE | PY-07 | Revisión de AP-07 sin base de AP-08 |
-| RQ-16 | Aplicaciones | Facturación electrónica conforme a la DIAN (fuente normativa NO CONFIRMADO) | PR-15; N-06 | Objetivo TO-BE | PY-09 | Factura de prueba (requiere RQ-01) |
+| RQ-16 | Aplicaciones | Facturación electrónica conforme a la DIAN (fuente: Resolución DIAN 000165 de 2023) | PR-15; N-06 | Objetivo TO-BE | PY-09 | Factura de prueba (requiere RQ-01) |
 | RQ-17 | Aplicaciones | Interfaz autenticada con centro de control del operador | PR-06 | Objetivo TO-BE | PY-06 | Contrato de interfaz acordado con el operador |
 | RQ-18 | Negocio | El piloto requiere fuente de video y red acordadas, actas y evidencia de resultados | G-N07; SN-04 | Objetivo TO-BE | PY-08 | Actas firmadas con resultados y alcance |
-| RQ-19 | Negocio | La vinculación de personal debe hacerse con contrato, afiliaciones y tratamiento Ley 1581 de datos de empleados (fuente normativa de nómina NO CONFIRMADO) | G-N06; N-07 | Objetivo TO-BE (condicional) | PY-10 | Expediente por colaborador |
+| RQ-19 | Negocio | La vinculación de personal debe hacerse con contrato, afiliaciones y tratamiento Ley 1581 de datos de empleados (fuentes: Resolución DIAN 000013 de 2021, Ley 100 de 1993 y Decreto 1072 de 2015) | G-N06; N-07 | Objetivo TO-BE (condicional) | PY-10 | Expediente por colaborador |
 | RQ-20 | Negocio | Ninguna pieza pública afirma cliente, contrato, piloto firmado ni impacto no medido | PN-02; P-05 | Objetivo TO-BE | Todos | Revisión de claims en P-05 |
 

@@ -30,7 +30,7 @@ lang: es-CO
 
 LIRN es una microempresa de una sola persona que desarrolla TORNS, un prototipo que mide la demanda de pasajeros en estación con visión por computador y propone al centro de control un plan de despacho. Este informe integra los cinco puntos del taller final siguiendo el Método de Desarrollo de Arquitectura (ADM) de TOGAF (The Open Group, 2022): la visión y el negocio (fases A y B), los sistemas de información en datos y aplicaciones (fase C), la tecnología (fase D) y la transformación (fases E y F, con criterios de gobierno para G y H).
 
-La pregunta que guía el documento es: ¿cómo ayuda la Arquitectura Empresarial propuesta a que la organización alcance sus objetivos estratégicos y sea más eficiente durante los próximos cinco años? El capítulo 9 la responde. Cada capítulo resume su dominio y remite al entregable completo por su nombre.
+La pregunta que guía el documento es: ¿cómo ayuda la Arquitectura Empresarial propuesta a que la organización alcance sus objetivos estratégicos y sea más eficiente durante los próximos cinco años? El capítulo 9 la responde.
 
 # 3. Descripción de la organización
 
@@ -44,7 +44,7 @@ La pregunta que guía el documento es: ¿cómo ayuda la Arquitectura Empresarial
 | Producto | TORNS: detección y conteo de pasajeros con YOLO11s (Ultralytics, s. f.) y recomendación determinista de despacho | Observado |
 | Clientes | Ninguno; no hay piloto ni contrato | Observado |
 | Caso de estudio | El sistema TransMilenio y el SITP de Bogotá se usan como caso de estudio, no como cliente | Observado |
-| Evidencia de mercado | Encuesta del 17 de agosto de 2026 (n=20) y entrevista a un controlador del SITP, citado por su rol | Observado |
+| Evidencia de mercado | Encuesta del 17 de agosto de 2026 (n=20, formulario anónimo en Google Forms, que sigue en uso) y entrevista a un controlador del SITP, citado por su rol. El 80 % dejó pasar buses llenos dentro del último mes, al 65 % le pasa varias veces por semana y el 40 % se identifica con el desbalance entre oferta y demanda (Equipo TORNS, 2026) | Observado (cifras agregadas); uso del formulario: Observado por declaración del dueño (1 de noviembre de 2026) |
 
 La misión, la visión y los objetivos estratégicos OE-01 a OE-05 están en el entregable «Arquitectura de Negocio (Punto 1)». En síntesis: OE-01 convertir TORNS en un producto demostrable y controlado para un centro de control; OE-02 abrir un canal comercial honesto hacia operadores B2B y B2G; OE-03 proteger datos personales y evidencia según la Ley 1581 de 2012 (Congreso de la República de Colombia, 2012); OE-04 cerrar la brecha entre demanda medida y oferta recomendada; OE-05 preparar la firma para un primer piloto pagado.
 
@@ -62,7 +62,7 @@ Fase B del ADM. El entregable «Arquitectura de Negocio (Punto 1)» documenta el
 
 **Capacidades.** De diez capacidades, CAP-04 Detección y conteo y CAP-05 Recomendación de despacho son funcionales en prototipo; CAP-07 Integración en vivo con el operador, CAP-09 Gestión financiera y facturación y CAP-10 Gestión de talento humano están ausentes y son brechas hacia el Objetivo TO-BE.
 
-**Activos de información.** Siete activos, desde el registro de leads (AI-01), que contiene datos personales sujetos a la Ley 1581 de 2012, hasta facturación y contratos (AI-07), hoy inexistente.
+**Activos de información.** Siete activos, desde el registro de leads (AI-01), que contiene datos personales sujetos a la Ley 1581 de 2012 (Congreso de la República de Colombia, 2012), hasta facturación y contratos (AI-07), hoy inexistente.
 
 **Hallazgo principal.** Toda la operación descansa en una persona y en un equipo de cómputo. El negocio TO-BE agrega P-06 Piloto, P-07 Integración con el centro de control, P-08 Gestión financiera y P-09 Talento humano, este último condicional a que exista personal que vincular.
 
@@ -78,7 +78,7 @@ Los flujos son el técnico (FL-T: video, inferencia, conteo y plan), el comercia
 
 ![Flujo técnico FL-T](../ondas/M2-datos/diagramas/E-04-FL-T-tecnico.png)
 
-**Problemas centrales.** Los conteos y planes no se guardan, por lo que no hay historial ni forma de medir; los leads se capturan sin política de tratamiento ni la autorización previa que exigen los artículos 5 a 7 del Decreto 1377 de 2013 (Presidencia de la República de Colombia, 2013); los pesos del modelo, el dataset y los videos no tienen respaldo. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Las imágenes de personas en estación exigen tratar con cuidado los datos que pueden ser sensibles en el sentido del art. 5 de la Ley 1581 de 2012.
+**Problemas centrales.** Los conteos y planes no se guardan, por lo que no hay historial ni forma de medir; los leads se capturan sin política de tratamiento ni la autorización previa que exigen los artículos 5 a 7 del Decreto 1377 de 2013 (Presidencia de la República de Colombia, 2013); los pesos del modelo, el dataset y los videos no tienen respaldo. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Las imágenes de personas en estación exigen tratar con cuidado los datos que pueden ser sensibles en el sentido del art. 5 de la Ley 1581 de 2012 (Congreso de la República de Colombia, 2012).
 
 **Propuesta.** Modelo TO-BE con persistencia de conteos y planes por estación y fecha, registro versionado del modelo, gestor de leads con autorización y entidades de piloto, factura y contrato.
 
@@ -102,11 +102,11 @@ Fase D. El entregable «Arquitectura Tecnológica (Punto 4)» contiene el invent
 
 ![Diagrama tecnológico AS-IS](../ondas/M4-tecnologia/diagramas/E4a-tecnologia-as-is.png)
 
-**Situación AS-IS.** Todo corre en una sola estación de trabajo, con disco cerca de su capacidad y sin respaldos ni separación de entornos. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Algunos datos del inventario, como IT-EQ-04 e IT-RD-06, siguen NO CONFIRMADO.
+**Situación AS-IS.** Todo corre en una sola estación de trabajo, con disco cerca de su capacidad y sin respaldos ni separación de entornos. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y cámaras USB externas (usb1), sin fechas ni resultados registrados (NO CONFIRMADO), y hoy no existen segmentación de red, firewall ni VPN. Marca: Observado por declaración del dueño (1 de noviembre de 2026).
 
 ![Diagrama tecnológico TO-BE](../ondas/M4-tecnologia/diagramas/E4b-tecnologia-to-be.png)
 
-**Propuesta.** Cinco entornos (Desarrollo, Laboratorio, Demostración, Piloto y Público), almacén de objetos para modelos y videos, gestor de secretos, respaldo verificado y GPU bajo demanda para la inferencia. El proveedor de nube no está elegido y los costos no se fijan.
+**Propuesta.** Cinco entornos (Desarrollo, Laboratorio, Demostración, Piloto y Público), almacén de objetos para modelos y videos, gestor de secretos, respaldo verificado y GPU bajo demanda para la inferencia. Azure y GCP se mantienen como alternativas de nube, con decisión pendiente (Objetivo TO-BE); los costos quedan NO CONFIRMADO. Los nodos administrativos de facturación y nómina, condicionales a la formalización, se rigen por la Resolución 000165 de 2023 (Dirección de Impuestos y Aduanas Nacionales [DIAN], 2023), la Resolución 000013 de 2021 (DIAN, 2021), la Ley 100 de 1993 (Congreso de la República de Colombia, 1993) y el Decreto 1072 de 2015 (Presidencia de la República de Colombia, 2015).
 
 **Riesgos principales.** Los entregables de Aplicaciones y Tecnología registran 20 riesgos; se resumen así:
 
@@ -210,15 +210,25 @@ La organización resultante sigue siendo pequeña, pero deja de depender de una 
 
 # 11. Bibliografía
 
+Congreso de la República de Colombia. (1993, 23 de diciembre). *Ley 100 de 1993, por la cual se crea el sistema de seguridad social integral y se dictan otras disposiciones*. Función Pública, Gestor Normativo. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=5248
+
 Congreso de la República de Colombia. (2008, 5 de diciembre). *Ley 1258 de 2008, por medio de la cual se crea la sociedad por acciones simplificada*. Función Pública, Gestor Normativo. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=34130
 
 Congreso de la República de Colombia. (2012, 17 de octubre). *Ley Estatutaria 1581 de 2012, por la cual se dictan disposiciones generales para la protección de datos personales*. Función Pública, Gestor Normativo. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981
+
+Dirección de Impuestos y Aduanas Nacionales. (2021, 11 de febrero). *Resolución 000013 de 2021, por la cual se implementa y desarrolla en el sistema de facturación electrónica la funcionalidad del documento soporte de pago de nómina electrónica y se adopta el anexo técnico*. https://www.dian.gov.co/normatividad/Normatividad/Resoluci%C3%B3n%20000013%20de%2011-02-2021.pdf
+
+Dirección de Impuestos y Aduanas Nacionales. (2023, 1 de noviembre). *Resolución 000165 de 2023, por la cual se desarrolla el sistema de facturación, los proveedores tecnológicos, se adopta la versión 1.9 del anexo técnico de factura electrónica de venta, se expide el anexo técnico 1.0 del documento equivalente electrónico, y se dictan otras disposiciones en materia del sistema de facturación*. https://www.dian.gov.co/normatividad/Normatividad/Resoluci%C3%B3n%20000165%20de%2001-11-2023.pdf
+
+Equipo TORNS. (2026). *Guía Actividad 2, Ingeniería Aplicada* [Documento interno no publicado].
 
 Object Management Group. (2014). *Business Process Model and Notation (BPMN), Version 2.0.2*. https://www.omg.org/spec/BPMN/2.0.2/
 
 The Open Group. (2022). *The TOGAF Standard, 10th Edition*. https://www.opengroup.org/togaf
 
 Presidencia de la República de Colombia. (2013, 27 de junio). *Decreto 1377 de 2013, por el cual se reglamenta parcialmente la Ley 1581 de 2012*. Función Pública, Gestor Normativo. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=53646
+
+Presidencia de la República de Colombia. (2015, 26 de mayo). *Decreto 1072 de 2015, Decreto Único Reglamentario del Sector Trabajo*. Función Pública, Gestor Normativo. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72173
 
 Presidencia de la República de Colombia. (2019, 5 de junio). *Decreto 957 de 2019, por el cual se adiciona el capítulo 13 al Título 1 de la Parte 2 del Libro 2 del Decreto 1074 de 2015*. Función Pública, Gestor Normativo. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=94550
 

@@ -117,7 +117,20 @@ CRM, ERP e identidad de operador: Objetivo TO-BE.
 
 ## 9. Tecnología
 
-Estado: cerrada en M4 (Arquitectura Tecnológica, Punto 4). AS-IS Observado: estación de trabajo del fundador como único entorno, Docker local, GitHub Pages, Git, pesos `.pt`, OpenCV (archivo, USB o RTSP), cámaras USB usb0 y usb1, GPU obsoleta y disco cerca de su capacidad, sin respaldos. Riesgos RT-01 a RT-13 del Punto 4 (RT-12, gestión de secretos, NO CONFIRMADO). Objetivo TO-BE: AP-03a y AP-03b separados con cola IT-07 (producto NO CONFIRMADO), entornos de laboratorio, demostración y piloto separados, nodos alojables en nube (proveedor sin elegir), GPU bajo demanda, almacén de objetos versionado y autenticación N-02. Obligaciones de facturación electrónica, nómina electrónica y seguridad social: NO CONFIRMADO. IT-EQ-04 Pruebas con cámaras: sin sesión documentada, NO CONFIRMADO. IT-RD-06 Segmentación, firewall o VPN: sin evidencia, NO CONFIRMADO.
+Estado: cerrada en M4 (Arquitectura Tecnológica, Punto 4). AS-IS Observado: estación de trabajo del fundador como único entorno, Docker local, GitHub Pages, Git, pesos `.pt`, OpenCV (archivo, USB o RTSP), cámaras USB usb0 y usb1, GPU obsoleta y disco cerca de su capacidad, sin respaldos. Riesgos RT-01 a RT-13 del Punto 4 (RT-12, gestión de secretos, NO CONFIRMADO). Objetivo TO-BE: AP-03a y AP-03b separados con cola IT-07 (producto NO CONFIRMADO), entornos de laboratorio, demostración y piloto separados, nodos alojables en nube (Azure y GCP como alternativas, decisión pendiente; costos NO CONFIRMADO), GPU bajo demanda, almacén de objetos versionado y autenticación N-02. Fuentes normativas revisadas el 1 de noviembre de 2026: Resolución DIAN 000165 de 2023 (facturación electrónica), Resolución DIAN 000013 de 2021 (nómina electrónica), Ley 100 de 1993 (afiliación y aportes a seguridad social) y Decreto 1072 de 2015 (PILA para teletrabajadores). IT-EQ-04 Pruebas con cámaras: pruebas con cámaras USB integradas en portátiles (usb0) y cámaras USB externas (usb1), Observado por declaración del dueño (1 de noviembre de 2026); fechas y resultados NO CONFIRMADO. IT-RD-06 Segmentación, firewall o VPN: no existen actualmente, Observado por declaración del dueño (1 de noviembre de 2026).
+
+Resultados agregados de la encuesta del 17 de agosto de 2026 (n=20, formulario anónimo), tomados del documento interno no publicado «Guía Actividad 2, Ingeniería Aplicada» (Equipo TORNS, 2026). Marca: Observado (cifras agregadas; sin datos personales de encuestados). Las etiquetas siguen las del documento:
+
+- Frecuencia de uso: el 30 % usa el sistema a diario y el 50 % lo usa 3 o más veces por semana.
+- Franjas horarias (opción múltiple): el 80 % viaja entre 4:00 y 7:30 p. m. y el 60 % entre 6:00 y 8:30 a. m.
+- Hora fija de llegada: el 80 % tiene hora de llegada; para el 35 % llegar tarde tiene consecuencias.
+- Recencia del problema: el 55 % dejó pasar buses llenos en los últimos 7 días y el 80 % dentro del último mes.
+- Frecuencia del problema: al 65 % le pasa varias veces por semana.
+- Tiempo adicional perdido por un solo evento: el 70 % pierde 15 minutos o más y el 35 % más de media hora.
+- Tiempo estimado perdido al mes, estimación del equipo que cruza la duración y la frecuencia declaradas: promedio de 3 horas por persona; el 40 % está en las bandas de 3 a 6 h (15 %) y de más de 6 h (25 %).
+- Estrategias actuales (opción múltiple): el 75 % sale más temprano, el 30 % paga taxi o aplicación y el 25 % no hace nada.
+- Gasto en alternativas el mes pasado: el 90 % gastó algo y el 65 % gastó $50.000 o más.
+- Afirmación con la que se identifica: desbalance entre oferta y demanda 40 %, estrés 25 % y puntualidad 20 %.
 
 ## 10. Brechas y proyectos
 
@@ -145,6 +158,7 @@ Candidatos de origen, identificados al cierre de M1:
 - Procesos: P-01 a P-05.
 - Superficies de software: `lirn-web-main`, `tro-frontend`, `tro-backend`, `yolo-train-routes-optimization`.
 - Encuesta 17 de agosto de 2026, n=20. Entrevista a controlador SITP (rol, no nombre).
+- Formulario de la encuesta en uso (AP-13 Google Forms). Observado por declaración del dueño (1 de noviembre de 2026).
 - Identidad TRO prohibida en entregables nuevos.
 - Lead no es cliente.
 - Observado no se presenta como Objetivo. Objetivo no se presenta como Observado.

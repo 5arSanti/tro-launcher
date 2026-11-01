@@ -17,7 +17,7 @@ Cada proyecto se cierra solo si cumple sus requisitos del Registro de Requisitos
 ## 3. Reglas de gobierno
 
 - Claims: aplica RQ-20 y PN-02. Un lead no es cliente. TransMilenio es caso de estudio, no cliente (Observado).
-- Datos personales: toda recolección requiere autorización previa e informada del titular (artículo específico NO CONFIRMADO). La Ley 1581 de 2012, art. 5, define los datos sensibles; los datos de seguridad social y salud de empleados que trataría P-09 pueden serlo. PY-03 y PY-10 se gobiernan por esta regla.
+- Datos personales: toda recolección requiere autorización previa e informada del titular (artículo específico NO CONFIRMADO). La Ley 1581 de 2012, art. 5, define los datos sensibles; son sensibles los atributos de salud de los empleados que trataría P-09; la afiliación a seguridad social es obligatoria para quien tenga contrato de trabajo y el empleador responde por el pago de los aportes (Ley 100 de 1993, arts. 15 y 22); para teletrabajadores, los aportes se pagan mediante PILA (Decreto 1072 de 2015, art. 2.2.1.5.7); su clasificación como dato sensible queda NO CONFIRMADO. PY-03 y PY-10 se gobiernan por esta regla.
 - Decisión humana: la recomendación de despacho no sustituye la decisión del centro de control (PN-04).
 - Métricas: toda métrica del modelo cita fuente y alcance (RQ-10).
 - Cambios: ningún hecho bloqueado del registro de empresa se cambia sin aprobación de Santiago.
