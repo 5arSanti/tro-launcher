@@ -127,7 +127,7 @@ Resultados agregados de la encuesta del 17 de agosto de 2026 (n=20, formulario a
 - Recencia del problema: el 55 % dejó pasar buses llenos en los últimos 7 días y el 80 % dentro del último mes.
 - Frecuencia del problema: al 65 % le pasa varias veces por semana.
 - Tiempo adicional perdido por un solo evento: el 70 % pierde 15 minutos o más y el 35 % más de media hora.
-- Tiempo estimado perdido al mes, estimación del equipo que cruza la duración y la frecuencia declaradas: promedio de 3 horas por persona; el 40 % pierde 3 horas o más y el 25 % más de 6 horas.
+- Tiempo estimado perdido al mes, estimación del equipo que cruza la duración y la frecuencia declaradas: promedio de 3 horas por persona; el 40 % está en las bandas de 3 a 6 h (15 %) y de más de 6 h (25 %).
 - Estrategias actuales (opción múltiple): el 75 % sale más temprano, el 30 % paga taxi o aplicación y el 25 % no hace nada.
 - Gasto en alternativas el mes pasado: el 90 % gastó algo y el 65 % gastó $50.000 o más.
 - Afirmación con la que se identifica: desbalance entre oferta y demanda 40 %, estrés 25 % y puntualidad 20 %.
