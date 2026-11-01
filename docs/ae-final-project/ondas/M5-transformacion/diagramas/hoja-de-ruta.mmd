@@ -1,0 +1,28 @@
+flowchart LR
+  subgraph H1["Corto plazo 0-1 año"]
+    PY01[PY-01 Formalización legal]
+    PY03[PY-03 Canal Ley 1581]
+    PY07[PY-07 Seguridad y respaldo]
+    PY09[PY-09 Gestión financiera y facturación P-08]
+    PY02[PY-02 Identidad pública]
+    PY04[PY-04 Historial de conteos]
+  end
+  subgraph H2["Mediano plazo 1-3 años"]
+    PY05[PY-05 Inferencia desacoplada y evaluación]
+    PY08[PY-08 Primer piloto pagado]
+  end
+  subgraph H3["Largo plazo 3-5 años"]
+    PY06[PY-06 Interoperabilidad centro de control]
+  end
+  PY10[PY-10 Talento humano P-09<br/>condicional, sin fecha]
+  PY01 --> PY03
+  PY01 --> PY09
+  PY01 -.-> PY10
+  PY07 --> PY05
+  PY04 --> PY05
+  PY05 --> PY08
+  PY03 --> PY08
+  PY07 --> PY08
+  PY09 --> PY08
+  PY08 --> PY06
+  style PY10 stroke-dasharray: 5 5

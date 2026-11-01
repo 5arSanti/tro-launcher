@@ -1,0 +1,36 @@
+# Análisis de Brechas consolidado (Fase E del ADM)
+
+| ID | Dominio | AS-IS (qué existe hoy) | Marca AS-IS | TO-BE (qué hace falta) | Qué debe cambiar | Trazas | Estado de insumo |
+|----|---------|------------------------|-------------|------------------------|------------------|--------|------------------|
+| B-N01 | Negocio | Sin NIT ni matrícula mercantil | Observado | S.A.S. formalizada | Registro ante Cámara de Comercio y DIAN | G-N01; PI-17 | Completo |
+| B-N02 | Negocio | Banda pública de tres nombres frente a equipo de una persona (Johel Arias); identificadores tro-* residuales | Observado | Comunicación alineada al equipo vigente | Actualizar banda y retirar residuos TRO | G-N02; PI-07; PR-09, PR-10 | Completo |
+| B-N03 | Negocio | Leads recopilados en hoja sin respuesta ni seguimiento | Observado por declaración del dueño (1 de noviembre de 2026) | Embudo con atención y seguimiento (CAP-03) | Incorporar paso de atención al proceso comercial | G-N03; PI-02, PI-16; PR-17 | Completo |
+| B-N04 | Negocio | Sin evaluación del modelo en estación; recall 0,55 es métrica de entrenamiento de la última época sobre 1.000 imágenes del COCO Person Dataset de Roboflow, no de estación | Observado | Evaluación con video de estación acordado con operador | Definir protocolo de evaluación en campo | G-N05; RA-03, RA-05; RT-04; PR-16 | Completo |
+| B-N05 | Negocio | CAP-07, CAP-09 y CAP-10 ausentes | Observado | Capacidades con proceso (P-07, P-08, P-09) | Diseñar interoperabilidad, facturación y talento | G-N06; PR-06, PR-15 | Completo |
+| B-N06 | Negocio | Sin proceso de contratación ni piloto | Observado | P-06 y SN-04 | Diseñar proceso de piloto pagado | G-N07 | Completo |
+| B-N07 | Negocio | Dependencia de una sola persona para las cinco áreas | Observado | Roles futuros (Comercial, Ingeniería, Operación, Calidad) | Plan de talento ligado a CAP-10; documento de recuperación y segundo custodio | G-N06; PR-15; RT-01 | Completo |
+| B-D01 | Datos | Conteos y planes solo en memoria | Observado | Historial comparable por estación | Persistencia gestionada | G-N04; PI-01; PR-05; RT-08 | Completo |
+| B-D02 | Datos | Formulario sin política Ley 1581 ni casilla de autorización; datos en cuenta personal de Google | Observado por declaración del dueño (1 de noviembre de 2026) | Política, aviso y autorización publicados | Formalizar tratamiento de datos personales | G-N03; PI-02, PI-17; PR-02 | Completo (aviso requiere B-N01) |
+| B-D03 | Datos | Sin diccionario, propietario de dato ni retención | Observado (ausencia) | Gobierno de datos mínimo | Catálogo y política de retención | PI-03, PI-11, PI-12 | Completo |
+| B-D04 | Datos | Cuenta de anotador con datos personales en repositorio público | Observado | Datos personales fuera del repositorio | Retirar y controlar base de Label Studio (AP-08) | PI-13; PR-14; RA-06; RT-09 | Completo |
+| B-D05 | Datos | Inconsistencias de identificadores y datos de demostración legibles como reales | Observado | Catálogo de estaciones único y datos de demo rotulados | Corregir y rotular | PI-05, PI-06, PI-09; PR-08 | Completo |
+| B-D06 | Datos | Sin respaldos de pesos, dataset, base de etiquetado ni videos | Observado por declaración del dueño (1 de noviembre de 2026) | Respaldo fuera de la estación con prueba de restauración | Política de respaldo y almacén de objetos versionado | PI-18; RT-02 | Completo |
+| B-A01 | Aplicaciones | AP-06 (hoja con Apps Script) como sustituto de CRM, sin acuse ni reintento | Observado | Gestor estructurado de leads (N-01) | Reemplazar AP-06 con integración IT-01 | PR-01; PI-02 | Completo |
+| B-A02 | Aplicaciones | AP-02 y AP-03 sin autenticación; CORS abierto | Observado | Identidad y roles (N-02) | Autenticación y CORS restringido | PR-03; PI-14; RT-05, RT-06 | Completo |
+| B-A03 | Aplicaciones | Inferencia ligada a la apertura del stream en AP-03 | Observado | AP-03a API de despacho y AP-03b inferencia desacoplada (N-03) | Partición lógica y cola de conteos | G-N05; PR-04 | Completo |
+| B-A04 | Aplicaciones | AP-05 copiado a mano, deriva de versiones entre AP-04 y AP-03 | Observado | Registro versionado del modelo (N-05) | Publicación de artefacto con metadatos | PR-07 | Completo |
+| B-A05 | Aplicaciones | Sin integración con centro de control | Observado (ausencia) | Interfaz autenticada IT-06 | Acordar contrato de interfaz con operador | G-N06; PR-06 | Completo |
+| B-A06 | Aplicaciones | Sin aplicación de facturación y contabilidad | Observado (ausencia) | Facturación electrónica SaaS (N-06) | Adoptar servicio | G-N06; PR-15 | Completo; requiere B-N01 |
+| B-A07 | Aplicaciones | Código sin uso, textos sin respaldo, sin pruebas | Observado | Código limpio, textos alineados, pruebas | Saneamiento | PR-10, PR-11, PR-12; RA-03; RT-07 | Completo |
+| B-T01 | Tecnología | Un solo entorno (desarrollo en la estación del fundador) | Observado | Entornos de laboratorio, demostración y piloto separados según la tabla de entornos del Punto 4 | Contenedores separados para AP-03a, AP-03b, laboratorio y demostración | PR-13; PI-18; tabla de entornos | Completo |
+| B-T02 | Tecnología | Configuración de desarrollo expuesta: CORS abierto, depuración y recarga activas, puerto publicado | Observado | Imagen de ejecución mínima y perfiles de entorno | Endurecer imágenes; pruebas e integración continua del backend | PR-12; RT-06 y RT-07 | Completo |
+| B-T03 | Tecnología | Plantilla de secretos presente; manejo real sin evidencia | NO CONFIRMADO | Gestor de secretos por entorno y registro de accesos | Adoptar gestor de secretos | RT-12 | Completo; estado AS-IS NO CONFIRMADO |
+| B-T04 | Tecnología | Solo cámaras USB usb0 y usb1; GPU de la estación obsoleta; inferencia acoplada al video | Observado | Fuente de campo definida con un operador; AP-03b continuo con cola IT-07; GPU bajo demanda | Evaluación de infraestructura de campo y cola de eventos (producto NO CONFIRMADO) | RT-04, RT-11 y RT-13; G-N05 | Completo |
+| B-T05 | Tecnología | Publicación y leads en cuentas de GitHub y Google | Observado | Espejo de repositorios y N-01 | Plan de continuidad | RT-10 | Completo |
+| B-T06 | Tecnología | Disco de la única estación cerca de su capacidad y equipos obsoletos | Observado por declaración del dueño (1 de noviembre de 2026) | Almacén de objetos fuera de la estación y GPU bajo demanda | Retiro de duplicados y migración de artefactos | RT-03 y RT-13 | Completo |
+
+Totales: 26 brechas (Negocio 7, Datos 6, Aplicaciones 7, Tecnología 6). Los riesgos tecnológicos RT-01 a RT-13 quedan trazados a brechas de los cuatro dominios; las brechas B-T01 a B-T06 se trazan además a la tabla de entornos, a la cola IT-07 y al diagrama tecnológico TO-BE. Quedan NO CONFIRMADO: IT-EQ-04 Pruebas con cámaras (sin sesión documentada) e IT-RD-06 Segmentación, firewall o VPN (sin evidencia).
+
+Correspondencia con las brechas de negocio del TO-BE de Negocio: B-N01 a B-N06 corresponden a G-N01 a G-N03, G-N05, G-N06 y G-N07; G-N04 se consolida en B-D01. B-N07 es una brecha adicional de M5.
+
+Nota: RA-01 a RA-07 son los riesgos de la Arquitectura de Aplicaciones y RT-01 a RT-13 los de la Arquitectura Tecnológica.

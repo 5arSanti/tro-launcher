@@ -117,11 +117,13 @@ CRM, ERP e identidad de operador: Objetivo TO-BE.
 
 ## 9. Tecnología
 
-Se detalla en M4. AS-IS observado: estación de trabajo del fundador, Docker local, GitHub Pages, Git, pesos `.pt`, OpenCV (archivo / USB / RTSP). Sin granja GPU de producción.
+Estado: cerrada en M4 (Arquitectura Tecnológica, Punto 4). AS-IS Observado: estación de trabajo del fundador como único entorno, Docker local, GitHub Pages, Git, pesos `.pt`, OpenCV (archivo, USB o RTSP), cámaras USB usb0 y usb1, GPU obsoleta y disco cerca de su capacidad, sin respaldos. Riesgos RT-01 a RT-13 del Punto 4 (RT-12, gestión de secretos, NO CONFIRMADO). Objetivo TO-BE: AP-03a y AP-03b separados con cola IT-07 (producto NO CONFIRMADO), entornos de laboratorio, demostración y piloto separados, nodos alojables en nube (proveedor sin elegir), GPU bajo demanda, almacén de objetos versionado y autenticación N-02. Obligaciones de facturación electrónica, nómina electrónica y seguridad social: NO CONFIRMADO. IT-EQ-04 Pruebas con cámaras: sin sesión documentada, NO CONFIRMADO. IT-RD-06 Segmentación, firewall o VPN: sin evidencia, NO CONFIRMADO.
 
 ## 10. Brechas y proyectos
 
-Candidatos identificados y actualizados al cierre de M1 (no son portafolio cerrado; M5 decide):
+Estado: cerrada en M5 (Transformación, Punto 5). Los candidatos C-01 a C-08 quedan resueltos en el portafolio PY-01 a PY-10: C-06 se separa en PY-06 para CAP-07, PY-09 para CAP-09 y P-08, y PY-10 para CAP-10 y P-09, condicional y sin fecha. Las 26 brechas consolidadas, la priorización y la hoja de ruta 0-1, 1-3 y 3-5 años están en la carpeta M5-transformacion. Todos los proyectos son Objetivo TO-BE; ninguno está en ejecución (Observado).
+
+Candidatos de origen, identificados al cierre de M1:
 
 - Formalización legal S.A.S. ante Cámara de Comercio de Bogotá y DIAN (NIT y matrícula mercantil).
 - Alinear la banda pública de tres nombres en `/torns` con el equipo actual (Johel Arias) y retirar identificadores técnicos residuales `tro-*`.
