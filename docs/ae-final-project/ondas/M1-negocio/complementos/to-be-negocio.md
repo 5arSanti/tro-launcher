@@ -43,9 +43,9 @@ Se conservan P-01 a P-05 y se proponen procesos nuevos solo donde una capacidad 
 | P-03 Realización del producto | Misional | Incluye evaluación en estación y versionado de modelo y regla antes de cada entrega | CAP-04, CAP-05, CAP-08 |
 | P-04 Acompañamiento | Misional | Se extiende de la demostración al acompañamiento de piloto con registro de incidencias | CAP-06 |
 | P-05 Evidencia, calidad y mejora | Apoyo | Custodia la evidencia del piloto y verifica que todo indicador publicado tenga fuente | CAP-02 |
-| P-06 Contratación y piloto (aprobado por Santiago (1 de noviembre de 2026)) | Misional | Desde la propuesta aprobada hasta el acta de inicio y cierre del piloto. Condición de entrada: evaluar el modelo con video de estación y acordar con el operador la fuente de video y la red (Objetivo TO-BE) | CAP-03, CAP-06, CAP-09 |
-| P-07 Integración con el centro de control (aprobado por Santiago (1 de noviembre de 2026)) | Misional | Acuerdo técnico y operativo de intercambio con el operador; operador humano en el circuito | CAP-07 |
-| P-08 Gestión financiera y facturación (aprobado por Santiago (1 de noviembre de 2026)) | Apoyo | Facturación electrónica, contabilidad y contratos comerciales. Entradas: NIT y matrícula de C-01 y contratos de P-06 | CAP-09 |
+| P-06 Contratación y piloto (aprobado por Santiago el 1 de noviembre de 2026) | Misional | Desde la propuesta aprobada hasta el acta de inicio y cierre del piloto. Condición de entrada: evaluar el modelo con video de estación y acordar con el operador la fuente de video y la red (Objetivo TO-BE) | CAP-03, CAP-06, CAP-09 |
+| P-07 Integración con el centro de control (aprobado por Santiago el 1 de noviembre de 2026) | Misional | Acuerdo técnico y operativo de intercambio con el operador; operador humano en el circuito | CAP-07 |
+| P-08 Gestión financiera y facturación (aprobado por Santiago el 1 de noviembre de 2026) | Apoyo | Facturación electrónica, contabilidad y contratos comerciales. Entradas: NIT y matrícula de C-01 y contratos de P-06 | CAP-09 |
 | P-09 Gestión del talento humano (aprobado por Santiago el 1 de noviembre de 2026, separado de P-08) | Apoyo | Vinculación, nómina, seguridad social y desvinculación; trata datos personales de empleados bajo la Ley 1581. Entradas: necesidad de personal y NIT de C-01 | CAP-10 |
 
 <!-- reescribir Santiago -->
@@ -58,8 +58,8 @@ Cadena de valor TO-BE: las actividades primarias "Propuesta, contrato y piloto p
 | SN-01 Información institucional y recepción de interés | Diseñado AS-IS; en la práctica el interés se recibe y no se responde (Observado) | Con aviso de privacidad, autorización de tratamiento y respuesta trazable bajo CAP-03 |
 | SN-02 Demostración guiada de medición y recomendación | Observado | Se mantiene como paso previo a la propuesta |
 | SN-03 Verificación de evidencia y control de no-claims | Observado | Se aplica también a los informes del piloto |
-| SN-04 Piloto de medición de demanda en estación (aprobado por Santiago (1 de noviembre de 2026)) | No existe (Observado) | Servicio pagado y acotado en tiempo y estaciones, con informe de resultados. Condición previa: evaluación del modelo con video de estación y acuerdo con el operador sobre fuente de video y red |
-| SN-05 Soporte y mejora del servicio (aprobado por Santiago (1 de noviembre de 2026)) | No existe (Observado) | Atención de incidencias y ajustes acordados con el operador |
+| SN-04 Piloto de medición de demanda en estación (aprobado por Santiago el 1 de noviembre de 2026) | No existe (Observado) | Servicio pagado y acotado en tiempo y estaciones, con informe de resultados. Condición previa: evaluación del modelo con video de estación y acuerdo con el operador sobre fuente de video y red |
+| SN-05 Soporte y mejora del servicio (aprobado por Santiago el 1 de noviembre de 2026) | No existe (Observado) | Atención de incidencias y ajustes acordados con el operador |
 
 Sin precio, duración ni número de estaciones: NO CONFIRMADO, lo define el Roadmap de Transformación.
 
