@@ -9,6 +9,6 @@ Los horizontes son relativos al inicio de la transformación; no se fijan fechas
 | Largo plazo (3-5 años) | PY-06 | Intercambio autenticado con el centro de control, con decisión humana |
 | Condicional, sin fecha | PY-10 | Se activa cuando haya personal que vincular (NO CONFIRMADO) |
 
-Dependencias (Diseñado AS-IS): PY-01 precede a PY-03 (aviso con Responsable identificado), PY-09 y PY-10. PY-04 y PY-07 preceden a PY-05. PY-08 requiere PY-03, PY-05, PY-07 y PY-09. PY-06 requiere un operador real (PY-08).
+Dependencias, Objetivo TO-BE (criterio del equipo): PY-01 precede a PY-03 (aviso con Responsable identificado), PY-09 y PY-10. PY-04 y PY-07 preceden a PY-05. PY-08 requiere PY-03, PY-05, PY-07 y PY-09. PY-06 requiere un operador real (PY-08).
 
 Diagrama: Hoja de Ruta (diagrama de la onda M5, fuente Mermaid y PNG).

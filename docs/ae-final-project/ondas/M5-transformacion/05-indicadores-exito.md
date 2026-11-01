@@ -4,8 +4,8 @@ No se afirma impacto actual. La línea base es NO CONFIRMADO cuando no hay medic
 
 | ID | Tipo del enunciado | Indicador | Fórmula | Línea base | Meta (Objetivo TO-BE) | Proyecto | OE |
 |----|--------------------|-----------|---------|------------|------------------------|----------|----|
-| IN-01 | Reducción de tiempos | Tiempo de primera respuesta a un lead | promedio (fecha de respuesta menos fecha de recepción) por periodo | Observado por declaración del dueño: los leads no se responden | Todo lead con respuesta registrada | PY-03 | OE-02 |
-| IN-02 | Reducción de tiempos | Tiempo de restauración tras pérdida del equipo | tiempo entre la falla simulada y el servicio restaurado | Observado por declaración del dueño: no hay respaldo | Restauración documentada y probada | PY-07 | OE-01 |
+| IN-01 | Reducción de tiempos | Tiempo de primera respuesta a un lead | promedio (fecha de respuesta menos fecha de recepción) por periodo | Observado por declaración del dueño (1 de noviembre de 2026): los leads no se responden | Todo lead con respuesta registrada | PY-03 | OE-02 |
+| IN-02 | Reducción de tiempos | Tiempo de restauración tras pérdida del equipo | tiempo entre la falla simulada y el servicio restaurado | Observado por declaración del dueño (1 de noviembre de 2026): no hay respaldo | Restauración documentada y probada | PY-07 | OE-01 |
 | IN-03 | Reducción de tiempos | Tiempo de espera en andén durante el piloto | promedio de espera medida con el operador, antes y después | NO CONFIRMADO | Reducción acordada con el operador | PY-08 | OE-01 |
 | IN-04 | Disminución de costos | Pasos manuales para publicar el modelo | número de pasos manuales por publicación | Observado: el modelo se copia a mano (PR-07) | Publicación sin pasos manuales | PY-05 | OE-01 |
 | IN-05 | Disminución de costos | Despachos sin respaldo de demanda observada | despachos sin recomendación asociada / despachos totales | NO CONFIRMADO; requiere piloto | Reducción acordada con el operador | PY-08, PY-04 | OE-04 |

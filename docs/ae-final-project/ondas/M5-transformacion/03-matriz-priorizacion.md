@@ -10,7 +10,7 @@ Escalas cualitativas (no hay montos; el costo es un nivel relativo):
 |----------|---------|-------------|----------------|---------------|-----------|
 | PY-01 | Alto | Baja | Bajo | Habilita PY-03, PY-08, PY-09 y PY-10 | 1 |
 | PY-03 | Alto | Media | Bajo | Riesgo actual Ley 1581 (Observado) | 1 |
-| PY-07 | Alto | Media | Medio | Sin respaldos ni entornos separados (Observado por declaración del dueño); requiere almacén de objetos, gestor de secretos y entornos separados según la propuesta TO-BE de la Arquitectura Tecnológica; RT-02, RT-12 | 1 |
+| PY-07 | Alto | Media | Medio | Sin respaldos ni entornos separados (Observado por declaración del dueño (1 de noviembre de 2026)); requiere almacén de objetos, gestor de secretos y entornos separados según la propuesta TO-BE de la Arquitectura Tecnológica; RT-02, RT-12 | 1 |
 | PY-09 | Alto | Media | Medio | Precondición del piloto; requiere PY-01 y un servicio de facturación | 1 |
 | PY-02 | Medio | Baja | Bajo | Cambios de texto | 2 |
 | PY-04 | Alto | Media | Medio | Base de indicadores; requiere N-04 en el nodo de datos alojable en nube, proveedor sin elegir | 2 |
