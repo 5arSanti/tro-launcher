@@ -176,7 +176,7 @@ N-02 precede a IT-06. N-04 precede a cualquier análisis histórico. AP-03b prec
 ## 3.6 Relación con las demás arquitecturas
 
 <!-- reescribir Santiago -->
-- Negocio: la autenticación con roles de operador en la consola y en la API, el registro versionado del modelo y la facturación quedan recogidos como necesidades de aplicación en el TO-BE de negocio, con el registro versionado del modelo ligado a P-03 (CAP-04 y CAP-08) la facturación ligada a P-08 y CAP-09 (N-06) y la gestión de personal y nómina ligada a P-09 y CAP-10 (N-07), procesos aprobados por Santiago el 1 de noviembre de 2026.
+- Negocio: la autenticación con roles de operador en la consola y en la API, el registro versionado del modelo y la facturación quedan recogidos como necesidades de aplicación en el TO-BE de negocio, con el registro versionado del modelo ligado a P-03 (CAP-04 y CAP-08), la facturación ligada a P-08 y CAP-09 (N-06) y la gestión de personal y nómina ligada a P-09 y CAP-10 (N-07), procesos aprobados por Santiago el 1 de noviembre de 2026.
 - Datos: los flujos F-01 a F-17 se cruzaron con este mapa. El evento IT-07 no transporta total_objects, porque es un dato derivado que el modelo lógico conserva en observacion_conteo.
 - Tecnología: la cola de IT-07, el proveedor de identidad y los entornos separados de AP-03a y AP-03b se definen en la Arquitectura Tecnológica.
 
