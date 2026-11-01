@@ -16,7 +16,7 @@ La Arquitectura Tecnológica traduce las necesidades de la Arquitectura de Aplic
 | IT-EQ-01 | Estación del fundador | Intel Core i5-10400 a 2,90 GHz, 48 GB de RAM, NVIDIA GeForce GTX 1050 Ti de 4 GB, 1,14 TB de almacenamiento con 975 GB usados (cerca del 85 %), Windows de 64 bits | Observado por declaración del dueño (1 de noviembre de 2026) |
 | IT-EQ-02 | GPU de entrenamiento | La misma GTX 1050 Ti; la salida del cuaderno registra PyTorch 2.7.1 con CUDA 11.8 y Ultralytics 8.3.228 | Observado |
 | IT-EQ-03 | Cámaras | Cámara integrada usb0 y cámara USB externa usb1 | Observado por declaración del dueño (1 de noviembre de 2026) |
-| IT-EQ-04 | Pruebas con cámaras | Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1); no hay fechas ni resultados registrados | Observado por declaración del dueño (1 de noviembre de 2026) / NO CONFIRMADO (fechas y resultados) |
+| IT-EQ-04 | Pruebas con cámaras | Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1); no hay fechas ni resultados registrados | Observado por declaración del dueño (1 de noviembre de 2026); fechas y resultados NO CONFIRMADO |
 | IT-EQ-05 | Servidores de producción | No existen | Observado |
 | IT-EQ-06 | GPU de producción | No existe | Observado |
 
@@ -188,7 +188,7 @@ Cada componente TO-BE se despliega por separado. Sin cifras ni proveedores.
 | AP-10 SharePoint | SaaS | SaaS de apoyo y destino de respaldo documental | Objetivo TO-BE |
 | AP-11 Correo | SaaS | SaaS de apoyo, sin cambio | Objetivo TO-BE |
 | AP-12 Google Fonts | SaaS externo | Fuente servida desde el nodo público | Objetivo TO-BE |
-| AP-13 Google Forms | SaaS en uso (Observado por declaración del dueño (1 de noviembre de 2026)) | SaaS de apoyo mientras se use | Objetivo TO-BE |
+| AP-13 Google Forms | SaaS. Sigue en uso. Observado por declaración del dueño (1 de noviembre de 2026). | SaaS de apoyo mientras se use | Objetivo TO-BE |
 | N-06 Facturación (P-08, CAP-09) | No existe | Nodo SaaS administrativo, componente separado; se implanta después de C-01 | Objetivo TO-BE |
 | N-07 Personal y nómina (P-09, CAP-10) | No existe | Nodo SaaS administrativo, componente separado; condicional a que haya personal que vincular y a C-01 | Objetivo TO-BE, condicional |
 

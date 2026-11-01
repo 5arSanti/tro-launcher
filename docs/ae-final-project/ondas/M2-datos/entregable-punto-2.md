@@ -32,7 +32,7 @@ El inventario identifica 23 conjuntos de datos (D-01 a D-23) y los ubica dentro 
 | Evidencia | D-02, D-03 | AI-02 | Existente | Encuesta del 17 de agosto de 2026 (n=20) y entrevista a un controlador SITP, por rol | Observado (registro y documento de resultados del equipo «Guía Actividad 2, Ingeniería Aplicada», solo cifras agregadas) / NO CONFIRMADO (respuestas individuales y soporte de las notas) |
 
 <!-- reescribir Santiago -->
-Dos hallazgos del inventario condicionan el resto de la sección. Primero, la base SQLite de Label Studio (AP-08) está versionada en el repositorio público de AP-04 y contiene una cuenta de usuario con nombre, correo, teléfono y credencial (D-14, Observado; los valores no se reproducen). Segundo, el dataset de entrenamiento no está en el repositorio: las cifras de 3.694 imágenes de entrenamiento y 1.000 de validación constan en la salida del cuaderno de AP-04 (Observado), y su origen es el conjunto coco-person de Roboflow Universe con licencia MIT, entrenado el 15 de noviembre de 2025 (Observado por declaración del dueño (1 de noviembre de 2026)). Ese conjunto no contiene imágenes de estaciones, por lo que sus métricas no describen el desempeño en andén.
+Dos hallazgos del inventario condicionan el resto de la sección. Primero, la base SQLite de Label Studio (AP-08) está versionada en el repositorio público de AP-04 y contiene una cuenta de usuario con nombre, correo, teléfono y credencial (D-14, Observado; los valores no se reproducen). Segundo, el dataset de entrenamiento no está en el repositorio: las cifras de 3.694 imágenes de entrenamiento y 1.000 de validación constan en la salida del cuaderno de AP-04 (Observado), y su origen es el conjunto coco-person de Roboflow Universe con licencia MIT, entrenado el 15 de noviembre de 2025. Observado por declaración del dueño (1 de noviembre de 2026). Ese conjunto no contiene imágenes de estaciones, por lo que sus métricas no describen el desempeño en andén.
 
 ## 3. Modelo de datos
 
@@ -48,7 +48,7 @@ El modelo gira alrededor de la estación. Cada estación tiene una cámara, y la
 ![Modelo lógico AS-IS](diagramas/E-03-logico-as-is.png)
 
 <!-- reescribir Santiago -->
-El modelo lógico se reconstruyó desde los esquemas de AP-03 y AP-01 porque el producto no tiene base de datos (Observado). Las relaciones existen solo por convención de identificador y no como claves foráneas. Tres rasgos lo definen: el plan de despacho se indexa por estación y guarda solo el último; la métrica de detección se indexa por video y guarda solo la última; y el estado inicial usa la clave de catálogo station_sur mientras la actualización por cámara usa station_sur_usb0, lo que crea dos registros para la misma estación (PI-05, Observado en una copia aislada del servicio). El esquema de la hoja de leads tiene las columnas timestamp, nombre, email, organizacion, mensaje y origen (Observado por declaración del dueño (1 de noviembre de 2026)).
+El modelo lógico se reconstruyó desde los esquemas de AP-03 y AP-01 porque el producto no tiene base de datos (Observado). Las relaciones existen solo por convención de identificador y no como claves foráneas. Tres rasgos lo definen: el plan de despacho se indexa por estación y guarda solo el último; la métrica de detección se indexa por video y guarda solo la última; y el estado inicial usa la clave de catálogo station_sur mientras la actualización por cámara usa station_sur_usb0, lo que crea dos registros para la misma estación (PI-05, Observado en una copia aislada del servicio). El esquema de la hoja de leads tiene las columnas timestamp, nombre, email, organizacion, mensaje y origen. Observado por declaración del dueño (1 de noviembre de 2026).
 
 ### 3.3 Modelo conceptual y lógico TO-BE
 
@@ -71,7 +71,7 @@ Los flujos se agrupan en tres familias: técnico (FL-T, procesos P-03 y P-04), c
 | F-01 | Visitante en AP-01 | Nombre, correo, organización, mensaje y origen, como JSON enviado en texto plano | AP-06 | I-08 | En la hoja. El sitio da el envío por exitoso con una respuesta HTTP 200, sin acuse de registro | Observado (código) / Observado por declaración del dueño (1 de noviembre de 2026): hoja |
 | F-02 | AP-06 | Lead | Sin respuesta al lead | I-09 | No aplica | Observado por declaración del dueño (1 de noviembre de 2026) |
 | F-03 | AP-01 en GitHub Pages | Recursos del sitio; la IP del visitante llega a AP-12 Google Fonts | Navegador del visitante | I-15, I-12 | No | Observado |
-| F-04 | Archivo mp4, cámara USB o RTSP | Fotogramas | Memoria de AP-03 | I-07 | Volátil | Observado / Observado por declaración del dueño (1 de noviembre de 2026) (pruebas usb0 y usb1) / NO CONFIRMADO (fechas y resultados) |
+| F-04 | Archivo mp4, cámara USB o RTSP | Fotogramas | Memoria de AP-03 | I-07 | Volátil | Observado (código); pruebas usb0 y usb1: Observado por declaración del dueño (1 de noviembre de 2026); fechas y resultados NO CONFIRMADO |
 | F-05 | Memoria de AP-03 | Fotograma y cajas de la clase person | Resumen de conteo | Interna | Volátil | Observado |
 | F-06 | AP-03 | Fotograma anotado (MJPEG) | AP-02 | I-02 | No | Observado |
 | F-07 | AP-03 | Métrica de detección por WebSocket. Solo se emite mientras algún cliente consume F-06 | AP-02 | I-03 | Cola de cinco mensajes | Observado |
@@ -81,7 +81,7 @@ Los flujos se agrupan en tres familias: técnico (FL-T, procesos P-03 y P-04), c
 | F-11 | AP-08 | Etiquetas exportadas | Cuaderno de AP-04, que produce best.pt | I-10 | Persistente | Observado |
 | F-12 | AP-05 (my_model.pt) | Archivo de pesos, leído por ruta; el archivo se obtiene por copia manual de best.pt desde AP-04 | AP-03 | I-06, I-11 | Persistente | Observado |
 | F-13 | Equipo del fundador | Código y artefactos, incluida la base de AP-08 | Repositorio público en AP-07 | I-13 | Persistente | Observado |
-| F-14 | Encuestados | Respuestas recogidas en AP-13 Google Forms | Resumen agregado | I-16 | Persistente | Observado (registro) / Observado por declaración del dueño (1 de noviembre de 2026) (AP-13 Google Forms sigue en uso) |
+| F-14 | Encuestados | Respuestas recogidas en AP-13 Google Forms | Resumen agregado | I-16 | Persistente | Observado (registro); uso de AP-13 Google Forms: Observado por declaración del dueño (1 de noviembre de 2026) |
 | F-15 | Controlador SITP | Notas por rol | Documento de evidencia | I-16 (fuera de aplicación) | Persistente | Observado (registro) / NO CONFIRMADO (soporte) |
 | F-16 | Evidencia agregada | Resultados agregados | Visitantes y evaluadores, vía AP-01 | I-12 | Persistente | Observado |
 | F-17 | AP-03, lectura de D-04 | Identificador, archivo y nombre visible de cada fuente | AP-02 | I-01 | No | Observado |
@@ -94,7 +94,7 @@ En el flujo técnico el dato nace como imagen y termina como número. AP-03 capt
 ![Flujo comercial FL-C](diagramas/E-04-FL-C-comercial.png)
 
 <!-- reescribir Santiago -->
-El flujo comercial es el único que lleva datos personales de terceros hacia un proveedor externo. El formulario de AP-01 no muestra aviso ni casilla de autorización y envía el lead a AP-06 (Observado). El texto del formulario promete una respuesta por el mismo canal, pero hoy los leads solo se recopilan (Observado por declaración del dueño (1 de noviembre de 2026)). Por eso la respuesta al lead aparece en el diagrama como Objetivo TO-BE y no como un flujo existente.
+El flujo comercial es el único que lleva datos personales de terceros hacia un proveedor externo. El formulario de AP-01 no muestra aviso ni casilla de autorización y envía el lead a AP-06 (Observado). El texto del formulario promete una respuesta por el mismo canal, pero hoy los leads solo se recopilan. Observado por declaración del dueño (1 de noviembre de 2026). Por eso la respuesta al lead aparece en el diagrama como Objetivo TO-BE y no como un flujo existente.
 
 ![Flujo de evidencia FL-E](diagramas/E-04-FL-E-evidencia.png)
 
@@ -135,7 +135,7 @@ Se aplican los criterios de la Arquitectura de Negocio: seguridad corporativa en
 | D-01 Lead | Confidencial | Sí. Nombre y correo semiprivados o privados; el mensaje libre puede contener datos adicionales | Recolectado sin aviso ni autorización | Observado |
 | D-04 y D-05 Video y fotograma | Interno | Posible (imagen de personas). No es sensible porque TORNS no identifica personas | Videos de Pexels; sin persistencia de fotogramas | Observado / Observado por declaración del dueño (1 de noviembre de 2026) |
 | D-06 a D-11 Conteo, estación y plan | Interno | No; el conteo es agregado | Sin restricción especial | Observado |
-| D-12 y D-13 Modelo y dataset | Reservado | Posible en las imágenes del dataset | Licencia MIT declarada; licencia de cada video sin verificar | Observado por declaración del dueño (1 de noviembre de 2026) / NO CONFIRMADO (licencia de cada video) |
+| D-12 y D-13 Modelo y dataset | Reservado | Posible en las imágenes del dataset | Licencia MIT declarada; licencia de cada video sin verificar | Observado por declaración del dueño (1 de noviembre de 2026); licencia de cada video NO CONFIRMADO |
 | D-14 Cuenta de anotador | Confidencial | Sí: identificación, contacto y credencial | Publicada en repositorio público: riesgo alto de privacidad | Observado |
 | D-02 y D-03 Evidencia | Interno, resumen público | No en lo agregado | Respuestas individuales sin verificar | Observado / NO CONFIRMADO |
 | D-21 Empleados (colaborador y contrato laboral) | Confidencial | Sí. Sensibles solo los atributos de salud (Ley 1581 de 2012, art. 5); la afiliación a seguridad social es obligatoria para quien tenga contrato de trabajo (Ley 100 de 1993, arts. 15 y 22) y se liquida por PILA (Decreto 1072 de 2015, art. 2.2.1.5.7) | Hoy no existe; se trataría al vincular personal en P-09 | Observado (no existe) / Objetivo TO-BE |

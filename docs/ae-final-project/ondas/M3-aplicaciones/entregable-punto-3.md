@@ -28,16 +28,16 @@ Solo el sitio web comercial está publicado, mediante GitHub Pages. La consola d
 | AP-10 | SharePoint (Microsoft 365) | Almacenamiento de documentos de apoyo; no compromete la operación del producto | Rol de Dirección y Calidad (fundador) | Tercero SaaS, apoyo documental | En uso como apoyo documental | Diseñado AS-IS |
 | AP-11 | Correo electrónico | Comunicación y resguardo de algunos documentos; no compromete la operación del producto. No se usa para responder leads; Observado por declaración del dueño (1 de noviembre de 2026). | Todos los roles (fundador) | Tercero SaaS, apoyo documental | En uso como apoyo documental | Diseñado AS-IS |
 | AP-12 | Google Fonts (fonts.googleapis.com y fonts.gstatic.com, enlazados en AP-01) | Entrega la tipografía Manrope al navegador del visitante; al cargar el sitio, el navegador envía la IP del visitante a Google (flujo F-03 de Datos) | Visitantes externos (consumo indirecto) | Tercero SaaS (Google), servicio externo | En uso | Observado |
-| AP-13 | Google Forms (formulario de la encuesta de validación) | Recoge las respuestas de la encuesta de validación (flujo F-14 de Datos); sigue en uso (Observado por declaración del dueño (1 de noviembre de 2026)); formulario «Tu experiencia diaria en el transporte masivo de Bogotá», https://forms.gle/uEEiodW6xn7VL5K69; el soporte de la entrevista (F-15) no está confirmado | Rol de Dirección y Producto (fundador) | Tercero SaaS (Google) | Uso actual por confirmar | NO CONFIRMADO |
+| AP-13 | Google Forms (formulario de la encuesta de validación) | Recoge las respuestas de la encuesta de validación (flujo F-14 de Datos); formulario «Tu experiencia diaria en el transporte masivo de Bogotá». Sigue en uso. Observado por declaración del dueño (1 de noviembre de 2026). El soporte de la entrevista (F-15) no está confirmado | Rol de Dirección y Producto (fundador) | Tercero SaaS (Google) | En uso | Observado por declaración del dueño (1 de noviembre de 2026) |
 
 <!-- reescribir Santiago -->
 Observaciones sobre el inventario:
 
-- El servicio de detección admite como fuente un archivo de video, una cámara USB o una URL RTSP (Observado en código). Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1) (Observado por declaración del dueño (1 de noviembre de 2026)); fechas y resultados NO CONFIRMADO.
+- El servicio de detección admite como fuente un archivo de video, una cámara USB o una URL RTSP (Observado en código). Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1). Observado por declaración del dueño (1 de noviembre de 2026). Fechas y resultados NO CONFIRMADO.
 - Las métricas del modelo de detección son de entrenamiento, no de operación. Si se citan, se nombran como tales: recall de 0,55 en la última época de entrenamiento sobre imágenes genéricas (Observado; fuente: métrica de entrenamiento de la última época en results.csv de yolo-train-routes-optimization; entrenamiento del 15 de noviembre de 2025); Observado por declaración del dueño (1 de noviembre de 2026) para la fecha, el dataset coco-person de Roboflow y la licencia MIT.
 - La hoja de cálculo recibe los mensajes mediante el Apps Script configurado en VITE_CONTACT_ENDPOINT. El código del script no está en los repositorios (NO CONFIRMADO).
 - Google Fonts entra al inventario porque el sitio carga su tipografía desde servidores de Google y, con ello, entrega la IP de cada visitante a un tercero (Observado en código).
-- Google Forms se registra por el flujo de la encuesta de validación descrito en la Arquitectura de Datos. Sigue en uso (Observado por declaración del dueño (1 de noviembre de 2026)); el enlace público del formulario resuelve a la página «Tu experiencia diaria en el transporte masivo de Bogotá» (Observado el 1 de noviembre de 2026).
+- Google Forms se registra por el flujo de la encuesta de validación descrito en la Arquitectura de Datos. Sigue en uso. Observado por declaración del dueño (1 de noviembre de 2026). El enlace público del formulario resuelve a la página «Tu experiencia diaria en el transporte masivo de Bogotá» (Observado el 1 de noviembre de 2026).
 - No existen CRM, ERP, sistema de identidad ni mesa de servicio (Observado como ausencia).
 
 ## 3.3 Mapa de integraciones
@@ -59,14 +59,14 @@ Observaciones sobre el inventario:
 | I-13 | AP-01 a AP-05 (estación del fundador) | AP-07 | Control de versiones; Git sobre HTTPS | Código y artefactos | Cuenta de GitHub | F-13 | Observado |
 | I-14 | AP-03 | Centro de control del operador | No existe; n/a | n/a | n/a | n/a | Observado (ausencia de integración) |
 | I-15 | AP-01 (navegador del visitante) | AP-12 | Recurso externo; HTTPS GET de hoja de estilos y fuentes (preconnect a fonts.googleapis.com y fonts.gstatic.com) | IP del visitante y cabeceras del navegador hacia Google; tipografía hacia el navegador | No aplica | F-03 | Observado |
-| I-16 | Encuestados | AP-13 | Formulario SaaS; Formulario web de Google | Respuestas de la encuesta; notas de entrevista fuera de aplicación | Cuenta de Google del dueño | F-14, F-15 | Observado por declaración del dueño (1 de noviembre de 2026) (uso actual); soporte de F-15 NO CONFIRMADO |
+| I-16 | Encuestados | AP-13 | Formulario SaaS; Formulario web de Google | Respuestas de la encuesta; notas de entrevista fuera de aplicación | Cuenta de Google del dueño | F-14, F-15 | Uso actual: Observado por declaración del dueño (1 de noviembre de 2026); soporte de F-15 NO CONFIRMADO |
 
 ![Mapa de integraciones AS-IS](diagramas/E6b-integraciones-as-is.png)
 
 <!-- reescribir Santiago -->
 Lectura del mapa:
 
-- Ninguna integración conecta con un sistema de un operador de transporte. Las integraciones con terceros son comerciales o de apoyo: la hoja con Apps Script, Google Fonts y Google Forms (Observado; Google Forms: Observado por declaración del dueño (1 de noviembre de 2026)).
+- Ninguna integración conecta con un sistema de un operador de transporte. Las integraciones con terceros son comerciales o de apoyo: la hoja con Apps Script, Google Fonts y Google Forms. Marca: Observado; para Google Forms, Observado por declaración del dueño (1 de noviembre de 2026).
 - Las integraciones entre la consola y el servicio de detección (I-01 a I-05) no tienen autenticación, y la API acepta cualquier origen por CORS (Observado).
 - I-03 depende de I-02: si nadie consume el flujo de video, no hay inferencia ni métricas (Observado por lectura estática).
 - I-06 e I-11 acoplan el modelo por sistema de archivos: el servicio lo ubica por una ruta relativa al monorepo y el archivo de pesos se copia a mano tras cada entrenamiento (Observado).
@@ -97,7 +97,7 @@ Criterio de severidad: Alta si afecta el cumplimiento legal, la seguridad o la c
 | PR-13 | Sin despliegue de AP-02 ni AP-03 fuera del equipo local; sin entorno de piloto separado | Falta de plataforma (adicional, detalle en la Arquitectura Tecnológica) | AP-02, AP-03 | Observado | Media | Insumo para la Arquitectura Tecnológica (Azure y GCP como alternativas, decisión pendiente) |
 | PR-14 | Herramientas personales sin gobierno formal (Label Studio local, hoja, SharePoint, correo); base de Label Studio versionada en repositorio público con una cuenta de anotador con datos personales (AI-04), riesgo alto de privacidad | Dependencia de herramientas externas | AP-06, AP-08, AP-10, AP-11 | Observado | Alta | RA-06 |
 | PR-15 | Ausencia de ERP o aplicación de facturación y contabilidad | Capacidad ausente | Ninguna | Observado (ausencia) | Baja (pasa a Media cuando haya un piloto contratado) | N-06 |
-| PR-16 | Cámaras físicas sin prueba documentada: el código soporta USB y RTSP, el dueño declara pruebas con usb0 (cámaras integradas en portátiles) y usb1 (cámaras USB externas) sin fechas ni resultados registrados | Evidencia (adicional) | AP-03 | Observado por declaración del dueño (1 de noviembre de 2026) / NO CONFIRMADO (fechas y resultados) | Media | Insumo para el Roadmap de Transformación (sesión de prueba documentada) |
+| PR-16 | Cámaras físicas sin prueba documentada: el código soporta USB y RTSP, el dueño declara pruebas con usb0 (cámaras integradas en portátiles) y usb1 (cámaras USB externas) sin fechas ni resultados registrados | Evidencia (adicional) | AP-03 | Observado por declaración del dueño (1 de noviembre de 2026); fechas y resultados NO CONFIRMADO | Media | Insumo para el Roadmap de Transformación (sesión de prueba documentada) |
 | PR-17 | Leads recopilados sin respuesta ni seguimiento: el interés recibido no se convierte en gestión comercial | Proceso manual inexistente (adicional) | AP-06 | Observado por declaración del dueño (1 de noviembre de 2026) | Media | N-01 |
 
 <!-- reescribir Santiago -->
