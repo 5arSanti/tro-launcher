@@ -1,0 +1,29 @@
+flowchart LR
+  subgraph Terceros["Servicios de terceros (Observado)"]
+    GP["GitHub Pages: AP-01"]
+    GH["GitHub repositorios y Actions: AP-07"]
+    GS["Google Apps Script y Sheets: AP-06"]
+    GF["Google Fonts: AP-12"]
+  end
+  subgraph EST["Estación del fundador i5-10400, 48 GB RAM, GTX 1050 Ti 4 GB, disco 85 % ocupado (Observado)"]
+    FE["Consola AP-02 React y Vite, sin autenticación"]
+    subgraph DK["Contenedor Docker de desarrollo"]
+      API["AP-03 FastAPI: despacho e inferencia acoplados"]
+      MOD["AP-05 modelo YOLO, archivo local"]
+      MEM["Conteos y despacho en memoria"]
+    end
+    TRN["AP-04 entrenamiento y AP-08 Label Studio con SQLite"]
+    MP4["Videos mp4 de prueba"]
+  end
+  CAM["Cámaras usb0 y usb1; RTSP soportado sin cámara de campo"]
+  V["Visitante"] -->|HTTPS| GP
+  V --> GF
+  GP -->|POST formulario| GS
+  GH -->|Actions| GP
+  FE -->|HTTP y MJPEG| API
+  API -->|WebSocket métricas| FE
+  API --> MOD
+  API --> MEM
+  MP4 --> API
+  CAM --> API
+  TRN -->|copia de pesos| MOD

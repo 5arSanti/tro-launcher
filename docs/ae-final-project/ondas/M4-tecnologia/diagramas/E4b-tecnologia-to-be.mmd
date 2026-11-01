@@ -1,0 +1,40 @@
+flowchart LR
+  subgraph PUB["Nodo público (Objetivo TO-BE)"]
+    WEB["AP-01 sitio comercial"]
+    CRM["N-01 gestor de leads"]
+  end
+  subgraph IDP["Nodo de identidad (Objetivo TO-BE)"]
+    ID["N-02 proveedor de identidad y roles"]
+  end
+  subgraph APP["Nodo de aplicación de demostración (Objetivo TO-BE)"]
+    CON["AP-02 consola autenticada"]
+    DES["AP-03a API de despacho autenticada"]
+  end
+  subgraph INF["Nodo de inferencia con GPU (Objetivo TO-BE)"]
+    INFS["AP-03b servicio de inferencia continuo"]
+  end
+  Q["Cola de eventos IT-07 (Objetivo TO-BE, tecnología sin elegir)"]
+  subgraph DAT["Nodo de datos (Objetivo TO-BE)"]
+    DB["N-04 persistencia de conteos y despacho"]
+    REG["N-05 registro versionado del modelo"]
+    OBJ["Almacén de objetos con respaldo"]
+  end
+  subgraph LAB["Nodo de laboratorio aislado (Objetivo TO-BE)"]
+    TR["AP-04 entrenamiento y AP-08 etiquetado"]
+  end
+  subgraph ADM["Nodo SaaS administrativo (Objetivo TO-BE, condicional)"]
+    FAC["N-06 facturación"]
+    NOM["N-07 personal y nómina, condicional a C-01 y personal"]
+  end
+  CAMS["Fuentes de video por estación"] --> INFS
+  CON -->|HTTPS| DES
+  CON --> ID
+  DES --> ID
+  INFS -->|evento de conteo| Q
+  Q --> DES
+  Q --> DB
+  DES --> DB
+  REG --> INFS
+  TR --> REG
+  TR --> OBJ
+  WEB --> CRM
