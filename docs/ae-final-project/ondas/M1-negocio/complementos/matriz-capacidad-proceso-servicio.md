@@ -10,10 +10,10 @@ Leyenda: P = proceso principal que ejerce la capacidad (fuente: mapa de capacida
 | CAP-04 Detección y conteo de pasajeros en estación | Presente (prototipo) |  |  | P | A |  | SN-02 | Observado |
 | CAP-05 Cálculo y recomendación determinista de despacho | Presente (prototipo) |  |  | P | A |  | SN-02 | Observado |
 | CAP-06 Atención al cliente / Acompañamiento de demostración | Presente (acotada) |  | A |  | P |  | SN-02 | Observado / Diseñado AS-IS |
-| CAP-07 Integración y despacho en vivo con el centro de control | Ausente |  |  |  |  |  | Ninguno | Observado (ausencia) |
+| CAP-07 Integración y despacho en vivo con el centro de control | Ausente |  |  |  |  |  | Ninguno | Observado |
 | CAP-08 Gestión de inventarios (catálogo digital vs. hardware físico) | Parcial |  |  | P |  |  | NO CONFIRMADO | Observado / brecha |
-| CAP-09 Gestión financiera, contable y facturación | Ausente |  |  |  |  |  | Ninguno | Observado (ausencia) |
-| CAP-10 Gestión de talento humano | Ausente |  |  |  |  |  | Ninguno | Observado (ausencia) |
+| CAP-09 Gestión financiera, contable y facturación | Ausente |  |  |  |  |  | Ninguno | Observado |
+| CAP-10 Gestión de talento humano | Ausente |  |  |  |  |  | Ninguno | Observado |
 
 ## Lectura
 - Las letras P salen de la columna "proceso asociado" del mapa de capacidades de M1. Las letras A son propuesta mía y Santiago debe aprobarlas o borrarlas.

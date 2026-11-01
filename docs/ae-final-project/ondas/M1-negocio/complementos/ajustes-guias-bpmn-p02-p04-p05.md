@@ -6,7 +6,7 @@ Decisión de Santiago (1 de noviembre de 2026): la imagen BPMN publicada prevale
 - Carriles: Persona interesada, Comercial, Canal de contacto (sin cambio).
 - Retirar de la guía el escalamiento a P-01 cuando el mensaje pide algo fuera de alcance. Según la imagen, Comercial responde con el alcance real en ambos casos.
 - Describir el registro de contacto como objeto de datos (hoja de cálculo), no como CRM.
-- Nota AS-IS (Observado por declaración): en la práctica los leads se recopilan y no se responden; la tarea de respuesta queda como diseño (Diseñado AS-IS).
+- Nota AS-IS (Observado; fuente: declaración de Santiago del 1 de noviembre de 2026): en la práctica los leads se recopilan y no se responden; la tarea de respuesta queda como diseño (Diseñado AS-IS).
 
 ## P-04 Acompañamiento al uso del prototipo
 - Carriles: Operación, Persona interesada, Calidad. Retirar el carril Producto de la guía.

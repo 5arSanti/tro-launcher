@@ -4,14 +4,15 @@ Versión 0.2, 1 de noviembre de 2026 (cambios frente a 0.1 al final del document
 
 Alcance según el enunciado del taller: capacidades, procesos, servicios, información y recursos tecnológicos del negocio TO-BE. Información y tecnología se describen aquí solo como requisito de negocio; el detalle es de M2 (Datos) y M4 (Tecnología).
 
-Hechos confirmados por Santiago (Observado por declaración): LIRN tiene un autor único, Johel Santiago Arias; los tres nombres de la página de TORNS son de presentación y no corresponden a un equipo. Los nombres técnicos tro-* se mantienen en la descripción AS-IS. Las pruebas de captura se hicieron con dos cámaras USB (usb0 y usb1). Label Studio se considera aplicación; SharePoint y el correo son herramientas de apoyo.
+Hechos confirmados por Santiago el 1 de noviembre de 2026 (Observado; fuente: declaración del autor): LIRN tiene un autor único, Johel Santiago Arias; los tres nombres de la página de TORNS son de presentación y no corresponden a un equipo. Los nombres técnicos tro-* se mantienen en la descripción AS-IS. Las pruebas de captura se hicieron con dos cámaras USB (usb0 y usb1). Label Studio se considera aplicación; SharePoint y el correo son herramientas de apoyo.
 
-Nombres de superficies según la tabla aprobada en B-10: AP-01 Sitio web comercial de LIRN y TORNS, AP-02 Consola de operación de estaciones, AP-03 Servicio de detección de pasajeros y plan de despacho (API), AP-04 Entrenamiento del modelo de detección.
+Nombres de superficies según la tabla aprobada en B-10: AP-01 Sitio web comercial de LIRN y TORNS, AP-02 Consola de operación de estaciones, AP-03 Servicio de detección de pasajeros y plan de despacho (API), AP-04 Entrenamiento del modelo de detección. El inventario completo de aplicaciones (AP-01 a AP-13, incluidas AP-12 Google Fonts y AP-13 Google Forms) y las diferencias DF-01 a DF-10 están en el entregable de Aplicaciones (Punto 3); el modelo de datos, los flujos y el tratamiento Ley 1581 están en el entregable de Datos (Punto 2).
 
 ## 1. Visión de negocio TO-BE
 
 Punto de partida: misión y visión aprobadas (Observado); cero clientes y sin piloto (Observado); equipo de una persona (Observado).
 
+<!-- reescribir Santiago -->
 Estado objetivo: LIRN, formalizada como S.A.S., ofrece TORNS a un operador B2B o una entidad B2G bajo un primer piloto pagado, con medición de demanda en estación, recomendación de despacho que decide el centro de control, datos personales tratados bajo la Ley 1581 y evidencia trazable de resultados. Objetivo TO-BE, ligado a OE-05.
 
 Principios que gobiernan el TO-BE: PN-01 a PN-08 del catálogo de principios (borrador). En especial PN-02 (afirmar solo lo evidenciado), PN-04 (la decisión de despacho es del operador) y PN-08 (crecer por capacidad).
@@ -60,7 +61,7 @@ Cadena de valor TO-BE: las actividades primarias "Propuesta, contrato y piloto p
 
 Sin precio, duración ni número de estaciones: NO CONFIRMADO, lo decide M5.
 
-Nota sobre el desempeño del modelo (Observado): el recall de 0,55 es la métrica de entrenamiento de la última época, medida sobre 1.000 imágenes de validación del COCO Person Dataset de Roboflow, sin imágenes de TransMilenio ni de estaciones. No anticipa el desempeño en plataforma; por eso SN-04 y P-06 exigen la evaluación previa con video de estación.
+Nota sobre el desempeño del modelo (Observado): el recall de 0,55 es la métrica de entrenamiento de la última época, medida sobre 1.000 imágenes de validación del COCO Person Dataset de Roboflow, sin imágenes de TransMilenio ni de estaciones; el entrenamiento se realizó el 15 de noviembre de 2025 (Observado; fuente: declaración de Santiago del 1 de noviembre de 2026). No anticipa el desempeño en plataforma; por eso SN-04 y P-06 exigen la evaluación previa con video de estación.
 
 ## 5. Información requerida por el negocio TO-BE (insumo para M2)
 
@@ -82,6 +83,7 @@ La selección y el diseño son de Aplicaciones y Tecnología; aquí solo se decl
 
 ## 7. Organización TO-BE
 
+<!-- reescribir Santiago -->
 Punto de partida: una persona, Johel Arias, autor único, cubre las cinco áreas funcionales (Diseñado AS-IS). Estado objetivo: las áreas existen como roles; un cargo nuevo solo se justifica por una capacidad ausente (CAP-07, CAP-09, CAP-10). No se fija número de personas ni fecha: NO CONFIRMADO.
 
 ## 8. Brechas de negocio AS-IS a TO-BE (insumo para el Gap Analysis de M5)
@@ -94,7 +96,7 @@ Punto de partida: una persona, Johel Arias, autor único, cubre las cinco áreas
 | G-N04 | Conteos solo en memoria (Observado) | Historial comparable por estación | Persistencia histórica |
 | G-N05 | Modelo evaluado solo en validación de entrenamiento sobre imágenes genéricas, recall 0,55 (Observado) | Evaluación en estación | Desacople y evaluación en estación |
 | G-N06 | CAP-07, CAP-09 y CAP-10 ausentes (Observado) | Capacidades con proceso (P-07, P-08) | Capacidades ausentes |
-| G-N07 | Sin proceso de contratación ni piloto (Observado). Riesgo de continuidad: no hay copias de respaldo y todo se despliega solo en el equipo de Santiago (Observado por declaración; detalle en M4 Tecnología) | P-06 y SN-04, con respaldo y entorno de piloto separado | Primer piloto pagado; respaldo y separación de entornos |
+| G-N07 | Sin proceso de contratación ni piloto (Observado). Riesgo de continuidad: no hay copias de respaldo y todo se despliega solo en el equipo de Santiago (Observado; fuente: declaración de Santiago del 1 de noviembre de 2026; detalle en el entregable de Tecnología, M4) | P-06 y SN-04, con respaldo y entorno de piloto separado | Primer piloto pagado; respaldo y separación de entornos |
 
 Los candidatos se citan por nombre; sus identificadores C-01 a C-08 los asigna el Líder de Transformación en M5, por posición en el registro.
 

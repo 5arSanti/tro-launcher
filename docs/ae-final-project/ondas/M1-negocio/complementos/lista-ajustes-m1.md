@@ -4,8 +4,8 @@ Borrador de apoyo para Santiago. No es texto final del informe. Marcas: Observad
 
 | ID | Ajuste | Estado | Decisión o dato que falta | Marca |
 |----|--------|--------|---------------------------|-------|
-| B-01 | NIT y matrícula mercantil | Cerrado (decisión de Santiago, 28 oct 2026) | No existe NIT ni matrícula real. Se mantiene como Observado: formalización registral no ejecutada. No se asigna número. | Observado (brecha) |
-| B-02 | Banda pública de tres nombres y residuos tro-* | Cerrado (decisión de Santiago, 28 oct 2026) | Quedan como brecha documentada, sin tocar nada. El equipo vigente es solo Johel Arias. | Observado (brecha) |
+| B-01 | NIT y matrícula mercantil | Cerrado (decisión de Santiago, 28 oct 2026) | No existe NIT ni matrícula real. Se mantiene como Observado: formalización registral no ejecutada. No se asigna número. | Observado |
+| B-02 | Banda pública de tres nombres y residuos tro-* | Cerrado (decisión de Santiago, 28 oct 2026) | Quedan como brecha documentada, sin tocar nada. El equipo vigente es solo Johel Arias. | Observado |
 | B-03 | Portada con autor, fecha y grupo | Cerrado (decisión de Santiago, 28 oct 2026) | Autor único, ya definido en la documentación del proyecto. No se pide más. | Observado |
 | B-04 | Bibliografía con URL | Cerrado en borrador | Ver archivo de bibliografía. Dos URL oficiales de leyes del Senado dieron error de servidor en la verificación; se usó el Gestor Normativo de la Función Pública. | Observado |
 | B-10 | Nombre de las superficies sin identidad TRO | Cerrado (aprobado por Santiago, 28 oct 2026) | Se aplica la tabla vigente de abajo, que reemplaza la propuesta inicial. | Objetivo TO-BE |
