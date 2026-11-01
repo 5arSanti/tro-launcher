@@ -117,7 +117,8 @@ Todo este apartado es Objetivo TO-BE. Horizonte, prioridad y costo los define el
 | N-03 (AP-03b) | Servicio de inferencia desacoplado de la entrega de video; en adelante se identifica solo como AP-03b | PR-04 | AP-03b con inferencia desacoplada | Arquitectura Tecnológica (cómputo) |
 | N-04 | Persistencia de conteos, estado y planes de despacho | PR-05 | Historial de conteos y recomendaciones por estación y fecha | Arquitectura de Datos (modelo lógico), Arquitectura Tecnológica (base de datos) |
 | N-05 | Registro versionado del modelo | PR-07 | Versionado de modelo antes de cada entrega (P-03) | Arquitectura Tecnológica |
-| N-06 | Facturación electrónica y contabilidad mínima (SaaS) | PR-15 | Contratos, actas y facturación del piloto | Formalización legal ante Cámara de Comercio y DIAN (C-01) |
+| N-06 | Facturación electrónica y contabilidad mínima (SaaS) | PR-15 | Contratos, actas y facturación del piloto; servicio de aplicación de P-08, Gestión financiera y facturación (CAP-09) | Formalización legal ante Cámara de Comercio y DIAN (C-01); fuente normativa de la facturación electrónica NO CONFIRMADO |
+| N-07 | Gestión de personal y nómina (SaaS) | Ninguno (necesidad TO-BE; no hay personal vinculado) | Servicio de aplicación de P-09, Gestión del talento humano (CAP-10); se activa solo cuando haya personal que vincular | Arquitectura de Datos (entidades colaborador y contrato_laboral, condicionales); fuente normativa de nómina, seguridad social y afiliaciones NO CONFIRMADO |
 
 ### Integraciones recomendadas
 
@@ -166,7 +167,7 @@ Contrato entre ambos servicios (IT-07):
 ### Dependencias lógicas
 
 <!-- reescribir Santiago -->
-N-02 precede a IT-06. N-04 precede a cualquier análisis histórico. AP-03b precede al uso de varias cámaras. N-06 se implanta después de la formalización legal ante Cámara de Comercio y DIAN. IT-06 solo procede con un operador real y un acuerdo firmado; hoy no hay piloto.
+N-02 precede a IT-06. N-04 precede a cualquier análisis histórico. AP-03b precede al uso de varias cámaras. N-06 se implanta después de la formalización legal ante Cámara de Comercio y DIAN. N-07 se implanta solo cuando haya personal que vincular y después de la formalización legal (C-01). IT-06 solo procede con un operador real y un acuerdo firmado; hoy no hay piloto.
 
 ![Contexto de aplicaciones TO-BE](diagramas/E6c-contexto-to-be.png)
 
@@ -175,7 +176,7 @@ N-02 precede a IT-06. N-04 precede a cualquier análisis histórico. AP-03b prec
 ## 3.6 Relación con las demás arquitecturas
 
 <!-- reescribir Santiago -->
-- Negocio: la autenticación con roles de operador en la consola y en la API, el registro versionado del modelo y la facturación quedan recogidos como necesidades de aplicación en el TO-BE de negocio, con el registro versionado del modelo ligado a P-03 (CAP-04 y CAP-08) y la facturación ligada a P-08 y CAP-09, que siguen como propuesta del dueño.
+- Negocio: la autenticación con roles de operador en la consola y en la API, el registro versionado del modelo y la facturación quedan recogidos como necesidades de aplicación en el TO-BE de negocio, con el registro versionado del modelo ligado a P-03 (CAP-04 y CAP-08), la facturación ligada a P-08 y CAP-09 (N-06) y la gestión de personal y nómina ligada a P-09 y CAP-10 (N-07), procesos aprobados por Santiago el 1 de noviembre de 2026.
 - Datos: los flujos F-01 a F-17 se cruzaron con este mapa. El evento IT-07 no transporta total_objects, porque es un dato derivado que el modelo lógico conserva en observacion_conteo.
 - Tecnología: la cola de IT-07, el proveedor de identidad y los entornos separados de AP-03a y AP-03b se definen en la Arquitectura Tecnológica.
 
