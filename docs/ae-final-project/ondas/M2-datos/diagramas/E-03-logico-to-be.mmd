@@ -80,6 +80,33 @@ erDiagram
         texto metricas_evaluacion
         texto conjunto_datos
     }
+    cliente {
+        id id PK
+        id organizacion_id FK
+        fecha fecha_alta
+    }
+    contrato {
+        id id PK
+        id cliente_id FK
+        texto objeto
+        fecha vigencia
+    }
+    acta_piloto {
+        id id PK
+        id contrato_id FK
+        inicio tipo
+        fecha fecha
+        texto resultado
+    }
+    factura {
+        id id PK
+        id contrato_id FK
+        fecha fecha
+        decimal valor
+    }
+    contrato }o--|| cliente : "cliente_id"
+    acta_piloto }o--|| contrato : "contrato_id"
+    factura }o--|| contrato : "contrato_id"
     contacto }o--|| organizacion : "organizacion_id"
     autorizacion_titular }o--|| contacto : "contacto_id"
     solicitud_derechos }o--|| contacto : "contacto_id"

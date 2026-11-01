@@ -16,8 +16,8 @@ Leer antes: registro (secciones 1 a 7) y `AGENTS.md` (flujo de inferencia).
 
 | Entregable | Archivo | Estado |
 |---|---|---|
-| Texto final del Punto 2 | entregable-punto-2.md | Pendiente de revisión del Auditor y aprobación del Líder |
+| Borrador de apoyo del Punto 2 (Santiago redacta el texto final) | entregable-punto-2.md | Pendiente de revisión del Auditor y aprobación del Líder |
 | Diagramas conceptual, lógico y de flujos (PNG y Mermaid) | diagramas/ | Pendiente de revisión |
-| Inventario de datos y matriz de flujos (xlsx y csv) | tablas/ | Pendiente de revisión |
+| Inventario de datos, matriz de flujos y anexo de verificación de evidencia (xlsx y csv) | tablas/ | Pendiente de revisión |
 
 La actualización de la sección 7 del registro de la empresa queda reservada al Líder.
