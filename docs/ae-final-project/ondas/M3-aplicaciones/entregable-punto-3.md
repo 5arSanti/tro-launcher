@@ -118,7 +118,7 @@ Todo este apartado es Objetivo TO-BE. Horizonte, prioridad y costo los define el
 | N-04 | Persistencia de conteos, estado y planes de despacho | PR-05 | Historial de conteos y recomendaciones por estación y fecha | Arquitectura de Datos (modelo lógico), Arquitectura Tecnológica (base de datos) |
 | N-05 | Registro versionado del modelo | PR-07 | Versionado de modelo antes de cada entrega (P-03) | Arquitectura Tecnológica |
 | N-06 | Facturación electrónica y contabilidad mínima (SaaS) | PR-15 | Contratos, actas y facturación del piloto; servicio de aplicación de P-08, Gestión financiera y facturación (CAP-09) | Formalización legal ante Cámara de Comercio y DIAN (C-01); fuente normativa de la facturación electrónica NO CONFIRMADO |
-| N-07 | Gestión de personal y nómina (SaaS) | Sin problema AS-IS: hoy no hay personal vinculado | Servicio de aplicación de P-09, Gestión del talento humano (CAP-10); se activa solo cuando haya personal que vincular | Arquitectura de Datos (entidades colaborador y contrato_laboral, condicionales); fuente normativa de nómina, seguridad social y afiliaciones NO CONFIRMADO |
+| N-07 | Gestión de personal y nómina (SaaS) | Ninguno (necesidad TO-BE; no hay personal vinculado) | Servicio de aplicación de P-09, Gestión del talento humano (CAP-10); se activa solo cuando haya personal que vincular | Arquitectura de Datos (entidades colaborador y contrato_laboral, condicionales); fuente normativa de nómina, seguridad social y afiliaciones NO CONFIRMADO |
 
 ### Integraciones recomendadas
 
@@ -167,7 +167,7 @@ Contrato entre ambos servicios (IT-07):
 ### Dependencias lógicas
 
 <!-- reescribir Santiago -->
-N-02 precede a IT-06. N-04 precede a cualquier análisis histórico. AP-03b precede al uso de varias cámaras. N-06 se implanta después de la formalización legal ante Cámara de Comercio y DIAN. IT-06 solo procede con un operador real y un acuerdo firmado; hoy no hay piloto.
+N-02 precede a IT-06. N-04 precede a cualquier análisis histórico. AP-03b precede al uso de varias cámaras. N-06 se implanta después de la formalización legal ante Cámara de Comercio y DIAN. N-07 se implanta solo cuando haya personal que vincular y después de la formalización legal (C-01). IT-06 solo procede con un operador real y un acuerdo firmado; hoy no hay piloto.
 
 ![Contexto de aplicaciones TO-BE](diagramas/E6c-contexto-to-be.png)
 
@@ -191,6 +191,6 @@ N-02 precede a IT-06. N-04 precede a cualquier análisis histórico. AP-03b prec
 | DF-05 | Arquitectura de Negocio | La autenticación se pedía solo en AP-02; esta arquitectura la extiende a AP-03a | Cerrada: el TO-BE de negocio la incluye en AP-03a |
 | DF-06 | Arquitectura de Negocio | Posible afirmación de un límite de tamaño de solicitud activo | Cerrada: no se afirma ese límite |
 | DF-07 | Arquitectura de Negocio | El recall de 0,55 se citaba sin indicar que es métrica de entrenamiento | Cerrada: se precisa como métrica de la última época de entrenamiento |
-| DF-08 | Arquitectura de Negocio | El registro versionado del modelo y la facturación no figuraban como necesidades de aplicación | Cerrada: el TO-BE de negocio recoge el registro versionado del modelo ligado a P-03 (CAP-04 y CAP-08) y la facturación ligada a P-08 y CAP-09; P-09 (CAP-10) se cubre con N-07 tras separar P-08 |
+| DF-08 | Arquitectura de Negocio | El registro versionado del modelo y la facturación no figuraban como necesidades de aplicación | Cerrada: el TO-BE de negocio recoge el registro versionado del modelo ligado a P-03 (CAP-04 y CAP-08) y la facturación ligada a P-08 y CAP-09 |
 | DF-09 | Arquitectura de Datos | F-02 suponía atención manual de los leads | Cerrada: F-02 figura como inexistente en el AS-IS |
 | DF-10 | Arquitectura de Datos | Origen de los videos, del dataset y fecha de entrenamiento sin confirmar | Cerrada para videos de Pexels, fecha de entrenamiento del 15 de noviembre de 2025 y dataset coco-person de Roboflow con licencia MIT; Observado por declaración del dueño (1 de noviembre de 2026) |
