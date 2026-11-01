@@ -63,7 +63,7 @@ Cadena de valor TO-BE: las actividades primarias "Propuesta, contrato y piloto p
 Sin precio, duración ni número de estaciones: NO CONFIRMADO, lo define el Roadmap de Transformación.
 
 <!-- reescribir Santiago -->
-Nota sobre el desempeño del modelo (Observado): el recall de 0,55 es la métrica de entrenamiento de la última época, medida sobre 1.000 imágenes de validación del COCO Person Dataset de Roboflow, sin imágenes de TransMilenio ni de estaciones; el entrenamiento se realizó el 15 de noviembre de 2025 (Observado por declaración del dueño (1 de noviembre de 2026)). No anticipa el desempeño en plataforma; por eso SN-04 y P-06 exigen la evaluación previa con video de estación.
+Nota sobre el desempeño del modelo (Observado): el recall de 0,55 es la métrica de entrenamiento de la última época, medida sobre 1.000 imágenes de validación del COCO Person Dataset de Roboflow, sin imágenes de TransMilenio ni de estaciones; el entrenamiento se realizó el 15 de noviembre de 2025, Observado por declaración del dueño (1 de noviembre de 2026). No anticipa el desempeño en plataforma; por eso SN-04 y P-06 exigen la evaluación previa con video de estación.
 
 ## 5. Información requerida por el negocio TO-BE (insumo para la Arquitectura de Datos)
 
@@ -98,7 +98,7 @@ Punto de partida: una persona, Johel Arias, autor único, cubre las cinco áreas
 | G-N04 | Brecha | Conteos solo en memoria (Observado) | Historial comparable por estación | C-04: Persistencia histórica |
 | G-N05 | Brecha | Modelo evaluado solo en validación de entrenamiento sobre imágenes genéricas, recall 0,55 (Observado) | Evaluación en estación | C-05: Desacople y evaluación en estación |
 | G-N06 | Brecha | CAP-07, CAP-09 y CAP-10 ausentes (Observado) | Capacidades con proceso (P-07, P-08) | C-06: Capacidades ausentes |
-| G-N07 | Brecha | Sin proceso de contratación ni piloto (Observado). Riesgo de continuidad: no hay copias de respaldo y todo se despliega solo en el equipo de Santiago (Observado por declaración del dueño (1 de noviembre de 2026); detalle en la Arquitectura Tecnológica) | P-06 y SN-04, con respaldo y entorno de piloto separado | C-08 y C-07: Primer piloto pagado; respaldo y separación de entornos |
+| G-N07 | Brecha | Sin proceso de contratación ni piloto (Observado). Riesgo de continuidad: no hay copias de respaldo y todo se despliega solo en el equipo de Santiago, Observado por declaración del dueño (1 de noviembre de 2026), con detalle en la Arquitectura Tecnológica | P-06 y SN-04, con respaldo y entorno de piloto separado | C-08 y C-07: Primer piloto pagado; respaldo y separación de entornos |
 
 ## Pendientes para Santiago
 1. Aprobar o descartar P-06, P-07, P-08, SN-04 y SN-05 (propuestos).
