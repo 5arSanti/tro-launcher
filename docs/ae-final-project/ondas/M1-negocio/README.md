@@ -25,4 +25,4 @@ Secciones 1 a 7, 10 y 11 de `docs/ae-final-project/registro-empresa.md` actualiz
 
 ## Complementos de la entrega final (1 de noviembre de 2026)
 
-La subcarpeta [complementos](complementos/) reúne los borradores de apoyo de la entrega final: catálogo de principios, cadena de valor, matriz capacidad x proceso x servicio, TO-BE de negocio v0.2 (insumo del Punto 5), cotejo BPMN (B-06) con los ajustes propuestos a las guías de P-02, P-04 y P-05, identificadores C-01 a C-08, lista de ajustes y diagramas exportados (imagenes/mmd e imagenes/png). Santiago redacta el texto final.
+La subcarpeta [complementos](complementos/) reúne los borradores de apoyo de la entrega final: catálogo de principios, cadena de valor, matriz capacidad x proceso x servicio, TO-BE de negocio v0.2 (insumo del Punto 5), cotejo BPMN (B-06) con los ajustes propuestos a las guías de P-02, P-04 y P-05, identificadores C-01 a C-08, apoyo al Roadmap de Transformación (trazabilidad de brechas, portafolio, indicadores y cierre de P-06 a P-08, SN-04 y SN-05), lista de ajustes y diagramas exportados (imagenes/mmd e imagenes/png). Santiago redacta el texto final.
