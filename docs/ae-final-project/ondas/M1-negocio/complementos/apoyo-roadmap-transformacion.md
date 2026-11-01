@@ -57,14 +57,14 @@ Marca de las definiciones y fórmulas: Objetivo TO-BE. Ningún indicador tiene l
 
 ## 4. Cierre de P-06 a P-09, SN-04 y SN-05
 
-Aprobados por Santiago (1 de noviembre de 2026). Marca: Objetivo TO-BE, porque ninguno existe todavía. En la misma decisión, la gestión de talento humano se separó de P-08 como P-09.
+Aprobados por Santiago el 1 de noviembre de 2026. Marca: Objetivo TO-BE, porque ninguno existe todavía. En la misma decisión, la gestión de talento humano se separó de P-08 como P-09.
 
 | Elemento | Definición | Entradas | Salidas | Capacidad | Brecha que cierra | Criterio de aceptación |
 |----------|------------|----------|---------|-----------|-------------------|------------------------|
 | P-06 Contratación y piloto | Lleva una propuesta aprobada hasta el acta de cierre del piloto | Propuesta aprobada en P-01; evaluación en estación de C-05; acuerdo de fuente de video y red con el operador | Contrato, acta de inicio, informe de resultados, acta de cierre | CAP-03, CAP-06, CAP-09 | G-N07 | Existe un piloto con contrato, actas e informe cuyas cifras pasan por SN-03 |
 | P-07 Integración con el centro de control | Acuerda y opera el intercambio técnico con el operador con decisión humana | Requisitos del operador; AP-02 y AP-03a con autenticación (DF-05) | Acuerdo de intercambio, interfaz autenticada, registro de decisiones del operador | CAP-07 | G-N06 | El operador recibe recomendaciones por un canal autenticado y su decisión queda registrada |
 | P-08 Gestión financiera y facturación | Gestiona facturación electrónica, contabilidad y contratos comerciales | NIT y matrícula de C-01; contratos de P-06 | Facturas electrónicas, registros contables, contratos comerciales | CAP-09 | G-N01, G-N06 | El piloto se factura electrónicamente y queda registrado en contabilidad; fuente normativa de la facturación electrónica NO CONFIRMADO |
-| P-09 Gestión del talento humano | Gestiona vinculación, nómina, seguridad social y desvinculación, con datos personales de empleados bajo la Ley 1581 | Necesidad de personal; NIT de C-01 | Contratos laborales, registros de nómina | CAP-10 | G-N06 | Cada vinculación queda con contrato y afiliaciones registradas |
+| P-09 Gestión del talento humano | Gestiona vinculación, nómina, seguridad social y desvinculación, con datos personales de empleados bajo la Ley 1581 | Necesidad de personal; NIT de C-01 | Contratos laborales, registros de nómina | CAP-10 | G-N06 | Cada vinculación queda con contrato y afiliaciones registradas; fuente normativa de seguridad social y afiliaciones NO CONFIRMADO |
 | SN-04 Piloto de medición de demanda en estación | Servicio pagado, acotado en tiempo y estaciones, con informe de resultados | Contrato de P-06; video de estación; modelo evaluado | Conteos, recomendaciones históricas e informe | CAP-04, CAP-05, CAP-06 | G-N04, G-N05, G-N07 | Informe entregado con métricas por estación y fecha y fuente trazable; precio, duración y número de estaciones NO CONFIRMADO |
 | SN-05 Soporte y mejora del servicio | Atiende incidencias y ajustes acordados con el operador | Incidencias del operador; resultados de SN-04 | Incidencias resueltas, versiones del modelo o de la regla registradas | CAP-06, CAP-08 | G-N07 | Cada incidencia tiene registro de apertura, respuesta y cierre |
 

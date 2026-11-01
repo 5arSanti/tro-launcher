@@ -46,7 +46,7 @@ Se conservan P-01 a P-05 y se proponen procesos nuevos solo donde una capacidad 
 | P-06 Contratación y piloto (aprobado por Santiago el 1 de noviembre de 2026) | Misional | Desde la propuesta aprobada hasta el acta de inicio y cierre del piloto. Condición de entrada: evaluar el modelo con video de estación y acordar con el operador la fuente de video y la red (Objetivo TO-BE) | CAP-03, CAP-06, CAP-09 |
 | P-07 Integración con el centro de control (aprobado por Santiago el 1 de noviembre de 2026) | Misional | Acuerdo técnico y operativo de intercambio con el operador; operador humano en el circuito | CAP-07 |
 | P-08 Gestión financiera y facturación (aprobado por Santiago el 1 de noviembre de 2026) | Apoyo | Facturación electrónica, contabilidad y contratos comerciales. Entradas: NIT y matrícula de C-01 y contratos de P-06 | CAP-09 |
-| P-09 Gestión del talento humano (aprobado por Santiago el 1 de noviembre de 2026, separado de P-08) | Apoyo | Vinculación, nómina, seguridad social y desvinculación; trata datos personales de empleados bajo la Ley 1581. Entradas: necesidad de personal y NIT de C-01 | CAP-10 |
+| P-09 Gestión del talento humano (aprobado por Santiago el 1 de noviembre de 2026; resulta de separar P-08) | Apoyo | Vinculación, nómina, seguridad social y desvinculación (fuente normativa de seguridad social y afiliaciones NO CONFIRMADO); trata datos personales de empleados bajo la Ley 1581. Entradas: necesidad de personal y NIT de C-01 | CAP-10 |
 
 <!-- reescribir Santiago -->
 Cadena de valor TO-BE: las actividades primarias "Propuesta, contrato y piloto pagado" y "Soporte técnico y mejora con el operador", que hoy no tienen proceso (Observado), quedan cubiertas por P-06 y por P-04 extendido con SN-05, respectivamente (Objetivo TO-BE). P-07 habilita CAP-07; P-08 habilita CAP-09 y P-09 habilita CAP-10.
@@ -104,7 +104,7 @@ Punto de partida: una persona, Johel Arias, autor único, cubre las cinco áreas
 | G-N07 | Brecha | Sin proceso de contratación ni piloto (Observado). Riesgo de continuidad: no hay copias de respaldo y todo se despliega solo en el equipo de Santiago, Observado por declaración del dueño (1 de noviembre de 2026), con detalle en la Arquitectura Tecnológica | P-06 y SN-04, con respaldo y entorno de piloto separado | C-08 y C-07: Primer piloto pagado; respaldo y separación de entornos |
 
 ## Pendientes para Santiago
-1. Resuelto: P-06, P-07, P-08, SN-04 y SN-05 aprobados por Santiago (1 de noviembre de 2026), con P-08 separado en P-08 y P-09.
+1. Resuelto: P-06 a P-09, SN-04 y SN-05 aprobados por Santiago el 1 de noviembre de 2026; P-09 resulta de separar P-08.
 2. Confirmar que el piloto pagado es el único hito comercial del horizonte TO-BE.
 3. Metas, plazos y costos: NO CONFIRMADO, se definen en el Roadmap de Transformación.
 
@@ -113,5 +113,5 @@ Punto de partida: una persona, Johel Arias, autor único, cubre las cinco áreas
 - SN-04 y P-06: condición de piloto y nota sobre el recall de 0,55.
 - CAP-03, SN-01 y G-N03: leads recopilados sin respuesta en cuenta personal; riesgo Ley 1581/2012; seguimiento con autorización como objetivo.
 - Sección 6: autenticación con roles en AP-02 y AP-03a (DF-05); AP-03a y AP-03b con IT-07; registro versionado de modelos y facturación (DF-08).
-- P-06 a P-08, SN-04 y SN-05 aprobados por Santiago (1 de noviembre de 2026), con marca Objetivo TO-BE. P-08 queda como gestión financiera y facturación (CAP-09) y se crea P-09, gestión del talento humano (CAP-10).
+- P-06 a P-09, SN-04 y SN-05 aprobados por Santiago el 1 de noviembre de 2026; P-09 resulta de separar P-08. Marca Objetivo TO-BE. P-08 queda como gestión financiera y facturación (CAP-09) y se crea P-09, gestión del talento humano (CAP-10).
 - Hechos confirmados: autor único, nombres tro-* en AS-IS, cámaras usb0 y usb1, clasificación de Label Studio, SharePoint y correo.

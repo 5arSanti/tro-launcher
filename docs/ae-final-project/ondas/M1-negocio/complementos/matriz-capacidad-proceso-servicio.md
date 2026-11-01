@@ -21,7 +21,7 @@ Leyenda: P = proceso principal que ejerce la capacidad (fuente: mapa de capacida
 - Los dueños funcionales de cada proceso (Dirección, Comercial, Producto, Operación, Calidad) hoy son una sola persona, Johel Arias (Diseñado AS-IS). No se afirma como hoy que existan áreas separadas.
 
 ## Proyección TO-BE aprobada (1 de noviembre de 2026)
-Marca: Objetivo TO-BE. Procesos y servicios aprobados por Santiago; no existen hoy (Observado).
+Marca: Objetivo TO-BE. Procesos y servicios aprobados por Santiago el 1 de noviembre de 2026; no existen hoy (Observado).
 
 | Capacidad | P-06 | P-07 | P-08 | P-09 | Servicio de negocio TO-BE |
 |-----------|------|------|------|------|---------------------------|
@@ -34,7 +34,7 @@ Marca: Objetivo TO-BE. Procesos y servicios aprobados por Santiago; no existen h
 | CAP-09 Gestión financiera, contable y facturación | A |  | P |  | Ninguno de cara al cliente |
 | CAP-10 Gestión de talento humano |  |  |  | P | Ninguno de cara al cliente |
 
-- P-06 ejerce CAP-09 como apoyo, porque produce los contratos que factura P-08.
+- P-06 ejerce CAP-09 como apoyo, porque produce los contratos que factura P-08. Fundamento: la descripción aprobada de P-06 en el TO-BE de negocio lo liga a CAP-03, CAP-06 y CAP-09.
 - P-09 se separó de P-08 por decisión de Santiago: CAP-09 y CAP-10 tienen ciclos, normas y datos distintos.
 
 ## Servicios de negocio AS-IS (de la Arquitectura de Negocio)

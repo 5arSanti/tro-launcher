@@ -32,7 +32,7 @@ Disposición: dos bloques apilados, apoyo arriba y primarias abajo. El resultado
 - Resultado declarado: oferta ajustada a la demanda medida en estación (Objetivo TO-BE, no entregado hoy).
 - B1 a B3 existen como proceso documentado (Observado o Diseñado AS-IS). B4 y B5 no existen: LIRN no tiene clientes ni pilotos (Observado) y se proyectan solo como TO-BE.
 - El valor que se declara como resultado final es objetivo. No se afirma como entregado hoy.
-- A5 y A6 no existen hoy, según el mapa de capacidades (Observado). En el TO-BE aprobado por Santiago (1 de noviembre de 2026) los cubren P-08 y P-09, respectivamente (Objetivo TO-BE).
+- A5 y A6 no existen hoy, según el mapa de capacidades (Observado). En el TO-BE aprobado por Santiago el 1 de noviembre de 2026 los cubren P-08 y P-09, respectivamente (Objetivo TO-BE).
 - No hay cifras ni costos por actividad. Si el docente exige análisis de margen, queda NO CONFIRMADO.
 
 ## Pendiente para Santiago
