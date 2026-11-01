@@ -117,7 +117,18 @@ CRM, ERP e identidad de operador: Objetivo TO-BE.
 
 ## 9. Tecnología
 
-Estado: cerrada en M4 (Arquitectura Tecnológica, Punto 4). AS-IS Observado: estación de trabajo del fundador como único entorno, Docker local, GitHub Pages, Git, pesos `.pt`, OpenCV (archivo, USB o RTSP), cámaras USB usb0 y usb1, GPU obsoleta y disco cerca de su capacidad, sin respaldos. Riesgos RT-01 a RT-13 del Punto 4 (RT-12, gestión de secretos, NO CONFIRMADO). Objetivo TO-BE: AP-03a y AP-03b separados con cola IT-07 (producto NO CONFIRMADO), entornos de laboratorio, demostración y piloto separados, nodos alojables en nube (proveedor sin elegir), GPU bajo demanda, almacén de objetos versionado y autenticación N-02. Obligaciones de facturación electrónica, nómina electrónica y seguridad social: NO CONFIRMADO. IT-EQ-04 Pruebas con cámaras: sin sesión documentada, NO CONFIRMADO. IT-RD-06 Segmentación, firewall o VPN: sin evidencia, NO CONFIRMADO.
+Estado: cerrada en M4 (Arquitectura Tecnológica, Punto 4). AS-IS Observado: estación de trabajo del fundador como único entorno, Docker local, GitHub Pages, Git, pesos `.pt`, OpenCV (archivo, USB o RTSP), cámaras USB usb0 y usb1, GPU obsoleta y disco cerca de su capacidad, sin respaldos. Riesgos RT-01 a RT-13 del Punto 4 (RT-12, gestión de secretos, NO CONFIRMADO). Objetivo TO-BE: AP-03a y AP-03b separados con cola IT-07 (producto NO CONFIRMADO), entornos de laboratorio, demostración y piloto separados, nodos alojables en nube (Azure y GCP como alternativas, decisión pendiente; costos NO CONFIRMADO), GPU bajo demanda, almacén de objetos versionado y autenticación N-02. Fuentes normativas revisadas el 1 de noviembre de 2026: Resolución DIAN 000165 de 2023 (facturación electrónica), Resolución DIAN 000013 de 2021 (nómina electrónica), Ley 100 de 1993 y Decreto 1072 de 2015 (seguridad social, afiliaciones y PILA). IT-EQ-04 Pruebas con cámaras: pruebas con cámaras USB integradas en portátiles (usb0) y cámaras USB externas (usb1), Observado por declaración del dueño (1 de noviembre de 2026); fechas y resultados NO CONFIRMADO. IT-RD-06 Segmentación, firewall o VPN: no existen actualmente, Observado por declaración del dueño (1 de noviembre de 2026).
+
+Resultados agregados de la encuesta del 17 de agosto de 2026 (n=20, formulario anónimo), tomados del documento de resultados del equipo «Guía Actividad 2, Ingeniería Aplicada». Marca: Observado (cifras agregadas; sin datos personales de encuestados):
+
+- Frecuencia de uso: diaria 30 %, 3 a 4 veces por semana 20 %, 1 a 2 veces por semana 15 %, algunas veces al mes 30 %, casi nunca 5 %.
+- Franjas de uso (respuesta múltiple): 16:00 a 19:30, 80 %; 6:00 a 8:30, 60 %.
+- Última demora relevante: esta semana 50 %; la sufre varias veces por semana el 65 %.
+- Duración de la demora: más de 30 min 35 %, 15 a 30 min 35 %, 5 a 15 min 30 %.
+- Tiempo perdido al mes: promedio de 3,0 horas, estimación del equipo a partir de las respuestas; 40 % por encima de 3 horas.
+- Reacción (respuesta múltiple): salir más temprano 75 %, taxi o aplicación 30 %.
+- Sobrecosto mensual: 65 % de $50.000 o más; 10 % ninguno.
+- Causa percibida principal: desajuste entre oferta y demanda 40 %.
 
 ## 10. Brechas y proyectos
 
@@ -145,6 +156,7 @@ Candidatos de origen, identificados al cierre de M1:
 - Procesos: P-01 a P-05.
 - Superficies de software: `lirn-web-main`, `tro-frontend`, `tro-backend`, `yolo-train-routes-optimization`.
 - Encuesta 17 de agosto de 2026, n=20. Entrevista a controlador SITP (rol, no nombre).
+- Formulario de la encuesta en uso (AP-13 Google Forms): https://forms.gle/uEEiodW6xn7VL5K69. Observado por declaración del dueño (1 de noviembre de 2026).
 - Identidad TRO prohibida en entregables nuevos.
 - Lead no es cliente.
 - Observado no se presenta como Objetivo. Objetivo no se presenta como Observado.

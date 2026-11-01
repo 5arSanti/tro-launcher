@@ -10,7 +10,7 @@ Marcas usadas: **Observado** (presente en código, configuración o declaración
 LIRN tiene un único integrante, Johel Santiago Arias, que ejerce los roles de Dirección, Comercial, Producto, Operación y Calidad (Observado). Por eso el área usuaria de cada aplicación se expresa como rol del fundador. Ninguna aplicación tiene usuarios de un operador de transporte, porque no existe piloto ni contrato (Observado).
 
 <!-- reescribir Santiago -->
-Solo el sitio web comercial está publicado, mediante GitHub Pages. La consola de operación y el servicio de detección corren únicamente en el equipo local del fundador (Observado). Un despliegue en Azure o GCP es una idea sin decisión (NO CONFIRMADO, decisión de despliegue; su análisis corresponde a la Arquitectura Tecnológica).
+Solo el sitio web comercial está publicado, mediante GitHub Pages. La consola de operación y el servicio de detección corren únicamente en el equipo local del fundador (Observado). Azure y GCP se mantienen como alternativas de despliegue, con decisión pendiente (Objetivo TO-BE; alternativas declaradas por el dueño el 1 de noviembre de 2026; su análisis corresponde a la Arquitectura Tecnológica; costos NO CONFIRMADO).
 
 ## 3.2 Inventario de aplicaciones
 
@@ -28,16 +28,16 @@ Solo el sitio web comercial está publicado, mediante GitHub Pages. La consola d
 | AP-10 | SharePoint (Microsoft 365) | Almacenamiento de documentos de apoyo; no compromete la operación del producto | Rol de Dirección y Calidad (fundador) | Tercero SaaS, apoyo documental | En uso como apoyo documental | Diseñado AS-IS |
 | AP-11 | Correo electrónico | Comunicación y resguardo de algunos documentos; no compromete la operación del producto. No se usa para responder leads; Observado por declaración del dueño (1 de noviembre de 2026). | Todos los roles (fundador) | Tercero SaaS, apoyo documental | En uso como apoyo documental | Diseñado AS-IS |
 | AP-12 | Google Fonts (fonts.googleapis.com y fonts.gstatic.com, enlazados en AP-01) | Entrega la tipografía Manrope al navegador del visitante; al cargar el sitio, el navegador envía la IP del visitante a Google (flujo F-03 de Datos) | Visitantes externos (consumo indirecto) | Tercero SaaS (Google), servicio externo | En uso | Observado |
-| AP-13 | Google Forms (formulario de la encuesta de validación) | Recoge las respuestas de la encuesta de validación (flujo F-14 de Datos); su uso vigente y el soporte de la entrevista (F-15) no están confirmados | Rol de Dirección y Producto (fundador) | Tercero SaaS (Google) | Uso actual por confirmar | NO CONFIRMADO |
+| AP-13 | Google Forms (formulario de la encuesta de validación) | Recoge las respuestas de la encuesta de validación (flujo F-14 de Datos); sigue en uso (Observado por declaración del dueño (1 de noviembre de 2026)); formulario «Tu experiencia diaria en el transporte masivo de Bogotá», https://forms.gle/uEEiodW6xn7VL5K69; el soporte de la entrevista (F-15) no está confirmado | Rol de Dirección y Producto (fundador) | Tercero SaaS (Google) | Uso actual por confirmar | NO CONFIRMADO |
 
 <!-- reescribir Santiago -->
 Observaciones sobre el inventario:
 
-- El servicio de detección admite como fuente un archivo de video, una cámara USB o una URL RTSP (Observado en código). El dueño declara pruebas con la cámara integrada del portátil y una cámara USB externa, sin sesión documentada (NO CONFIRMADO documentalmente).
+- El servicio de detección admite como fuente un archivo de video, una cámara USB o una URL RTSP (Observado en código). Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1) (Observado por declaración del dueño (1 de noviembre de 2026)); fechas y resultados NO CONFIRMADO.
 - Las métricas del modelo de detección son de entrenamiento, no de operación. Si se citan, se nombran como tales: recall de 0,55 en la última época de entrenamiento sobre imágenes genéricas (Observado; fuente: métrica de entrenamiento de la última época en results.csv de yolo-train-routes-optimization; entrenamiento del 15 de noviembre de 2025); Observado por declaración del dueño (1 de noviembre de 2026) para la fecha, el dataset coco-person de Roboflow y la licencia MIT.
 - La hoja de cálculo recibe los mensajes mediante el Apps Script configurado en VITE_CONTACT_ENDPOINT. El código del script no está en los repositorios (NO CONFIRMADO).
 - Google Fonts entra al inventario porque el sitio carga su tipografía desde servidores de Google y, con ello, entrega la IP de cada visitante a un tercero (Observado en código).
-- Google Forms se registra por el flujo de la encuesta de validación descrito en la Arquitectura de Datos. Su uso actual no está confirmado y se mantiene como NO CONFIRMADO hasta que el dueño lo confirme.
+- Google Forms se registra por el flujo de la encuesta de validación descrito en la Arquitectura de Datos. Sigue en uso (Observado por declaración del dueño (1 de noviembre de 2026)); el enlace público del formulario resuelve a la página «Tu experiencia diaria en el transporte masivo de Bogotá» (Observado el 1 de noviembre de 2026).
 - No existen CRM, ERP, sistema de identidad ni mesa de servicio (Observado como ausencia).
 
 ## 3.3 Mapa de integraciones
@@ -50,7 +50,7 @@ Observaciones sobre el inventario:
 | I-04 | AP-02 | AP-03 | REST; HTTP GET y POST /routing/*, JSON | Trenes, estaciones, estado, solicitud y plan de despacho | Ausente | F-09, F-10 | Observado |
 | I-05 | AP-02 | AP-03 | REST (sondeo); HTTP GET /health, JSON | Estado de salud | Ausente | n/a | Observado |
 | I-06 | AP-05 | AP-03 | Archivo; Lectura de archivo .pt por ruta relativa al monorepo | Pesos del modelo | No aplica | F-12 | Observado |
-| I-07 | Fuente de video (archivos de prueba de Pexels, cámara USB o URL) | AP-03 | Captura; OpenCV sobre archivo mp4, índice o dispositivo USB, o URL RTSP | Fotogramas | No aplica | F-04 | Observado (código); cámara física probada sin documentación: NO CONFIRMADO |
+| I-07 | Fuente de video (archivos de prueba de Pexels, cámara USB o URL) | AP-03 | Captura; OpenCV sobre archivo mp4, índice o dispositivo USB, o URL RTSP | Fotogramas | No aplica | F-04 | Observado (código); pruebas con usb0 y usb1: Observado por declaración del dueño (1 de noviembre de 2026); fechas y resultados NO CONFIRMADO |
 | I-08 | AP-01 | AP-06 | HTTP hacia Apps Script; POST con JSON en texto plano a la URL de VITE_CONTACT_ENDPOINT; éxito por HTTP 200 sin confirmación | nombre, email, organizacion, mensaje, origen (la hoja agrega timestamp) | Ausente | F-01 | Observado en sitio; Observado por declaración del dueño (1 de noviembre de 2026); script NO CONFIRMADO en repositorios |
 | I-09 | AP-06 | Ninguno | Sin integración; Los leads solo se recopilan en la hoja; no se responden ni se envían a AP-11 | Lead | No aplica | F-02 | Observado por declaración del dueño (1 de noviembre de 2026; ausencia de respuesta) |
 | I-10 | AP-08 | AP-04 | Archivo; Exportaciones de etiquetas en mydata/ | Anotaciones e imágenes | No aplica | F-11 | Observado |
@@ -59,14 +59,14 @@ Observaciones sobre el inventario:
 | I-13 | AP-01 a AP-05 (estación del fundador) | AP-07 | Control de versiones; Git sobre HTTPS | Código y artefactos | Cuenta de GitHub | F-13 | Observado |
 | I-14 | AP-03 | Centro de control del operador | No existe; n/a | n/a | n/a | n/a | Observado (ausencia de integración) |
 | I-15 | AP-01 (navegador del visitante) | AP-12 | Recurso externo; HTTPS GET de hoja de estilos y fuentes (preconnect a fonts.googleapis.com y fonts.gstatic.com) | IP del visitante y cabeceras del navegador hacia Google; tipografía hacia el navegador | No aplica | F-03 | Observado |
-| I-16 | Encuestados | AP-13 | Formulario SaaS; Formulario web de Google | Respuestas de la encuesta; notas de entrevista fuera de aplicación | Cuenta de Google del dueño | F-14, F-15 | NO CONFIRMADO (uso actual) |
+| I-16 | Encuestados | AP-13 | Formulario SaaS; Formulario web de Google | Respuestas de la encuesta; notas de entrevista fuera de aplicación | Cuenta de Google del dueño | F-14, F-15 | Observado por declaración del dueño (1 de noviembre de 2026) (uso actual); soporte de F-15 NO CONFIRMADO |
 
 ![Mapa de integraciones AS-IS](diagramas/E6b-integraciones-as-is.png)
 
 <!-- reescribir Santiago -->
 Lectura del mapa:
 
-- Ninguna integración conecta con un sistema de un operador de transporte. Las integraciones con terceros son comerciales o de apoyo: la hoja con Apps Script, Google Fonts y Google Forms (Observado; Google Forms NO CONFIRMADO).
+- Ninguna integración conecta con un sistema de un operador de transporte. Las integraciones con terceros son comerciales o de apoyo: la hoja con Apps Script, Google Fonts y Google Forms (Observado; Google Forms: Observado por declaración del dueño (1 de noviembre de 2026)).
 - Las integraciones entre la consola y el servicio de detección (I-01 a I-05) no tienen autenticación, y la API acepta cualquier origen por CORS (Observado).
 - I-03 depende de I-02: si nadie consume el flujo de video, no hay inferencia ni métricas (Observado por lectura estática).
 - I-06 e I-11 acoplan el modelo por sistema de archivos: el servicio lo ubica por una ruta relativa al monorepo y el archivo de pesos se copia a mano tras cada entrenamiento (Observado).
@@ -94,10 +94,10 @@ Criterio de severidad: Alta si afecta el cumplimiento legal, la seguridad o la c
 | PR-10 | Textos sin respaldo: cifrado y acceso controlado, "despacho óptimo", "Centro de control", frames por WebSocket | Consistencia de identidad; posible duplicidad de fuentes de verdad del producto | AP-01, AP-02, AP-03 | Observado | Baja | RA-03 |
 | PR-11 | Código sin uso registrado: middleware de tamaño no activado y lista de detecciones simuladas | Deuda técnica (adicional) | AP-02, AP-03 | Observado (uso de H-38 NO CONFIRMADO) | Baja | RA-05 |
 | PR-12 | Sin pruebas del backend; imagen con dependencias de desarrollo, recarga automática y puerto de depuración expuesto | Calidad y seguridad (adicional) | AP-03 | Observado | Alta | Insumo para la Arquitectura Tecnológica |
-| PR-13 | Sin despliegue de AP-02 ni AP-03 fuera del equipo local; sin entorno de piloto separado | Falta de plataforma (adicional, detalle en la Arquitectura Tecnológica) | AP-02, AP-03 | Observado | Media | Insumo para la Arquitectura Tecnológica (Azure o GCP: NO CONFIRMADO) |
+| PR-13 | Sin despliegue de AP-02 ni AP-03 fuera del equipo local; sin entorno de piloto separado | Falta de plataforma (adicional, detalle en la Arquitectura Tecnológica) | AP-02, AP-03 | Observado | Media | Insumo para la Arquitectura Tecnológica (Azure y GCP como alternativas, decisión pendiente) |
 | PR-14 | Herramientas personales sin gobierno formal (Label Studio local, hoja, SharePoint, correo); base de Label Studio versionada en repositorio público con una cuenta de anotador con datos personales (AI-04), riesgo alto de privacidad | Dependencia de herramientas externas | AP-06, AP-08, AP-10, AP-11 | Observado | Alta | RA-06 |
 | PR-15 | Ausencia de ERP o aplicación de facturación y contabilidad | Capacidad ausente | Ninguna | Observado (ausencia) | Baja (pasa a Media cuando haya un piloto contratado) | N-06 |
-| PR-16 | Cámaras físicas sin prueba documentada: el código soporta USB y RTSP, el dueño declara pruebas con usb0 y usb1 sin registro | Evidencia (adicional) | AP-03 | NO CONFIRMADO documentalmente | Media | Insumo para el Roadmap de Transformación (sesión de prueba documentada) |
+| PR-16 | Cámaras físicas sin prueba documentada: el código soporta USB y RTSP, el dueño declara pruebas con usb0 (cámaras integradas en portátiles) y usb1 (cámaras USB externas) sin fechas ni resultados registrados | Evidencia (adicional) | AP-03 | Observado por declaración del dueño (1 de noviembre de 2026) / NO CONFIRMADO (fechas y resultados) | Media | Insumo para el Roadmap de Transformación (sesión de prueba documentada) |
 | PR-17 | Leads recopilados sin respuesta ni seguimiento: el interés recibido no se convierte en gestión comercial | Proceso manual inexistente (adicional) | AP-06 | Observado por declaración del dueño (1 de noviembre de 2026) | Media | N-01 |
 
 <!-- reescribir Santiago -->
@@ -117,8 +117,8 @@ Todo este apartado es Objetivo TO-BE. Horizonte, prioridad y costo los define el
 | N-03 (AP-03b) | Servicio de inferencia desacoplado de la entrega de video; en adelante se identifica solo como AP-03b | PR-04 | AP-03b con inferencia desacoplada | Arquitectura Tecnológica (cómputo) |
 | N-04 | Persistencia de conteos, estado y planes de despacho | PR-05 | Historial de conteos y recomendaciones por estación y fecha | Arquitectura de Datos (modelo lógico), Arquitectura Tecnológica (base de datos) |
 | N-05 | Registro versionado del modelo | PR-07 | Versionado de modelo antes de cada entrega (P-03) | Arquitectura Tecnológica |
-| N-06 | Facturación electrónica y contabilidad mínima (SaaS) | PR-15 | Contratos, actas y facturación del piloto; servicio de aplicación de P-08, Gestión financiera y facturación (CAP-09) | Formalización legal ante Cámara de Comercio y DIAN (C-01); fuente normativa de la facturación electrónica NO CONFIRMADO |
-| N-07 | Gestión de personal y nómina (SaaS) | Ninguno (necesidad TO-BE; no hay personal vinculado) | Servicio de aplicación de P-09, Gestión del talento humano (CAP-10); se activa solo cuando haya personal que vincular | Arquitectura de Datos (entidades colaborador y contrato_laboral, condicionales); fuente normativa de nómina, seguridad social y afiliaciones NO CONFIRMADO |
+| N-06 | Facturación electrónica y contabilidad mínima (SaaS) | PR-15 | Contratos, actas y facturación del piloto; servicio de aplicación de P-08, Gestión financiera y facturación (CAP-09) | Formalización legal ante Cámara de Comercio y DIAN (C-01); fuente normativa: Resolución DIAN 000165 de 2023 |
+| N-07 | Gestión de personal y nómina (SaaS) | Ninguno (necesidad TO-BE; no hay personal vinculado) | Servicio de aplicación de P-09, Gestión del talento humano (CAP-10); se activa solo cuando haya personal que vincular | Arquitectura de Datos (entidades colaborador y contrato_laboral, condicionales); fuentes normativas: Resolución DIAN 000013 de 2021 (nómina electrónica), Ley 100 de 1993 y Decreto 1072 de 2015 (seguridad social, afiliaciones y PILA) |
 
 ### Integraciones recomendadas
 
