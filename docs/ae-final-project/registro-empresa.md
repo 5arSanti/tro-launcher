@@ -117,7 +117,7 @@ CRM, ERP e identidad de operador: Objetivo TO-BE.
 
 ## 9. Tecnología
 
-Se detalla en M4. AS-IS observado: estación de trabajo del fundador, Docker local, GitHub Pages, Git, pesos `.pt`, OpenCV (archivo / USB / RTSP). Sin granja GPU de producción.
+Estado: cerrada en M4 (Arquitectura Tecnológica, Punto 4). AS-IS Observado: estación de trabajo del fundador como único entorno, Docker local, GitHub Pages, Git, pesos `.pt`, OpenCV (archivo, USB o RTSP), cámaras USB usb0 y usb1, GPU obsoleta y disco cerca de su capacidad, sin respaldos. Riesgos RT-01 a RT-13 del Punto 4 (RT-12, gestión de secretos, NO CONFIRMADO). Objetivo TO-BE: AP-03a y AP-03b separados con cola IT-07 (producto NO CONFIRMADO), entornos de laboratorio, demostración y piloto separados, nodos alojables en nube (proveedor sin elegir), GPU bajo demanda, almacén de objetos versionado y autenticación N-02. Obligaciones de facturación electrónica, nómina electrónica y seguridad social: NO CONFIRMADO.
 
 ## 10. Brechas y proyectos
 

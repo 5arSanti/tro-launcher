@@ -1,6 +1,6 @@
 # Onda M5. Transformación (fases E, F, G y H del ADM; Punto 5 del taller)
 
-Estado: borrador de apoyo completo, en revisión de Santiago. Sigue el spec y plan de M5 aprobado por Santiago. Insumos: entregables de Negocio (Punto 1), Datos (Punto 2) y Aplicaciones (Punto 3), auditados y fusionados. La Arquitectura Tecnológica (Punto 4) no está publicada: sus brechas quedan como Pendiente M4.
+Estado: borrador de apoyo completo, en revisión de Santiago. Sigue el spec y plan de M5 aprobado por Santiago. Insumos: entregables de Negocio (Punto 1), Datos (Punto 2), Aplicaciones (Punto 3) y Tecnología (Punto 4), fusionados.
 
 | N.º | Entregable | Fase ADM |
 |-----|------------|----------|

@@ -1,5 +1,5 @@
 # Hoja de Ruta de Transformación (Fase F)
-> Borrador de apoyo v1.0, 1 de noviembre de 2026. Líder de Transformación. Santiago redacta el texto final. Sin cifras, costos ni NIT. Marcas: Observado, Diseñado AS-IS, Objetivo TO-BE. «Pendiente M4» significa que el insumo depende del entregable de la Arquitectura Tecnológica, aún no publicado en main.
+> Borrador de apoyo v1.0, 1 de noviembre de 2026. Líder de Transformación. Santiago redacta el texto final. Sin cifras, costos ni NIT. Marcas: Observado, Diseñado AS-IS, Objetivo TO-BE. Los riesgos citados como «RT-xx (Punto 4)» son los de la Arquitectura Tecnológica; los citados sin ese sufijo son los del Punto 3.
 
 Los horizontes son relativos al inicio de la transformación; no se fijan fechas calendario. Todo es Objetivo TO-BE.
 
