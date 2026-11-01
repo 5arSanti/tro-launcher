@@ -1,61 +1,47 @@
 # Guía BPMN P-05 Evidencia, calidad y mejora
-Notación: BPMN 2.0. El modelador humano dibuja; tú no.
+Notación: BPMN 2.0. La imagen BPMN publicada prevalece sobre esta guía, aprobado por Santiago el 1 de noviembre de 2026. Marca: Observado.
 
 ## Carriles (pools / lanes)
 
 - Calidad
 - Dirección
 - Producto
-- Comunicación pública
+
+La imagen no tiene carril Comunicación pública.
 
 ## Evento de inicio
 
-Nueva evidencia a custodiar, hallazgo de mensaje público, o no conformidad del prototipo (desde P-01, P-03 o P-04).
+Evento de mensaje «Llega un hallazgo» (carril Calidad).
 
 ## Actividades (orden)
 
-1. Clasificar el hallazgo como claim público, evidencia o fallo del prototipo — lane: Calidad — tipo: tarea de usuario
-2. Custodiar la evidencia n=20 con leyenda de investigación del equipo (17 agosto 2026) — lane: Calidad — tipo: tarea de usuario
-3. Abrir un registro de no conformidad cuando el hallazgo lo requiere — lane: Calidad — tipo: tarea de usuario
-4. Corregir el mensaje público cuando la no conformidad afecta claims — lane: Dirección — tipo: tarea de usuario
-5. Corregir la solución de producto cuando la no conformidad afecta el prototipo — lane: Producto — tipo: tarea de usuario
-6. Verificar que la comunicación mantiene caso de estudio (no piloto) y que n=20 no es resultado de operador — lane: Calidad — tipo: tarea de usuario
-7. Cerrar la no conformidad cuando la verificación confirma el caso no piloto — lane: Calidad — tipo: tarea de usuario
+1. Clasificar el hallazgo: mensaje público, solución TORNS o solo custodia de evidencia. Carril: Calidad.
+2. Abrir una no conformidad y asignarla a Dirección o a Producto, según el hallazgo. Carril: Calidad.
+3. Corregir el mensaje público y devolver el caso a Calidad. Carril: Dirección.
+4. Corregir la solución TORNS y devolver el caso a Calidad. Carril: Producto.
+5. Conservar la encuesta de veinte respuestas del 17 de agosto de 2026 como investigación del equipo, no como resultado de un operador. Carril: Calidad.
+6. Verificar que la comunicación pública presente el caso TransMilenio como estudio, no como piloto firmado. Carril: Calidad.
+7. Cerrar la no conformidad o dejarla abierta si la corrección no basta. Carril: Dirección (según la posición en la imagen).
 
 ## Decisiones (gateways)
 
 | Pregunta | Sí | No |
 |----------|----|-----|
-| ¿El hallazgo afecta claims en mensajes públicos? | Abrir no conformidad y corregir mensaje (P-01) | Evaluar si afecta prototipo |
-| ¿El hallazgo afecta la solución de producto o el prototipo? | Abrir no conformidad y corregir solución (P-03) | Custodiar evidencia |
-| ¿El texto afirma piloto firmado o impacto inventado? | Abrir no conformidad y corregir mensaje | Cerrar no conformidad si verificación ok |
-
-## Mensajes
-
-| De | A | Contenido |
-|----|---|-----------|
-| P-04 / P-03 / P-01 | Calidad | Hallazgo |
-| Calidad | Dirección | No conformidad de claim |
-| Calidad | Producto | No conformidad de prototipo |
-| Calidad | Comunicación pública | Evidencia autorizada (n=20, caso no piloto) |
+| ¿El hallazgo afecta el mensaje público de LIRN? | Abrir no conformidad (es comunicación) | Evaluar si afecta la solución |
+| ¿El hallazgo afecta la solución TORNS? | Abrir no conformidad (es el producto) | Conservar la evidencia (solo evidencia) |
+| ¿El texto público afirma un piloto firmado o un impacto inventado? | Volver a abrir no conformidad (sigue habiendo afirmación indebida) | Cerrar la no conformidad |
 
 ## Artefactos / data objects
 
-Evidencia n=20; entrevista rol SITP; registro de no conformidad; matriz de evidencia. Plantilla de no conformidad: NO CONFIRMADO.
+«Evidencia n igual a 20», ubicado en el carril Producto.
 
 ## Evento de fin
 
-Queda hecho: evidencia custodiada y no conformidad encaminada o cerrada. No queda hecho: ISO certificado, KPI de minutos ahorrados, ni estudio de un operador.
+Único evento de fin «Mejora encaminada». El cierre de la no conformidad es la última tarea y no se modela como paso adicional después del fin.
 
 ## Qué no modelar
 
-- Integración con el operador de Transmilenio / Metro
-- Compra, pago, SLA de cliente firmado
-- Departamentos que no estén en la tabla de roles futuros
-- Identidad TRO / vigilancia
-- Auditoría de certificación ISO (NO CONFIRMADO)
-- Tablero de impacto al pasajero
-
-## Instrucción al modelador
-
-Dibujar un proceso colaborativo con los carriles de arriba. Etiquetar actividades con frases completas. Gateways con preguntas completas. Mantener el flujo feliz (evidencia ok → verificación → cierre) y un flujo de error por cada decisión. No añadir tareas de contrato con operador ni métricas de impacto inventadas.
+- Integración con el operador de TransMilenio o Metro.
+- Auditoría de certificación ISO (NO CONFIRMADO).
+- Tablero de impacto al pasajero o indicadores de impacto inventados.
+- Identidad TRO o vigilancia.
