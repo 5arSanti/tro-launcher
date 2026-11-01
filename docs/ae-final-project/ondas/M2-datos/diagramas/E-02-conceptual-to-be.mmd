@@ -7,6 +7,8 @@ flowchart LR
     Cliente["Cliente<br/>(solo con contrato)"]
     Contrato["Contrato"]
     Factura["Factura"]
+    Colaborador["Colaborador"]
+    ContratoLab["Contrato laboral"]
     Linea["Línea"]
     Estacion["Estación"]
     Fuente["Fuente de video<br/>(con autorización)"]
@@ -23,6 +25,7 @@ flowchart LR
     Organizacion -.->|"puede ser"| Cliente
     Cliente -.->|"firma"| Contrato
     Contrato -.->|"genera"| Factura
+    Colaborador -.->|"suscribe"| ContratoLab
     Linea -->|"agrupa"| Estacion
     Estacion -->|"dispone de"| Fuente
     Fuente -->|"produce"| Observacion
@@ -34,3 +37,5 @@ flowchart LR
     style Cliente stroke-dasharray: 5 5
     style Contrato stroke-dasharray: 5 5
     style Factura stroke-dasharray: 5 5
+    style Colaborador stroke-dasharray: 5 5
+    style ContratoLab stroke-dasharray: 5 5
