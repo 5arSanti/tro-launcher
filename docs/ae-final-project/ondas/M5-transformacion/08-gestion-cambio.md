@@ -1,11 +1,10 @@
 # Gestión del cambio de la arquitectura (Fase H)
-> Borrador de apoyo v1.0, 1 de noviembre de 2026. Líder de Transformación. Santiago redacta el texto final. Sin cifras, costos ni NIT. Marcas: Observado, Diseñado AS-IS, Objetivo TO-BE. Los riesgos citados como «RT-xx (Punto 4)» son los de la Arquitectura Tecnológica; los citados sin ese sufijo son los del Punto 3.
 
 ## 1. Disparadores de revisión de la arquitectura (Objetivo TO-BE)
 
 | Disparador | Efecto |
 |------------|--------|
-| Elección de proveedor de nube, de cola IT-07 o de gestor de secretos (NO CONFIRMADO en el Punto 4) | Se revisan B-T01 a B-T06, los costos relativos de PY-04, PY-05 y PY-07 y los criterios RQ-11, RQ-12 y RQ-14 |
+| Elección de proveedor de nube, de cola IT-07 o de gestor de secretos (NO CONFIRMADO en la Arquitectura Tecnológica) | Se revisan B-T01 a B-T06, los costos relativos de PY-04, PY-05 y PY-07 y los criterios RQ-11, RQ-12 y RQ-14 |
 | Formalización legal (PY-01) | Se actualiza el registro de empresa y se habilitan PY-09 y PY-10 |
 | Firma de un piloto | Se activan P-06, SN-04 e indicadores de campo |
 | Necesidad de vincular personal | Se activa PY-10 |

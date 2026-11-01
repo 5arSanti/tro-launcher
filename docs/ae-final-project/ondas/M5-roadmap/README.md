@@ -1,6 +1,8 @@
 # Onda M5. Roadmap e informe único
 
-Estado: playbook. No crear `informe/` ni redactar el Punto 5 hasta tener spec y plan de M5.
+Estado: reemplazada por la onda M5-transformacion, que contiene los entregables del Punto 5. Se conserva como registro histórico.
+
+Estado previo: playbook. No crear `informe/` ni redactar el Punto 5 hasta tener spec y plan de M5.
 
 Leer antes: registro completo y entregables de M1 a M4.
 

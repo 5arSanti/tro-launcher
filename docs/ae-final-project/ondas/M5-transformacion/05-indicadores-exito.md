@@ -1,5 +1,4 @@
 # Indicadores de Éxito (Fase H)
-> Borrador de apoyo v1.0, 1 de noviembre de 2026. Líder de Transformación. Santiago redacta el texto final. Sin cifras, costos ni NIT. Marcas: Observado, Diseñado AS-IS, Objetivo TO-BE. Los riesgos citados como «RT-xx (Punto 4)» son los de la Arquitectura Tecnológica; los citados sin ese sufijo son los del Punto 3.
 
 No se afirma impacto actual. La línea base es NO CONFIRMADO cuando no hay medición, u Observado cuando la ausencia está documentada. Toda meta es Objetivo TO-BE y cualitativa; el valor numérico se fija con datos reales.
 
