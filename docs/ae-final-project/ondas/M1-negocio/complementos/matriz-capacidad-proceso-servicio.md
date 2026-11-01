@@ -17,7 +17,7 @@ Leyenda: P = proceso principal que ejerce la capacidad (fuente: mapa de capacida
 
 ## Lectura
 - Las letras P salen de la columna "proceso asociado" del mapa de capacidades. Las letras A son propuestas y Santiago debe aprobarlas o borrarlas.
-- Tres capacidades ausentes (CAP-07, CAP-09, CAP-10) no tienen proceso ni servicio. Alimentan C-06. En el TO-BE aprobado las cubren P-07, P-08 y P-09 (ver la proyección TO-BE).
+- Tres capacidades ausentes (CAP-07, CAP-09, CAP-10) no tienen proceso ni servicio. Alimentan C-06. En el TO-BE aprobado por Santiago el 1 de noviembre de 2026 las cubren P-07, P-08 y P-09 (ver la proyección TO-BE).
 - Los dueños funcionales de cada proceso (Dirección, Comercial, Producto, Operación, Calidad) hoy son una sola persona, Johel Arias (Diseñado AS-IS). No se afirma como hoy que existan áreas separadas.
 
 ## Proyección TO-BE aprobada (1 de noviembre de 2026)
