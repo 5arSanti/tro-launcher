@@ -108,7 +108,11 @@ flowchart LR
   TRN -->|copia de pesos| MOD
 ```
 
+![Diagrama tecnológico AS-IS](diagramas/E4a-tecnologia-as-is.png)
+
 ## 4. Riesgos tecnológicos
+
+Escala de riesgos cualitativa: Alta, Media, Baja.
 
 | ID | Riesgo | Causa | Probabilidad | Impacto | Marca de la causa | Tratamiento (Objetivo TO-BE) |
 |---|---|---|---|---|---|---|
@@ -262,7 +266,11 @@ flowchart LR
   SP -.->|respaldo documental| OBJ
   DES -.->|condicional| FAC
   OPE -.->|condicional| NOM
+  classDef condicional stroke-dasharray: 5 5,stroke-width:2px
+  class FAC,NOM condicional
 ```
+
+![Diagrama tecnológico TO-BE](diagramas/E4b-tecnologia-to-be.png)
 
 Leyenda: las líneas punteadas indican componentes condicionales. N-06 se implanta después de C-01; N-07 solo si hay personal que vincular y después de C-01. Marca: Objetivo TO-BE, condicional.
 
