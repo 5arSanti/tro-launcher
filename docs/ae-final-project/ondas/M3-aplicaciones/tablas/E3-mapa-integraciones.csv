@@ -1,5 +1,5 @@
 ID,Origen,Destino,Tipo,Protocolo y formato,Disparador,Datos intercambiados,Autenticación,Flujo M2,Evidencia,Marca
-I-01,AP-02,AP-03,REST,"HTTP GET /api/v1/videos/list, JSON",Carga de AP-02,Lista de videos y cámaras,Ausente,n/a,tro-frontend/src/App.tsx:26,Observado
+I-01,AP-02,AP-03,REST,"HTTP GET /api/v1/videos/list, JSON",Carga de AP-02,Lista de videos y cámaras,Ausente,F-17,tro-frontend/src/App.tsx:26,Observado
 I-02,AP-03,AP-02,Flujo de video,"HTTP GET /videos/{id}/stream, multipart/x-mixed-replace (MJPEG) en etiqueta de imagen",Apertura de la vista,Fotograma anotado JPEG,Ausente,F-06,"tro-frontend/src/components/video/VideoStream.tsx:10,20; tro-backend video_controller.py:35-90",Observado
 I-03,AP-03,AP-02,WebSocket,"WS /videos/ws/{id}/detections, JSON",Suscripción de AP-02; solo hay métricas si alguien consume el flujo (H-09),"video_id, timestamp, total_objects, person_count, label_counts",Ausente,F-07,"DetectionPanel.tsx:55,59; video_controller.py:93-106",Observado
 I-04,AP-02,AP-03,REST,"HTTP GET y POST /routing/*, JSON",Acción del usuario y refresco periódico,"Trenes, estaciones, estado, solicitud y plan de despacho",Ausente,"F-09, F-10",tro-frontend/src/services/routingService.ts:17-93; routing_controller.py:39-146,Observado

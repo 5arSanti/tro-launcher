@@ -41,7 +41,7 @@ Observaciones sobre el inventario:
 
 | ID | Origen | Destino | Tipo y protocolo | Datos intercambiados | Autenticación | Flujo de Datos | Marca |
 |---|---|---|---|---|---|---|---|
-| I-01 | AP-02 | AP-03 | REST; HTTP GET /api/v1/videos/list, JSON | Lista de videos y cámaras | Ausente | n/a | Observado |
+| I-01 | AP-02 | AP-03 | REST; HTTP GET /api/v1/videos/list, JSON | Lista de videos y cámaras | Ausente | F-17 | Observado |
 | I-02 | AP-03 | AP-02 | Flujo de video; HTTP GET /videos/{id}/stream, multipart/x-mixed-replace (MJPEG) en etiqueta de imagen | Fotograma anotado JPEG | Ausente | F-06 | Observado |
 | I-03 | AP-03 | AP-02 | WebSocket; WS /videos/ws/{id}/detections, JSON | video_id, timestamp, total_objects, person_count, label_counts | Ausente | F-07 | Observado |
 | I-04 | AP-02 | AP-03 | REST; HTTP GET y POST /routing/*, JSON | Trenes, estaciones, estado, solicitud y plan de despacho | Ausente | F-09, F-10 | Observado |
