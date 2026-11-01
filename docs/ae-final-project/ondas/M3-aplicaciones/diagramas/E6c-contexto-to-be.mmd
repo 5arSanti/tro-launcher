@@ -1,0 +1,21 @@
+flowchart TB
+  subgraph Comercial["Comercial (Objetivo TO-BE)"]
+    AP01[AP-01 Sitio web comercial con aviso Ley 1581]
+    N01[N-01 Gestor de leads o CRM ligero]
+  end
+  subgraph Producto["Producto TORNS (Objetivo TO-BE)"]
+    N02[N-02 Identidad y control de acceso]
+    AP02[AP-02 Consola de operación]
+    AP03[AP-03a API de plan de despacho]
+    N03[AP-03b Servicio de inferencia desacoplado]
+    N04[N-04 Persistencia de conteos y planes]
+    N05[N-05 Registro versionado del modelo]
+    AP04[AP-04 Entrenamiento]
+    AP08[AP-08 Label Studio]
+  end
+  subgraph Admin["Administración (Objetivo TO-BE)"]
+    N06[N-06 Facturación y contabilidad mínima]
+  end
+  CC[Centro de control del operador: decide el despacho]
+  classDef tobe fill:#dcfce7,stroke:#166534;
+  class AP03,N01,N02,N03,N04,N05,N06 tobe;
