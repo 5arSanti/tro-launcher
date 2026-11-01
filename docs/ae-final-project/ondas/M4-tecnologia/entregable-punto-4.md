@@ -121,7 +121,7 @@ Escala de riesgos cualitativa: Alta, Media, Baja.
 | RT-03 | Disco cerca de su capacidad | 975 GB usados de 1,14 TB | Media | Alta | Observado por declaración del dueño (1 de noviembre de 2026) | Almacén de objetos y retiro de duplicados |
 | RT-04 | Límite de medición del modelo | Recall bajo sobre imágenes genéricas, sin evaluación en estación | Alta | Media | Observado | Evaluación con fuente de estación antes de un piloto |
 | RT-05 | Brecha de autenticación | La consola y la API no autentican | Media | Alta | Observado | N-02 en AP-02 y AP-03a |
-| RT-06 | Configuración de desarrollo expuesta | CORS abierto, depuración y recarga activas, puerto 5678 publicado | Media | Alta | Observado | Imagen mínima y perfiles de entorno |
+| RT-06 | Configuración de desarrollo expuesta | CORS abierto, depuración y recarga activas, puerto 5678 publicado; sin segmentación de red, firewall ni VPN (IT-RD-06) | Media | Alta | Observado; IT-RD-06 Observado por declaración del dueño (1 de noviembre de 2026) | Imagen mínima y perfiles de entorno |
 | RT-07 | Brecha de pruebas del backend | Configuración de pytest sin carpeta de pruebas ni integración continua | Alta | Media | Observado | Pruebas de contrato e integración continua |
 | RT-08 | Estado volátil | Conteos en memoria | Alta | Media | Observado | N-04 |
 | RT-09 | Datos personales en el laboratorio | Cuenta de anotador e imágenes de personas en repositorio | Media | Alta | Observado | Laboratorio aislado y tratamiento conforme a la Ley 1581 de 2012 |
