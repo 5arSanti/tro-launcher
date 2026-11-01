@@ -86,7 +86,7 @@ Tablero de empresa: `docs/ae-final-project/registro-empresa.md`.
 
 Marcas de hecho: Observado, Diseñado AS-IS, Objetivo TO-BE. Un Objetivo no se afirma como hoy. Si el hecho no está en este archivo ni en el registro, escribir `NO CONFIRMADO`.
 
-Hitos: M0 fundación (hecho). M1 negocio. M2 datos. M3 aplicaciones. M4 tecnología. M5 roadmap e informe único.
+Hitos: M0 fundación (hecho). M1 negocio (hecho, auditado). M2 datos (hecho, auditado). M3 aplicaciones (hecho, auditado). M4 tecnología (pendiente). M5 transformación (borrador completo en revisión de Santiago; carpeta M5-transformacion; brechas de tecnología Pendiente M4) e informe único (pendiente).
 
 Cada hito M1 a M5 requiere spec y plan antes de redactar. El informe no cita archivos `.md`. Cita entregables por nombre y URL. Tono formal TOGAF, orientado a un decisor de negocio.
 
