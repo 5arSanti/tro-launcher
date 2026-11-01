@@ -82,20 +82,20 @@ Criterio de severidad: Alta si afecta el cumplimiento legal, la seguridad o la c
 
 | ID | Problema | Categoría | Aplicaciones | Marca | Severidad | Propuesta |
 |---|---|---|---|---|---|---|
-| PR-01 | La hoja de cálculo actúa como sustituto de CRM; el sitio da por recibido el mensaje con cualquier HTTP 200, sin acuse, reintento ni cola | Dependencia de hoja de cálculo; falta de integración | AP-01, AP-06 | Observado | Media | N-01, IT-01, RT-01 |
+| PR-01 | La hoja de cálculo actúa como sustituto de CRM; el sitio da por recibido el mensaje con cualquier HTTP 200, sin acuse, reintento ni cola | Dependencia de hoja de cálculo; falta de integración | AP-01, AP-06 | Observado | Media | N-01, IT-01, RA-01 |
 | PR-02 | Riesgo actual Ley 1581: el formulario recopila datos personales sin política de tratamiento ni casilla de autorización; los datos quedan en la cuenta personal de Google del dueño; el análisis jurídico es de Datos | Seguridad y cumplimiento (adicional) | AP-01, AP-06 | Observado en código; Observado por declaración del dueño (1 de noviembre de 2026) | Alta | IT-01 |
 | PR-03 | Sin autenticación ni autorización en la API y la consola; CORS abierto con credenciales | Seguridad (adicional) | AP-02, AP-03 | Observado | Alta | N-02, IT-02 |
 | PR-04 | Inferencia ligada al flujo de video: sin cliente no hay conteo, y cada cliente crea su propio ciclo de inferencia | Falta de integración (acoplamiento) | AP-02, AP-03, AP-05 | Observado (lectura estática) | Alta | AP-03b, IT-07 |
 | PR-05 | Conteos, estado y planes de despacho solo en memoria; se pierden al reiniciar | Falta de persistencia (adicional) | AP-03 | Observado | Alta | N-04, IT-04 |
 | PR-06 | Sin integración con el centro de control del operador | Falta de integración | AP-03 | Observado (ausencia) | Media | IT-06 |
 | PR-07 | Modelo acoplado a la estructura del monorepo y copiado a mano; deriva de versiones de Ultralytics y Python entre entrenamiento y API | Falta de integración (empaquetado) | AP-03, AP-04, AP-05 | Observado; efecto en contenedor NO CONFIRMADO | Media | N-05, IT-05 |
-| PR-08 | Identificadores de estación inconsistentes (station_sur frente a station_sur_usb0) y estación usb1 sin fuente en el listado | Defecto de aplicación (adicional) | AP-02, AP-03 | Observado (lectura estática; verificación pendiente) | Alta | RT-04 (corrección TO-BE) |
-| PR-09 | Identidad TRO residual en nombres, descripciones y contenedores (incluye etl-migration-api heredado) | Consistencia de identidad (adicional) | AP-02, AP-03 | Observado | Baja | RT-02 |
-| PR-10 | Textos sin respaldo: cifrado y acceso controlado, "despacho óptimo", "Centro de control", frames por WebSocket | Consistencia de identidad; posible duplicidad de fuentes de verdad del producto | AP-01, AP-02, AP-03 | Observado | Baja | RT-03 |
-| PR-11 | Código sin uso registrado: middleware de tamaño no activado y lista de detecciones simuladas | Deuda técnica (adicional) | AP-02, AP-03 | Observado (uso de H-38 NO CONFIRMADO) | Baja | RT-05 |
+| PR-08 | Identificadores de estación inconsistentes (station_sur frente a station_sur_usb0) y estación usb1 sin fuente en el listado | Defecto de aplicación (adicional) | AP-02, AP-03 | Observado (lectura estática; verificación pendiente) | Alta | RA-04 (corrección TO-BE) |
+| PR-09 | Identidad TRO residual en nombres, descripciones y contenedores (incluye etl-migration-api heredado) | Consistencia de identidad (adicional) | AP-02, AP-03 | Observado | Baja | RA-02 |
+| PR-10 | Textos sin respaldo: cifrado y acceso controlado, "despacho óptimo", "Centro de control", frames por WebSocket | Consistencia de identidad; posible duplicidad de fuentes de verdad del producto | AP-01, AP-02, AP-03 | Observado | Baja | RA-03 |
+| PR-11 | Código sin uso registrado: middleware de tamaño no activado y lista de detecciones simuladas | Deuda técnica (adicional) | AP-02, AP-03 | Observado (uso de H-38 NO CONFIRMADO) | Baja | RA-05 |
 | PR-12 | Sin pruebas del backend; imagen con dependencias de desarrollo, recarga automática y puerto de depuración expuesto | Calidad y seguridad (adicional) | AP-03 | Observado | Alta | Insumo para la Arquitectura Tecnológica |
 | PR-13 | Sin despliegue de AP-02 ni AP-03 fuera del equipo local; sin entorno de piloto separado | Falta de plataforma (adicional, detalle en la Arquitectura Tecnológica) | AP-02, AP-03 | Observado | Media | Insumo para la Arquitectura Tecnológica (Azure o GCP: NO CONFIRMADO) |
-| PR-14 | Herramientas personales sin gobierno formal (Label Studio local, hoja, SharePoint, correo); base de Label Studio versionada en repositorio público con una cuenta de anotador con datos personales (AI-04), riesgo alto de privacidad | Dependencia de herramientas externas | AP-06, AP-08, AP-10, AP-11 | Observado | Alta | RT-06 |
+| PR-14 | Herramientas personales sin gobierno formal (Label Studio local, hoja, SharePoint, correo); base de Label Studio versionada en repositorio público con una cuenta de anotador con datos personales (AI-04), riesgo alto de privacidad | Dependencia de herramientas externas | AP-06, AP-08, AP-10, AP-11 | Observado | Alta | RA-06 |
 | PR-15 | Ausencia de ERP o aplicación de facturación y contabilidad | Capacidad ausente | Ninguna | Observado (ausencia) | Baja (pasa a Media cuando haya un piloto contratado) | N-06 |
 | PR-16 | Cámaras físicas sin prueba documentada: el código soporta USB y RTSP, el dueño declara pruebas con usb0 y usb1 sin registro | Evidencia (adicional) | AP-03 | NO CONFIRMADO documentalmente | Media | Insumo para el Roadmap de Transformación (sesión de prueba documentada) |
 | PR-17 | Leads recopilados sin respuesta ni seguimiento: el interés recibido no se convierte en gestión comercial | Proceso manual inexistente (adicional) | AP-06 | Observado por declaración del dueño (1 de noviembre de 2026) | Media | N-01 |
@@ -156,13 +156,13 @@ Contrato entre ambos servicios (IT-07):
 
 | ID | Elemento | Motivo | Reemplazo |
 |---|---|---|---|
-| RT-01 | Rol de la hoja de cálculo como CRM | Dependencia de hoja, sin control | N-01 |
-| RT-02 | Identidad TRO residual (descripciones, etl-migration-api, etl-network); estandarización opcional de nombres tro-* de repositorios | Regla de identidad; nombres conservados en AS-IS por decisión del dueño | Nombres TORNS |
-| RT-03 | Textos sin respaldo en consola y sitio | Afirmaciones no evidenciadas | Textos alineados con lo observado |
-| RT-04 | Inconsistencia de identificadores de estación | Defecto | Identificador único por estación |
-| RT-05 | Middleware no activado y lista de detecciones simuladas | Código sin uso | Activar o eliminar |
-| RT-06 | Base de Label Studio en repositorio público | Exposición de datos personales de la cuenta de anotador (AI-04), riesgo alto | Almacenamiento privado |
-| RT-07 | Carga de Google Fonts desde servidores de Google (AP-12) | Cada visita transfiere la IP del visitante a un tercero sin aviso | Tipografía alojada con el propio sitio, o mención expresa en el aviso de tratamiento |
+| RA-01 | Rol de la hoja de cálculo como CRM | Dependencia de hoja, sin control | N-01 |
+| RA-02 | Identidad TRO residual (descripciones, etl-migration-api, etl-network); estandarización opcional de nombres tro-* de repositorios | Regla de identidad; nombres conservados en AS-IS por decisión del dueño | Nombres TORNS |
+| RA-03 | Textos sin respaldo en consola y sitio | Afirmaciones no evidenciadas | Textos alineados con lo observado |
+| RA-04 | Inconsistencia de identificadores de estación | Defecto | Identificador único por estación |
+| RA-05 | Middleware no activado y lista de detecciones simuladas | Código sin uso | Activar o eliminar |
+| RA-06 | Base de Label Studio en repositorio público | Exposición de datos personales de la cuenta de anotador (AI-04), riesgo alto | Almacenamiento privado |
+| RA-07 | Carga de Google Fonts desde servidores de Google (AP-12) | Cada visita transfiere la IP del visitante a un tercero sin aviso | Tipografía alojada con el propio sitio, o mención expresa en el aviso de tratamiento |
 
 ### Dependencias lógicas
 
