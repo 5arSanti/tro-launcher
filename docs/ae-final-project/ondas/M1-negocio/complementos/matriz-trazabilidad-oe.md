@@ -12,7 +12,7 @@ Borrador de apoyo. Fuente: tabla de objetivos estratégicos (objetivo a proceso,
 
 ## Hallazgos de trazabilidad
 1. Todo objetivo tiene al menos un proceso y un servicio. Ningún objetivo queda huérfano.
-2. CAP-07, CAP-09 y CAP-10 no tienen proceso ni servicio AS-IS. Solo se enlazan a OE-05 (TO-BE). Es coherente con el registro (Observado, ausencia).
+2. CAP-07, CAP-09 y CAP-10 no tienen proceso ni servicio AS-IS. Solo se enlazan a OE-05 (TO-BE). Es coherente con el registro (Observado, ausencia). En el TO-BE aprobado por Santiago (1 de noviembre de 2026), OE-05 se apoya además en P-06 a P-09 y en SN-04 y SN-05: CAP-07 en P-07, CAP-09 en P-08 y CAP-10 en P-09 (Objetivo TO-BE).
 3. CAP-08 no tiene servicio explícito en la Arquitectura de Negocio. NO CONFIRMADO si el catálogo digital se considera parte de SN-02.
 4. P-05 y P-01 sostienen OE-03, pero no existe aún un servicio de cara al interesado para datos personales. Brecha cubierta por C-03.
 5. Los indicadores de las fichas de proceso no cuantifican ningún objetivo. Varias metas figuran como NO CONFIRMADO. No se inventa ninguna.

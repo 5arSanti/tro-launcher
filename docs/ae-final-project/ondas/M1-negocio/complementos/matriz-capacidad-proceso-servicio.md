@@ -17,8 +17,25 @@ Leyenda: P = proceso principal que ejerce la capacidad (fuente: mapa de capacida
 
 ## Lectura
 - Las letras P salen de la columna "proceso asociado" del mapa de capacidades. Las letras A son propuestas y Santiago debe aprobarlas o borrarlas.
-- Tres capacidades ausentes (CAP-07, CAP-09, CAP-10) no tienen proceso ni servicio. Alimentan C-06.
+- Tres capacidades ausentes (CAP-07, CAP-09, CAP-10) no tienen proceso ni servicio. Alimentan C-06. En el TO-BE aprobado las cubren P-07, P-08 y P-09 (ver la proyección TO-BE).
 - Los dueños funcionales de cada proceso (Dirección, Comercial, Producto, Operación, Calidad) hoy son una sola persona, Johel Arias (Diseñado AS-IS). No se afirma como hoy que existan áreas separadas.
+
+## Proyección TO-BE aprobada (1 de noviembre de 2026)
+Marca: Objetivo TO-BE. Procesos y servicios aprobados por Santiago; no existen hoy (Observado).
+
+| Capacidad | P-06 | P-07 | P-08 | P-09 | Servicio de negocio TO-BE |
+|-----------|------|------|------|------|---------------------------|
+| CAP-03 Ventas y captación de interés B2B / B2G | P |  |  |  | SN-04 |
+| CAP-04 Detección y conteo de pasajeros en estación |  |  |  |  | SN-04 |
+| CAP-05 Cálculo y recomendación determinista de despacho |  |  |  |  | SN-04 |
+| CAP-06 Atención al cliente / Acompañamiento de demostración | P |  |  |  | SN-04, SN-05 |
+| CAP-07 Integración y despacho en vivo con el centro de control |  | P |  |  | NO CONFIRMADO |
+| CAP-08 Gestión de inventarios (catálogo digital vs. hardware físico) |  |  |  |  | SN-05 |
+| CAP-09 Gestión financiera, contable y facturación | A |  | P |  | Ninguno de cara al cliente |
+| CAP-10 Gestión de talento humano |  |  |  | P | Ninguno de cara al cliente |
+
+- P-06 ejerce CAP-09 como apoyo, porque produce los contratos que factura P-08.
+- P-09 se separó de P-08 por decisión de Santiago: CAP-09 y CAP-10 tienen ciclos, normas y datos distintos.
 
 ## Servicios de negocio AS-IS (de la Arquitectura de Negocio)
 - SN-01 Información institucional y recepción de interés comercial (P-02).
