@@ -1,0 +1,36 @@
+flowchart LR
+    Organizacion["Organización"]
+    Contacto["Contacto"]
+    Autorizacion["Autorización del titular"]
+    Solicitud["Solicitud de derechos"]
+    Lead["Lead"]
+    Cliente["Cliente<br/>(solo con contrato)"]
+    Contrato["Contrato"]
+    Factura["Factura"]
+    Linea["Línea"]
+    Estacion["Estación"]
+    Fuente["Fuente de video<br/>(con autorización)"]
+    Observacion["Observación de conteo"]
+    Version["Versión de modelo"]
+    ModeloTren["Modelo de tren"]
+    Recom["Recomendación<br/>de despacho"]
+    Evidencia["Evidencia de validación"]
+    Producto["Producto TORNS<br/>(AP-01 a AP-04)"]
+    Organizacion -->|"agrupa"| Contacto
+    Contacto -->|"otorga"| Autorizacion
+    Contacto -->|"presenta"| Solicitud
+    Contacto -->|"origina"| Lead
+    Organizacion -.->|"puede ser"| Cliente
+    Cliente -.->|"firma"| Contrato
+    Contrato -.->|"genera"| Factura
+    Linea -->|"agrupa"| Estacion
+    Estacion -->|"dispone de"| Fuente
+    Fuente -->|"produce"| Observacion
+    Version -->|"genera"| Observacion
+    Observacion -->|"origina"| Recom
+    ModeloTren -->|"se selecciona en"| Recom
+    Estacion -->|"admite"| ModeloTren
+    Evidencia -->|"respalda"| Producto
+    style Cliente stroke-dasharray: 5 5
+    style Contrato stroke-dasharray: 5 5
+    style Factura stroke-dasharray: 5 5

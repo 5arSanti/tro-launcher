@@ -1,0 +1,41 @@
+Tabla,Id,Evidencia en código o registro
+E-01-inventario-datos,D-01,AP-01:src/components/ContactForm.tsx:L40; AP-01:src/lib/submitContact.ts:L6-L24; AP-01:.env.example:L1
+E-01-inventario-datos,D-02,"AP-01:src/content/copy.ts:L90 (texto de validación con n=20); registro de empresa, sección 7"
+E-01-inventario-datos,D-03,Registro de empresa y onda M1 (el soporte no está en el repositorio)
+E-01-inventario-datos,D-04,"AP-03:src/app/video/video_service.py:L25,L54,L128"
+E-01-inventario-datos,D-05,"AP-03:src/app/video/services/video_stream_service.py:L47,L112"
+E-01-inventario-datos,D-06,"AP-03:src/app/video/services/metrics_service.py:L31,L45; AP-03:src/app/video/interfaces/detection_metrics.py:L19-L32"
+E-01-inventario-datos,D-07,AP-03:src/app/routing/services/train_dispatch_service.py:L95-L155
+E-01-inventario-datos,D-08,"AP-03:src/app/video/video_service.py:L25,L87; AP-03:src/app/routing/services/train_dispatch_service.py:L160"
+E-01-inventario-datos,D-09,"AP-03:src/app/routing/services/train_dispatch_service.py:L16-L21,L78-L90"
+E-01-inventario-datos,D-10,"AP-03:src/app/routing/services/train_dispatch_service.py:L63,L177,L224"
+E-01-inventario-datos,D-11,AP-03:src/app/routing/services/train_dispatch_service.py:L182-L215; AP-03:src/app/routing/routing_controller.py:L116-L135
+E-01-inventario-datos,D-12,AP-04:data.yaml; AP-04:runs/detect/train; AP-03:src/app/video/services/model_service.py:L12-L24
+E-01-inventario-datos,D-13,"AP-04:mydata/media (371 archivos rastreados); AP-04:mydata/export; AP-04:main.ipynb (celda de entrenamiento, salida registrada); AP-04:dataset (solo un marcador)"
+E-01-inventario-datos,D-14,"AP-04:mydata/label_studio.sqlite3 (lectura de solo lectura, sin imprimir valores); AP-04:mydata/export (campo de creador con correo)"
+E-01-inventario-datos,D-15,AP-03:src/app/routing/services/train_dispatch_service.py:L229
+E-01-inventario-datos,D-16,Repositorio coordinador y los cuatro submódulos AP-01 a AP-04 en los commits de la sección de método
+E-01-inventario-datos,D-17,Registro de empresa y guías de las ondas
+E-01-inventario-datos,D-18,Registro de empresa (sin contratos ni clientes). Un lead no es un cliente
+E-01-inventario-datos,D-19,Registro de empresa (SH-08)
+E-01-inventario-datos,D-20,Registro de empresa (AI-07)
+E-01-inventario-datos,D-21,Registro de empresa (equipo vigente de una persona)
+E-01-inventario-datos,D-22,Registro de empresa (AI-07)
+E-01-inventario-datos,D-23,Aclaración de Santiago en esta onda (turno de aprobación del spec v0.2)
+E-04-matriz-flujos,F-01,AP-01:src/lib/submitContact.ts:L16-L32; AP-01:.env.example:L1
+E-04-matriz-flujos,F-02,AP-01:src/content/copy.ts (texto del formulario promete respuesta por el mismo canal)
+E-04-matriz-flujos,F-03,AP-01:index.html:L7-L9 (fuentes cargadas desde Google)
+E-04-matriz-flujos,F-04,AP-03:src/app/video/services/video_stream_service.py:L80-L86
+E-04-matriz-flujos,F-05,AP-03:src/app/video/services/detection_service.py:L32
+E-04-matriz-flujos,F-06,AP-03:src/app/video/video_controller.py:L59-L74; AP-03:src/app/video/services/video_stream_service.py:L112
+E-04-matriz-flujos,F-07,"AP-03:src/app/video/video_controller.py:L91; AP-03:src/app/video/services/metrics_service.py:L31,L45"
+E-04-matriz-flujos,F-08,AP-03:src/app/video/services/video_stream_service.py:L121-L133; AP-03:src/app/routing/services/train_dispatch_service.py:L216-L240
+E-04-matriz-flujos,F-09,AP-03:src/app/routing/routing_controller.py:L62-L110
+E-04-matriz-flujos,F-10,AP-03:src/app/routing/routing_controller.py:L116-L135; AP-03:src/app/routing/routing_schema.py:L75-L79
+E-04-matriz-flujos,F-11,AP-04:mydata/export; AP-04:runs/detect/train; AP-04:data.yaml
+E-04-matriz-flujos,F-12,AP-03:src/app/video/services/model_service.py:L21-L28; AP-03:src/app/common/constants.py:L7
+E-04-matriz-flujos,F-13,AP-04:mydata/label_studio.sqlite3; AP-04:mydata/export
+E-04-matriz-flujos,F-14,"Registro de empresa, sección 7 (AI-02)"
+E-04-matriz-flujos,F-15,"Registro de empresa, sección 7 (AI-02)"
+E-04-matriz-flujos,F-16,AP-01:src/content/copy.ts:L90
+E-04-matriz-flujos,F-17,AP-03:src/app/video/video_controller.py:L17-L30; AP-03:src/app/video/video_service.py:L54-L66

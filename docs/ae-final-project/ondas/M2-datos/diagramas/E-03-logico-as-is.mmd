@@ -1,0 +1,60 @@
+erDiagram
+    ModeloTren {
+        texto id PK
+        texto name
+        entero wagon_count
+        entero capacity_per_wagon
+        entero total_capacity
+    }
+    Estacion {
+        texto id PK
+        texto name
+        texto line
+        texto camera_id FK
+        entero travel_time_seconds
+        lista supported_train_ids FK
+    }
+    VideoInfo {
+        texto id PK
+        texto filename
+        texto name
+    }
+    Payload {
+        texto nombre
+        texto email
+        texto organizacion
+        texto mensaje
+        texto origen
+    }
+    Estado {
+        Estacion station FK
+        entero last_passenger_count
+        fecha last_updated
+        PlanDespacho last_dispatch FK
+    }
+    Plan {
+        texto station_id PK
+        texto station_name
+        texto camera_id
+        entero passenger_count
+        texto train_model FK
+        entero trains_required
+        entero total_capacity
+        entero surplus_capacity
+        texto status
+        entero estimated_cycle_time_seconds
+        fecha generated_at
+    }
+    Metrica {
+        texto video_id PK
+        fecha timestamp
+        entero total_objects
+        entero person_count
+        mapa label_counts
+    }
+    Estacion }o..o| VideoInfo : "camera_id"
+    Estacion }o..o| ModeloTren : "trenes admitidos"
+    Plan }o..o| ModeloTren : "train_model"
+    Estado }o..o| Estacion : "clave distinta PI-05"
+    Estado }o--|| Plan : "last_dispatch"
+    Metrica }o..o| VideoInfo : "video_id"
