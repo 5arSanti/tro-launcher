@@ -33,6 +33,7 @@ São Paulo es la única ubicación donde ambas nubes ofrecen la misma GPU (T4), 
 | AP-03b | Inferencia en GPU (I-07 video, IT-05 pesos desde N-05, publica IT-07) | VM NC4as T4 v3 | Compute Engine n1-standard-4 + T4 |
 | AP-04 | Reentrenamiento por lotes en GPU | VM NC4as T4 v3 bajo demanda | n1-standard-4 + T4 bajo demanda |
 | N-01 | Datos personales | Esquema separado dentro de N-04 | Esquema separado dentro de N-04 |
+| IT-01 | Receptor de leads: cómputo mínimo que recibe los leads de AP-01 (GitHub Pages no ejecuta código) y escribe en el esquema de N-01, con identidad propia, permisos solo sobre ese esquema y sin acceso de AP-03a ni AP-03b | Azure Functions (plan de consumo) o Container App mínima | Cloud Run functions o servicio Cloud Run mínimo |
 | N-02 | Proveedor de identidad OIDC | Entra External ID | Identity Platform |
 | N-04 | Base de datos gestionada | PostgreSQL Flexible Server | Cloud SQL para PostgreSQL |
 | N-05 | Almacenamiento de objetos versionado (pesos, evidencias) | Blob Storage Hot LRS | Cloud Storage Standard |
@@ -154,6 +155,20 @@ Cada línea tiene fuente y fecha de consulta 2 nov 2026 en la hoja de cálculo. 
 
 Referencia de hosting estático: AP-01 en GitHub Pages tiene costo de nube 0 USD. El precio del plan Free de Azure Static Web Apps y el de Firebase Hosting no se verificaron en esta consulta (NO CONFIRMADO); por eso AP-02 estático no suma a los totales.
 
+### 5.2 IT-01, receptor de leads
+
+Precios unitarios oficiales, región São Paulo, fecha de consulta 2 nov 2026. La cantidad es NO CONFIRMADO porque el volumen de leads no figura en la tabla de parámetros aprobada; por eso IT-01 no suma a los totales y estos no cambian.
+
+| Nube | Servicio | SKU | Precio unitario USD | Unidad | Nivel gratuito mensual | Fuente | SLA publicado |
+|---|---|---|---|---|---|---|---|
+| Azure | Azure Functions, plan de consumo (brazilsouth) | Standard Execution Time | 0,000016 | GB-s | 400 000 GB-s | Azure Retail Prices API | 99,95 % (Function App en plan de consumo) |
+| Azure | Azure Functions, plan de consumo (brazilsouth) | Standard Total Executions | 0,20 | millón de ejecuciones | 1 000 000 ejecuciones | Azure Retail Prices API | 99,95 % |
+| GCP | Cloud Run functions o Cloud Run, facturación por solicitud (southamerica-east1) | CPU, tiempo activo | 0,0000336 | vCPU-s | 180 000 vCPU-s (calculado con precio de us-central1) | https://cloud.google.com/run/pricing | 99,95 % (Cloud Run service sin GPU), https://cloud.google.com/run/sla |
+| GCP | Ídem | Memoria, tiempo activo | 0,0000035 | GiB-s | 360 000 GiB-s (calculado con precio de us-central1) | https://cloud.google.com/run/pricing | 99,95 % |
+| GCP | Ídem | Solicitudes | 0,40 | millón de solicitudes | 2 000 000 solicitudes | https://cloud.google.com/run/pricing | 99,95 % |
+
+El SLA de Azure proviene del documento «Service Level Agreement for Microsoft Online Services (WW)», versión del 1 de noviembre de 2026. La alternativa de Container App mínima usa los precios de Container Apps de la sección 5.1. En GCP, Cloud Run functions se despliega como servicio Cloud Run; aplicarle el SLA de Cloud Run es una lectura de la página de SLA, no una cláusula específica para funciones.
+
 ## 6. Acuerdos de nivel de servicio (SLA)
 
 Fuente Azure: «Service Level Agreement for Microsoft Online Services (WW)», versión del 1 de noviembre de 2026 (archivo OnlineSvcsConsolidatedSLA(WW)(English)(November_2026)(CR).docx), descargado de https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services (consulta 2 nov 2026). Fuente GCP: página SLA de cada servicio indicada en la tabla (consulta 2 nov 2026). Los porcentajes son el umbral de disponibilidad mensual por debajo del cual se otorga crédito de servicio.
@@ -175,9 +190,13 @@ Para que la VM de Azure tenga el 99,9 %, los discos del sistema operativo y de d
 
 ## 7. Residencia de datos (Ley 1581 de 2012)
 
-Ambas regiones están en Brasil. Almacenar datos personales (N-01) en ellas constituye transferencia o transmisión internacional de datos. El artículo 26 de la Ley 1581 de 2012 prohíbe la transferencia a países que no proporcionen niveles adecuados de protección, con las excepciones de los literales a) a f), y su Parágrafo 1 asigna a la Superintendencia de Industria y Comercio la declaración de conformidad. El artículo 27 trata las normas corporativas vinculantes. Fuente: Función Pública, https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981 (consulta 2 nov 2026). La misma fuente registra que el Decreto 1377 de 2013 reglamenta parcialmente la ley; sus artículos específicos no se verificaron.
+Ambas regiones están en Brasil. Los datos personales que saldrían del país son N-01 y las imágenes de personas en el almacén de objetos y en la inferencia (D-04, D-05 y D-13 del inventario de datos).
 
-Si la SIC considera que Brasil tiene un nivel adecuado de protección: NO CONFIRMADO. Esta condición es igual para Azure y GCP, así que no inclina la decisión, aunque sí debe resolverse antes de cargar datos personales en la nube.
+El proveedor de nube actúa como Encargado del Tratamiento por cuenta de LIRN, que es el Responsable. Por eso el caso típico es una transmisión internacional y no una transferencia. El Decreto 1377 de 2013 define la transferencia como el envío a un receptor que a su vez es Responsable (art. 3, num. 4), y la transmisión como la comunicación de datos para que un Encargado realice el Tratamiento por cuenta del Responsable (art. 3, num. 5). Según el art. 24, las transferencias internacionales deben observar el artículo 26 de la Ley 1581 de 2012 (num. 1). Las transmisiones internacionales entre Responsable y Encargado no necesitan informarse al Titular ni contar con su consentimiento cuando existe un contrato en los términos del art. 25 (num. 2). El art. 25 regula ese contrato de transmisión: alcance del tratamiento, actividades del Encargado y obligaciones mínimas de tratamiento según los principios, seguridad y confidencialidad. Fuente: Función Pública, https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=53646 (consulta 2 nov 2026). Que la transmisión con contrato proceda aunque el país no tenga nivel adecuado declarado se desprende de que el art. 24 remite al artículo 26 de la ley solo para transferencias; es una lectura del texto, no una disposición expresa. La compilación del Decreto 1377 de 2013 en el Decreto 1074 de 2015 queda NO CONFIRMADO en esta consulta; la página de Función Pública solo registra la derogatoria parcial por el Decreto 1081 de 2015.
+
+Para la transferencia, el artículo 26 de la Ley 1581 de 2012 prohíbe enviar datos a países que no proporcionen niveles adecuados de protección, con las excepciones de los literales a) a f). Su Parágrafo 1 asigna a la Superintendencia de Industria y Comercio la declaración de conformidad, y el artículo 27 trata las normas corporativas vinculantes. Fuente: Función Pública, https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981 (consulta 2 nov 2026).
+
+Si la SIC considera que Brasil tiene un nivel adecuado de protección: NO CONFIRMADO. La condición es igual para Azure y GCP, así que no inclina la decisión. En cualquiera de las dos nubes, el contrato de transmisión con el proveedor debe estar firmado antes de cargar datos personales. Esto es coherente con el pendiente del Entregable del Punto 2: la calificación de Google como Encargado para AP-06 sigue NO CONFIRMADO, y si se elige GCP el mismo análisis de contrato de encargo se extiende a Google Cloud.
 
 ## 8. Aislamiento de N-01
 
