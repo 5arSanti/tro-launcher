@@ -16,7 +16,7 @@ La Arquitectura Tecnológica traduce las necesidades de la Arquitectura de Aplic
 | IT-EQ-01 | Estación del fundador | Intel Core i5-10400 a 2,90 GHz, 48 GB de RAM, NVIDIA GeForce GTX 1050 Ti de 4 GB, 1,14 TB de almacenamiento con 975 GB usados (cerca del 85 %), Windows de 64 bits | Observado por declaración del dueño (1 de noviembre de 2026) |
 | IT-EQ-02 | GPU de entrenamiento | La misma GTX 1050 Ti; la salida del cuaderno registra PyTorch 2.7.1 con CUDA 11.8 y Ultralytics 8.3.228 | Observado |
 | IT-EQ-03 | Cámaras | Cámara integrada usb0 y cámara USB externa usb1 | Observado por declaración del dueño (1 de noviembre de 2026) |
-| IT-EQ-04 | Pruebas con cámaras | Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1); no hay fechas ni resultados registrados | Observado por declaración del dueño (1 de noviembre de 2026); fechas y resultados NO CONFIRMADO |
+| IT-EQ-04 | Pruebas con cámaras | Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1) | Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO |
 | IT-EQ-05 | Servidores de producción | No existen | Observado |
 | IT-EQ-06 | GPU de producción | No existe | Observado |
 

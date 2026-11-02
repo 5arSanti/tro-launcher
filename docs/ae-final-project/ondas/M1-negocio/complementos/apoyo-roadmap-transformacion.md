@@ -10,7 +10,7 @@ Las brechas G-N01 a G-N07 son de tipo Brecha. Su estado actual es Observado seg�
 
 | Brecha | Estado actual (marca) | OE | Proceso, capacidad y servicio afectados | Candidato | Arquitectura de Datos | Arquitectura de Aplicaciones |
 |--------|-----------------------|----|------------------------------------------|-----------|-----------------------|------------------------------|
-| G-N01 Sin NIT ni matrícula mercantil | Observado | OE-05 | P-01, P-08; CAP-01, CAP-09; sin servicio | C-01 | D-23 (Brecha) | Sin aplicación asociada |
+| G-N01 Sin NIT ni matrícula mercantil; no hay registro ante Cámara de Comercio | Observado por declaración del dueño (2 de noviembre de 2026) | OE-05 | P-01, P-08; CAP-01, CAP-09; sin servicio | C-01 | D-23 (Brecha) | Sin aplicación asociada |
 | G-N02 Banda pública desalineada | Observado | OE-02, OE-03 | P-01, P-02; CAP-01; SN-01, SN-03 | C-02 | D-17 | AP-01 |
 | G-N03 Leads en hoja personal, sin respuesta ni política de tratamiento | Observado | OE-02, OE-03 | P-02, P-05; CAP-02, CAP-03; SN-01 | C-03 | D-01, D-18 (Brecha) | AP-01, AP-06 |
 | G-N04 Conteos solo en memoria | Observado | OE-01, OE-04 | P-03; CAP-04, CAP-05; SN-02, SN-04 | C-04 | D-06, D-10, D-11 | AP-02, AP-03 (AP-03a y AP-03b en el TO-BE) |

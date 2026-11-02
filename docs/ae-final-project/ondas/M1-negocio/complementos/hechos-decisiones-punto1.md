@@ -7,8 +7,8 @@ Para que Santiago reescriba con voz propia. No copiar frases de aquí al informe
 |-----|-------|-------|--------|
 | H-01 | LIRN es la firma y TORNS es el único producto | Observado | Registro de empresa; archivo de identidad del repositorio |
 | H-02 | Razón social de trabajo LIRN, proyectada LIRN S.A.S., domicilio Bogotá | Diseñado AS-IS | Registro de empresa, apartado de identidad legal |
-| H-03 | Brecha: no existen NIT ni matrícula mercantil | Observado | Registro de empresa |
-| H-04 | Equipo actual: Johel Arias | Observado | Registro de empresa |
+| H-03 | Brecha: no hay registro ante Cámara de Comercio; no existen NIT ni matrícula mercantil | Observado por declaración del dueño (2 de noviembre de 2026) | Registro de empresa |
+| H-04 | Equipo actual: Johel Santiago Arias | Observado | Registro de empresa |
 | H-05 | Vista funcional de cinco áreas, todas a cargo del fundador | Diseñado AS-IS | Organigrama y stakeholders |
 | H-06 | Cero clientes firmados; Transmilenio es caso de estudio | Observado | Registro de empresa |
 | H-07 | Segmentos B2B operadores (4,15 sobre 5) y B2G Metro (4,00 sobre 5) | Observado / Diseñado AS-IS | Organización y estrategia |

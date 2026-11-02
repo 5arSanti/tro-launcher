@@ -17,7 +17,7 @@ Los Puntos 2 a 5 (Arquitectura de Datos, Arquitectura de Aplicaciones, Arquitect
 | Capítulo desarrollado | Punto 1. Arquitectura de Negocio |
 | Organización | LIRN |
 | Producto | TORNS |
-| Autor | Johel Arias |
+| Autor | Johel Santiago Arias |
 | Fecha | 22 de octubre de 2026 |
 | Método | TOGAF. Línea base de negocio (AS-IS) |
 
@@ -36,7 +36,7 @@ Marcas usadas en el documento:
 
 Este documento describe cómo funciona hoy **LIRN** antes de proponer tecnología futura. La firma vende. El producto opera. **LIRN es la firma. TORNS es el único producto.**
 
-TORNS es un prototipo aplicado. No es un piloto firmado. Mide cuántas personas esperan en una estación y recomienda al centro de control el tipo de vehículo y la cantidad de unidades. El equipo actual es **Johel Arias**, una persona. No hay clientes, contratos ni piloto firmado. **Transmilenio es caso de estudio, no cliente.**
+TORNS es un prototipo aplicado. No es un piloto firmado. Mide cuántas personas esperan en una estación y recomienda al centro de control el tipo de vehículo y la cantidad de unidades. El equipo actual es **Johel Santiago Arias**, una persona. No hay clientes, contratos ni piloto firmado. **Transmilenio es caso de estudio, no cliente.**
 
 El Punto 1 responde qué hace la organización, para quién trabaja, cuáles son sus objetivos y cuáles son sus procesos. Cada apartado conserva el detalle de la línea base: ficha de la empresa, misión, visión, objetivos, organigrama, activos de información, procesos modelados, capacidades, partes interesadas y el documento de Arquitectura de Negocio (AS-IS).
 
@@ -54,9 +54,9 @@ La organización concentra la relación institucional, la propiedad intelectual,
 |---|---|---|
 | **Nombre de la organización** | LIRN (razón social proyectada: LIRN S.A.S.). El nombre integra el concepto *Line* (líneas de metro y transporte masivo) con las siglas finales de su producto (*RN* de TORNS). | Observado (marca institucional) / Diseñado AS-IS (razón social) |
 | **Forma jurídica y domicilio** | Sociedad por Acciones Simplificada (S.A.S.) bajo la Ley 1258 de 2008, con domicilio principal en Bogotá D.C., Colombia. | Diseñado AS-IS |
-| **Identificación tributaria (NIT) y matrícula mercantil** | Pendiente de formalización registral ante la Cámara de Comercio de Bogotá y la DIAN. No se asigna número tributario en el estado actual. | Brecha AS-IS. NO CONFIRMADO el registro mercantil activo |
+| **Identificación tributaria (NIT) y matrícula mercantil** | No hay registro ante Cámara de Comercio; el registro ante la Cámara de Comercio de Bogotá ocurre después de la fecha de entrega. No se asigna número tributario. | Brecha AS-IS. Observado por declaración del dueño (2 de noviembre de 2026) |
 | **Sector económico** | Tecnología de la información, desarrollo de software e ingeniería aplicada a Sistemas Inteligentes de Transporte (ITS) y movilidad urbana (actividades de referencia CIIU 6201 y 6202). | Diseñado AS-IS |
-| **Tamaño de la empresa** | Microempresa unipersonal, de acuerdo con los criterios del Decreto 957 de 2019 en Colombia. Equipo actual: **Johel Arias** (una persona). | Observado (equipo) / Diseñado AS-IS (marco societario) |
+| **Tamaño de la empresa** | Microempresa unipersonal, de acuerdo con los criterios del Decreto 957 de 2019 en Colombia. Equipo actual: **Johel Santiago Arias** (una persona). | Observado (equipo) / Diseñado AS-IS (marco societario) |
 | **Productos o servicios** | Un único producto: **TORNS** (*Train Optimization Route and Navigation System*), acompañado del servicio precomercial de demostración guiada sobre escenarios de demanda en estación. | Observado |
 | **Clientes principales actuales** | Ninguno. La firma no cuenta hoy con contratos comerciales, clientes activos, alianzas ni pilotos firmados. | Observado |
 | **Segmentos de mercado objetivo** | Operadores de sistemas de transporte masivo con estaciones (segmento B2B: empresas concesionarias de operación; segmento B2G: entes gestores de movilidad y sistemas ferroviarios o BRT). | Diseñado AS-IS |
@@ -134,15 +134,15 @@ Los cinco objetivos articulan el paso desde la línea base (AS-IS) hacia la arqu
 
 ### Organigrama
 
-La estructura se documenta en dos vistas. La primera muestra la dotación real. La segunda muestra las unidades funcionales que ejecutan los procesos. En el presente, **Johel Arias** es responsable de las cinco áreas. La ocupación de esas áreas por gerencias distintas es un Objetivo TO-BE y no se afirma como hecho de hoy.
+La estructura se documenta en dos vistas. La primera muestra la dotación real. La segunda muestra las unidades funcionales que ejecutan los procesos. En el presente, **Johel Santiago Arias** es responsable de las cinco áreas. La ocupación de esas áreas por gerencias distintas es un Objetivo TO-BE y no se afirma como hecho de hoy.
 
-La página pública del producto conserva tres nombres de la etapa académica inicial. Para el gobierno actual de la firma, el equipo vigente es exclusivamente Johel Arias. La actualización de esa banda pública queda registrada como brecha de alineación documental.
+La página pública del producto conserva tres nombres de la etapa académica inicial. Para el gobierno actual de la firma, el equipo vigente es exclusivamente Johel Santiago Arias. La actualización de esa banda pública queda registrada como brecha de alineación documental.
 
 #### Vista jerárquica de la planta actual
 
 ```mermaid
 flowchart TD
-    DG["Dirección General de LIRN<br/>Titular actual: Johel Arias<br/>Marca: Observado / Diseñado AS-IS"]
+    DG["Dirección General de LIRN<br/>Titular actual: Johel Santiago Arias<br/>Marca: Observado / Diseñado AS-IS"]
     R1["Dirección Estratégica (P-01)"]
     R2["Comercial y Partes Interesadas (P-02)"]
     R3["Producto e Ingeniería TORNS (P-03)"]
@@ -160,15 +160,15 @@ flowchart TD
 ```mermaid
 flowchart TB
     subgraph DIR["Nivel directivo"]
-        A1["Dirección General<br/>Proceso: P-01<br/>Responsable AS-IS: Johel Arias<br/>Dotación separada: Objetivo TO-BE"]
+        A1["Dirección General<br/>Proceso: P-01<br/>Responsable AS-IS: Johel Santiago Arias<br/>Dotación separada: Objetivo TO-BE"]
     end
     subgraph MIS["Unidades misionales"]
-        A2["Área Comercial<br/>Proceso: P-02<br/>Responsable AS-IS: Johel Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
-        A3["Área de Producto e Ingeniería<br/>Proceso: P-03<br/>Responsable AS-IS: Johel Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
-        A4["Área de Operación<br/>Proceso: P-04<br/>Responsable AS-IS: Johel Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+        A2["Área Comercial<br/>Proceso: P-02<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+        A3["Área de Producto e Ingeniería<br/>Proceso: P-03<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+        A4["Área de Operación<br/>Proceso: P-04<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
     end
     subgraph APO["Unidad de apoyo"]
-        A5["Área de Calidad y Evidencia<br/>Proceso: P-05<br/>Responsable AS-IS: Johel Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+        A5["Área de Calidad y Evidencia<br/>Proceso: P-05<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
     end
     A1 -->|"Alcance de producto único y lista de no-claims"| A2
     A1 -->|"Alcance técnico aprobado"| A3
@@ -185,11 +185,11 @@ flowchart TB
 
 | Área | Nivel | Proceso | Responsable AS-IS | Rol proyectado (Objetivo TO-BE) | Relaciones |
 |---|---|---|---|---|---|
-| **Dirección General** | Dirección estratégica | P-01 | Johel Arias | Director General | Emite hacia Comercial y Producto el alcance de producto único (TORNS) y la lista de claims prohibidos. Recibe de Calidad las no conformidades sobre mensajes públicos y la evidencia autorizada (n=20). |
-| **Área Comercial** | Departamento misional | P-02 | Johel Arias | Líder Comercial B2B y B2G. Suplente previsto: Dirección | Recibe de Dirección las reglas de comunicación. Captura solicitudes del canal público y transfiere a Producto y Operación la nota de interés calificado cuando un prospecto pide ver el prototipo. |
-| **Área de Producto e Ingeniería** | Departamento misional | P-03 | Johel Arias | Líder de Producto e Ingeniería. Suplente previsto: Operación | Recibe de Dirección el alcance y de Comercial el interés calificado. Prepara el modelo, la API y la interfaz de despacho, y los entrega mediante acta interna a Operación. Recibe de Calidad y Operación los reportes de fallos técnicos. |
-| **Área de Operación** | Departamento misional | P-04 | Johel Arias | Coordinación de demostración. Suplente previsto: Producto | Recibe de Producto la solución verificada y de Comercial las solicitudes de acompañamiento. Conduce sesiones guiadas de conteo y recomendación sin operar la red real. Escala fallos a Producto o desviaciones de alcance a Calidad. |
-| **Área de Calidad y Evidencia** | Departamento de apoyo | P-05 | Johel Arias | Calidad y cumplimiento. Suplente previsto: Dirección | Custodia la encuesta del 17 de agosto de 2026 (n=20) y las notas de la entrevista al controlador SITP. Audita mensajes públicos y sesiones de Operación. Abre y cierra no conformidades que obligan a Dirección y a Producto. |
+| **Dirección General** | Dirección estratégica | P-01 | Johel Santiago Arias | Director General | Emite hacia Comercial y Producto el alcance de producto único (TORNS) y la lista de claims prohibidos. Recibe de Calidad las no conformidades sobre mensajes públicos y la evidencia autorizada (n=20). |
+| **Área Comercial** | Departamento misional | P-02 | Johel Santiago Arias | Líder Comercial B2B y B2G. Suplente previsto: Dirección | Recibe de Dirección las reglas de comunicación. Captura solicitudes del canal público y transfiere a Producto y Operación la nota de interés calificado cuando un prospecto pide ver el prototipo. |
+| **Área de Producto e Ingeniería** | Departamento misional | P-03 | Johel Santiago Arias | Líder de Producto e Ingeniería. Suplente previsto: Operación | Recibe de Dirección el alcance y de Comercial el interés calificado. Prepara el modelo, la API y la interfaz de despacho, y los entrega mediante acta interna a Operación. Recibe de Calidad y Operación los reportes de fallos técnicos. |
+| **Área de Operación** | Departamento misional | P-04 | Johel Santiago Arias | Coordinación de demostración. Suplente previsto: Producto | Recibe de Producto la solución verificada y de Comercial las solicitudes de acompañamiento. Conduce sesiones guiadas de conteo y recomendación sin operar la red real. Escala fallos a Producto o desviaciones de alcance a Calidad. |
+| **Área de Calidad y Evidencia** | Departamento de apoyo | P-05 | Johel Santiago Arias | Calidad y cumplimiento. Suplente previsto: Dirección | Custodia la encuesta del 17 de agosto de 2026 (n=20) y las notas de la entrevista al controlador SITP. Audita mensajes públicos y sesiones de Operación. Abre y cierra no conformidades que obligan a Dirección y a Producto. |
 
 ### Activos de información
 
@@ -220,7 +220,7 @@ Datos personales (Ley 1581 de 2012):
 | **AI-03** | Video de estaciones y métricas de conteo | Videos de demostración, cámara USB o RTSP, stream de video anotado y mensajes con `video_id`, `timestamp`, `total_objects`, `person_count` y `label_counts`. | P-03 y P-04 | Interno / Confidencial | Potencialmente sí (imagen de personas) | Dato potencialmente sensible. El prototipo minimiza el tratamiento: detecta la caja de la clase `person` para obtener `person_count`, sin reconocimiento facial, sin biometría identificativa y sin seguimiento individual persistente. | Observado |
 | **AI-04** | Pesos del modelo y dataset curado | Archivo `my_model.pt` (YOLO11s, 512 px, 60 épocas; precisión 0,73, recall 0,55, mAP50 0,64) y partición de 3.694 imágenes de entrenamiento y 1.000 de validación. | P-03 | Reservado | No, en los pesos. Imagen curada en el dataset de entrenamiento. | Los pesos son tensores numéricos. Las imágenes de entrenamiento provienen de conjuntos de detección de peatones sin vinculación a titulares identificados. | Observado |
 | **AI-05** | Código fuente de las cuatro superficies | Sitio comercial (`lirn-web-main`), aplicación operativa (`tro-frontend`), API y regla de despacho (`tro-backend`) y entrenamiento (`yolo-train-routes-optimization`). | P-03 | Interno / Reservado | No | No aplica la Ley 1581 de 2012. Es propiedad intelectual y lógica del producto. | Observado |
-| **AI-06** | Gobierno, fichas de proceso y registro de empresa | Alcance de producto único, lista de claims prohibidos, procesos P-01 a P-05 y diagramas BPMN. | P-01 y P-05 | Interno. El diagrama BPMN está publicado para evaluación. | Sí, mínimos | Dato público empresarial: el nombre de Johel Arias como responsable y autor. | Observado |
+| **AI-06** | Gobierno, fichas de proceso y registro de empresa | Alcance de producto único, lista de claims prohibidos, procesos P-01 a P-05 y diagramas BPMN. | P-01 y P-05 | Interno. El diagrama BPMN está publicado para evaluación. | Sí, mínimos | Dato público empresarial: el nombre de Johel Santiago Arias como responsable y autor. | Observado |
 | **AI-07** | Facturación, contabilidad y contratos | Libros, facturación electrónica, contratos B2B o B2G y acuerdos de nivel de servicio. | Gestión financiera futura | No existe hoy | No existe hoy | Brecha declarada. Sin clientes ni piloto firmado no hay facturación ni contratos. En el Objetivo TO-BE sería un activo confidencial. | Observado (ausencia) / Brecha |
 
 ### Mapa de procesos
@@ -257,7 +257,7 @@ flowchart LR
 
 #### Catálogo de procesos
 
-| Código | Nombre | Tipo | Dueño funcional (hoy: Johel Arias) | Objetivo | Entradas | Salidas | Indicadores |
+| Código | Nombre | Tipo | Dueño funcional (hoy: Johel Santiago Arias) | Objetivo | Entradas | Salidas | Indicadores |
 |---|---|---|---|---|---|---|---|
 | **P-01** | Dirección estratégica de LIRN | Estratégico | Dirección | Mantener un solo producto (TORNS), custodiar misión y visión, y controlar que la comunicación pública no incurra en claims prohibidos. | Misión y visión; mensajes públicos; evidencia n=20; no conformidades de P-05. | Alcance de producto para P-02 y P-03; lista de claims prohibidos; decisión de un solo producto. | Un solo producto ofertado (meta: Sí). Claims prohibidos detectados (meta: 0 abiertos). Revisiones de dirección (calendario fijo: NO CONFIRMADO). |
 | **P-02** | Relación comercial y partes interesadas | Misional | Comercial | Recibir y calificar interés por TORNS en el canal público, sin fingir cliente ni piloto. | Solicitud de contacto; alcance y no-claims de P-01; estado del canal. | Solicitud registrada; fallo honesto si el canal no está disponible; respuesta alineada al alcance; interés calificado hacia P-03. | Solicitudes recibidas (meta: NO CONFIRMADO). Rechazos por canal no disponible. Respuestas emitidas. No es conversión de cliente. |
@@ -332,7 +332,7 @@ Una parte interesada es cualquier persona, grupo, área u organización que pued
 
 | ID | Parte interesada | Categoría | Relación con LIRN y TORNS | Interés principal | Influencia | Marca |
 |---|---|---|---|---|---|---|
-| **SH-01** | Johel Arias, fundador y director general | Interna. Cubre Dirección, Comercial, Producto, Operación y Calidad | Único integrante actual y autor del prototipo y de los procesos. | Viabilidad de TORNS, rigor de los no-claims y preparación hacia un primer piloto pagado. | **Alta** | Observado / Diseñado AS-IS |
+| **SH-01** | Johel Santiago Arias, fundador y director general | Interna. Cubre Dirección, Comercial, Producto, Operación y Calidad | Único integrante actual y autor del prototipo y de los procesos. | Viabilidad de TORNS, rigor de los no-claims y preparación hacia un primer piloto pagado. | **Alta** | Observado / Diseñado AS-IS |
 | **SH-02** | Universidad Libre y docente del taller | Externa. Academia | Evalúa el plan bajo TOGAF. | Coherencia entre negocio, datos, aplicaciones, tecnología y roadmap, con trazabilidad verificable. | **Alta** | Observado |
 | **SH-03** | Operadores concesionarios, incluido el rol de controlador operativo entrevistado en el SITP | Externa. Segmento B2B. No son clientes actuales | Ejecutan rutas y sufren desajuste de frecuencia y multas operativas. | Conteo oportuno en estación y recomendación de despacho, en lugar de coordinación reactiva por radio. | **Alta** sobre requisitos del producto. **Media** en la operación actual, porque no hay contrato. | Observado / Diseñado AS-IS |
 | **SH-04** | Administradores y supervisores de estaciones | Externa. Segmento B2B secundario | Vigilan la saturación de plataforma (código TP 19). | Alerta temprana de acumulación de pasajeros. | **Media** | Diseñado AS-IS |
@@ -356,7 +356,7 @@ El documento de **Arquitectura de Negocio (AS-IS)** representa el estado actual 
 ```mermaid
 flowchart TB
     subgraph DOM_NEG["1. Dominio de Negocio (AS-IS)"]
-        N_ORG["LIRN S.A.S. unipersonal en Bogotá (NIT en brecha)<br/>Actor único: Johel Arias en 5 áreas funcionales"]
+        N_ORG["LIRN (proyectada LIRN S.A.S.) en Bogotá, sin registro ante Cámara de Comercio<br/>Actor único: Johel Santiago Arias en 5 áreas funcionales"]
         N_PRO["Procesos P-01 (estratégico), P-02 a P-04 (misionales) y P-05 (apoyo)<br/>Servicios SN-01 (comercial), SN-02 (demostración) y SN-03 (calidad)"]
         N_CAP["Capacidades activas: CAP-01 a CAP-06 y CAP-08 digital<br/>Capacidades ausentes: CAP-07 (red real), CAP-09 (finanzas) y CAP-10 (talento)"]
     end
@@ -392,7 +392,7 @@ flowchart TB
 
 El dominio de negocio define cómo se organiza LIRN hoy, qué procesos ejecuta, qué servicios entrega, qué capacidades tiene operativas y dónde se sitúan sus fronteras reales:
 
-- **Estructura organizacional y gobierno real (`Observado` / `Diseñado AS-IS`):** LIRN opera en Bogotá D.C. bajo el marco de una Sociedad por Acciones Simplificada (S.A.S.) unipersonal cuya formalización registral (NIT y matrícula mercantil ante la Cámara de Comercio de Bogotá y la DIAN) aún no se ha ejecutado y constituye una condición real del presente. La planta física está conformada por una única persona (**Johel Arias**), quien asume la Dirección General y ejecuta directamente las cinco áreas funcionales de la firma: Dirección (`P-01`), Comercial (`P-02`), Producto e Ingeniería (`P-03`), Operación (`P-04`) y Calidad (`P-05`). No existen gerencias intermedias ocupadas ni nómina administrativa. En la página pública `/torns` subsiste una banda informativa con tres nombres heredados de la fase académica inicial, lo cual representa una desalineación documental del AS-IS frente al equipo real de una sola persona.
+- **Estructura organizacional y gobierno real (`Observado` / `Diseñado AS-IS`):** LIRN opera en Bogotá D.C. bajo el marco de una Sociedad por Acciones Simplificada (S.A.S.) unipersonal cuya formalización registral (NIT y matrícula mercantil ante la Cámara de Comercio de Bogotá y la DIAN) aún no se ha ejecutado: no hay registro ante Cámara de Comercio, y ese registro ocurre después de la fecha de entrega. Marca: Observado por declaración del dueño (2 de noviembre de 2026). La planta física está conformada por una única persona (**Johel Santiago Arias**), quien asume la Dirección General y ejecuta directamente las cinco áreas funcionales de la firma: Dirección (`P-01`), Comercial (`P-02`), Producto e Ingeniería (`P-03`), Operación (`P-04`) y Calidad (`P-05`). No existen gerencias intermedias ocupadas ni nómina administrativa. En la página pública `/torns` subsiste una banda informativa con tres nombres heredados de la fase académica inicial, lo cual representa una desalineación documental del AS-IS frente al equipo real de una sola persona.
 - **Ejecución actual de los procesos de negocio (`Observado`):**
   - *Gobierno estratégico (`P-01`):* Mantiene a TORNS como único producto, custodia la misión y la visión aprobadas y aplica la regla de control de claims (prohibición de afirmar clientes, contratos, pilotos firmados, alianzas o métricas de ahorro comercial no probadas).
   - *Ciclo comercial (`P-02`):* Recibe solicitudes de contacto originadas en `/torns#contacto`, verifica manualmente que los datos estén completos y responde al interesado dentro del alcance del prototipo. **Lead no es cliente:** hoy la firma registra cero clientes firmados y cero ingresos por ventas. Transmilenio opera exclusivamente como caso de estudio y referente del problema público.
@@ -445,7 +445,7 @@ El dominio de aplicaciones representa el comportamiento y las interacciones real
 
 El dominio tecnológico describe la infraestructura física, de virtualización, de red, de almacenamiento y de cómputo sobre la cual corren hoy las aplicaciones y los datos de LIRN:
 
-- **Infraestructura de cómputo y ejecución operativa (`Observado`):** Toda la ejecución activa del producto TORNS (`tro-frontend`, `tro-backend` e inferencia del modelo `my_model.pt`) reside en **una única estación de trabajo local perteneciente al fundador (Johel Arias)**, orquestada mediante contenedores Docker locales y entorno de desarrollo local. No existen hoy servidores dedicados en centro de datos, clústeres en la nube ni instancias con GPU de producción para el backend.
+- **Infraestructura de cómputo y ejecución operativa (`Observado`):** Toda la ejecución activa del producto TORNS (`tro-frontend`, `tro-backend` e inferencia del modelo `my_model.pt`) reside en **una única estación de trabajo local perteneciente al fundador (Johel Santiago Arias)**, orquestada mediante contenedores Docker locales y entorno de desarrollo local. No existen hoy servidores dedicados en centro de datos, clústeres en la nube ni instancias con GPU de producción para el backend.
 - **Procesamiento de video e inferencia de inteligencia artificial (`Observado`):** La captura de video se realiza con OpenCV leyendo archivos locales MP4 en `tro-backend/src/app/assets/` o dispositivos locales USB/RTSP conectados al equipo de demostración. No existen cámaras físicas instaladas en estaciones de transporte público ni enlaces de red dedicados hacia patios o troncales. El modelo `my_model.pt` (YOLO11s entrenado a 512 píxeles por 60 épocas con umbral de confianza de 0,5) alcanza en validación una precisión de `0,73`, un `mAP50` de `0,64` y un **recall de `0,55`**. En la operación tecnológica real del AS-IS, ese recall implica que el sistema tiende a subcontar pasajeros cuando existen oclusiones o alta densidad en el encuadre, y no ha sido sometido aún a evaluación de estrés en condiciones de iluminación y ángulo de una estación real.
 - **Servicios en nube, red y dependencias externas (`Observado`):** El único componente desplegado en nube pública es el sitio comercial estático (`lirn-web-main`), alojado en **GitHub Pages**, junto con el webhook de **Google Apps Script y Google Sheets** que recibe el formulario de contacto y los tableros documentales en **Lucidchart** y **SharePoint**. La comunicación entre `tro-frontend` y `tro-backend` ocurre por HTTP (REST y stream MJPEG) y WebSocket sobre red local, sin terminación TLS/HTTPS dedicada para entornos productivos de misión crítica ni cortafuegos de aplicación (WAF).
 - **Resiliencia, respaldo y continuidad tecnológica en el AS-IS (`Observado`):** La infraestructura actual presenta una concentración total de riesgo operativo (*single point of failure*) en la estación de trabajo y en la disponibilidad de una sola persona. Aunque el código fuente está versionado en Git, **no existe una política formal ni automatizada de copias de seguridad (backups)** para los datos de contacto en Google Sheets, los videos de prueba o los pesos entrenados, ni existe separación física de entornos entre laboratorio de desarrollo y consola de demostración comercial.
@@ -458,7 +458,7 @@ La siguiente matriz consolida el estado real de los cuatro dominios de la Arquit
 
 | Dominio TOGAF | Estado operativo real hoy (Línea base AS-IS) | Procesos y capacidades que soporta | Cómo habilita hoy la misión, la visión y los objetivos estratégicos |
 |---|---|---|---|
-| **1. Negocio** | S.A.S. unipersonal en Bogotá con NIT y matrícula en brecha. Un único actor (**Johel Arias**) ejecuta las 5 áreas funcionales y los procesos `P-01` a `P-05`. Cero clientes y cero contratos firmados; Transmilenio como caso de estudio. Tres servicios activos (`SN-01`, `SN-02`, `SN-03`). Capacidades `CAP-01` a `CAP-06` operativas a escala precomercial; `CAP-07`, `CAP-09` y `CAP-10` ausentes. | `P-01` a `P-05` · `CAP-01` a `CAP-06` y `CAP-08` (digital) | Asegura el gobierno de un único producto (TORNS), mantiene un canal comercial honesto sin claims falsos (**OE-02**, **OE-03**) y conduce demostraciones guiadas del ciclo demanda hacia oferta (**OE-01**, **OE-04**), dejando trazada la ruta hacia el primer piloto pagado (**OE-05**). |
+| **1. Negocio** | LIRN (proyectada LIRN S.A.S.) en Bogotá; no hay registro ante Cámara de Comercio, por lo que NIT y matrícula siguen en brecha G-N01. Un único actor (**Johel Santiago Arias**) ejecuta las 5 áreas funcionales y los procesos `P-01` a `P-05`. Cero clientes y cero contratos firmados; Transmilenio como caso de estudio. Tres servicios activos (`SN-01`, `SN-02`, `SN-03`). Capacidades `CAP-01` a `CAP-06` operativas a escala precomercial; `CAP-07`, `CAP-09` y `CAP-10` ausentes. | `P-01` a `P-05` · `CAP-01` a `CAP-06` y `CAP-08` (digital) | Asegura el gobierno de un único producto (TORNS), mantiene un canal comercial honesto sin claims falsos (**OE-02**, **OE-03**) y conduce demostraciones guiadas del ciclo demanda hacia oferta (**OE-01**, **OE-04**), dejando trazada la ruta hacia el primer piloto pagado (**OE-05**). |
 | **2. Datos** | Siete activos identificados (`AI-01` a `AI-07`): leads con datos personales (Ley 1581) en Google Sheets; evidencia estática `n=20` (17 de agosto de 2026) y entrevista SITP; conteos `person_count`, carga de estación y despachos **en memoria volátil sin base de datos histórica**; capacidades fijas de tren (5, 10 y 15); pesos `my_model.pt` y dataset (3.694 / 1.000); facturación y contratos inexistentes hoy. | `P-02`, `P-03`, `P-04`, `P-05` · `CAP-02`, `CAP-03`, `CAP-04`, `CAP-05`, `CAP-08` | Permite sustentar con evidencia empírica el problema público en Bogotá, registrar el interés de prospectos B2B/B2G y transformar el número de pasajeros detectados ahora en un cálculo objetivo de unidades \(\lceil N / C \rceil\). |
 | **3. Aplicaciones** | Cuatro superficies propias: `lirn-web-main` (sitio comercial React + Vite), `tro-frontend` (consola React 19 con 4 vistas, **sin autenticación de operador**), `tro-backend` (API FastAPI `/api/v1` donde **la inferencia está acoplada a abrir el stream MJPEG**, WebSocket de métricas y regla determinista de despacho) y `yolo-train-routes-optimization` (entrenamiento offline). Apoyadas por Google Sheets (usado como registro comercial por ausencia de CRM y ERP), GitHub, Lucidchart y SharePoint. | `P-01`, `P-02`, `P-03`, `P-04`, `P-05` · `CAP-03`, `CAP-04`, `CAP-05`, `CAP-06` | Materializa la separación entre vitrina institucional (LIRN vende) y producto operativo (TORNS mide y recomienda), entregando al usuario de centro de control un flujo funcional de extremo a extremo en entorno de demostración. |
 | **4. Tecnología** | Ejecución concentrada en la **estación de trabajo local del fundador** con contenedores Docker locales, OpenCV sobre videos locales o cámara USB/RTSP y modelo YOLO11s (`my_model.pt`, umbral 0,5, precisión 0,73, **recall 0,55**, mAP50 0,64). Sitio estático en GitHub Pages. Sin servidores ni GPU de producción en nube, sin cámaras instaladas en estaciones reales y sin política automatizada de respaldo. | `P-02`, `P-03`, `P-04` · `CAP-03`, `CAP-04`, `CAP-05` | Viabiliza la operación del prototipo aplicado y la presencia web pública a costo de infraestructura cercano a cero, coherente con una microempresa unipersonal sin facturación activa, y provee la línea base exacta sobre la cual se diseñarán las ondas M2, M3, M4 y M5. |
@@ -473,7 +473,7 @@ La siguiente matriz consolida el estado real de los cuatro dominios de la Arquit
 
 #### Sociedad por Acciones Simplificada unipersonal en Bogotá
 
-La Ley 1258 de 2008 permite una S.A.S. con un único accionista. El equipo real es Johel Arias (Observado). Esa figura da personalidad jurídica sin socios ficticios. También separa el patrimonio y fija al responsable del tratamiento de datos frente a la Ley 1581 de 2012, de modo que la firma pueda suscribir acuerdos futuros con operadores B2B y entidades B2G. El domicilio en Bogotá coincide con la evidencia (encuesta n=20 y el acercamiento en la troncal de la Calle 26, entorno Salitre El Greco) y con los dos segmentos prioritarios. El NIT y la matrícula siguen como brecha. No se inventa un número.
+La Ley 1258 de 2008 permite una S.A.S. con un único accionista. El equipo real es Johel Santiago Arias (Observado). Esa figura da personalidad jurídica sin socios ficticios. También separa el patrimonio y fija al responsable del tratamiento de datos frente a la Ley 1581 de 2012, de modo que la firma pueda suscribir acuerdos futuros con operadores B2B y entidades B2G. El domicilio en Bogotá coincide con la evidencia (encuesta n=20 y el acercamiento en la troncal de la Calle 26, entorno Salitre El Greco) y con los dos segmentos prioritarios. El NIT y la matrícula siguen como brecha. No se inventa un número.
 
 #### Organigrama funcional sin gerencias ocupadas
 

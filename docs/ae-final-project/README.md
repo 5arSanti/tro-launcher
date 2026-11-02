@@ -18,7 +18,7 @@ Estas rutas son autoridad para agentes. No se copian ni se citan como archivos e
 
 | Fuente | Qué autoriza |
 |--------|----------------|
-| `AGENTS.md` | Identidad, equipo (Johel Arias), mapa técnico AS-IS y forma de trabajo |
+| `AGENTS.md` | Identidad, equipo (Johel Santiago Arias), mapa técnico AS-IS y forma de trabajo |
 | `docs/ae-final-project/registro-empresa.md` | Hechos bloqueados de empresa |
 | `PRODUCT.md` | Misión, visión, separación LIRN/TORNS, capacidades del prototipo y claims prohibidos |
 | `DESIGN.md` | Identidad visual. No es fuente de arquitectura empresarial |

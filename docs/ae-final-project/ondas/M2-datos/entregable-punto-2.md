@@ -25,7 +25,7 @@ El inventario identifica 23 conjuntos de datos (D-01 a D-23) y los ubica dentro 
 | Empleados | D-21 | Sin activo | Brecha | Un integrante, sin nómina ni proceso de talento humano | Observado |
 | Contratos | D-22 | AI-07 | Brecha | No existen | Observado (no existen) |
 | Estación | D-07 | AI-05 | Existente | Seis estaciones fijadas como constantes en AP-03 | Observado / Diseñado AS-IS |
-| Cámara | D-04, D-08 | AI-03 | Existente | Cuatro videos mp4 de Pexels, cámara USB o fuente RTSP. Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1), sin fechas ni resultados registrados | Observado / Observado por declaración del dueño (1 de noviembre de 2026): Pexels, usb0 y usb1 / NO CONFIRMADO (fechas y resultados de las pruebas) |
+| Cámara | D-04, D-08 | AI-03 | Existente | Cuatro videos mp4 de Pexels, cámara USB o fuente RTSP. Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1) | Observado; Observado por declaración del dueño (1 de noviembre de 2026): Pexels; Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO |
 | Conteo | D-05, D-06, D-10, D-15 | AI-03 | Existente | Fotograma, métrica, estado de estación y registros de ejecución. Solo el último valor, en memoria | Observado |
 | Modelo de tren | D-09 | AI-05 | Existente | Tres modelos con vagones y capacidad por vagón | Observado / Diseñado AS-IS |
 | Plan de despacho | D-11 | AI-03 | Existente | Último plan por estación, en memoria | Observado |
@@ -71,7 +71,7 @@ Los flujos se agrupan en tres familias: técnico (FL-T, procesos P-03 y P-04), c
 | F-01 | Visitante en AP-01 | Nombre, correo, organización, mensaje y origen, como JSON enviado en texto plano | AP-06 | I-08 | En la hoja. El sitio da el envío por exitoso con una respuesta HTTP 200, sin acuse de registro | Observado (código) / Observado por declaración del dueño (1 de noviembre de 2026): hoja |
 | F-02 | AP-06 | Lead | Sin respuesta al lead | I-09 | No aplica | Observado por declaración del dueño (1 de noviembre de 2026) |
 | F-03 | AP-01 en GitHub Pages | Recursos del sitio; la IP del visitante llega a AP-12 Google Fonts | Navegador del visitante | I-15, I-12 | No | Observado |
-| F-04 | Archivo mp4, cámara USB o RTSP | Fotogramas | Memoria de AP-03 | I-07 | Volátil | Observado (código); Observado por declaración del dueño (1 de noviembre de 2026): pruebas usb0 y usb1; fechas y resultados NO CONFIRMADO |
+| F-04 | Archivo mp4, cámara USB o RTSP | Fotogramas | Memoria de AP-03 | I-07 | Volátil | Observado (código); Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO |
 | F-05 | Memoria de AP-03 | Fotograma y cajas de la clase person | Resumen de conteo | Interna | Volátil | Observado |
 | F-06 | AP-03 | Fotograma anotado (MJPEG) | AP-02 | I-02 | No | Observado |
 | F-07 | AP-03 | Métrica de detección por WebSocket. Solo se emite mientras algún cliente consume F-06 | AP-02 | I-03 | Cola de cinco mensajes | Observado |
@@ -121,7 +121,7 @@ Cada problema se marca como hallazgo AS-IS. El estado futuro que lo cierra es Ob
 | Integridad y seguridad | PI-14. Despacho sin autenticación ni límite superior, CORS abierto | Un conteo falso altera el estado en memoria | Observado |
 | Información incompleta | PI-15. Encuesta sin soporte individual ni autorización visible | Registro de la empresa | NO CONFIRMADO |
 | Información incompleta | PI-16. El formulario promete respuesta, pero no se responde a los leads | Texto del formulario de AP-01 | Observado (texto) / Observado por declaración del dueño (1 de noviembre de 2026): sin respuesta |
-| Información incompleta | PI-17. Sin NIT ni matrícula | No existe identificación legal; el aviso de privacidad no puede identificar al Responsable | Observado por declaración del dueño (1 de noviembre de 2026) |
+| Información incompleta | PI-17. Sin NIT ni matrícula; no hay registro ante Cámara de Comercio. Observado por declaración del dueño (2 de noviembre de 2026) | No existe identificación legal; el aviso de privacidad no puede identificar al Responsable | Observado por declaración del dueño (1 de noviembre de 2026) |
 | Integridad y seguridad | PI-18. Sin despliegue fuera del equipo del fundador ni respaldos | No existe respaldo de datos; todo el dato operativo depende de un solo equipo | Observado por declaración del dueño (1 de noviembre de 2026) |
 
 Los problemas de aplicación DF-01 a DF-10 y la interfaz I-14, hacia un centro de control del operador que no existe (Observado), están descritos en el entregable de Arquitectura de Aplicaciones. Esta sección los complementa desde el dato y no los repite.
@@ -169,7 +169,7 @@ La identificación del Responsable en el aviso y en la política depende de la f
 
 ## 7. Pendientes NO CONFIRMADO
 
-1. Fechas y resultados de las pruebas con las cámaras usb0 y usb1 (las pruebas quedaron declaradas por el dueño el 1 de noviembre de 2026).
+1. Resultados de las pruebas con las cámaras usb0 y usb1; las fechas quedaron declaradas por el dueño el 2 de noviembre de 2026 (16, 17, 18 y 20 de noviembre de 2025).
 2. Soporte de las respuestas individuales de la encuesta (el uso vigente de Google Forms quedó declarado por el dueño el 1 de noviembre de 2026).
 3. Contenido de label_counts más allá de la clase person.
 4. Calificación de Google como Encargado y transferencia internacional de los leads.

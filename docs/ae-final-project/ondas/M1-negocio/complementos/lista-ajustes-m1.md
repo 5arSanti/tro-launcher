@@ -5,7 +5,7 @@ Borrador de apoyo para Santiago. No es texto final del informe. Marcas: Observad
 | ID | Ajuste | Estado | Decisión o dato que falta | Marca |
 |----|--------|--------|---------------------------|-------|
 | B-01 | NIT y matrícula mercantil | Cerrado (decisión de Santiago, 28 oct 2026) | No existe NIT ni matrícula real. Se mantiene como Observado: formalización registral no ejecutada. No se asigna número. | Observado |
-| B-02 | Banda pública de tres nombres y residuos tro-* | Cerrado (decisión de Santiago, 28 oct 2026) | Quedan como brecha documentada, sin tocar nada. El equipo vigente es solo Johel Arias. | Observado |
+| B-02 | Banda pública de tres nombres y residuos tro-* | Cerrado (decisión de Santiago, 28 oct 2026) | Quedan como brecha documentada, sin tocar nada. El equipo vigente es solo Johel Santiago Arias. | Observado |
 | B-03 | Portada con autor, fecha y grupo | Cerrado (decisión de Santiago, 28 oct 2026) | Autor único, ya definido en la documentación del proyecto. No se pide más. | Observado |
 | B-04 | Bibliografía con URL | Cerrado en borrador | Ver archivo de bibliografía. Dos URL oficiales de leyes del Senado dieron error de servidor en la verificación; se usó el Gestor Normativo de la Función Pública. | Observado |
 | B-10 | Nombre de las superficies sin identidad TRO | Cerrado (aprobado por Santiago, 28 oct 2026) | Se aplica la tabla vigente de abajo, que reemplaza la propuesta inicial. | Objetivo TO-BE |
@@ -15,12 +15,12 @@ Borrador de apoyo para Santiago. No es texto final del informe. Marcas: Observad
 ## B-02. Nota histórica, ya cerrado por Santiago: banda pública de tres nombres y residuos tro-*
 
 Hechos de partida:
-- El equipo actual es solo Johel Arias (Observado, registro de empresa y archivo de identidad del repositorio).
+- El equipo actual es solo Johel Santiago Arias (Observado, registro de empresa y archivo de identidad del repositorio).
 - La landing pública puede seguir mostrando tres nombres en la ruta del producto. El repositorio la califica como copia publicada antigua (Observado, copia histórica). El registro la deja como brecha de alineación documental.
 - El registro bloquea los nombres técnicos tro-frontend y tro-backend como superficies de software, mientras el candidato de proyecto 2 pide retirar los identificadores técnicos residuales tro-*. Son dos instrucciones que se rozan.
 
 Decisión propuesta para que Santiago confirme o corrija (no la tomo yo):
-1. En el informe, el equipo es solo Johel Arias. La banda de tres nombres se menciona una sola vez, como brecha de alineación (Observado), sin atribuir cargos a esos nombres.
+1. En el informe, el equipo es solo Johel Santiago Arias. La banda de tres nombres se menciona una sola vez, como brecha de alineación (Observado), sin atribuir cargos a esos nombres.
 2. La landing se alinea como proyecto del portafolio (candidato C-02), no como hecho cumplido.
 3. Los nombres tro-* se conservan únicamente como nombres técnicos de repositorio en el inventario de aplicaciones de M3, y en el cuerpo del informe se usan los nombres funcionales de B-10.
 

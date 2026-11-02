@@ -17,11 +17,11 @@ TORNS es un prototipo aplicado. No es un piloto firmado. Transmilenio es caso de
 
 ## Equipo
 
-Equipo actual: **Johel Arias** (una persona).
+Equipo actual: **Johel Santiago Arias** (una persona).
 
 No hay plantilla, gerencias ocupadas ni años de empresa. Los dueños de proceso (Dirección, Comercial, Producto / Ingeniería, Operación, Calidad) son roles futuros del mapa ISO, no cargos actuales.
 
-La landing pública puede seguir mostrando tres nombres. Eso es copia publicada antigua. Para agentes y para el taller AE, el equipo es solo Johel Arias.
+La landing pública puede seguir mostrando tres nombres. Eso es copia publicada antigua. Para agentes y para el taller AE, el equipo es solo Johel Santiago Arias.
 
 ## Claims prohibidos
 
