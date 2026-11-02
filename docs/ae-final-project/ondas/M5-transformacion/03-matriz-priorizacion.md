@@ -13,10 +13,10 @@ Escalas cualitativas (no hay montos; el costo es un nivel relativo):
 | PY-07 | Alto | Media | Medio | Sin respaldos ni entornos separados. Observado por declaración del dueño (1 de noviembre de 2026); requiere almacén de objetos, gestor de secretos y entornos separados según la propuesta TO-BE de la Arquitectura Tecnológica; RT-02, RT-12 | 1 |
 | PY-09 | Alto | Media | Medio | Precondición del piloto; requiere PY-01 y un servicio de facturación | 1 |
 | PY-02 | Medio | Baja | Bajo | Cambios de texto | 2 |
-| PY-04 | Alto | Media | Medio | Base de indicadores; requiere N-04 en el nodo de datos alojable en nube, proveedor sin elegir | 2 |
+| PY-04 | Alto | Media | Medio | Base de indicadores; requiere N-04 en el nodo de datos alojable en nube; proveedor sin elegir (GCP recomendado en el anexo de nube del Punto 4, decisión pendiente de Santiago) | 2 |
 | PY-05 | Alto | Alta | Alto | Requiere video de estación, acuerdo con operador y GPU bajo demanda y cola IT-07, producto NO CONFIRMADO; RT-04, RT-11, RT-13 | 2 |
 | PY-08 | Alto | Alta | Alto | Meta de la visión; depende de PY-01, PY-03, PY-05, PY-07 y PY-09 | 3 |
 | PY-06 | Medio | Alta | Medio | Requiere operador real y acuerdo de interfaz | 3 |
 | PY-10 | Medio | Media | Alto | Solo con personal que vincular | Condicional |
 
-Todas las valoraciones son Objetivo TO-BE (criterio del equipo) y quedan cotejadas con la propuesta TO-BE de la Arquitectura Tecnológica. Los niveles de costo son relativos; el Punto 4 no fija montos.
+Todas las valoraciones son Objetivo TO-BE (criterio del equipo) y quedan cotejadas con la propuesta TO-BE de la Arquitectura Tecnológica. Los niveles de costo son relativos. El anexo de nube del Punto 4 aporta una estimación a precios de lista de pago por uso consultados el 2 de noviembre de 2026 de la operación en nube (piloto: Azure 755,45 y GCP 650,11 USD/mes; escala: Azure 3.096,77 y GCP 2.864,32 USD/mes), que no cambia los niveles asignados.

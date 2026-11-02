@@ -106,7 +106,14 @@ Fase D. El entregable «Arquitectura Tecnológica (Punto 4)» contiene el invent
 
 ![Diagrama tecnológico TO-BE](../ondas/M4-tecnologia/diagramas/E4b-tecnologia-to-be.png)
 
-**Propuesta.** Cinco entornos (Desarrollo, Laboratorio, Demostración, Piloto y Público), almacén de objetos para modelos y videos, gestor de secretos, respaldo verificado y GPU bajo demanda para la inferencia. Azure y GCP se mantienen como alternativas de nube, con decisión pendiente (Objetivo TO-BE); los costos quedan NO CONFIRMADO. Los nodos administrativos de facturación y nómina, condicionales a la formalización, se rigen por la Resolución 000165 de 2023 (Dirección de Impuestos y Aduanas Nacionales [DIAN], 2023), la Resolución 000013 de 2021 (DIAN, 2021), la Ley 100 de 1993 (Congreso de la República de Colombia, 1993) y el Decreto 1072 de 2015 (Presidencia de la República de Colombia, 2015).
+**Propuesta.** Cinco entornos (Desarrollo, Laboratorio, Demostración, Piloto y Público), almacén de objetos para modelos y videos, gestor de secretos, respaldo verificado y GPU bajo demanda para la inferencia. Azure y GCP se mantienen como alternativas de nube (Objetivo TO-BE). El anexo «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS» estima la operación en São Paulo (Azure Brazil South y GCP southamerica-east1), única ubicación donde ambas ofrecen la GPU T4, con precios de lista de pago por uso de la Azure Retail Prices API (Microsoft, 2026) y de las páginas de precios de Google Cloud (Google, 2026), consultados el 2 de noviembre de 2026. Es una estimación y no una cotización.
+
+| Escenario | Azure (USD/mes) | GCP (USD/mes) | Diferencia |
+|---|---|---|---|
+| Piloto (1 a 3 cámaras) | 755,45 | 650,11 | GCP 105,34 menos (14 %) |
+| Escala (15 cámaras) | 3.096,77 | 2.864,32 | GCP 232,45 menos (8 %) |
+
+Fuente: anexo «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS». Los totales excluyen los rubros marcados NO CONFIRMADO y no aplican descuentos. El equipo recomienda GCP southamerica-east1 por costo y por disponibilidad de T4 en tres zonas; Azure publica niveles de SLA iguales o superiores en VPN, secretos y base de datos sin alta disponibilidad. Marca: Objetivo TO-BE; la decisión es de Santiago y sigue pendiente. En ambas nubes los datos personales saldrían a Brasil, por lo que antes de cargarlos debe firmarse el contrato de transmisión con el proveedor como Encargado (Presidencia de la República de Colombia, 2013); el nivel adecuado de Brasil es NO CONFIRMADO. Los nodos administrativos de facturación y nómina, condicionales a la formalización, se rigen por la Resolución 000165 de 2023 (Dirección de Impuestos y Aduanas Nacionales [DIAN], 2023), la Resolución 000013 de 2021 (DIAN, 2021), la Ley 100 de 1993 (Congreso de la República de Colombia, 1993) y el Decreto 1072 de 2015 (Presidencia de la República de Colombia, 2015).
 
 **Riesgos principales.** Los entregables de Aplicaciones y Tecnología registran 20 riesgos; se resumen así:
 
@@ -206,7 +213,8 @@ La organización resultante sigue siendo pequeña, pero deja de depender de una 
 3. Hacer y probar el respaldo de pesos, dataset y videos de inmediato.
 4. Conseguir video de estación con un acuerdo que respete la Ley 1581 de 2012 antes de anunciar cualquier métrica de desempeño.
 5. Mantener la regla de comunicar solo lo evidenciado (PN-02) y no presentar a TransMilenio como cliente.
-6. Revisar la hoja de ruta cada año, según la fase H del ADM.
+6. Decidir entre Azure y GCP con la estimación del anexo de nube del Punto 4 (GCP recomendado por el equipo; decisión de Santiago) y firmar el contrato de transmisión con el proveedor antes de cargar datos personales.
+7. Revisar la hoja de ruta cada año, según la fase H del ADM.
 
 # 11. Bibliografía
 
@@ -220,7 +228,11 @@ Dirección de Impuestos y Aduanas Nacionales. (2021, 11 de febrero). *Resolució
 
 Dirección de Impuestos y Aduanas Nacionales. (2023, 1 de noviembre). *Resolución 000165 de 2023, por la cual se desarrolla el sistema de facturación, los proveedores tecnológicos, se adopta la versión 1.9 del anexo técnico de factura electrónica de venta, se expide el anexo técnico 1.0 del documento equivalente electrónico, y se dictan otras disposiciones en materia del sistema de facturación*. https://www.dian.gov.co/normatividad/Normatividad/Resoluci%C3%B3n%20000165%20de%2001-11-2023.pdf
 
+Google. (2026). *Accelerator-optimized VM pricing* [Página de precios de Google Cloud]. Recuperado el 2 de noviembre de 2026, de https://cloud.google.com/products/compute/pricing/accelerator-optimized
+
 Equipo TORNS. (2026). *Guía Actividad 2, Ingeniería Aplicada* [Documento interno no publicado].
+
+Microsoft. (2026). *Azure Retail Prices API* [Interfaz de precios de lista]. Recuperado el 2 de noviembre de 2026, de https://prices.azure.com/api/retail/prices
 
 Object Management Group. (2014). *Business Process Model and Notation (BPMN), Version 2.0.2*. https://www.omg.org/spec/BPMN/2.0.2/
 

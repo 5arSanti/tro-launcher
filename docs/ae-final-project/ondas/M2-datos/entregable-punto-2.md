@@ -172,6 +172,6 @@ La identificación del Responsable en el aviso y en la política depende de la f
 1. Resultados de las pruebas con las cámaras usb0 y usb1; las fechas quedaron declaradas por el dueño el 2 de noviembre de 2026 (16, 17, 18 y 20 de noviembre de 2025).
 2. Soporte de las respuestas individuales de la encuesta (el uso vigente de Google Forms quedó declarado por el dueño el 1 de noviembre de 2026).
 3. Contenido de label_counts más allá de la clase person.
-4. Calificación de Google como Encargado y transferencia internacional de los leads.
+4. Contrato de transmisión con el proveedor de nube como Encargado (Decreto 1074 de 2015, arts. 2.2.2.25.5.1 y 2.2.2.25.5.2) para N-01 y las imágenes de personas, y Google como Encargado de la hoja de leads actual; nivel adecuado de Brasil NO CONFIRMADO.
 5. Obligación de inscripción de bases de datos y plazos de retención.
 6. Soporte documental de las notas de la entrevista.
