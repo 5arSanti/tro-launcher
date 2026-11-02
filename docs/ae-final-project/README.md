@@ -102,7 +102,7 @@ Si un hecho no está en esta tabla ni en el registro, se escribe `NO CONFIRMADO`
 
 ## Ondas
 
-| Hito | Punto del taller | Playbook | Resultado |
+| Hito | Punto del taller | Carpeta | Resultado |
 |------|------------------|----------|-----------|
 | M0 | Fundación | Hecho | Árbol, archivo, AGENTS.md y rules |
 | M1 | Punto 1. Arquitectura de Negocio | `ondas/M1-negocio/` | Organización, misión y visión, organigrama, activos, mapa BPM, capacidades, partes interesadas y AS-IS |
@@ -111,7 +111,7 @@ Si un hecho no está en esta tabla ni en el registro, se escribe `NO CONFIRMADO`
 | M4 | Punto 4. Arquitectura Tecnológica | `ondas/M4-tecnologia/` | Inventario, diagrama, riesgos y propuesta |
 | M5 | Punto 5 y entrega | `ondas/M5-transformacion/` | TO-BE, brechas, portafolio, priorización, hoja de ruta, indicadores, informe único y pregunta final |
 
-Cada hito M1 a M5 requiere spec y plan propios antes de redactar. Al cerrar, se actualiza el registro. Lo bloqueado no se contradice.
+Los hitos M0 a M5 están cerrados; cada entregable se integró en el informe (M1 en el capítulo 4, M2 en el 5, M3 en el 6, M4 en el 7 y M5 en el 8). El registro está actualizado. Lo bloqueado no se contradice.
 
 ## Estructura del informe único
 

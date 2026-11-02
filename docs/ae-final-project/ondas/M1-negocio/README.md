@@ -1,6 +1,6 @@
 # Onda M1. Arquitectura de Negocio
 
-Estado: **completada**. Hechos de negocio bloqueados en `docs/ae-final-project/registro-empresa.md`.
+Estado: cerrada. Entregable final del Punto 1, verificado por el Auditor e integrado en el capítulo 4 del informe. Hechos de negocio bloqueados en `docs/ae-final-project/registro-empresa.md`.
 
 Fuente de coherencia: `docs/ae-final-project/registro-empresa.md` y el enunciado del taller (`docs/ae-final-project/docs/definicion-taller-final.md`). Spec y plan de esta onda: `docs/superpowers/specs/2026-10-21-ae-m1-negocio-design.md` y `docs/superpowers/plans/2026-10-21-ae-m1-negocio.md`.
 

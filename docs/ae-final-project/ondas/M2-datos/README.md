@@ -1,10 +1,10 @@
 # Onda M2. Arquitectura de Datos
 
-Estado: playbook. No redactar el Punto 2 hasta tener spec y plan de M2.
+Estado: cerrada. Entregable final del Punto 2, verificado por el Auditor e integrado en el capítulo 5 del informe.
 
 Leer antes: registro (secciones 1 a 7) y `AGENTS.md` (flujo de inferencia).
 
-## Entregables de la onda (cuando se ejecute)
+## Alcance de la onda
 
 1. Inventario de datos (leads, producto, proveedores, facturación como brecha, empleado, contratos como brecha, estación, cámara, conteo, tren, despacho, evidencia)
 2. Modelo de datos (relaciones)
@@ -12,12 +12,12 @@ Leer antes: registro (secciones 1 a 7) y `AGENTS.md` (flujo de inferencia).
 4. Problemas de información
 5. Actualizar sección 7 del registro
 
-## Entregables (rama m2-datos/entrega-punto2)
+## Entregables
 
 | Entregable | Archivo | Estado |
 |---|---|---|
-| Borrador de apoyo del Punto 2 (Santiago redacta el texto final) | entregable-punto-2.md | Pendiente de revisión del Auditor y aprobación del Líder |
-| Diagramas conceptual, lógico y de flujos (PNG y Mermaid) | diagramas/ | Pendiente de revisión |
-| Inventario de datos, matriz de flujos y anexo de verificación de evidencia (xlsx y csv) | tablas/ | Pendiente de revisión |
+| Entregable del Punto 2 | entregable-punto-2.md | Final |
+| Diagramas conceptual, lógico y de flujos (PNG y Mermaid) | diagramas/ | Final |
+| Inventario de datos, matriz de flujos y anexo de verificación de evidencia (xlsx y csv) | tablas/ | Final |
 
-La actualización de la sección 7 del registro de la empresa queda reservada al Líder.
+La sección 7 del registro de empresa recoge los hechos de datos.
