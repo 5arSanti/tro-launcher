@@ -1,6 +1,6 @@
 # Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS
 
-Anexo de la Arquitectura Tecnológica (Punto 4). Complementa el Entregable del Punto 4 (sección de alternativas de nube, donde los costos figuraban como NO CONFIRMADO) y toma como base el inventario de aplicaciones y nodos TO-BE del Entregable del Punto 3. Hoja de cálculo asociada: `anexo-nube-azure-gcp.csv`.
+Anexo de la Arquitectura Tecnológica (Punto 4). Complementa el Entregable del Punto 4 (sección de alternativas de nube, donde los costos figuraban como NO CONFIRMADO) y toma como base el inventario de aplicaciones y nodos TO-BE del Entregable del Punto 3. Se acompaña de la hoja de cálculo del anexo.
 
 ## 1. Alcance y método
 
@@ -63,7 +63,7 @@ Todos los valores tienen la marca «Objetivo TO-BE (supuesto de escenario aproba
 | Secretos | 10 | 30 |
 | Túneles VPN S2S × horas | 1 × 730 h | 5 × 730 h |
 
-La duración de 6 h proviene del entrenamiento observado en la GTX 1050 Ti (4 a 6 h). Que el tiempo sea menor en una T4 de nube es NO CONFIRMADO, por lo que se conserva 6 h.
+La duración de 6 h proviene del entrenamiento en la GTX 1050 Ti (4 a 6 h), Observado por declaración del dueño (2 de noviembre de 2026). Que el tiempo sea menor en una T4 de nube es NO CONFIRMADO, por lo que se conserva 6 h.
 
 Supuestos menores añadidos, también Objetivo TO-BE de escenario: cada contenedor usa 1 vCPU y 2 GiB; el respaldo de la base de datos es igual a su tamaño; en GCP hay una versión activa por secreto. La base de datos no es idéntica entre nubes: en el piloto se compara Azure B1MS (burstable) con Cloud SQL de 1 vCPU dedicada y 3,75 GiB, y en escala Azure D2ds_v5 (2 vCore) con Cloud SQL de 2 vCPU y 8 GiB. Se tomó la instancia dedicada en GCP porque no se extrajo el precio de la instancia de núcleo compartido (NO CONFIRMADO).
 
@@ -74,11 +74,15 @@ Un piloto con 1 cámara y otro con 3 cámaras cuestan lo mismo, porque las tres 
 | Escenario | Azure (USD/mes) | GCP (USD/mes) | Diferencia |
 |---|---|---|---|
 | Piloto (1 a 3 cámaras) | 755,45 | 650,11 | GCP 105,34 menos (14 %) |
-| Escala (15 cámaras) | 3.072,37 | 2.864,32 | GCP 208,05 menos (7 %) |
+| Escala (15 cámaras) | 3.096,77 | 2.864,32 | GCP 232,45 menos (8 %) |
 
-Los totales excluyen los rubros marcados NO CONFIRMADO. La GPU de inferencia representa cerca del 64 % del piloto en Azure y del 65 % en GCP. Los descuentos por compromiso de GCP (T4 a 0,30 USD/h a 1 año y 0,21 USD/h a 3 años) y las reservas de Azure no se aplican, porque el método es pago por uso.
+Los totales excluyen los rubros marcados NO CONFIRMADO. La GPU de inferencia representa cerca del 64 % del piloto en Azure y del 65 % en GCP. Todos los valores son precios de lista de pago por uso. No se aplican el descuento por uso sostenido de GCP, sus descuentos por compromiso (T4 a 0,30 USD/h a 1 año y 0,21 USD/h a 3 años), ni las reservas o el plan de ahorro (savings plan) de Azure. No se usaron las calculadoras de precios de ninguno de los dos proveedores.
 
-Diferencias por rubro que explican el resultado: la VM con GPU cuesta 0,894 USD/h en Azure y 0,781595 USD/h en GCP; la VPN de Azure exige un gateway fijo (VpnGw1, 138,70 USD/mes) mientras GCP cobra solo por túnel (54,75 USD/mes por túnel); la salida a Internet favorece a Azure (primeros 100 GB sin costo y 0,12 USD/GB, frente a 0,19 USD/GiB en GCP).
+Precio de la T4 en GCP: la página oficial de precios de aceleradores (https://cloud.google.com/products/compute/pricing/accelerator-optimized, región Sao Paulo (southamerica-east1), fecha de consulta 2 nov 2026) muestra NVIDIA T4, 1 GPU, a 0,48 USD/hora; con la región Iowa (us-central1) la misma tabla muestra 0,35 USD/hora, lo que confirma que el selector de región cambió los valores. Se conserva 0,48 USD/hora. El valor de 0,42525 USD/hora señalado en la revisión no aparece en la página oficial consultada y queda NO CONFIRMADO.
+
+Cargo de entorno de Container Apps: la API de precios registra «Environment Management Hour» a 0,1 USD/hora en brazilsouth. La página oficial de precios indica que ese medidor aplica al plan Dedicated, al punto de conexión privado y al mantenimiento planificado. Que no aplique a un entorno solo de consumo es NO CONFIRMADO; el cargo no se suma a los totales. La misma página (https://azure.microsoft.com/en-us/pricing/details/container-apps/, fecha de consulta 2 nov 2026) declara un nivel gratuito mensual por suscripción de 180 000 vCPU-s, 360 000 GiB-s y 2 millones de solicitudes en el plan de consumo.
+
+Diferencias por rubro que explican el resultado: la VM con GPU cuesta 0,894 USD/h en Azure y 0,781595 USD/h en GCP; la VPN de Azure exige un gateway fijo (VpnGw1, 138,70 USD/mes) mientras GCP cobra solo por túnel (54,75 USD/mes por túnel); la salida a Internet favorece levemente a Azure (primeros 100 GB sin costo y 0,181 USD/GB, frente a 0,19 USD/GiB en GCP). En Azure se costea la tarifa por defecto, Routing Preference: Microsoft Global Network (medidor «Standard Data Transfer Out», brazilsouth, 0,181 USD/GB desde 100 GB, API de precios, fecha de consulta 2 nov 2026). La alternativa Routing Preference: Internet cuesta 0,12 USD/GB desde 100 GB y bajaría el escenario de escala en 24,40 USD/mes.
 
 ### 5.1 Detalle de precios
 
@@ -94,7 +98,7 @@ Cada línea tiene fuente y fecha de consulta 2 nov 2026 en la hoja de cálculo. 
 | Piloto | Azure | N-04 | PostgreSQL Flexible Server | Storage | 0,2185 | GB-mes | 32 | 6,99 |
 | Piloto | Azure | N-04 | PostgreSQL Flexible Server | Backup LRS | 0,095 | GB-mes | 32 | 3,04 |
 | Piloto | Azure | N-05 | Blob Storage Hot LRS | Data Stored | 0,0326 | GB-mes | 100 | 3,26 |
-| Piloto | Azure | Salida Internet | Bandwidth | Data Transfer Out (primeros 100 GB sin costo) | 0,12 | GB | 0 | 0,00 |
+| Piloto | Azure | Salida Internet | Bandwidth | Standard Data Transfer Out, Routing Preference: Microsoft Global Network (primeros 100 GB sin costo) | 0,181 | GB | 0 | 0,00 |
 | Piloto | Azure | IT-07 | Service Bus Basic | Operations | 0,05 | millon de operaciones | NO CONFIRMADO | 0,00 |
 | Piloto | Azure | N-02 | Entra External ID | Core MAU (0 a 50 000 sin costo) | 0,0 | MAU | 50 | 0,00 |
 | Piloto | Azure | Secretos | Key Vault Standard | Operations | 0,03 | 10 000 operaciones | NO CONFIRMADO | 0,00 |
@@ -127,7 +131,7 @@ Cada línea tiene fuente y fecha de consulta 2 nov 2026 en la hoja de cálculo. 
 | Escala | Azure | N-04 | PostgreSQL Flexible Server | Storage | 0,2185 | GB-mes | 128 | 27,97 |
 | Escala | Azure | N-04 | PostgreSQL Flexible Server | Backup LRS | 0,095 | GB-mes | 128 | 12,16 |
 | Escala | Azure | N-05 | Blob Storage Hot LRS | Data Stored | 0,0326 | GB-mes | 1024 | 33,38 |
-| Escala | Azure | Salida Internet | Bandwidth | Data Transfer Out (primeros 100 GB sin costo) | 0,12 | GB | 400 | 48,00 |
+| Escala | Azure | Salida Internet | Bandwidth | Standard Data Transfer Out, Routing Preference: Microsoft Global Network (primeros 100 GB sin costo) | 0,181 | GB | 400 | 72,40 |
 | Escala | Azure | IT-07 | Service Bus Basic | Operations | 0,05 | millon de operaciones | NO CONFIRMADO | 0,00 |
 | Escala | Azure | N-02 | Entra External ID | Core MAU (0 a 50 000 sin costo) | 0,0 | MAU | 500 | 0,00 |
 | Escala | Azure | Secretos | Key Vault Standard | Operations | 0,03 | 10 000 operaciones | NO CONFIRMADO | 0,00 |
@@ -177,7 +181,7 @@ Fuente Azure: «Service Level Agreement for Microsoft Online Services (WW)», ve
 |---|---|---|
 | VM individual (AP-03b, AP-04) | 99,9 % para VM única con Premium SSD en todos los discos; 99,5 % con Standard SSD; 95 % con Standard HDD | ≥ 99,9 % (instancia única, demás familias), https://cloud.google.com/compute/sla |
 | Contenedores (AP-03a) | Container Apps 99,95 % | Cloud Run sin GPU 99,95 %, https://cloud.google.com/run/sla |
-| Base de datos (N-04) | PostgreSQL Flexible Server sin HA 99,9 %; el SLA excluye las limitaciones propias del nivel Burstable v2 | 99,95 % solo con alta disponibilidad; sin HA no hay nivel declarado (NO CONFIRMADO), https://cloud.google.com/sql/sla |
+| Base de datos (N-04) | PostgreSQL Flexible Server sin HA 99,9 %; en el piloto (Burstable) el SLA excluye las limitaciones propias del nivel Burstable v2; en escala (General Purpose) esa exclusión no aplica | 99,95 % solo con alta disponibilidad; sin HA no hay nivel declarado (NO CONFIRMADO), https://cloud.google.com/sql/sla |
 | Objetos (N-05) | Storage Accounts, Hot LRS: 99,9 % lectura y escritura | ≥ 99,9 % (Standard regional), https://cloud.google.com/storage/sla |
 | Cola (IT-07) | NO CONFIRMADO para Service Bus Basic en Brazil South: el documento fija 99,9 % para todos los niveles fuera de regiones con zonas de disponibilidad y 99,99 % solo para Premium en regiones con zonas | ≥ 99,95 %, https://cloud.google.com/pubsub/sla |
 | Identidad (N-02) | NO CONFIRMADO para Entra External ID, que no figura en el documento; Entra ID Basic y Premium, y Azure AD B2C, figuran con 99,99 % | 99,95 %, https://cloud.google.com/identity-platform/sla |
@@ -192,11 +196,12 @@ Para que la VM de Azure tenga el 99,9 %, los discos del sistema operativo y de d
 
 Ambas regiones están en Brasil. Los datos personales que saldrían del país son N-01 y las imágenes de personas en el almacén de objetos y en la inferencia (D-04, D-05 y D-13 del inventario de datos).
 
-El proveedor de nube actúa como Encargado del Tratamiento por cuenta de LIRN, que es el Responsable. Por eso el caso típico es una transmisión internacional y no una transferencia. El Decreto 1377 de 2013 define la transferencia como el envío a un receptor que a su vez es Responsable (art. 3, num. 4), y la transmisión como la comunicación de datos para que un Encargado realice el Tratamiento por cuenta del Responsable (art. 3, num. 5). Según el art. 24, las transferencias internacionales deben observar el artículo 26 de la Ley 1581 de 2012 (num. 1). Las transmisiones internacionales entre Responsable y Encargado no necesitan informarse al Titular ni contar con su consentimiento cuando existe un contrato en los términos del art. 25 (num. 2). El art. 25 regula ese contrato de transmisión: alcance del tratamiento, actividades del Encargado y obligaciones mínimas de tratamiento según los principios, seguridad y confidencialidad. Fuente: Función Pública, https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=53646 (consulta 2 nov 2026). Que la transmisión con contrato proceda aunque el país no tenga nivel adecuado declarado se desprende de que el art. 24 remite al artículo 26 de la ley solo para transferencias; es una lectura del texto, no una disposición expresa. La compilación del Decreto 1377 de 2013 en el Decreto 1074 de 2015 queda NO CONFIRMADO en esta consulta; la página de Función Pública solo registra la derogatoria parcial por el Decreto 1081 de 2015.
+<!-- reescribir Santiago -->
+El proveedor de nube actúa como Encargado del Tratamiento por cuenta de LIRN, que es el Responsable. Por eso el caso típico es una transmisión internacional y no una transferencia. El Decreto 1377 de 2013 define la transferencia como el envío a un receptor que a su vez es Responsable (art. 3, num. 4), y la transmisión como la comunicación de datos para que un Encargado realice el Tratamiento por cuenta del Responsable (art. 3, num. 5). Según el art. 24, las transferencias internacionales deben observar el artículo 26 de la Ley 1581 de 2012 (num. 1). Las transmisiones internacionales entre Responsable y Encargado no necesitan informarse al Titular ni contar con su consentimiento cuando existe un contrato en los términos del art. 25 (num. 2). El art. 25 regula ese contrato de transmisión: alcance del tratamiento, actividades del Encargado y obligaciones mínimas de tratamiento según los principios, seguridad y confidencialidad. Fuente: Función Pública, https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=53646 (consulta 2 nov 2026). Que la transmisión con contrato proceda aunque el país no tenga nivel adecuado declarado se desprende de que el art. 24 remite al artículo 26 de la ley solo para transferencias; es una lectura del texto, no una disposición expresa. El Decreto 1377 de 2013 está compilado en el Decreto Único 1074 de 2015: el art. 24 corresponde al artículo 2.2.2.25.5.1 y el art. 25 al artículo 2.2.2.25.5.2, cuyos textos citan esa procedencia. Fuente: Normograma del Ministerio de Relaciones Exteriores, Decreto 1074 de 2015, https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/decreto_1074_2015_pr026.htm (consulta 2 nov 2026). La página de Función Pública (norma 76608) no respondió a la consulta automática.
 
 Para la transferencia, el artículo 26 de la Ley 1581 de 2012 prohíbe enviar datos a países que no proporcionen niveles adecuados de protección, con las excepciones de los literales a) a f). Su Parágrafo 1 asigna a la Superintendencia de Industria y Comercio la declaración de conformidad, y el artículo 27 trata las normas corporativas vinculantes. Fuente: Función Pública, https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981 (consulta 2 nov 2026).
 
-Si la SIC considera que Brasil tiene un nivel adecuado de protección: NO CONFIRMADO. La condición es igual para Azure y GCP, así que no inclina la decisión. En cualquiera de las dos nubes, el contrato de transmisión con el proveedor debe estar firmado antes de cargar datos personales. Esto es coherente con el pendiente del Entregable del Punto 2: la calificación de Google como Encargado para AP-06 sigue NO CONFIRMADO, y si se elige GCP el mismo análisis de contrato de encargo se extiende a Google Cloud.
+Brasil no figura por nombre en la lista de países con nivel adecuado de protección del numeral 3.2 de la Circular Externa 005 de 2017 de la SIC, ni en su modificación por la Circular Externa 002 de 2018, que añadió Australia y Japón (textos consultados el 2 nov 2026 en https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?dt=S&i=70498 y https://normas.cra.gov.co/gestor/docs/circular_superindustria_0002_2018.htm; la sede electrónica de la SIC no se pudo leer). La lista incluye además a los países declarados adecuados por la Comisión Europea; si Brasil tiene esa declaración es NO CONFIRMADO, de modo que su nivel adecuado ante la SIC queda NO CONFIRMADO. Para una transmisión con contrato esto no es condición, según la lectura del art. 2.2.2.25.5.1 expuesta arriba. La condición es igual para Azure y GCP, así que no inclina la decisión. En cualquiera de las dos nubes, el contrato de transmisión con el proveedor debe estar firmado antes de cargar datos personales. Esto es coherente con el pendiente del Entregable del Punto 2: la calificación de Google como Encargado para AP-06 sigue NO CONFIRMADO, y si se elige GCP el mismo análisis de contrato de encargo se extiende a Google Cloud.
 
 ## 8. Aislamiento de N-01
 
@@ -211,9 +216,10 @@ Objetivo TO-BE: cada estación tiene una pasarela RTSP local que publica el vide
 <!-- reescribir Santiago -->
 Objetivo TO-BE: se recomienda **GCP southamerica-east1** como opción preferente, sujeta a la decisión de Santiago. Criterios:
 
-1. Costo: GCP es más barato en ambos escenarios (14 % en piloto y 7 % en escala), sobre todo por la VM con GPU y por la VPN sin gateway fijo. La ventaja se reduce cuando crece la salida a Internet, rubro en el que Azure es más barato.
+1. Costo: GCP es más barato en ambos escenarios (14 % en piloto y 8 % en escala), sobre todo por la VM con GPU y por la VPN sin gateway fijo. La ventaja se reduce cuando crece la salida a Internet, rubro en el que Azure es levemente más barato.
 2. Disponibilidad de GPU en la región: ambas ofrecen T4 en São Paulo. GCP documenta T4 en tres zonas, lo que facilita reubicar la carga ante falta de capacidad; la distribución zonal de Azure es NO CONFIRMADO.
 3. SLA: en las piezas comparables Azure publica niveles iguales o superiores: VPN (99,95 % frente a 99,9 %), secretos (99,99 % frente a 99,95 %) y base de datos sin HA (99,9 % en Azure; en GCP sin nivel declarado). En GPU, contenedores y objetos ambas quedan empatadas (99,9 %, 99,95 % y 99,9 %). Este criterio favorece levemente a Azure, aunque la diferencia no compensa el costo; si el SLA de la base de datos es requisito, en GCP hay que pasar a Cloud SQL con HA, que no está costeado. La cola y la identidad de Azure siguen NO CONFIRMADO.
 4. Ecosistema actual: el ecosistema Microsoft (SharePoint, Outlook) favorece a Azure para identidad corporativa; el ecosistema Google (Forms, Sheets, Fonts) favorece a GCP. El ecosistema no define la decisión.
 
+<!-- reescribir Santiago -->
 Si la organización prioriza la integración con Microsoft, Azure es una alternativa viable con un sobrecosto de unos 105 USD/mes en el piloto.
