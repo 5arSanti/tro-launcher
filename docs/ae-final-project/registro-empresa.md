@@ -99,7 +99,7 @@ Clasificación de negocio y Ley 1581 de 2012 bloqueada en `ondas/M1-negocio/03-a
 |--------|---------------|-------|
 | `AI-01` Leads del formulario | Confidencial / Datos personales privados y semiprivados, Ley 1581 | Observado |
 | `AI-02` Encuesta 17 de agosto de 2026, n=20. Entrevista a controlador SITP (rol, no nombre). | Investigación, interno (resumen autorizado público) / Sin datos personales identificables | Observado |
-| `AI-03` Video y conteos del prototipo (`person_count`) | Interno / puede incluir imagen de personas (dato potencialmente sensible; sin biometría ni identificación) | Observado |
+| `AI-03` Video y conteos del prototipo (`person_count`) | Interno / puede incluir imagen de personas (dato personal, Ley 1581 de 2012, art. 3; sin biometría ni identificación) | Observado |
 | `AI-04` Pesos del modelo (`my_model.pt`) y dataset curado | Reservado (secreto empresarial; tensores sin datos personales) | Observado |
 | `AI-05` Código fuente (`lirn-web-main`, `tro-frontend`, `tro-backend`, `yolo-train-routes-optimization`) | Interno / Reservado | Observado |
 | `AI-06` Fichas y diagramas de proceso (`P-01` a `P-05` y registro) | Interno / publicado el diagrama Lucid (dato público empresarial del fundador) | Observado |
