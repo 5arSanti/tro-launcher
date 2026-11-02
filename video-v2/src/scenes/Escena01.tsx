@@ -1,65 +1,58 @@
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
-import {Stage, SceneIndex, Note} from '../components/Stage';
-import {Copy} from '../components/Copy';
-import {Drift} from '../components/Drift';
+import {SceneFrame} from '../components/SceneFrame';
+import {type Beat} from '../components/Narration';
 import {PlatformPlan, type Passenger} from '../components/PlatformPlan';
 import {appear, f, atProgress, arriveT, pathDownStairs, pathToDoor, WORLD} from '../lib';
-import {COLOR, LAYOUT} from '../design/tokens';
+import {COLOR} from '../design/tokens';
 
 const down = pathDownStairs();
-const doors = [3, 2, 4, 5, 3] as const;
+const doors = [3, 2, 4, 5, 3, 2] as const;
 
-const BEATS = [
-  {at: 0, text: '¿Por qué puerta subimos al metro?', size: 64, color: COLOR.accent},
-  {at: 4.2, text: 'Bajan las escaleras, miran las puertas y eligen una.'},
-  {at: 9.0, text: 'Sin hacer cuentas.'},
-  {at: 11.2, text: '¿Por qué esa, y no la de al lado?', color: COLOR.accent},
-  {at: 15.5, text: 'Justamente ese gesto, tan automático que casi no lo vemos,'},
-  {at: 20.5, text: 'es lo que este artículo intenta simular.'},
-  {at: 24.0, text: 'Soy Santiago Arias.'},
-  {at: 26.2, text: 'Vengo a sustentar A Subway Station Platform Crowd Simulation System.'},
-  {at: 31.0, text: 'Vale la pena: no se quedan en el modelo; lo contrastan con una estación de verdad.'},
+const BEATS: Beat[] = [
+  {at: 0, layout: 'hero', text: '¿Por qué puerta {subimos} al metro?'},
+  {at: 4.2, layout: 'left', text: 'Bajan las escaleras, miran las puertas y {eligen una}.'},
+  {at: 9.0, layout: 'hero', text: 'Sin hacer {cuentas}.'},
+  {at: 11.2, layout: 'right', text: '¿Por qué {esa}, y no la de al lado?'},
+  {at: 15.5, layout: 'top', text: 'Justamente ese gesto, tan automático que casi no lo vemos,'},
+  {at: 20.5, layout: 'top', text: 'es lo que este artículo intenta {simular}.', place: {x: 120, y: 260, s: 1.18}},
+  {at: 24.0, layout: 'hero', text: 'Soy {Santiago Arias},'},
+  {at: 26.2, layout: 'bottom', text: 'y vengo a sustentar {«A Subway Station Platform Crowd Simulation System»}.'},
+  {at: 30.5, layout: 'left', text: 'Desde ya, mi postura: {vale la pena},'},
+  {at: 32.3, layout: 'right', text: 'porque no se quedan en el modelo; lo contrastan con {una estación de verdad}.'},
 ];
-
-const spawn = (i: number) => i * 18;
 
 export const Escena01: React.FC = () => {
   const frame = useCurrentFrame();
-  const passengers: Passenger[] = doors.map((id, i) => {
-    const born = spawn(i);
-    const tDown = appear(frame, born, f(5));
-    const walk = appear(frame, born + f(6), f(8));
-    const chosen = frame >= born + f(6);
-    let p = WORLD.landing;
-    if (tDown < 1 && !chosen) p = atProgress(down, arriveT(tDown));
-    else if (chosen) p = atProgress(pathToDoor(id), arriveT(walk));
-    return {
-      id: `p${i}`,
-      x: p.x,
-      y: p.y,
-      fill: id === 3 ? COLOR.accent : COLOR.text,
-    };
-  }).filter((_, i) => frame >= spawn(i));
+  const t0 = f(4.2);
+  const passengers: Passenger[] = doors
+    .map((id, i) => {
+      const born = t0 + i * 20;
+      const tDown = appear(frame, born, f(4));
+      const chosen = frame >= born + f(4.6);
+      const walk = chosen ? appear(frame, born + f(4.6), f(6)) : 0;
+      let p = WORLD.landing;
+      if (!chosen) p = atProgress(down, arriveT(tDown));
+      else p = atProgress(pathToDoor(id), arriveT(walk));
+      return {id: `p${i}`, x: p.x, y: p.y, fill: i === 0 ? COLOR.accent : COLOR.text};
+    })
+    .filter((_, i) => frame >= t0 + i * 20);
 
   return (
-    <Stage>
-      <SceneIndex n="01" />
-      <Copy frame={frame} beats={BEATS} />
-      <Note left={LAYOUT.marginX} top={250}>
-        esquema
-      </Note>
-      <Drift frame={frame} toScale={1.1} origin="42% 70%">
+    <SceneFrame
+      n={1}
+      beats={BEATS}
+      panel={
         <PlatformPlan
-          x={LAYOUT.marginX}
-          y={420}
-          width={1728}
-          tag="andén"
-          highlightDoor={frame >= f(18) ? 3 : null}
-          lookSweep={appear(frame, f(8), f(6)) * (1 - appear(frame, f(16), 10))}
+          x={0}
+          y={150}
+          width={1440}
+          tag="esquema · andén"
+          highlightDoor={frame >= f(11.2) ? 3 : null}
+          lookSweep={appear(frame, f(7), f(3)) * (1 - appear(frame, f(11.2), 10))}
           passengers={passengers}
         />
-      </Drift>
-    </Stage>
+      }
+    />
   );
 };
