@@ -29,14 +29,22 @@ La carpeta [proceso/](proceso/) guarda evidencia de control de calidad que no fo
 
 Secciones con prosa de borrador que Santiago reescribe con su voz:
 
-- Informe: capítulos 2 (Introducción), 9 (Conclusiones) y 10 (Recomendaciones); prosa de nube del capítulo 7 (marcas en l.109 y l.120) y recomendación 6 (marca en l.220).
+- Informe: capítulos 2 (Introducción), 9 (Conclusiones) y 10 (Recomendaciones), la sección 8.1 (Situación objetivo TO-BE), la prosa de nube del capítulo 7 y la recomendación 6. Cada bloque abre y cierra con una marca.
 - M5: [03-matriz-priorizacion](ondas/M5-transformacion/03-matriz-priorizacion.md) l.22 y [08-gestion-cambio](ondas/M5-transformacion/08-gestion-cambio.md) l.7.
 
-Marcas `reescribir Santiago` presentes en el repositorio (archivo:línea):
+Marcas `reescribir Santiago` presentes en el repositorio (46, archivo:línea):
 
-- informe/plan-transformacion-empresarial.md:109
-- informe/plan-transformacion-empresarial.md:120
-- informe/plan-transformacion-empresarial.md:220
+- informe/plan-transformacion-empresarial.md:192
+- informe/plan-transformacion-empresarial.md:203
+- informe/plan-transformacion-empresarial.md:236
+- informe/plan-transformacion-empresarial.md:240
+- informe/plan-transformacion-empresarial.md:31
+- informe/plan-transformacion-empresarial.md:332
+- informe/plan-transformacion-empresarial.md:344
+- informe/plan-transformacion-empresarial.md:348
+- informe/plan-transformacion-empresarial.md:355
+- informe/plan-transformacion-empresarial.md:358
+- informe/plan-transformacion-empresarial.md:39
 - ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:21
 - ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:3
 - ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:71
@@ -126,7 +134,8 @@ Los hitos M0 a M5 están cerrados; cada entregable se integró en el informe (M1
 9. Conclusiones
 10. Recomendaciones
 11. Bibliografía
-12. Pregunta final de análisis
+
+La pregunta final de análisis se responde en el capítulo 9.
 
 Citas del informe: nombre del entregable y URL. Nunca una ruta `.md` del repositorio.
 

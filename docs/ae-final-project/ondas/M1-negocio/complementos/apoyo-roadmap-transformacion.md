@@ -19,7 +19,7 @@ Las brechas G-N01 a G-N07 son de tipo Brecha. Su estado actual es Observado seg�
 | G-N07 Sin contratación ni piloto; sin respaldo y despliegue en un solo equipo | Observado; Observado por declaración del dueño (1 de noviembre de 2026) para el respaldo | OE-01, OE-03, OE-05 | P-06, P-04; CAP-03, CAP-06, CAP-08; SN-04 | C-08 y C-07 | D-18, D-22; D-14, D-15 | AP-07; entorno de piloto en la Arquitectura Tecnológica |
 
 <!-- reescribir Santiago; lenguaje de proceso interno, no pasa al informe -->
-Nota: el detalle de respaldo y entornos de G-N07 corresponde a la Arquitectura Tecnológica, cuyo inventario aún no está publicado; la referencia queda NO CONFIRMADO hasta entonces.
+El detalle de respaldo y entornos de G-N07 está en el entregable del Punto 4 (Arquitectura Tecnológica): una sola estación de trabajo, sin respaldos ni separación de entornos, y el disco cerca de su capacidad (RT-03).
 
 ## 2. Propuesta de portafolio desde negocio
 

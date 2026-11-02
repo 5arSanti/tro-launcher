@@ -1,4 +1,4 @@
-# Plan de Transformación Empresarial
+# Arquitectura de Negocio. Punto 1 del Taller final
 
 Avance correspondiente al Punto 1 del Taller final de Arquitectura Empresarial. El orden de este documento sigue la entrega definida para el taller: portada, introducción, descripción de la organización y arquitectura de negocio. Dentro de la arquitectura de negocio, los apartados siguen el orden de los documentos exigidos en ese punto.
 
@@ -13,7 +13,7 @@ Los Puntos 2 a 5 (Arquitectura de Datos, Arquitectura de Aplicaciones, Arquitect
 | Institución | Universidad Libre |
 | Asignatura | Arquitectura Empresarial. Taller final |
 | Docente | Mgs. Maria del Pilar Niño Campos |
-| Documento | Plan de Transformación Empresarial |
+| Documento | Anexo de soporte del Plan de Transformación Empresarial: Arquitectura de Negocio (Punto 1) |
 | Capítulo desarrollado | Punto 1. Arquitectura de Negocio |
 | Organización | LIRN |
 | Producto | TORNS |
