@@ -1,0 +1,13 @@
+[
+  {"id": "Escena01", "frames": 1050},
+  {"id": "Escena02", "frames": 600},
+  {"id": "Escena03", "frames": 1050},
+  {"id": "Escena04", "frames": 1050},
+  {"id": "Escena05", "frames": 900},
+  {"id": "Escena06", "frames": 1050},
+  {"id": "Escena07", "frames": 2250},
+  {"id": "Escena08", "frames": 1050},
+  {"id": "Escena09", "frames": 900},
+  {"id": "Escena10", "frames": 900},
+  {"id": "Completo", "frames": 10800}
+]

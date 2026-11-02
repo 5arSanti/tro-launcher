@@ -1,0 +1,26 @@
+{
+  "name": "video-motion-v3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Motion graphics 6:00 — Wang et al. ICCMS 2022, sin audio. Papel y señalética.",
+  "scripts": {
+    "studio": "remotion studio",
+    "still": "remotion still",
+    "render": "remotion render",
+    "compositions": "remotion compositions",
+    "render:07": "remotion render Escena07 out/escena07.mp4 --codec=h264 --pixel-format=yuv420p --muted --crf=18",
+    "stills:07": "remotion still Escena07 out/stills/escena07-start.png --frame=0 && remotion still Escena07 out/stills/escena07-mid.png --frame=1125 && remotion still Escena07 out/stills/escena07-end.png --frame=2249"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.539",
+    "@remotion/google-fonts": "^4.0.539",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "katex": "^0.19.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.539",
+    "typescript": "^7.0.2",
+    "zod": "4.5.4"
+  }
+}
