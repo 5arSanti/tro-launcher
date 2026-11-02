@@ -167,11 +167,40 @@ Fase C, datos. El entregable «Arquitectura de Datos (Punto 2)» contiene el inv
 
 ![Modelo conceptual TO-BE](../ondas/M2-datos/diagramas/E-02-conceptual-to-be.png)
 
+![Modelo lógico TO-BE](../ondas/M2-datos/diagramas/E-03-logico-to-be.png)
+
 Los flujos son el técnico (FL-T: video, inferencia, conteo y plan), el comercial (FL-C: formulario hacia la hoja de cálculo) y el de evidencia (FL-E).
 
 ![Flujo técnico FL-T](../ondas/M2-datos/diagramas/E-04-FL-T-tecnico.png)
 
-**Problemas centrales.** Los conteos y planes no se guardan, por lo que no hay historial ni forma de medir; los leads se capturan sin política de tratamiento ni la autorización previa que exigen los artículos 5 a 7 del Decreto 1377 de 2013 (Presidencia de la República de Colombia, 2013); los pesos del modelo, el dataset y los videos no tienen respaldo. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Las imágenes de personas en estación exigen tratar con cuidado los datos que pueden ser sensibles en el sentido del art. 5 de la Ley 1581 de 2012 (Congreso de la República de Colombia, 2012).
+![Flujo comercial FL-C](../ondas/M2-datos/diagramas/E-04-FL-C-comercial.png)
+
+<!-- reescribir Santiago -->
+
+**Problemas centrales.** Los conteos y planes no se guardan, por lo que no hay historial ni forma de medir; los pesos del modelo, el dataset y los videos no tienen respaldo. Marca: Observado. Los leads se capturan sin política de tratamiento ni la autorización previa que exigen los artículos 5 a 7 del Decreto 1377 de 2013 (Presidencia de la República de Colombia, 2013). Marca: Observado por declaración del dueño (1 de noviembre de 2026). Las imágenes de personas en estación son datos personales (Ley 1581 de 2012, art. 3) y su transmisión a la nube requiere contrato con el Encargado.
+
+<!-- reescribir Santiago -->
+
+**Problemas de información.**
+
+| Código | Problema | Marca |
+|---|---|---|
+| PI-01 | Sin historial de conteos ni de planes | Observado |
+| PI-02 | Lead sin estado, responsable ni autorización | Observado |
+| PI-03 | Sin diccionario de datos, propietario ni retención | Observado |
+| PI-04 | Dataset fuera del repositorio | Observado / Observado por declaración del dueño (1 de noviembre de 2026): origen |
+| PI-05 | Clave de estación distinta entre catálogo y estado | Observado (copia aislada) |
+| PI-06 | Estación con cámara usb1 sin fuente publicada | Observado |
+| PI-07 | Nombres heredados y banda pública | Observado |
+| PI-08 y PI-09 | Comentario de "densidad" y datos de demostración sin rótulo | Observado |
+| PI-10 | Videos duplicados entre AP-03 y AP-04, dos estados por estación y leads sin control de duplicados | Observado / NO CONFIRMADO (duplicados en la hoja) |
+| PI-11 y PI-12 | Hoja de leads, encuesta, diagramas y documentos en servicios separados sin catálogo | Observado |
+| PI-13 | Datos personales de AP-08 en repositorio público | Observado |
+| PI-14 | Despacho sin autenticación ni límite superior, CORS abierto | Observado |
+| PI-15 | Encuesta sin soporte individual ni autorización visible | NO CONFIRMADO |
+| PI-16 | El formulario promete respuesta, pero no se responde a los leads | Observado (texto) / Observado por declaración del dueño (1 de noviembre de 2026): sin respuesta |
+| PI-17 | Sin NIT ni matrícula; no hay registro ante Cámara de Comercio | Observado por declaración del dueño (2 de noviembre de 2026) |
+| PI-18 | Sin despliegue fuera del equipo del fundador ni respaldos | Observado por declaración del dueño (1 de noviembre de 2026) |
 
 **Propuesta.** Modelo TO-BE con persistencia de conteos y planes por estación y fecha, registro versionado del modelo, gestor de leads con autorización y entidades de piloto, factura y contrato.
 
@@ -179,27 +208,29 @@ Los flujos son el técnico (FL-T: video, inferencia, conteo y plan), el comercia
 
 Fase C, aplicaciones. El entregable «Arquitectura de Aplicaciones (Punto 3)» inventaría AP-01 a AP-13, mapea las integraciones, registra los problemas PR-01 a PR-17 y los riesgos RA-01 a RA-07, y propone la interoperabilidad con las aplicaciones nuevas N-01 a N-07 y las interfaces IT-01, IT-02, IT-04, IT-05, IT-06 e IT-07.
 
-**Inventario de aplicaciones.**
+**Inventario de aplicaciones.** Inventario resumido; el detalle con evidencia y marcas está en el inventario de aplicaciones E1.
 
-| Código | Nombre | Función | Área usuaria | Marca |
-|---|---|---|---|---|
-| AP-01 | Sitio web comercial de LIRN y TORNS (lirn-web-main) | Presenta la firma y el producto TORNS y recibe mensajes de interés mediante un formulario de contacto | Visitantes externos; rol Comercial (fundador) | Observado |
-| AP-02 | Consola de operación de estaciones (tro-frontend) | Muestra video con detecciones, métricas por cámara, estado de estaciones y plan de despacho | Rol de Operación y de Producto (fundador) en demostración; sin usuarios de operador | Observado; sin despliegue; Observado por declaración del dueño (1 de noviembre de 2026) |
-| AP-03 | Servicio de detección de pasajeros y plan de despacho, API (tro-backend) | Ejecuta la detección sobre video, publica métricas por WebSocket y aplica la regla determinista de despacho. | Consumido por AP-02; rol de Producto | Observado |
-| AP-04 | Entrenamiento del modelo de detección (yolo-train-routes-optimization) | Prepara el conjunto de datos, entrena y exporta el modelo de detección de personas. | Rol de Producto y de Calidad (fundador) | Observado |
-| AP-05 | Modelo de detección (my_model/my_model.pt, en yolo-train-routes-optimization) | Artefacto de IA de una clase (person) consumido por AP-03 como archivo local | Consumido por AP-03 | Observado |
-| AP-06 | Hoja de cálculo con Apps Script (hoja de Google; endpoint configurado en VITE_CONTACT_ENDPOINT) | Recibe y guarda los mensajes del formulario con las columnas timestamp, nombre, email, organizacion, mensaje y origen; la consulta solo el dueño. | Rol Comercial (fundador, único consultor) | Observado por declaración del dueño (1 de noviembre de 2026); código del script NO CONFIRMADO en repositorios |
-| AP-07 | GitHub: repositorios, Pages y Actions (github.com/5arSanti) | Control de versiones, pruebas y publicación del sitio | Rol de Producto (fundador) | Observado |
-| AP-08 | Label Studio (en Docker; exportaciones en mydata/) | Etiquetado de imágenes del conjunto de datos del modelo de visión. | Rol de Producto (fundador) | Observado (instrucciones y árbol); uso confirmado por el dueño (1 de noviembre de 2026) |
-| AP-09 | Lucidchart (SaaS) | Diagramación de arquitectura y procesos | Rol de Dirección (fundador) | Diseñado AS-IS |
-| AP-10 | SharePoint (Microsoft 365) | Almacenamiento de documentos de apoyo; no compromete la operación del producto | Rol de Dirección y Calidad (fundador) | Diseñado AS-IS |
-| AP-11 | Correo electrónico | Comunicación y resguardo de algunos documentos; no compromete la operación del producto. | Todos los roles (fundador) | Diseñado AS-IS |
-| AP-12 | Google Fonts (fonts.googleapis.com y fonts.gstatic.com, enlazados en AP-01) | Entrega la tipografía Manrope al navegador del visitante; al cargar el sitio, el navegador envía la IP del visitante a Google (flujo F-03 de Datos) | Visitantes externos (consumo indirecto) | Observado |
-| AP-13 | Google Forms (formulario de la encuesta de validación) | Recoge las respuestas de la encuesta de validación (flujo F-14 de Datos); formulario «Tu experiencia diaria en el transporte masivo de Bogotá». | Rol de Dirección y Producto (fundador) | Observado por declaración del dueño (1 de noviembre de 2026) |
+| Código | Nombre | Función | Área usuaria | Estado | Marca |
+|---|---|---|---|---|---|
+| AP-01 | Sitio web comercial de LIRN y TORNS (lirn-web-main) | Presenta la firma y el producto TORNS y recibe mensajes de interés mediante un formulario de contacto | Visitantes externos; rol Comercial (fundador) | En uso (GitHub Pages) | Observado |
+| AP-02 | Consola de operación de estaciones (tro-frontend) | Muestra video con detecciones, métricas por cámara, estado de estaciones y plan de despacho | Rol de Operación y de Producto (fundador) en demostración; sin usuarios de operador | Prototipo local | Observado; sin despliegue; Observado por declaración del dueño (1 de noviembre de 2026) |
+| AP-03 | Servicio de detección de pasajeros y plan de despacho, API (tro-backend) | Ejecuta la detección sobre video, publica métricas por WebSocket y aplica la regla determinista de despacho. | Consumido por AP-02; rol de Producto | Prototipo local | Observado |
+| AP-04 | Entrenamiento del modelo de detección (yolo-train-routes-optimization) | Prepara el conjunto de datos, entrena y exporta el modelo de detección de personas. | Rol de Producto y de Calidad (fundador) | En uso, ejecución local | Observado |
+| AP-05 | Modelo de detección (my_model/my_model.pt, en yolo-train-routes-optimization) | Artefacto de IA de una clase (person) consumido por AP-03 como archivo local | Consumido por AP-03 | Versionado | Observado |
+| AP-06 | Hoja de cálculo con Apps Script (hoja de Google; endpoint configurado en VITE_CONTACT_ENDPOINT) | Recibe y guarda los mensajes del formulario con las columnas timestamp, nombre, email, organizacion, mensaje y origen; la consulta solo el dueño. | Rol Comercial (fundador, único consultor) | En uso como sustituto de CRM, se retira con N-01 | Observado por declaración del dueño (1 de noviembre de 2026); código del script NO CONFIRMADO en repositorios |
+| AP-07 | GitHub: repositorios, Pages y Actions (github.com/5arSanti) | Control de versiones, pruebas y publicación del sitio | Rol de Producto (fundador) | En uso | Observado |
+| AP-08 | Label Studio (en Docker; exportaciones en mydata/) | Etiquetado de imágenes del conjunto de datos del modelo de visión. | Rol de Producto (fundador) | En uso | Observado (instrucciones y árbol); uso confirmado por el dueño (1 de noviembre de 2026) |
+| AP-09 | Lucidchart (SaaS) | Diagramación de arquitectura y procesos | Rol de Dirección (fundador) | En uso según el registro | Diseñado AS-IS |
+| AP-10 | SharePoint (Microsoft 365) | Almacenamiento de documentos de apoyo; no compromete la operación del producto | Rol de Dirección y Calidad (fundador) | Apoyo documental | Diseñado AS-IS |
+| AP-11 | Correo electrónico | Comunicación y resguardo de algunos documentos; no compromete la operación del producto. | Todos los roles (fundador) | Apoyo documental | Diseñado AS-IS |
+| AP-12 | Google Fonts (fonts.googleapis.com y fonts.gstatic.com, enlazados en AP-01) | Entrega la tipografía Manrope al navegador del visitante; al cargar el sitio, el navegador envía la IP del visitante a Google (flujo F-03 de Datos) | Visitantes externos (consumo indirecto) | En uso | Observado |
+| AP-13 | Google Forms (formulario de la encuesta de validación) | Recoge las respuestas de la encuesta de validación (flujo F-14 de Datos); formulario «Tu experiencia diaria en el transporte masivo de Bogotá». | Rol de Dirección y Producto (fundador) | En uso | Observado por declaración del dueño (1 de noviembre de 2026) |
 
 ![Contexto de aplicaciones AS-IS](../ondas/M3-aplicaciones/diagramas/E6a-contexto-as-is.png)
 
 **Situación AS-IS.** AP-01 Sitio web comercial de LIRN y TORNS, AP-02 Consola de operación de estaciones y AP-03 Servicio de detección de pasajeros y plan de despacho funcionan como prototipo; AP-02 y AP-03 no tienen autenticación; la inferencia está acoplada a la apertura del flujo de video; una hoja de cálculo con Apps Script (AP-06) sustituye al CRM; no hay integración con ningún centro de control ni aplicación de facturación.
+
+![Integraciones AS-IS](../ondas/M3-aplicaciones/diagramas/E6b-integraciones-as-is.png)
 
 ![Contexto de aplicaciones TO-BE](../ondas/M3-aplicaciones/diagramas/E6c-contexto-to-be.png)
 

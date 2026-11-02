@@ -32,19 +32,21 @@ Secciones con prosa de borrador que Santiago reescribe con su voz:
 - Informe: capítulos 2 (Introducción), 9 (Conclusiones) y 10 (Recomendaciones), la sección 8.1 (Situación objetivo TO-BE), la prosa de nube del capítulo 7 y la recomendación 6. Cada bloque abre y cierra con una marca.
 - M5: [03-matriz-priorizacion](ondas/M5-transformacion/03-matriz-priorizacion.md) l.22 y [08-gestion-cambio](ondas/M5-transformacion/08-gestion-cambio.md) l.7.
 
-Marcas `reescribir Santiago` presentes en el repositorio (46, archivo:línea):
+Marcas `reescribir Santiago` presentes en el repositorio (48, archivo:línea):
 
-- informe/plan-transformacion-empresarial.md:254
-- informe/plan-transformacion-empresarial.md:265
-- informe/plan-transformacion-empresarial.md:298
-- informe/plan-transformacion-empresarial.md:302
+- informe/plan-transformacion-empresarial.md:178
+- informe/plan-transformacion-empresarial.md:182
+- informe/plan-transformacion-empresarial.md:285
+- informe/plan-transformacion-empresarial.md:296
 - informe/plan-transformacion-empresarial.md:31
+- informe/plan-transformacion-empresarial.md:329
+- informe/plan-transformacion-empresarial.md:333
 - informe/plan-transformacion-empresarial.md:39
-- informe/plan-transformacion-empresarial.md:394
-- informe/plan-transformacion-empresarial.md:406
-- informe/plan-transformacion-empresarial.md:410
-- informe/plan-transformacion-empresarial.md:417
-- informe/plan-transformacion-empresarial.md:420
+- informe/plan-transformacion-empresarial.md:425
+- informe/plan-transformacion-empresarial.md:437
+- informe/plan-transformacion-empresarial.md:441
+- informe/plan-transformacion-empresarial.md:448
+- informe/plan-transformacion-empresarial.md:451
 - ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:21
 - ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:3
 - ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:71
