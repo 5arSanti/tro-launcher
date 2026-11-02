@@ -1,28 +1,29 @@
-import React from 'react';
-import katex from 'katex';
-import {COLOR} from '../design/tokens';
+import React from "react";
+import katex from "katex";
+import { useTheme } from "../design/theme";
 
 export const Tex: React.FC<{
   tex: string;
   color?: string;
   fontSize?: number;
   opacity?: number;
-}> = ({tex, color = COLOR.text, fontSize = 52, opacity = 1}) => {
+}> = ({ tex, color, fontSize = 52, opacity = 1 }) => {
+  const C = useTheme();
   const html = katex.renderToString(tex, {
     throwOnError: false,
     displayMode: false,
-    strict: 'ignore',
+    strict: "ignore",
   });
   return (
     <span
       style={{
-        color,
+        color: color ?? C.text,
         fontSize,
         opacity,
         lineHeight: 1.15,
-        display: 'inline-block',
+        display: "inline-block",
       }}
-      dangerouslySetInnerHTML={{__html: html}}
+      dangerouslySetInnerHTML={{ __html: html }}
     />
   );
 };
@@ -32,11 +33,14 @@ export const Term: React.FC<{
   active: boolean;
   seen: boolean;
   fontSize?: number;
-}> = ({tex, active, seen, fontSize = 52}) => (
-  <Tex
-    tex={tex}
-    fontSize={fontSize}
-    color={active ? COLOR.accent : COLOR.text}
-    opacity={active ? 1 : seen ? 0.55 : 0.22}
-  />
-);
+}> = ({ tex, active, seen, fontSize = 52 }) => {
+  const C = useTheme();
+  return (
+    <Tex
+      tex={tex}
+      fontSize={fontSize}
+      color={active ? C.accent : C.text}
+      opacity={active ? 1 : seen ? 0.55 : 0.22}
+    />
+  );
+};

@@ -1,7 +1,7 @@
-import React from 'react';
-import {easeEnter, clampI} from '../lib/anim';
-import {FONT_SANS} from '../design/fonts';
-import {COLOR} from '../design/tokens';
+import React from "react";
+import { easeEnter, clampI } from "../lib/anim";
+import { FONT_SANS } from "../design/fonts";
+import { useTheme } from "../design/theme";
 
 export const MaskReveal: React.FC<{
   text: string;
@@ -20,19 +20,20 @@ export const MaskReveal: React.FC<{
   from,
   duration = 12,
   fontSize = 40,
-  color = COLOR.text,
+  color,
   weight = 600,
   fontFamily = FONT_SANS,
   delay = 0,
 }) => {
+  const C = useTheme();
   const start = from + delay;
   const y = clampI(frame, [start, start + duration], [110, 0], easeEnter);
   const op = clampI(frame, [start, start + duration], [0, 1], easeEnter);
   return (
     <div
       style={{
-        display: 'inline-block',
-        overflow: 'hidden',
+        display: "inline-block",
+        overflow: "hidden",
         lineHeight: 1.1,
         height: fontSize * 1.1,
       }}
@@ -44,9 +45,9 @@ export const MaskReveal: React.FC<{
           fontFamily,
           fontSize,
           fontWeight: weight,
-          color,
-          letterSpacing: '-0.035em',
-          whiteSpace: 'nowrap',
+          color: color ?? C.text,
+          letterSpacing: "-0.035em",
+          whiteSpace: "nowrap",
         }}
       >
         {text}
@@ -62,12 +63,13 @@ export const Keyword: React.FC<{
   size?: number;
   color?: string;
   opacity?: number;
-}> = ({text, frame, from, size = 88, color = COLOR.text, opacity}) => {
+}> = ({ text, frame, from, size = 88, color, opacity }) => {
+  const C = useTheme();
   const p = clampI(frame, [from, from + 18], [0, 1], easeEnter);
   return (
     <div
       style={{
-        overflow: 'hidden',
+        overflow: "hidden",
         opacity: opacity ?? p,
       }}
     >
@@ -77,9 +79,9 @@ export const Keyword: React.FC<{
           fontFamily: FONT_SANS,
           fontSize: size,
           fontWeight: 600,
-          color,
+          color: color ?? C.text,
           lineHeight: 1.05,
-          letterSpacing: '-0.04em',
+          letterSpacing: "-0.04em",
         }}
       >
         {text}
