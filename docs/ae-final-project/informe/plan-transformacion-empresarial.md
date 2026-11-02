@@ -177,7 +177,7 @@ Los flujos son el técnico (FL-T: video, inferencia, conteo y plan), el comercia
 
 <!-- reescribir Santiago -->
 
-**Problemas centrales.** Los conteos y planes no se guardan, por lo que no hay historial ni forma de medir; los pesos del modelo, el dataset y los videos no tienen respaldo. Marca: Observado. Los leads se capturan sin política de tratamiento ni la autorización previa que exigen los artículos 5 a 7 del Decreto 1377 de 2013 (Presidencia de la República de Colombia, 2013). Marca: Observado por declaración del dueño (1 de noviembre de 2026). Las imágenes de personas en estación son datos personales (Ley 1581 de 2012, art. 3) y su transmisión a la nube requiere contrato con el Encargado.
+**Problemas centrales.** Los conteos y planes no se guardan, por lo que no hay historial ni forma de medir. Marca: Observado. Los pesos del modelo, el dataset y los videos no tienen respaldo. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Los leads se capturan sin política de tratamiento ni la autorización previa que exigen los artículos 5 a 7 del Decreto 1377 de 2013 (Presidencia de la República de Colombia, 2013). Marca: Observado por declaración del dueño (1 de noviembre de 2026). Las imágenes de personas en estación son datos personales (Ley 1581 de 2012, art. 3) y su transmisión a la nube requiere contrato con el Encargado.
 
 <!-- reescribir Santiago -->
 
