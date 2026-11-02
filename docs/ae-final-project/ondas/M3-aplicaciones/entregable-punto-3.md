@@ -10,7 +10,7 @@ Marcas usadas: **Observado** (presente en código, configuración o declaración
 LIRN tiene un único integrante, Johel Santiago Arias, que ejerce los roles de Dirección, Comercial, Producto, Operación y Calidad (Observado). Por eso el área usuaria de cada aplicación se expresa como rol del fundador. Ninguna aplicación tiene usuarios de un operador de transporte, porque no existe piloto ni contrato (Observado).
 
 <!-- reescribir Santiago -->
-Solo el sitio web comercial está publicado, mediante GitHub Pages. La consola de operación y el servicio de detección corren únicamente en el equipo local del fundador (Observado). Azure y GCP se mantienen como alternativas de despliegue, con decisión pendiente (Objetivo TO-BE; alternativas declaradas por el dueño el 1 de noviembre de 2026; su análisis corresponde a la Arquitectura Tecnológica; costos NO CONFIRMADO).
+Solo el sitio web comercial está publicado, mediante GitHub Pages. La consola de operación y el servicio de detección corren únicamente en el equipo local del fundador (Observado). Azure y GCP se mantienen como alternativas de despliegue, con decisión pendiente (Objetivo TO-BE; alternativas declaradas por el dueño el 1 de noviembre de 2026; la Arquitectura Tecnológica estima costos de lista para dos escenarios y recomienda GCP; la elección queda como decisión del dueño).
 
 ## 3.2 Inventario de aplicaciones
 

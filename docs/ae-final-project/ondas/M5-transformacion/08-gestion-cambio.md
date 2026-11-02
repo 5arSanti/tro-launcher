@@ -4,7 +4,7 @@
 
 | Disparador | Efecto |
 |------------|--------|
-| Elección entre Azure y GCP (alternativas declaradas, decisión pendiente), de cola IT-07 o de gestor de secretos | Se revisan B-T01 a B-T06, los costos relativos de PY-04, PY-05 y PY-07 y los criterios RQ-11, RQ-12 y RQ-14 |
+| Elección entre Azure y GCP (alternativas declaradas; el anexo de nube del Punto 4 recomienda GCP como Objetivo TO-BE y la decisión sigue pendiente de Santiago), de cola IT-07 o de gestor de secretos | Se revisan B-T01 a B-T06, los costos de PY-04, PY-05 y PY-07 frente a la estimación a precios de lista de pago por uso consultados el 2 de noviembre de 2026 del anexo (piloto: Azure 755,45 y GCP 650,11 USD/mes; escala: Azure 3.096,77 y GCP 2.864,32 USD/mes) y los criterios RQ-11, RQ-12 y RQ-14 |
 | Formalización legal (PY-01) | Se actualiza el registro de empresa y se habilitan PY-09 y PY-10 |
 | Firma de un piloto | Se activan P-06, SN-04 e indicadores de campo |
 | Necesidad de vincular personal | Se activa PY-10 |

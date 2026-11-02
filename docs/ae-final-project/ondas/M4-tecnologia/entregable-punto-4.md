@@ -128,7 +128,7 @@ Escala de riesgos cualitativa: Alta, Media, Baja.
 | RT-10 | Dependencia de GitHub y Google | Publicación y leads en cuentas de terceros | Media | Media | Observado | Espejo de repositorios y N-01 |
 | RT-11 | Cámara USB no equivale a cámara de campo | Solo usb0 y usb1 | Alta | Media | Observado por declaración del dueño (1 de noviembre de 2026) | Fuente de campo definida con un operador |
 | RT-12 | Gestión de secretos | Plantilla presente; manejo real sin evidencia | Media | Media | NO CONFIRMADO | Gestor de secretos por entorno |
-| RT-13 | Brecha: equipos obsoletos | GPU GTX 1050 Ti de 4 GB y disco al 85 % de ocupación en la única estación | Alta | Media | Observado | GPU bajo demanda para entrenamiento e inferencia y almacén de objetos fuera de la estación |
+| RT-13 | Brecha: equipos obsoletos | GPU GTX 1050 Ti de 4 GB y disco al 85 % de ocupación en la única estación | Alta | Media | Observado | GPU bajo demanda para entrenamiento e inferencia y almacén de objetos fuera de la estación; costo estimado en el anexo de nube (VM con T4 en São Paulo, 0,894 USD/h en Azure y 0,781595 USD/h en GCP, precios de lista del 2 de noviembre de 2026) |
 
 Las valoraciones son juicio de arquitectura y no medición. Marca: Diseñado AS-IS.
 
@@ -146,7 +146,7 @@ Marca de toda la sección: Objetivo TO-BE.
 2. Entorno de entrenamiento y etiquetado reproducible, independiente de la instalación manual de la estación.
 
 ### 5.3 Cloud
-1. Nodos de aplicación, datos e identidad alojables en nube; Azure y GCP se mantienen como alternativas, con decisión pendiente (Objetivo TO-BE, alternativas declaradas por el dueño el 1 de noviembre de 2026). Costos: NO CONFIRMADO.
+1. Nodos de aplicación, datos e identidad alojables en nube; Azure y GCP se mantienen como alternativas, con decisión pendiente (Objetivo TO-BE, alternativas declaradas por el dueño el 1 de noviembre de 2026). Costos: el anexo «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS» los estima en São Paulo (Azure Brazil South y GCP southamerica-east1) como estimación a precios de lista de pago por uso consultados el 2 de noviembre de 2026: piloto de 1 a 3 cámaras, Azure 755,45 USD/mes y GCP 650,11 USD/mes; escala de 15 cámaras, Azure 3.096,77 USD/mes y GCP 2.864,32 USD/mes. El equipo recomienda GCP (Objetivo TO-BE); la decisión es de Santiago y sigue pendiente.
 2. GPU bajo demanda para entrenamiento e inferencia, no permanente.
 3. Almacén de objetos versionado para pesos, videos y exportes.
 
@@ -286,4 +286,4 @@ Leyenda: las líneas punteadas indican componentes condicionales. N-06 se implan
 | Brecha: leads en hoja personal | N-01 |
 | Brecha: modelo copiado a mano sin versionado (DF-08, P-03) | N-05 registro versionado del modelo en el nodo de datos |
 | Brecha: sin aplicación de facturación (DF-08, P-08) | N-06 en el nodo SaaS administrativo, Objetivo TO-BE, condicional a C-01 |
-| Brecha: equipos obsoletos (RT-13) | GPU bajo demanda y almacén de objetos fuera de la estación |
+| Brecha: equipos obsoletos (RT-13) | GPU bajo demanda y almacén de objetos fuera de la estación, con costos estimados en el anexo de nube (sección 5.3) |
