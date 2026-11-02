@@ -26,7 +26,7 @@ mustExist("docs/ae-final-project/ondas/M1-negocio/README.md");
 mustExist("docs/ae-final-project/ondas/M2-datos/README.md");
 mustExist("docs/ae-final-project/ondas/M3-aplicaciones/README.md");
 mustExist("docs/ae-final-project/ondas/M4-tecnologia/README.md");
-mustExist("docs/ae-final-project/ondas/M5-roadmap/README.md");
+mustExist("docs/ae-final-project/ondas/M5-transformacion/README.md");
 mustExist("docs/ae-final-project/informe/plan-transformacion-empresarial.md");
 
 const registerNeedles = [

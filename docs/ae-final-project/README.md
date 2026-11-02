@@ -2,7 +2,76 @@
 
 LIRN es la firma. TORNS es el único producto. TORNS es un prototipo aplicado. No es un piloto firmado. Transmilenio es el caso de estudio, no un cliente.
 
-Este árbol es el único espacio de trabajo del taller TOGAF. El informe único se redactará más adelante en `informe/plan-transformacion-empresarial.md`. Esa ruta no se crea hasta M5.
+## Documento final para revisar
+
+El documento final del taller es el informe único **Plan de Transformación Empresarial**:
+
+- Word: [informe/plan-transformacion-empresarial.docx](informe/plan-transformacion-empresarial.docx), generado desde el Markdown con 11 figuras.
+- Markdown fuente: [informe/plan-transformacion-empresarial.md](informe/plan-transformacion-empresarial.md).
+
+Para regenerar el Word desde `informe/`: `pandoc plan-transformacion-empresarial.md --resource-path=. -o plan-transformacion-empresarial.docx` y fijar la propiedad de autor en Johel Santiago Arias.
+
+## Anexos por onda
+
+| Onda | Anexo |
+|------|-------|
+| M1 | [Entregable Punto 1. Arquitectura de Negocio](ondas/M1-negocio/entregable-punto-1.md), con apartados 01 a 04 y [complementos](ondas/M1-negocio/complementos/) |
+| M2 | [Entregable Punto 2. Arquitectura de Datos](ondas/M2-datos/entregable-punto-2.md), con [tablas](ondas/M2-datos/tablas/) y [diagramas](ondas/M2-datos/diagramas/) |
+| M3 | [Entregable Punto 3. Arquitectura de Aplicaciones](ondas/M3-aplicaciones/entregable-punto-3.md), con [tablas](ondas/M3-aplicaciones/tablas/) y [diagramas](ondas/M3-aplicaciones/diagramas/) |
+| M4 | [Entregable Punto 4. Arquitectura Tecnológica](ondas/M4-tecnologia/entregable-punto-4.md) y [Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS](ondas/M4-tecnologia/anexo-nube-azure-gcp.md) ([CSV](ondas/M4-tecnologia/anexo-nube-azure-gcp.csv)) |
+| M5 | [Roadmap de Transformación, archivos 00 a 08](ondas/M5-transformacion/README.md) |
+| Procesos | [Fichas, guías e imágenes BPMN de P-01 a P-05](procesos/README.md) |
+| Registro | [Registro de empresa](registro-empresa.md) |
+
+La carpeta [proceso/](proceso/) guarda evidencia de control de calidad que no forma parte de la entrega: [M1-control-calidad](proceso/M1-control-calidad/) y el [inventario de pendientes NO CONFIRMADO](proceso/pendientes-no-confirmado.md).
+
+## Secciones para reescritura de Santiago
+
+Secciones con prosa de borrador que Santiago reescribe con su voz:
+
+- Informe: capítulos 2 (Introducción), 9 (Conclusiones) y 10 (Recomendaciones); prosa de nube del capítulo 7 (marcas en l.109 y l.120) y recomendación 6 (marca en l.220).
+- M5: [03-matriz-priorizacion](ondas/M5-transformacion/03-matriz-priorizacion.md) l.22 y [08-gestion-cambio](ondas/M5-transformacion/08-gestion-cambio.md) l.7.
+
+Marcas `reescribir Santiago` presentes en el repositorio (archivo:línea):
+
+- informe/plan-transformacion-empresarial.md:109
+- informe/plan-transformacion-empresarial.md:120
+- informe/plan-transformacion-empresarial.md:220
+- ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:21
+- ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:3
+- ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:71
+- ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:8
+- ondas/M1-negocio/complementos/cadena-de-valor.md:31
+- ondas/M1-negocio/complementos/catalogo-principios.md:5
+- ondas/M1-negocio/complementos/catalogo-principios.md:6
+- ondas/M1-negocio/complementos/to-be-negocio.md:15
+- ondas/M1-negocio/complementos/to-be-negocio.md:51
+- ondas/M1-negocio/complementos/to-be-negocio.md:66
+- ondas/M1-negocio/complementos/to-be-negocio.md:91
+- ondas/M2-datos/entregable-punto-2.md:101
+- ondas/M2-datos/entregable-punto-2.md:11
+- ondas/M2-datos/entregable-punto-2.md:34
+- ondas/M2-datos/entregable-punto-2.md:43
+- ondas/M2-datos/entregable-punto-2.md:50
+- ondas/M2-datos/entregable-punto-2.md:59
+- ondas/M2-datos/entregable-punto-2.md:62
+- ondas/M2-datos/entregable-punto-2.md:91
+- ondas/M2-datos/entregable-punto-2.md:96
+- ondas/M3-aplicaciones/entregable-punto-3.md:103
+- ondas/M3-aplicaciones/entregable-punto-3.md:108
+- ondas/M3-aplicaciones/entregable-punto-3.md:12
+- ondas/M3-aplicaciones/entregable-punto-3.md:136
+- ondas/M3-aplicaciones/entregable-punto-3.md:169
+- ondas/M3-aplicaciones/entregable-punto-3.md:178
+- ondas/M3-aplicaciones/entregable-punto-3.md:33
+- ondas/M3-aplicaciones/entregable-punto-3.md:66
+- ondas/M3-aplicaciones/entregable-punto-3.md:80
+- ondas/M3-aplicaciones/entregable-punto-3.md:9
+- ondas/M4-tecnologia/anexo-nube-azure-gcp.md:199
+- ondas/M4-tecnologia/anexo-nube-azure-gcp.md:216
+- ondas/M4-tecnologia/anexo-nube-azure-gcp.md:224
+- ondas/M4-tecnologia/entregable-punto-4.md:159
+- ondas/M4-tecnologia/entregable-punto-4.md:7
 
 ## Fuente de coherencia
 
@@ -40,11 +109,11 @@ Si un hecho no está en esta tabla ni en el registro, se escribe `NO CONFIRMADO`
 | M2 | Punto 2. Arquitectura de Datos | `ondas/M2-datos/` | Inventario, modelo, flujo y problemas de información |
 | M3 | Punto 3. Arquitectura de Aplicaciones | `ondas/M3-aplicaciones/` | Inventario, integraciones, problemas y propuesta de interoperabilidad |
 | M4 | Punto 4. Arquitectura Tecnológica | `ondas/M4-tecnologia/` | Inventario, diagrama, riesgos y propuesta |
-| M5 | Punto 5 y entrega | `ondas/M5-roadmap/` | TO-BE, brechas, portafolio, priorización, hoja de ruta, indicadores, informe único y pregunta final |
+| M5 | Punto 5 y entrega | `ondas/M5-transformacion/` | TO-BE, brechas, portafolio, priorización, hoja de ruta, indicadores, informe único y pregunta final |
 
 Cada hito M1 a M5 requiere spec y plan propios antes de redactar. Al cerrar, se actualiza el registro. Lo bloqueado no se contradice.
 
-## Informe único (reservado)
+## Estructura del informe único
 
 1. Portada
 2. Introducción

@@ -14,4 +14,4 @@ Estado: borrador de apoyo completo, en revisión de Santiago. Sigue el spec y pl
 | 07 | Gobierno de la implementación | G |
 | 08 | Gestión del cambio de la arquitectura | H |
 
-La onda M5 reemplaza el playbook de la carpeta M5-roadmap. El informe único se arma después de la revisión de Santiago.
+La onda M5 reemplazó el playbook M5-roadmap, retirado en la consolidación final. El informe único se arma después de la revisión de Santiago.

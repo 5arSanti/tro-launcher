@@ -248,8 +248,8 @@ Presidencia de la República de Colombia. (2015, 26 de mayo). *Decreto 1072 de 2
 
 Presidencia de la República de Colombia. (2019, 5 de junio). *Decreto 957 de 2019, por el cual se adiciona el capítulo 13 al Título 1 de la Parte 2 del Libro 2 del Decreto 1074 de 2015*. Función Pública, Gestor Normativo. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=94550
 
-Superintendencia de Industria y Comercio. (2017). *Circular Externa 005 de 2017*.
+Superintendencia de Industria y Comercio. (2017, 10 de agosto). *Circular Externa 005 de 2017, adicionar un Capítulo Tercero al Título V de la Circular Única*. Diario Oficial 50.321. https://sedeelectronica.sic.gov.co/transparencia/normativa/circular-05-12
 
-Superintendencia de Industria y Comercio. (2018). *Circular Externa 002 de 2018*.
+Superintendencia de Industria y Comercio. (2018, 23 de marzo). *Circular Externa 002 de 2018, por medio de la cual se modifica el numeral 3.2 del Capítulo Tercero del Título V de la Circular Única*. Diario Oficial 50.544. https://sedeelectronica.sic.gov.co/transparencia/normativa/circular-02-14
 
 Ultralytics. (s. f.). *Ultralytics YOLO11* [Documentación]. Recuperado el 1 de noviembre de 2026, de https://docs.ultralytics.com/models/yolo11/
