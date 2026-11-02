@@ -27,7 +27,7 @@ mustExist("docs/ae-final-project/ondas/M2-datos/README.md");
 mustExist("docs/ae-final-project/ondas/M3-aplicaciones/README.md");
 mustExist("docs/ae-final-project/ondas/M4-tecnologia/README.md");
 mustExist("docs/ae-final-project/ondas/M5-roadmap/README.md");
-mustNotExist("docs/ae-final-project/informe");
+mustExist("docs/ae-final-project/informe/plan-transformacion-empresarial.md");
 
 const registerNeedles = [
   "Identidad legal y de mercado",
@@ -71,10 +71,6 @@ if (existsSync(join(root, "AGENTS.md"))) {
   }
 }
 
-if (existsSync(join(root, "docs/ae-final-project"))) {
-  const top = readdirSync(join(root, "docs/ae-final-project"));
-  if (top.includes("informe")) fail("informe/ should not exist yet");
-}
 
 if (failures.length) {
   console.error("FAIL:\n" + failures.map((item) => "- " + item).join("\n"));

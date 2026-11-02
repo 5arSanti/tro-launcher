@@ -59,14 +59,10 @@ mustNotExist("docs/lirn-agent-procesos.md");
 mustNotExist("docs/landing-instructions.md");
 mustNotExist("docs/contact-apps-script.md");
 mustNotExist("docs/presentations/torns-landing-guion.md");
-mustNotExist("docs/ae-final-project/informe");
+mustExist("docs/ae-final-project/informe/plan-transformacion-empresarial.md");
 mustNotExist("docs/brand/lirn-wordmark-prompt.md");
 mustNotExist("docs/superpowers/plans/2026-09-13-lirn-procesos-fichas.md");
 
-if (existsSync(join(root, "docs/ae-final-project"))) {
-  const top = readdirSync(join(root, "docs/ae-final-project"));
-  if (top.includes("informe")) fail("informe/ should not exist yet");
-}
 
 if (existsSync(join(root, "README.md"))) {
   const readme = read("README.md");
