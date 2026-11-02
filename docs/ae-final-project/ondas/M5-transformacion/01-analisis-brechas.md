@@ -2,8 +2,8 @@
 
 | ID | Dominio | AS-IS (qué existe hoy) | Marca AS-IS | TO-BE (qué hace falta) | Qué debe cambiar | Trazas | Estado de insumo |
 |----|---------|------------------------|-------------|------------------------|------------------|--------|------------------|
-| B-N01 | Negocio | Sin NIT ni matrícula mercantil | Observado | S.A.S. formalizada | Registro ante Cámara de Comercio y DIAN | G-N01; PI-17 | Completo |
-| B-N02 | Negocio | Banda pública de tres nombres frente a equipo de una persona (Johel Arias); identificadores tro-* residuales | Observado | Comunicación alineada al equipo vigente | Actualizar banda y retirar residuos TRO | G-N02; PI-07; PR-09, PR-10 | Completo |
+| B-N01 | Negocio | No hay registro ante Cámara de Comercio; sin NIT ni matrícula mercantil | Observado por declaración del dueño (2 de noviembre de 2026) | S.A.S. formalizada | Registro ante Cámara de Comercio y DIAN | G-N01; PI-17 | Completo |
+| B-N02 | Negocio | Banda pública de tres nombres frente a equipo de una persona (Johel Santiago Arias); identificadores tro-* residuales | Observado | Comunicación alineada al equipo vigente | Actualizar banda y retirar residuos TRO | G-N02; PI-07; PR-09, PR-10 | Completo |
 | B-N03 | Negocio | Leads recopilados en hoja sin respuesta ni seguimiento | Observado por declaración del dueño (1 de noviembre de 2026) | Embudo con atención y seguimiento (CAP-03) | Incorporar paso de atención al proceso comercial | G-N03; PI-02, PI-16; PR-17 | Completo |
 | B-N04 | Negocio | Sin evaluación del modelo en estación; recall 0,55 es métrica de entrenamiento de la última época sobre 1.000 imágenes del COCO Person Dataset de Roboflow, no de estación | Observado | Evaluación con video de estación acordado con operador | Definir protocolo de evaluación en campo | G-N05; RA-03, RA-05; RT-04; PR-16 | Completo |
 | B-N05 | Negocio | CAP-07, CAP-09 y CAP-10 ausentes | Observado | Capacidades con proceso (P-07, P-08, P-09) | Diseñar interoperabilidad, facturación y talento | G-N06; PR-06, PR-15 | Completo |

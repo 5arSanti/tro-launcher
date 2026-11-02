@@ -89,13 +89,13 @@ La selección y el diseño son de Aplicaciones y Tecnología; aquí solo se decl
 ## 7. Organización TO-BE
 
 <!-- reescribir Santiago -->
-Punto de partida: una persona, Johel Arias, autor único, cubre las cinco áreas funcionales (Diseñado AS-IS). Estado objetivo: las áreas existen como roles; un cargo nuevo solo se justifica por una capacidad ausente (CAP-07, CAP-09, CAP-10). No se fija número de personas ni fecha: NO CONFIRMADO.
+Punto de partida: una persona, Johel Santiago Arias, autor único, cubre las cinco áreas funcionales (Diseñado AS-IS). Estado objetivo: las áreas existen como roles; un cargo nuevo solo se justifica por una capacidad ausente (CAP-07, CAP-09, CAP-10). No se fija número de personas ni fecha: NO CONFIRMADO.
 
 ## 8. Brechas de negocio AS-IS a TO-BE (insumo para el Gap Analysis del Roadmap de Transformación)
 
 | ID | Tipo | Lo que falta hoy (Observado) | Estado que la cierra (Objetivo TO-BE) | Candidato |
 |----|------|------------------------------|---------------------------------------|-----------|
-| G-N01 | Brecha | Sin NIT ni matrícula (Observado) | S.A.S. formalizada | C-01: Formalización legal ante Cámara de Comercio y DIAN |
+| G-N01 | Brecha | No hay registro ante Cámara de Comercio; sin NIT ni matrícula. Observado por declaración del dueño (2 de noviembre de 2026) | S.A.S. formalizada | C-01: Formalización legal ante Cámara de Comercio y DIAN |
 | G-N02 | Brecha | Banda pública desalineada (Observado) | Comunicación alineada con el equipo vigente | C-02: Alineación de la banda pública |
 | G-N03 | Brecha | Leads en hoja de la cuenta Google personal de Santiago, sin respuesta y sin política publicada; riesgo Ley 1581/2012 (Observado) | Embudo con gestor y política Ley 1581 | C-03: Política Ley 1581 y gestor de leads |
 | G-N04 | Brecha | Conteos solo en memoria (Observado) | Historial comparable por estación | C-04: Persistencia histórica |

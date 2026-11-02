@@ -38,7 +38,7 @@ La pregunta que guía el documento es: ¿cómo ayuda la Arquitectura Empresarial
 |---|---|---|
 | Razón social | LIRN (proyectada LIRN S.A.S.), sociedad por acciones simplificada que se constituiría según la Ley 1258 de 2008 (Congreso de la República de Colombia, 2008) | Diseñado AS-IS |
 | Sector económico | Software e ITS para movilidad y transporte masivo (CIIU 6201 / 6202) | Diseñado AS-IS |
-| NIT y matrícula mercantil | NO CONFIRMADO | NO CONFIRMADO |
+| NIT y matrícula mercantil | Sin NIT ni matrícula; no hay registro ante Cámara de Comercio | Observado por declaración del dueño (2 de noviembre de 2026) |
 | Tamaño | Microempresa unipersonal; el Decreto 957 de 2019 (Presidencia de la República de Colombia, 2019) clasifica por ingresos, que no están confirmados, por lo que la clasificación es una hipótesis de diseño | Observado (equipo), Diseñado AS-IS (marco) |
 | Equipo | Un autor y responsable único, Johel Santiago Arias | Observado por declaración del dueño (1 de noviembre de 2026) |
 | Producto | TORNS: detección y conteo de pasajeros con YOLO11s (Ultralytics, s. f.) y recomendación determinista de despacho | Observado |
@@ -102,7 +102,7 @@ Fase D. El entregable «Arquitectura Tecnológica (Punto 4)» contiene el invent
 
 ![Diagrama tecnológico AS-IS](../ondas/M4-tecnologia/diagramas/E4a-tecnologia-as-is.png)
 
-**Situación AS-IS.** Todo corre en una sola estación de trabajo, con disco cerca de su capacidad y sin respaldos ni separación de entornos. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y cámaras USB externas (usb1), sin fechas ni resultados registrados (NO CONFIRMADO), y hoy no existen segmentación de red, firewall ni VPN. Marca: Observado por declaración del dueño (1 de noviembre de 2026).
+**Situación AS-IS.** Todo corre en una sola estación de trabajo, con disco cerca de su capacidad y sin respaldos ni separación de entornos. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Hoy no existen segmentación de red, firewall ni VPN. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Sobre las cámaras: Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO.
 
 ![Diagrama tecnológico TO-BE](../ondas/M4-tecnologia/diagramas/E4b-tecnologia-to-be.png)
 

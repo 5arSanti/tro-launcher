@@ -42,7 +42,7 @@ const registerNeedles = [
   "Brechas y proyectos",
   "Glosario de términos bloqueados",
   "LIRN es la firma. TORNS es el único producto.",
-  "Equipo actual: Johel Arias.",
+  "Equipo actual: Johel Santiago Arias.",
   "TORNS es prototipo aplicado. No es piloto firmado.",
   "Transmilenio es caso de estudio, no cliente.",
   "Observado",

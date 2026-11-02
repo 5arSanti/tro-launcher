@@ -11,11 +11,11 @@ Desarrollado y bloqueado en `ondas/M1-negocio/01-organizacion-y-estrategia.md`.
 | Hecho | Marca | Estado |
 |-------|-------|--------|
 | Razón social de trabajo: LIRN (proyectada LIRN S.A.S.) | Diseñado AS-IS | Bloqueado (M1) |
-| Forma: Sociedad por Acciones Simplificada (SAS), Colombia (Ley 1258 de 2008) | Diseñado AS-IS | Bloqueado (M1) |
+| Forma: Proyectada como S.A.S. unipersonal (Ley 1258 de 2008), sin constituir, Colombia | Objetivo TO-BE; sin registro, Observado por declaración del dueño (2 de noviembre de 2026) | Bloqueado (M1) |
 | Sede: Bogotá | Diseñado AS-IS | Bloqueado (M1) |
 | Tamaño: microempresa unipersonal (Decreto 957 de 2019) | Observado (equipo) / Diseñado AS-IS (marco) | Bloqueado (M1) |
 | Sector: software e ITS para movilidad y transporte masivo (CIIU 6201 / 6202) | Diseñado AS-IS | Bloqueado (M1) |
-| NIT y matrícula mercantil | Pendiente de formalización | Brecha. No inventar número |
+| NIT y matrícula mercantil | No hay registro ante Cámara de Comercio | Observado por declaración del dueño (2 de noviembre de 2026). Brecha G-N01; no se asigna número; el registro ante la Cámara de Comercio de Bogotá ocurre después de la fecha de entrega |
 | Mercado: operadores B2B y B2G de sistemas masivos con estaciones | Diseñado AS-IS | Bloqueado (M1) |
 | Datos personales: Ley 1581 de 2012 y Decreto 1377 de 2013 | Diseñado AS-IS | Bloqueado (M1) |
 
@@ -25,7 +25,7 @@ Desarrollado y bloqueado en `ondas/M1-negocio/02-organigrama-y-stakeholders.md`.
 
 | Hecho | Marca | Estado |
 |-------|-------|--------|
-| Equipo actual: Johel Arias. | Observado | Bloqueado (M1) |
+| Equipo actual: Johel Santiago Arias. | Observado | Bloqueado (M1) |
 | Organigrama AS-IS: Dirección General, una persona | Diseñado AS-IS | Bloqueado (M1) |
 | Vista funcional: Dirección, Comercial, Producto / Ingeniería, Operación, Calidad | Diseñado AS-IS | Bloqueado (M1) |
 | El fundador es responsable actual de las cinco áreas | Diseñado AS-IS | Bloqueado (M1) |
@@ -117,7 +117,7 @@ CRM, ERP e identidad de operador: Objetivo TO-BE.
 
 ## 9. Tecnología
 
-Estado: cerrada en M4 (Arquitectura Tecnológica, Punto 4). AS-IS Observado: estación de trabajo del fundador como único entorno, Docker local, GitHub Pages, Git, pesos `.pt`, OpenCV (archivo, USB o RTSP), cámaras USB usb0 y usb1, GPU obsoleta y disco cerca de su capacidad, sin respaldos. Riesgos RT-01 a RT-13 del Punto 4 (RT-12, gestión de secretos, NO CONFIRMADO). Objetivo TO-BE: AP-03a y AP-03b separados con cola IT-07 (producto NO CONFIRMADO), entornos de laboratorio, demostración y piloto separados, nodos alojables en nube (Azure y GCP como alternativas, decisión pendiente; costos NO CONFIRMADO), GPU bajo demanda, almacén de objetos versionado y autenticación N-02. Fuentes normativas revisadas el 1 de noviembre de 2026: Resolución DIAN 000165 de 2023 (facturación electrónica), Resolución DIAN 000013 de 2021 (nómina electrónica), Ley 100 de 1993 (afiliación y aportes a seguridad social) y Decreto 1072 de 2015 (PILA para teletrabajadores). IT-EQ-04 Pruebas con cámaras: pruebas con cámaras USB integradas en portátiles (usb0) y cámaras USB externas (usb1), Observado por declaración del dueño (1 de noviembre de 2026); fechas y resultados NO CONFIRMADO. IT-RD-06 Segmentación, firewall o VPN: no existen actualmente, Observado por declaración del dueño (1 de noviembre de 2026).
+Estado: cerrada en M4 (Arquitectura Tecnológica, Punto 4). AS-IS Observado: estación de trabajo del fundador como único entorno, Docker local, GitHub Pages, Git, pesos `.pt`, OpenCV (archivo, USB o RTSP), cámaras USB usb0 y usb1, GPU obsoleta y disco cerca de su capacidad, sin respaldos. Cámaras: Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO. Riesgos RT-01 a RT-13 del Punto 4 (RT-12, gestión de secretos, NO CONFIRMADO). Objetivo TO-BE: AP-03a y AP-03b separados con cola IT-07 (producto NO CONFIRMADO), entornos de laboratorio, demostración y piloto separados, nodos alojables en nube (Azure y GCP como alternativas, decisión pendiente; costos NO CONFIRMADO), GPU bajo demanda, almacén de objetos versionado y autenticación N-02. Fuentes normativas revisadas el 1 de noviembre de 2026: Resolución DIAN 000165 de 2023 (facturación electrónica), Resolución DIAN 000013 de 2021 (nómina electrónica), Ley 100 de 1993 (afiliación y aportes a seguridad social) y Decreto 1072 de 2015 (PILA para teletrabajadores). IT-EQ-04 Pruebas con cámaras: pruebas con cámaras USB integradas en portátiles (usb0) y cámaras USB externas (usb1), Observado por declaración del dueño (1 de noviembre de 2026); fechas y resultados NO CONFIRMADO. IT-RD-06 Segmentación, firewall o VPN: no existen actualmente, Observado por declaración del dueño (1 de noviembre de 2026).
 
 Resultados agregados de la encuesta del 17 de agosto de 2026 (n=20, formulario anónimo), tomados del documento interno no publicado «Guía Actividad 2, Ingeniería Aplicada» (Equipo TORNS, 2026). Marca: Observado (cifras agregadas; sin datos personales de encuestados). Las etiquetas siguen las del documento:
 
@@ -139,7 +139,7 @@ Estado: cerrada en M5 (Transformación, Punto 5). Los candidatos C-01 a C-08 que
 Candidatos de origen, identificados al cierre de M1:
 
 - Formalización legal S.A.S. ante Cámara de Comercio de Bogotá y DIAN (NIT y matrícula mercantil).
-- Alinear la banda pública de tres nombres en `/torns` con el equipo actual (Johel Arias) y retirar identificadores técnicos residuales `tro-*`.
+- Alinear la banda pública de tres nombres en `/torns` con el equipo actual (Johel Santiago Arias) y retirar identificadores técnicos residuales `tro-*`.
 - Formalizar política e aviso de tratamiento de datos personales (Ley 1581 de 2012) en el canal de contacto y pasar de una hoja de cálculo suelta a un CRM o gestor estructurado de leads (`CAP-03`).
 - Persistencia histórica de conteos (`person_count`) y recomendaciones de despacho, hoy volátiles en memoria.
 - Desacoplar la inferencia de video respecto de la apertura del stream MJPEG y evaluar el modelo (`recall 0,55`) en condiciones reales de estación (`CAP-04`).
@@ -150,7 +150,7 @@ Candidatos de origen, identificados al cierre de M1:
 ## 11. Glosario de términos bloqueados
 
 - LIRN es la firma. TORNS es el único producto.
-- Equipo actual: Johel Arias.
+- Equipo actual: Johel Santiago Arias.
 - TORNS es prototipo aplicado. No es piloto firmado.
 - Transmilenio es caso de estudio, no cliente.
 - El prototipo cuenta personas. No calcula densidad por área.
