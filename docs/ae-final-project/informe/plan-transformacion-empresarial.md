@@ -38,7 +38,7 @@ La pregunta que guía el documento es: ¿cómo ayuda la Arquitectura Empresarial
 |---|---|---|
 | Razón social | LIRN (proyectada LIRN S.A.S.), sociedad por acciones simplificada que se constituiría según la Ley 1258 de 2008 (Congreso de la República de Colombia, 2008) | Diseñado AS-IS |
 | Sector económico | Software e ITS para movilidad y transporte masivo (CIIU 6201 / 6202) | Diseñado AS-IS |
-| NIT y matrícula mercantil | No hay registro ante Cámara de Comercio. Observado por declaración del dueño (2 de noviembre de 2026) | No hay registro ante Cámara de Comercio. Observado por declaración del dueño (2 de noviembre de 2026) |
+| NIT y matrícula mercantil | Sin NIT ni matrícula; no hay registro ante Cámara de Comercio | Observado por declaración del dueño (2 de noviembre de 2026) |
 | Tamaño | Microempresa unipersonal; el Decreto 957 de 2019 (Presidencia de la República de Colombia, 2019) clasifica por ingresos, que no están confirmados, por lo que la clasificación es una hipótesis de diseño | Observado (equipo), Diseñado AS-IS (marco) |
 | Equipo | Un autor y responsable único, Johel Santiago Arias | Observado por declaración del dueño (1 de noviembre de 2026) |
 | Producto | TORNS: detección y conteo de pasajeros con YOLO11s (Ultralytics, s. f.) y recomendación determinista de despacho | Observado |

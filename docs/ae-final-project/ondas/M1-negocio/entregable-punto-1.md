@@ -53,7 +53,7 @@ La organización concentra la relación institucional, la propiedad intelectual,
 | Atributo empresarial | Definición en la arquitectura de negocio | Marca de hecho |
 |---|---|---|
 | **Nombre de la organización** | LIRN (razón social proyectada: LIRN S.A.S.). El nombre integra el concepto *Line* (líneas de metro y transporte masivo) con las siglas finales de su producto (*RN* de TORNS). | Observado (marca institucional) / Diseñado AS-IS (razón social) |
-| **Forma jurídica y domicilio** | Sociedad por Acciones Simplificada (S.A.S.) bajo la Ley 1258 de 2008, con domicilio principal en Bogotá D.C., Colombia. | Diseñado AS-IS |
+| **Forma jurídica y domicilio** | Proyectada como S.A.S. unipersonal (Ley 1258 de 2008), sin constituir; domicilio principal en Bogotá D.C., Colombia. | Objetivo TO-BE; sin registro, Observado por declaración del dueño (2 de noviembre de 2026) |
 | **Identificación tributaria (NIT) y matrícula mercantil** | No hay registro ante Cámara de Comercio; el registro ante la Cámara de Comercio de Bogotá ocurre después de la fecha de entrega. No se asigna número tributario. | Brecha AS-IS. Observado por declaración del dueño (2 de noviembre de 2026) |
 | **Sector económico** | Tecnología de la información, desarrollo de software e ingeniería aplicada a Sistemas Inteligentes de Transporte (ITS) y movilidad urbana (actividades de referencia CIIU 6201 y 6202). | Diseñado AS-IS |
 | **Tamaño de la empresa** | Microempresa unipersonal, de acuerdo con los criterios del Decreto 957 de 2019 en Colombia. Equipo actual: **Johel Santiago Arias** (una persona). | Observado (equipo) / Diseñado AS-IS (marco societario) |

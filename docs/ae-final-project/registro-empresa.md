@@ -11,7 +11,7 @@ Desarrollado y bloqueado en `ondas/M1-negocio/01-organizacion-y-estrategia.md`.
 | Hecho | Marca | Estado |
 |-------|-------|--------|
 | Razón social de trabajo: LIRN (proyectada LIRN S.A.S.) | Diseñado AS-IS | Bloqueado (M1) |
-| Forma: Sociedad por Acciones Simplificada (SAS), Colombia (Ley 1258 de 2008) | Diseñado AS-IS | Bloqueado (M1) |
+| Forma: Proyectada como S.A.S. unipersonal (Ley 1258 de 2008), sin constituir, Colombia | Objetivo TO-BE; sin registro, Observado por declaración del dueño (2 de noviembre de 2026) | Bloqueado (M1) |
 | Sede: Bogotá | Diseñado AS-IS | Bloqueado (M1) |
 | Tamaño: microempresa unipersonal (Decreto 957 de 2019) | Observado (equipo) / Diseñado AS-IS (marco) | Bloqueado (M1) |
 | Sector: software e ITS para movilidad y transporte masivo (CIIU 6201 / 6202) | Diseñado AS-IS | Bloqueado (M1) |
