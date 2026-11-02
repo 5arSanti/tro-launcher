@@ -34,17 +34,17 @@ Secciones con prosa de borrador que Santiago reescribe con su voz:
 
 Marcas `reescribir Santiago` presentes en el repositorio (46, archivo:línea):
 
-- informe/plan-transformacion-empresarial.md:192
-- informe/plan-transformacion-empresarial.md:203
-- informe/plan-transformacion-empresarial.md:236
-- informe/plan-transformacion-empresarial.md:240
+- informe/plan-transformacion-empresarial.md:254
+- informe/plan-transformacion-empresarial.md:265
+- informe/plan-transformacion-empresarial.md:298
+- informe/plan-transformacion-empresarial.md:302
 - informe/plan-transformacion-empresarial.md:31
-- informe/plan-transformacion-empresarial.md:332
-- informe/plan-transformacion-empresarial.md:344
-- informe/plan-transformacion-empresarial.md:348
-- informe/plan-transformacion-empresarial.md:355
-- informe/plan-transformacion-empresarial.md:358
 - informe/plan-transformacion-empresarial.md:39
+- informe/plan-transformacion-empresarial.md:394
+- informe/plan-transformacion-empresarial.md:406
+- informe/plan-transformacion-empresarial.md:410
+- informe/plan-transformacion-empresarial.md:417
+- informe/plan-transformacion-empresarial.md:420
 - ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:21
 - ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:3
 - ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:71

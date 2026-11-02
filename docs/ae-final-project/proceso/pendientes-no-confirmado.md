@@ -1,6 +1,6 @@
 # Pendientes NO CONFIRMADO al cierre (2 de noviembre de 2026)
 
-**Totales (calculados por script):** 210 apariciones de la marca; 194 pendientes legítimos; 16 no pendientes (14 definiciones de la marca y 2 títulos de sección).
+**Totales (calculados por script):** 216 apariciones de la marca; 200 pendientes legítimos; 16 no pendientes (14 definiciones de la marca y 2 títulos de sección).
 
 Inventario generado con `rg -n "NO CONFIRMADO"` sobre `docs/ae-final-project` y `AGENTS.md`, sin contar este archivo. Cada aparición clasificada como pendiente es una marca de evidencia: el hecho no tiene fuente verificable en el repositorio ni declaración del dueño. Ninguna se cierra sin evidencia nueva; no se inventan valores. Las definiciones y los títulos de sección nombran la marca, pero no señalan un dato faltante. El control de calidad de M1 está en [M1-control-calidad](M1-control-calidad/).
 
@@ -10,13 +10,19 @@ Inventario generado con `rg -n "NO CONFIRMADO"` sobre `docs/ae-final-project` y 
 | AGENTS.md:87 | …ervado, Diseñado AS-IS, Objetivo TO-BE. Un Objetivo no se afirma como hoy. Si el hecho no está en este archivo ni en el registro, escribir `NO CONFIRMADO | Definición de la marca (no pendiente) |
 | README.md:109 | …Si un hecho no está en esta tabla ni en el registro, se escribe `NO CONFIRMADO | Definición de la marca (no pendiente) |
 | README.md:26 | …ia de control de calidad que no forma parte de la entrega: [M1-control-calidad](M1-control-calidad/) y el [inventario de pendientes NO CONFIRMADO | Definición de la marca (no pendiente) |
-| informe/plan-transformacion-empresarial.md:163 | …olo el dueño. / Rol Comercial (fundador, único consultor) / Observado por declaración del dueño (1 de noviembre de 2026); código del script NO CONFIRMADO | Pendiente legítimo: falta evidencia |
-| informe/plan-transformacion-empresarial.md:188 | …de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO | Pendiente legítimo: falta evidencia |
-| informe/plan-transformacion-empresarial.md:201 | …Fuente: anexo «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS». Los totales excluyen los rubros marcados NO CONFIRMADO | Pendiente legítimo: falta evidencia |
-| informe/plan-transformacion-empresarial.md:227 | …/ RT-12 / Gestión de secretos sin evidencia (NO CONFIRMADO | Pendiente legítimo: falta evidencia |
-| informe/plan-transformacion-empresarial.md:270 | …/ B-T03 / Plantilla de secretos presente; manejo real sin evidencia / NO CONFIRMADO | Pendiente legítimo: falta evidencia |
-| informe/plan-transformacion-empresarial.md:271 | …nida con un operador; AP-03b continuo con cola IT-07; GPU bajo demanda / Evaluación de infraestructura de campo y cola de eventos (producto NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| informe/plan-transformacion-empresarial.md:143 | …20) / AP-13 Google Forms y resumen estático en el sitio / Interno (resumen público) / No en el consolidado / Observado (registro y sitio) / NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| informe/plan-transformacion-empresarial.md:144 | …ción: entrevista a controlador SITP / Documento de evidencia / Interno / Sin dato personal identificable declarado / Observado (registro) / NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| informe/plan-transformacion-empresarial.md:145 | …de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| informe/plan-transformacion-empresarial.md:156 | …/ D-15 / Registros de ejecución / Salida estándar del proceso / Interno / No en el contenido observado / Observado (código) / NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| informe/plan-transformacion-empresarial.md:162 | …para teletrabajadores, los aportes se pagan mediante PILA (Decreto 1072 de 2015, art. 2.2.1.5.7); su clasificación como dato sensible queda NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| informe/plan-transformacion-empresarial.md:191 | …olo el dueño. / Rol Comercial (fundador, único consultor) / Observado por declaración del dueño (1 de noviembre de 2026); código del script NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| informe/plan-transformacion-empresarial.md:221 | …de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| informe/plan-transformacion-empresarial.md:250 | …de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| informe/plan-transformacion-empresarial.md:263 | …Fuente: anexo «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS». Los totales excluyen los rubros marcados NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | informe/plan-transformacion-empresarial.md:27 | …/ NO CONFIRMADO | Definición de la marca (no pendiente) |
+| informe/plan-transformacion-empresarial.md:289 | …/ RT-12 / Gestión de secretos sin evidencia (NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| informe/plan-transformacion-empresarial.md:332 | …/ B-T03 / Plantilla de secretos presente; manejo real sin evidencia / NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| informe/plan-transformacion-empresarial.md:333 | …nida con un operador; AP-03b continuo con cola IT-07; GPU bajo demanda / Evaluación de infraestructura de campo y cola de eventos (producto NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M1-negocio/01-organizacion-y-estrategia.md:6 | …**Política de hechos:** `Observado` / `Diseñado AS-IS` / `Objetivo TO-BE` / `NO CONFIRMADO | Definición de la marca (no pendiente) |
 | ondas/M1-negocio/02-organigrama-y-stakeholders.md:6 | …**Política de hechos:** `Observado` / `Diseñado AS-IS` / `Objetivo TO-BE` / `NO CONFIRMADO | Definición de la marca (no pendiente) |
 | ondas/M1-negocio/03-activos-procesos-capacidades.md:6 | …**Política de hechos:** `Observado` / `Diseñado AS-IS` / `Objetivo TO-BE` / `NO CONFIRMADO | Definición de la marca (no pendiente) |

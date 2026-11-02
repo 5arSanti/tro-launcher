@@ -135,6 +135,34 @@ Lectura de poder e interés:
 
 Fase C, datos. El entregable «Arquitectura de Datos (Punto 2)» contiene el inventario D-01 a D-23, los modelos conceptual y lógico AS-IS y TO-BE, tres flujos de información y los problemas PI-01 a PI-18.
 
+**Inventario de datos.**
+
+| Código | Conjunto de datos | Origen o sistema | Clasificación | Dato personal | Marca |
+|---|---|---|---|---|---|
+| D-01 | Lead (solicitud de contacto). Un lead no es un cliente | Hoja de cálculo de Google mediante Apps Script (según el registro) | Confidencial | Sí | Observado (formulario) / Observado por declaración del dueño (1 de noviembre de 2026): hoja y Apps Script en cuenta personal de Google |
+| D-02 | Evidencia de validación: encuesta del 17 de agosto de 2026 (n=20) | AP-13 Google Forms y resumen estático en el sitio | Interno (resumen público) | No en el consolidado | Observado (registro y sitio) / NO CONFIRMADO (respuestas individuales) |
+| D-03 | Evidencia de validación: entrevista a controlador SITP | Documento de evidencia | Interno | Sin dato personal identificable declarado | Observado (registro) / NO CONFIRMADO (soporte de las notas) |
+| D-04 | Fuente de video | Cuatro archivos mp4 de demostración, cámara USB o fuente RTSP | Interno | Posible (imagen de personas) | Observado (código); Observado por declaración del dueño (1 de noviembre de 2026): videos de Pexels; Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO |
+| D-05 | Fotograma procesado | Memoria y flujo MJPEG | Interno | Posible (imagen de personas) | Observado (código) |
+| D-06 | Métrica de detección | Memoria de AP-03 y WebSocket | Interno | No (agregado) | Observado (código) |
+| D-07 | Estación | Constantes en el código de AP-03 | Interno | No | Observado (código) / Diseñado AS-IS (datos de demostración) |
+| D-08 | Cámara | Configuración y variables de entorno | Interno | No | Observado (código) |
+| D-09 | Modelo de tren | Constantes en el código de AP-03 | Interno | No | Observado (código y registro) / Diseñado AS-IS (parámetros del prototipo) |
+| D-10 | Estado de estación | Memoria del proceso | Interno | No | Observado (código) |
+| D-11 | Plan de despacho | Memoria y respuesta de la API | Interno | No | Observado (código) |
+| D-12 | Modelo entrenado (pesos) | Archivo de pesos en el repositorio de AP-04 | Reservado | No | Observado (código) |
+| D-13 | Dataset y anotaciones | Carpeta de la herramienta de etiquetado dentro del repositorio de AP-04 | Reservado | Posible (imágenes) | Observado (código y cuaderno de entrenamiento: 3.694 imágenes de entrenamiento y 1.000 de validación; el dataset no existe en el repositorio) / Observado por declaración del dueño (1 de noviembre de 2026): origen coco-person de Roboflow Universe, licencia MIT y fecha de entrenamiento |
+| D-14 | Cuenta de anotador y credenciales de la herramienta de etiquetado | Base SQLite dentro del repositorio público | Confidencial | Sí | Observado (código) |
+| D-15 | Registros de ejecución | Salida estándar del proceso | Interno | No en el contenido observado | Observado (código) / NO CONFIRMADO (retención) |
+| D-16 | Código fuente de AP-01 a AP-04 | GitHub (repositorio público) | Interno o Reservado | No | Observado (registro y repositorio) |
+| D-17 | Documentación de procesos y gobierno | Repositorio, Lucidchart, SharePoint | Interno | Mínimo (nombre público del fundador) | Observado (registro) |
+| D-18 | Clientes | Ninguno | No aplica | No aplica | Observado (no existen clientes firmados) |
+| D-19 | Proveedores comerciales y técnicos | Ninguno | No aplica | No aplica | Observado (proveedores técnicos sin contrato; no existe registro de proveedores comerciales) |
+| D-20 | Facturación y contabilidad | Ninguno | No aplica | No aplica | Observado (no existe facturación) |
+| D-21 | Empleados | Ninguno | Confidencial (Objetivo TO-BE) | Sí, en Objetivo TO-BE. Sensibles los atributos de salud (Ley 1581 de 2012, art. 5); la afiliación a seguridad social es obligatoria para quien tenga contrato de trabajo y el empleador responde por el pago de los aportes (Ley 100 de 1993, arts. 15 y 22); para teletrabajadores, los aportes se pagan mediante PILA (Decreto 1072 de 2015, art. 2.2.1.5.7); su clasificación como dato sensible queda NO CONFIRMADO | Observado (un integrante; no existe CAP-10 Gestión de talento humano) |
+| D-22 | Contratos y acuerdos de servicio | Ninguno | No aplica | No aplica | Observado (no existen contratos) |
+| D-23 | Identificación legal de la firma (NIT y matrícula mercantil) | Ninguno | No aplica | No aplica | Observado (no existen NIT ni matrícula; la formalización registral no se ha ejecutado) |
+
 ![Modelo conceptual AS-IS](../ondas/M2-datos/diagramas/E-02-conceptual-as-is.png)
 
 ![Modelo conceptual TO-BE](../ondas/M2-datos/diagramas/E-02-conceptual-to-be.png)
@@ -182,6 +210,40 @@ Fase C, aplicaciones. El entregable «Arquitectura de Aplicaciones (Punto 3)» i
 # 7. Arquitectura Tecnológica
 
 Fase D. El entregable «Arquitectura Tecnológica (Punto 4)» contiene el inventario tecnológico, los diagramas AS-IS y TO-BE, los riesgos RT-01 a RT-13 y la propuesta de entornos.
+
+**Inventario tecnológico.**
+
+| Código | Tipo | Descripción | Marca |
+|---|---|---|---|
+| IT-EQ-01 | Servidores y equipos | Estación del fundador: Intel Core i5-10400 a 2,90 GHz, 48 GB de RAM, NVIDIA GeForce GTX 1050 Ti de 4 GB, 1,14 TB de almacenamiento con 975 GB usados (cerca del 85 %), Windows de 64 bits | Observado por declaración del dueño (1 de noviembre de 2026) |
+| IT-EQ-02 | Servidores y equipos | GPU de entrenamiento: La misma GTX 1050 Ti; la salida del cuaderno registra PyTorch 2.7.1 con CUDA 11.8 y Ultralytics 8.3.228 | Observado |
+| IT-EQ-03 | Servidores y equipos | Cámaras: Cámara integrada usb0 y cámara USB externa usb1 | Observado por declaración del dueño (1 de noviembre de 2026) |
+| IT-EQ-04 | Servidores y equipos | Pruebas con cámaras: Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1) | Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO |
+| IT-EQ-05 | Servidores y equipos | Servidores de producción: No existen | Observado |
+| IT-EQ-06 | Servidores y equipos | GPU de producción: No existe | Observado |
+| IT-RD-01 | Redes | Red local de la estación: La consola llama a la API en localhost por defecto (http://localhost:8000/api/v1) | Observado |
+| IT-RD-02 | Redes | Puertos del contenedor: Puerto de la API por variable PORT y puerto de depuración 5678 publicado | Observado |
+| IT-RD-03 | Redes | Puerto de etiquetado: 8080 para Label Studio | Observado |
+| IT-RD-04 | Redes | Transporte de video y métricas: MJPEG sobre HTTP y métricas por WebSocket, sin cifrado propio | Observado |
+| IT-RD-05 | Redes | Fuente RTSP: Soportada por el backend; no hay cámara de campo instalada | Observado |
+| IT-RD-06 | Redes | Segmentación, firewall o VPN: No existen actualmente segmentación de red, firewall ni VPN | Observado por declaración del dueño (1 de noviembre de 2026) |
+| IT-SW-01 | Plataformas y software base | Contenedor del backend: Python 3.11 slim, FastAPI, Uvicorn con recarga automática, Ultralytics y OpenCV; paquetes de desarrollo incluidos | Observado |
+| IT-SW-02 | Plataformas y software base | Docker Compose: Un servicio, verificación de salud cada 30 segundos, depuración activa por defecto; nombre de contenedor y red residual de otro proyecto | Observado |
+| IT-SW-03 | Plataformas y software base | Consola de operación: React 19 con Vite, ejecución local | Observado |
+| IT-SW-04 | Plataformas y software base | Sitio comercial: React con Vite; pruebas y publicación con GitHub Actions en GitHub Pages | Observado |
+| IT-SW-05 | Plataformas y software base | Entrenamiento: Anaconda, Python 3.13, Ultralytics YOLO11, cuaderno | Observado |
+| IT-SW-06 | Plataformas y software base | Etiquetado: Label Studio en Docker con volumen local | Observado |
+| IT-BD-01 | Bases de datos y almacenamiento | Base de datos de producción: No existe | Observado |
+| IT-BD-02 | Bases de datos y almacenamiento | Estado del backend: Conteos y plan de despacho solo en memoria; se pierden al reiniciar | Observado |
+| IT-BD-03 | Bases de datos y almacenamiento | Base SQLite de Label Studio: Dentro del repositorio de entrenamiento, con cuenta de anotador | Observado |
+| IT-BD-04 | Bases de datos y almacenamiento | Pesos, imágenes, exportes y videos: Versionados en repositorios; videos duplicados entre backend y entrenamiento | Observado |
+| IT-BD-05 | Bases de datos y almacenamiento | Dataset preprocesado: Vive en la estación, fuera del repositorio, sin respaldo | Observado por declaración del dueño (1 de noviembre de 2026) |
+| IT-BD-06 | Bases de datos y almacenamiento | Leads: Hoja de Google alimentada por Apps Script en la cuenta personal del dueño | Observado por declaración del dueño (1 de noviembre de 2026) |
+| IT-NB-01 | Nube y servicios de terceros | GitHub, Pages y Actions: Repositorios y publicación del sitio comercial | Observado |
+| IT-NB-02 | Nube y servicios de terceros | Google Apps Script y Sheets: Recepción de leads por POST desde el formulario | Observado |
+| IT-NB-03 | Nube y servicios de terceros | Google Fonts: Tipografía del sitio comercial | Observado |
+| IT-NB-04 | Nube y servicios de terceros | Lucidchart, SharePoint y correo: Apoyo documental | Diseñado AS-IS |
+| IT-NB-05 | Nube y servicios de terceros | Nube de cómputo: Solo como idea, sin despliegue | Observado por declaración del dueño (1 de noviembre de 2026) |
 
 ![Diagrama tecnológico AS-IS](../ondas/M4-tecnologia/diagramas/E4a-tecnologia-as-is.png)
 
@@ -377,8 +439,6 @@ Microsoft. (2026). *Azure Retail Prices API* [Interfaz de precios de lista]. Rec
 
 Object Management Group. (2014). *Business Process Model and Notation (BPMN), Version 2.0.2*. https://www.omg.org/spec/BPMN/2.0.2/
 
-The Open Group. (2022). *The TOGAF Standard, 10th Edition*. https://www.opengroup.org/togaf
-
 Presidencia de la República de Colombia. (2013, 27 de junio). *Decreto 1377 de 2013, por el cual se reglamenta parcialmente la Ley 1581 de 2012*. Función Pública, Gestor Normativo. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=53646
 
 Presidencia de la República de Colombia. (2015, 26 de mayo). *Decreto 1072 de 2015, Decreto Único Reglamentario del Sector Trabajo*. Función Pública, Gestor Normativo. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72173
@@ -388,5 +448,7 @@ Presidencia de la República de Colombia. (2019, 5 de junio). *Decreto 957 de 20
 Superintendencia de Industria y Comercio. (2017, 10 de agosto). *Circular Externa 005 de 2017, adicionar un Capítulo Tercero al Título V de la Circular Única*. Diario Oficial 50.321. https://sedeelectronica.sic.gov.co/transparencia/normativa/circular-05-12
 
 Superintendencia de Industria y Comercio. (2018, 23 de marzo). *Circular Externa 002 de 2018, por medio de la cual se modifica el numeral 3.2 del Capítulo Tercero del Título V de la Circular Única*. Diario Oficial 50.544. https://sedeelectronica.sic.gov.co/transparencia/normativa/circular-02-14
+
+The Open Group. (2022). *The TOGAF Standard, 10th Edition*. https://www.opengroup.org/togaf
 
 Ultralytics. (s. f.). *Ultralytics YOLO11* [Documentación]. Recuperado el 1 de noviembre de 2026, de https://docs.ultralytics.com/models/yolo11/
