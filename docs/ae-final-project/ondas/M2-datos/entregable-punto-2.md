@@ -1,4 +1,4 @@
-# Punto 2. Arquitectura de Datos de LIRN S.A.S.
+# Punto 2. Arquitectura de Datos de LIRN (proyectada LIRN S.A.S.)
 
 Fase C del ADM de TOGAF, dominio de Datos. Corte de la evidencia: 1 de noviembre de 2026.
 
@@ -121,7 +121,7 @@ Cada problema se marca como hallazgo AS-IS. El estado futuro que lo cierra es Ob
 | Integridad y seguridad | PI-14. Despacho sin autenticación ni límite superior, CORS abierto | Un conteo falso altera el estado en memoria | Observado |
 | Información incompleta | PI-15. Encuesta sin soporte individual ni autorización visible | Registro de la empresa | NO CONFIRMADO |
 | Información incompleta | PI-16. El formulario promete respuesta, pero no se responde a los leads | Texto del formulario de AP-01 | Observado (texto) / Observado por declaración del dueño (1 de noviembre de 2026): sin respuesta |
-| Información incompleta | PI-17. Sin NIT ni matrícula; no hay registro ante Cámara de Comercio. Observado por declaración del dueño (2 de noviembre de 2026) | No existe identificación legal; el aviso de privacidad no puede identificar al Responsable | Observado por declaración del dueño (1 de noviembre de 2026) |
+| Información incompleta | PI-17. Sin NIT ni matrícula; no hay registro ante Cámara de Comercio | No existe identificación legal; el aviso de privacidad no puede identificar al Responsable | Observado por declaración del dueño (2 de noviembre de 2026) |
 | Integridad y seguridad | PI-18. Sin despliegue fuera del equipo del fundador ni respaldos | No existe respaldo de datos; todo el dato operativo depende de un solo equipo | Observado por declaración del dueño (1 de noviembre de 2026) |
 
 Los problemas de aplicación DF-01 a DF-10 y la interfaz I-14, hacia un centro de control del operador que no existe (Observado), están descritos en el entregable de Arquitectura de Aplicaciones. Esta sección los complementa desde el dato y no los repite.

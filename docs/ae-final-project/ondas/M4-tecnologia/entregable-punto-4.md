@@ -1,4 +1,4 @@
-# Arquitectura Tecnológica de LIRN S.A.S. (Fase D del ADM, Punto 4 del taller)
+# Arquitectura Tecnológica de LIRN (proyectada LIRN S.A.S.) (Fase D del ADM, Punto 4 del taller)
 
 ## 1. Alcance y punto de partida
 

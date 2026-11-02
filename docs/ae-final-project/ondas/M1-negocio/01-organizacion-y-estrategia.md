@@ -87,10 +87,10 @@ Para articular el paso desde la línea base actual (AS-IS) hacia la arquitectura
 
 En cumplimiento del método TOGAF, la línea base de negocio debe reflejar con exactitud la realidad operativa de la organización sin inventar capacidades inexistentes ni dejar vacíos estructurales. Se justifican a continuación las tres decisiones centrales del modelo empresarial de LIRN:
 
-### 3.1 Por qué una S.A.S. unipersonal en Bogotá es el marco AS-IS adecuado
+### 3.1 Por qué una S.A.S. unipersonal en Bogotá es el marco proyectado adecuado
 
 1. **Viabilidad societaria unipersonal:** La legislación mercantil colombiana (Ley 1258 de 2008) permite constituir y operar una Sociedad por Acciones Simplificada con un único accionista. Dado que el equipo real actual está conformado exclusivamente por **Johel Santiago Arias** (`Observado`), la figura de S.A.S. unipersonal formaliza la personalidad jurídica de LIRN sin exigir socios ficticios ni juntas directivas simuladas.
-2. **Separación patrimonial y responsabilidad sobre datos:** LIRN captura datos de contacto en su sitio público y procesa secuencias de video en su prototipo. Operar bajo el marco de una S.A.S. delimita al responsable jurídico del tratamiento de datos personales frente a la Ley 1581 de 2012 y habilita a la firma para suscribir acuerdos de confidencialidad o contratos futuros con operadores B2B y entidades B2G.
+2. **Separación patrimonial y responsabilidad sobre datos:** LIRN captura datos de contacto en su sitio público y procesa secuencias de video en su prototipo. Operar, una vez constituida, bajo el marco de una S.A.S. delimitará al responsable jurídico del tratamiento de datos personales frente a la Ley 1581 de 2012 y habilita a la firma para suscribir acuerdos de confidencialidad o contratos futuros con operadores B2B y entidades B2G.
 3. **Coherencia geográfica con el caso de estudio:** Domiciliar la firma en Bogotá D.C. alinea la sede operativa con el entorno donde se levantó la evidencia empírica (encuesta `n=20` y acercamiento operativo en el entorno de la troncal Calle 26 / Salitre El Greco) y con sus dos segmentos prioritarios iniciales (concesionarios de transporte masivo de Bogotá y Sistema Metro de Bogotá). La pendiente de NIT y matrícula mercantil se registra con transparencia como la primera brecha legal que el Roadmap (M5) deberá cerrar.
 
 ### 3.2 Por qué el organigrama distingue la planta real de la vista funcional sin afirmar gerencias ocupadas
