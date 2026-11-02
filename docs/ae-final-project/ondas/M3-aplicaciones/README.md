@@ -1,6 +1,6 @@
 # Onda M3. Arquitectura de Aplicaciones
 
-Estado: texto final en revisión (1 de noviembre de 2026). Pendiente de revisión del Auditor y visto bueno del Líder de Transformación.
+Estado: cerrada. Entregable final del Punto 3, verificado por el Auditor e integrado en el capítulo 6 del informe.
 
 ## Contenido
 
@@ -8,4 +8,4 @@ Estado: texto final en revisión (1 de noviembre de 2026). Pendiente de revisió
 - `diagramas/`: fuentes Mermaid y PNG (E6a contexto AS-IS, E6b integraciones AS-IS, E6c contexto TO-BE, E6d integraciones TO-BE).
 - `tablas/`: inventario de aplicaciones y mapa de integraciones en CSV y XLSX.
 
-La actualización de la sección 8 del registro la integra el Líder de Transformación.
+La sección 8 del registro de empresa recoge las superficies de aplicaciones.

@@ -1,6 +1,6 @@
 # Onda M5. Transformación (fases E, F, G y H del ADM; Punto 5 del taller)
 
-Estado: borrador de apoyo completo, en revisión de Santiago. Sigue el spec y plan de M5 aprobado por Santiago. Insumos: entregables de Negocio (Punto 1), Datos (Punto 2), Aplicaciones (Punto 3) y Tecnología (Punto 4), fusionados.
+Estado: cerrada. Entregable final del Punto 5, verificado por el Auditor e integrado en el capítulo 8 del informe. Sigue el spec y plan de M5 aprobado por Santiago. Insumos: entregables de Negocio (Punto 1), Datos (Punto 2), Aplicaciones (Punto 3) y Tecnología (Punto 4), fusionados.
 
 | N.º | Entregable | Fase ADM |
 |-----|------------|----------|
@@ -14,4 +14,4 @@ Estado: borrador de apoyo completo, en revisión de Santiago. Sigue el spec y pl
 | 07 | Gobierno de la implementación | G |
 | 08 | Gestión del cambio de la arquitectura | H |
 
-La onda M5 reemplaza el playbook de la carpeta M5-roadmap. El informe único se arma después de la revisión de Santiago.
+La onda M5 reemplazó el playbook M5-roadmap, retirado en la consolidación final. El informe único ya está armado.

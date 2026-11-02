@@ -1,5 +1,7 @@
 # B-06. Diagramas Mermaid y cotejo de las cinco imágenes BPMN
 
+Nota de ubicación: las carpetas imagenes/mmd, imagenes/png e imagenes/svg citadas aquí están en ondas/M1-negocio/complementos/imagenes.
+
 ## Mermaid (organigrama, capacidades, procesos, AS-IS)
 - Extraje los bloques Mermaid de los cuatro apartados y del consolidado como archivos .mmd en la carpeta imagenes/mmd (10 archivos): organigrama jerárquico (02-1), vista funcional (02-2), interacción de procesos (03-1), mapa de capacidades (03-2), línea base AS-IS (04-1) y sus copias en el consolidado (cons-1 a cons-4; cons-5 era copia idéntica de 04-1 y se eliminó).
 - Exportación: PNG en imagenes/png y SVG en imagenes/svg. Revisé visualmente los diez PNG; renderizan completos y sin títulos cortados. La cadena de valor se volvió a exportar con el ajuste de B5. Estado: cerrado.

@@ -1,10 +1,10 @@
 # Onda M4. Arquitectura Tecnológica
 
-Estado: playbook. No redactar el Punto 4 hasta tener spec y plan de M4.
+Estado: cerrada. Entregable final del Punto 4 verificado por el Auditor (PR #16 y PR #18) e integrado en el capítulo 7 del informe; anexo de nube verificado (PR #26) e integrado (PR #27).
 
 Leer antes: registro sección 9 y código de `tro-backend`.
 
-## Entregables de la onda (cuando se ejecute)
+## Alcance de la onda
 
 1. Inventario tecnológico
 2. Diagrama tecnológico
@@ -16,7 +16,8 @@ Leer antes: registro sección 9 y código de `tro-backend`.
 
 | Entregable | Archivo | Estado |
 |---|---|---|
-| Borrador de apoyo del Punto 4 | entregable-punto-4.md | Pendiente de revisión del Auditor |
-| Diagramas AS-IS y TO-BE (Mermaid) | diagramas/ | Pendiente de revisión |
+| Entregable Punto 4. Arquitectura Tecnológica | entregable-punto-4.md | Final, verificado por el Auditor |
+| Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS | anexo-nube-azure-gcp.md y .csv | Final, verificado por el Auditor; elección de nube pendiente de Santiago |
+| Diagramas E4a AS-IS y E4b TO-BE | diagramas/ | Final |
 
-La actualización de la sección 9 del registro de la empresa queda reservada al Líder.
+La sección 9 del registro de empresa está cerrada en M4.
