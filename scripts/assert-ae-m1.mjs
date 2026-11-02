@@ -34,7 +34,7 @@ for (const rel of m1Files) {
   mustExist(rel);
 }
 
-mustNotExist("docs/ae-final-project/informe");
+mustExist("docs/ae-final-project/informe/plan-transformacion-empresarial.md");
 
 const fileNeedles = {
   "docs/ae-final-project/ondas/M1-negocio/01-organizacion-y-estrategia.md": [
