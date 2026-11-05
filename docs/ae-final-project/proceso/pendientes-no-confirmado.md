@@ -1,6 +1,8 @@
-# Pendientes NO CONFIRMADO al cierre (2 de noviembre de 2026)
+# Pendientes NO CONFIRMADO al cierre (2 de noviembre de 2026; ajuste 5 de noviembre de 2026)
 
-**Totales (calculados por script):** 218 apariciones de la marca; 202 pendientes legítimos; 16 no pendientes (14 definiciones de la marca y 2 títulos de sección).
+**Totales al cierre (2 de noviembre de 2026, calculados por script):** 218 apariciones de la marca; 202 pendientes legítimos; 16 no pendientes (14 definiciones de la marca y 2 títulos de sección).
+
+**Ajuste 5 de noviembre de 2026.** Se cerraron marcas obsoletas ya bloqueadas en el registro y en el Punto 4: uso vigente de AP-13 Google Forms (los diagramas E-04-FL-E y E6a); fuentes normativas de facturación y de nómina o seguridad social (Resolución DIAN 000165 de 2023, Resolución DIAN 000013 de 2021, Ley 100 de 1993 y Decreto 1072 de 2015). Las filas correspondientes de este inventario quedan como cerradas. No se inventaron valores. Siguen pendientes las respuestas individuales, el soporte de F-15, el calendario que modifique la Resolución 000013 de 2021 y el resto de marcas de evidencia.
 
 Inventario generado con `rg -n "NO CONFIRMADO"` sobre `docs/ae-final-project` y `AGENTS.md`, sin contar este archivo. Cada aparición clasificada como pendiente es una marca de evidencia: el hecho no tiene fuente verificable en el repositorio ni declaración del dueño. Ninguna se cierra sin evidencia nueva; no se inventan valores. Las definiciones y los títulos de sección nombran la marca, pero no señalan un dato faltante. El control de calidad de M1 está en [M1-control-calidad](M1-control-calidad/).
 
@@ -40,8 +42,8 @@ Inventario generado con `rg -n "NO CONFIRMADO"` sobre `docs/ae-final-project` y 
 | ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:51 | …ratamiento registrada / leads con autorización / leads recibidos / Gestor de leads (D-01, D-18) / Sin política publicada (Observado); valor NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:52 | …uente / Piezas públicas cuyas cifras tienen fuente verificada en SN-03 / piezas con fuente / piezas publicadas / Registro de SN-03 (D-17) / NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:54 | …o por el centro de control / recomendaciones coincidentes / recomendaciones emitidas / Historial de C-04 y registro del operador vía P-07 / NO CONFIRMADO | Pendiente legítimo: falta evidencia |
-| ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:66 | …9 / G-N01, G-N06 / El piloto se factura electrónicamente y queda registrado en contabilidad; fuente normativa de la facturación electrónica NO CONFIRMADO | Pendiente legítimo: falta evidencia |
-| ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:67 | …mina / CAP-10 / G-N06 / Cada vinculación queda con contrato y afiliaciones registradas; fuente normativa de seguridad social y afiliaciones NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:66 | …fuente normativa de la facturación electrónica NO CONFIRMADO | Cerrada el 5 de noviembre de 2026: Resolución DIAN 000165 de 2023, ya bloqueada en el Punto 4 |
+| ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:67 | …fuente normativa de seguridad social y afiliaciones NO CONFIRMADO | Cerrada el 5 de noviembre de 2026: Resolución DIAN 000013 de 2021, Ley 100 de 1993 y Decreto 1072 de 2015, ya bloqueadas en el Punto 4. El calendario que modifique la 000013 sigue pendiente |
 | ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:68 | …P-06 / G-N04, G-N05, G-N07 / Informe entregado con métricas por estación y fecha y fuente trazable; precio, duración y número de estaciones NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:74 | …## Datos NO CONFIRMADO | Título de sección (no pendiente) |
 | ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:78 | …Santiago aprobó P-06 a P-08, SN-04 y SN-05 el 1 de noviembre de 2026 y separó P-09. Precio, duración y número de estaciones de SN-04 siguen NO CONFIRMADO | Pendiente legítimo: falta evidencia |
@@ -56,7 +58,7 @@ Inventario generado con `rg -n "NO CONFIRMADO"` sobre `docs/ae-final-project` y 
 | ondas/M1-negocio/complementos/matriz-trazabilidad-oe.md:18 | …5. Los indicadores de las fichas de proceso no cuantifican ningún objetivo. Varias metas figuran como NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M1-negocio/complementos/to-be-negocio.md:109 | …3. Metas, plazos y costos: NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M1-negocio/complementos/to-be-negocio.md:3 | …Los puntos de partida citan su marca AS-IS. No se fijan cifras, costos, fechas de mercado ni clientes: donde el taller pida una meta, queda NO CONFIRMADO | Pendiente legítimo: falta evidencia |
-| ondas/M1-negocio/complementos/to-be-negocio.md:49 | …ulta de separar P-08) / Apoyo / Vinculación, nómina, seguridad social y desvinculación (fuente normativa de seguridad social y afiliaciones NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| ondas/M1-negocio/complementos/to-be-negocio.md:49 | …fuente normativa de seguridad social y afiliaciones NO CONFIRMADO | Cerrada el 5 de noviembre de 2026: mismas fuentes del Punto 4. El calendario que modifique la 000013 sigue pendiente |
 | ondas/M1-negocio/complementos/to-be-negocio.md:64 | …Sin precio, duración ni número de estaciones: NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M1-negocio/complementos/to-be-negocio.md:92 | …en como roles; un cargo nuevo solo se justifica por una capacidad ausente (CAP-07, CAP-09, CAP-10). No se fija número de personas ni fecha: NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M1-negocio/entregable-punto-1.md:262 | …roducto. / Un solo producto ofertado (meta: Sí). Claims prohibidos detectados (meta: 0 abiertos). Revisiones de dirección (calendario fijo: NO CONFIRMADO | Pendiente legítimo: falta evidencia |
@@ -65,7 +67,7 @@ Inventario generado con `rg -n "NO CONFIRMADO"` sobre `docs/ae-final-project` y 
 | ondas/M1-negocio/entregable-punto-1.md:265 | …rta del prototipo. / Informe de acompañamiento; escalamiento a P-03 (fallo técnico) o a P-05 (claim indebido). / Sesiones realizadas (meta: NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M1-negocio/entregable-punto-1.md:266 | …lecciones hacia P-01 y P-03. / Evidencia n=20 presente con fecha 17 de agosto de 2026 (meta: Sí). No conformidades abiertas (meta numérica: NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M1-negocio/entregable-punto-1.md:31 | …/ NO CONFIRMADO | Definición de la marca (no pendiente) |
-| ondas/M2-datos/diagramas/E-04-FL-E-evidencia.mmd:3 | …GF["Google Forms F-14<br/>(uso vigente NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| ondas/M2-datos/diagramas/E-04-FL-E-evidencia.mmd:3 | …GF["Google Forms F-14<br/>(uso vigente NO CONFIRMADO | Cerrada el 5 de noviembre de 2026: uso de AP-13 ya bloqueado en el registro (1 de noviembre de 2026). Las respuestas individuales siguen pendientes |
 | ondas/M2-datos/diagramas/E-04-FL-E-evidencia.mmd:6 | …DOC["Documento de evidencia<br/>F-15 (soporte NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M2-datos/entregable-punto-2.md:102 | … evidencia se publica solo lo agregado. Las respuestas individuales de la encuesta y las notas de la entrevista no están en el repositorio (NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M2-datos/entregable-punto-2.md:118 | …ción y leads sin control de duplicados / Misma suma de verificación en ambos repositorios; la hoja real de leads no se revisó / Observado / NO CONFIRMADO | Pendiente legítimo: falta evidencia |
@@ -90,7 +92,7 @@ Inventario generado con `rg -n "NO CONFIRMADO"` sobre `docs/ae-final-project` y 
 | ondas/M2-datos/tablas/E-04-matriz-flujos.csv:15 | …icación,P-05,I-16,Observado (registro); Observado por declaración del dueño (1 de noviembre de 2026): uso de AP-13; respuestas individuales NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M2-datos/tablas/E-04-matriz-flujos.csv:16 | …,Documento de evidencia (P-05),Persistente,Sin dato personal identificable declarado,P-05,I-16 (fuera de aplicación),Observado (registro) / NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M2-datos/tablas/E-04-matriz-flujos.csv:5 | …de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO | Pendiente legítimo: falta evidencia |
-| ondas/M3-aplicaciones/diagramas/E6a-contexto-as-is.mmd:20 | …AP13[AP-13 Google Forms: NO CONFIRMADO | Pendiente legítimo: falta evidencia |
+| ondas/M3-aplicaciones/diagramas/E6a-contexto-as-is.mmd:20 | …AP13[AP-13 Google Forms: NO CONFIRMADO | Cerrada el 5 de noviembre de 2026: uso de AP-13 ya bloqueado en el registro |
 | ondas/M3-aplicaciones/entregable-punto-3.md:100 | …de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M3-aplicaciones/entregable-punto-3.md:115 | …stor de leads en reemplazo de la hoja / Arquitectura de Datos (modelo de lead y autorización); Roadmap de Transformación (riesgo y control; NO CONFIRMADO | Pendiente legítimo: falta evidencia |
 | ondas/M3-aplicaciones/entregable-punto-3.md:153 | …/ Tecnología de cola / NO CONFIRMADO | Pendiente legítimo: falta evidencia |

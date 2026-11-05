@@ -162,3 +162,10 @@ Candidatos de origen, identificados al cierre de M1:
 - Identidad TRO prohibida en entregables nuevos.
 - Lead no es cliente.
 - Observado no se presenta como Objetivo. Objetivo no se presenta como Observado.
+
+## 12. Constancia de ajuste (5 de noviembre de 2026)
+
+Alineación de marcas obsoletas, sin hechos nuevos:
+
+- El uso de AP-13 Google Forms ya estaba bloqueado como Observado por declaración del dueño (1 de noviembre de 2026). Se retiró `NO CONFIRMADO` de uso vigente en el diagrama del flujo de evidencia F-14 y en el diagrama de contexto de aplicaciones AS-IS. Siguen `NO CONFIRMADO` las respuestas individuales de la encuesta y el soporte de las notas de la entrevista (F-15).
+- Las fuentes normativas de P-08 y P-09 ya estaban bloqueadas en la Arquitectura Tecnológica (Punto 4): Resolución DIAN 000165 de 2023, Resolución DIAN 000013 de 2021, Ley 100 de 1993 y Decreto 1072 de 2015. Se retiró `NO CONFIRMADO` de esas fuentes en el apoyo al Roadmap, en la Arquitectura de Negocio TO-BE y en el Portafolio de Proyectos. Siguen `NO CONFIRMADO` las resoluciones que modifiquen la 000013 de 2021 y el calendario aplicable a LIRN.

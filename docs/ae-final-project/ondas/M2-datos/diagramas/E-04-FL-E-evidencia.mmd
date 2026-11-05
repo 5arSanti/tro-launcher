@@ -1,6 +1,6 @@
 flowchart LR
     ENC["Encuestados<br/>(n=20)"]
-    GF["Google Forms F-14<br/>(uso vigente NO CONFIRMADO)"]
+    GF["Google Forms F-14<br/>(en uso)"]
     RES["Resumen agregado<br/>de la encuesta"]
     CTRL["Controlador SITP<br/>(por rol)"]
     DOC["Documento de evidencia<br/>F-15 (soporte NO CONFIRMADO)"]
@@ -12,5 +12,4 @@ flowchart LR
     CTRL -->|"notas por rol"| DOC
     DOC -->|"resultados agregados"| SITIO
     SITIO -->|"GitHub Pages"| VIS
-    style GF stroke-dasharray: 5 5
     style DOC stroke-dasharray: 5 5
