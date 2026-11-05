@@ -24,11 +24,11 @@ El inventario identifica 23 conjuntos de datos (D-01 a D-23) y los ubica dentro 
 | Empleados | D-21 | Sin activo | Brecha | Un integrante, sin nómina ni proceso de talento humano | Observado |
 | Contratos | D-22 | AI-07 | Brecha | No existen | Observado (no existen) |
 | Estación | D-07 | AI-05 | Existente | Seis estaciones fijadas como constantes en AP-03 | Observado / Diseñado AS-IS |
-| Cámara | D-04, D-08 | AI-03 | Existente | Cuatro videos mp4 de Pexels, cámara USB o fuente RTSP. Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1) | Observado; Observado por declaración del dueño (1 de noviembre de 2026): Pexels; Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO |
+| Cámara | D-04, D-08 | AI-03 | Existente | Cuatro videos mp4 de Pexels, cámara USB o fuente RTSP. Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1) | Observado; Observado por declaración del dueño (1 de noviembre de 2026): Pexels; Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; sin resultados documentados, Observado por declaración del dueño (5 de noviembre de 2026) |
 | Conteo | D-05, D-06, D-10, D-15 | AI-03 | Existente | Fotograma, métrica, estado de estación y registros de ejecución. Solo el último valor, en memoria | Observado |
 | Modelo de tren | D-09 | AI-05 | Existente | Tres modelos con vagones y capacidad por vagón | Observado / Diseñado AS-IS |
 | Plan de despacho | D-11 | AI-03 | Existente | Último plan por estación, en memoria | Observado |
-| Evidencia | D-02, D-03 | AI-02 | Existente | Encuesta del 17 de agosto de 2026 (n=20) y entrevista a un controlador SITP, por rol | Observado (registro y documento interno no publicado «Guía Actividad 2, Ingeniería Aplicada», del Equipo TORNS, 2026; solo cifras agregadas) / NO CONFIRMADO (respuestas individuales y soporte de las notas) |
+| Evidencia | D-02, D-03 | AI-02 | Existente | Encuesta del 17 de agosto de 2026 (n=20) y entrevista a un controlador SITP, por rol | Observado (registro y «Guía Actividad 2, Ingeniería Aplicada», Equipo TORNS, 2026; cifras agregadas y notas por rol). NO CONFIRMADO: respuestas individuales de la encuesta |
 
 Dos hallazgos del inventario condicionan el resto de esta sección. Primero, la base SQLite de Label Studio (AP-08) está versionada en el repositorio público de AP-04 y contiene una cuenta de usuario con nombre, correo, teléfono y credencial (D-14, Observado; los valores no se reproducen). Segundo, el dataset de entrenamiento no está en el repositorio: las cifras de 3.694 imágenes de entrenamiento y 1.000 de validación constan en la salida del cuaderno de AP-04 (Observado), y su origen es el conjunto coco-person de Roboflow Universe con licencia MIT, entrenado el 15 de noviembre de 2025, Observado por declaración del dueño (1 de noviembre de 2026). Ese conjunto no contiene imágenes de estaciones, de modo que sus métricas no describen el desempeño en andén.
 
@@ -69,7 +69,7 @@ Los flujos se agrupan en tres familias: técnico (FL-T, procesos P-03 y P-04), c
 | F-01 | Visitante en AP-01 | Nombre, correo, organización, mensaje y origen, como JSON enviado en texto plano | AP-06 | I-08 | En la hoja. El sitio da el envío por exitoso con una respuesta HTTP 200, sin acuse de registro | Observado (código) / Observado por declaración del dueño (1 de noviembre de 2026): hoja |
 | F-02 | AP-06 | Lead | Sin respuesta al lead | I-09 | No aplica | Observado por declaración del dueño (1 de noviembre de 2026) |
 | F-03 | AP-01 en GitHub Pages | Recursos del sitio; la IP del visitante llega a AP-12 Google Fonts | Navegador del visitante | I-15, I-12 | No | Observado |
-| F-04 | Archivo mp4, cámara USB o RTSP | Fotogramas | Memoria de AP-03 | I-07 | Volátil | Observado (código); Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO |
+| F-04 | Archivo mp4, cámara USB o RTSP | Fotogramas | Memoria de AP-03 | I-07 | Volátil | Observado (código); Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; sin resultados documentados, Observado por declaración del dueño (5 de noviembre de 2026) |
 | F-05 | Memoria de AP-03 | Fotograma y cajas de la clase person | Resumen de conteo | Interna | Volátil | Observado |
 | F-06 | AP-03 | Fotograma anotado (MJPEG) | AP-02 | I-02 | No | Observado |
 | F-07 | AP-03 | Métrica de detección por WebSocket. Solo se emite mientras algún cliente consume F-06 | AP-02 | I-03 | Cola de cinco mensajes | Observado |
@@ -79,8 +79,8 @@ Los flujos se agrupan en tres familias: técnico (FL-T, procesos P-03 y P-04), c
 | F-11 | AP-08 | Etiquetas exportadas | Cuaderno de AP-04, que produce best.pt | I-10 | Persistente | Observado |
 | F-12 | AP-05 (my_model.pt) | Archivo de pesos, leído por ruta; el archivo se obtiene por copia manual de best.pt desde AP-04 | AP-03 | I-06, I-11 | Persistente | Observado |
 | F-13 | Equipo del fundador | Código y artefactos, incluida la base de AP-08 | Repositorio público en AP-07 | I-13 | Persistente | Observado |
-| F-14 | Encuestados | Respuestas recogidas en AP-13 Google Forms | Resumen agregado | I-16 | Persistente | Observado (registro); Observado por declaración del dueño (1 de noviembre de 2026): uso de AP-13 Google Forms |
-| F-15 | Controlador SITP | Notas por rol | Documento de evidencia | I-16 (fuera de aplicación) | Persistente | Observado (registro) / NO CONFIRMADO (soporte) |
+| F-14 | Encuestados | Respuestas recogidas en AP-13 Google Forms (https://forms.gle/uEEiodW6xn7VL5K69) | Resumen agregado | I-16 | Persistente | Observado (registro); Observado por declaración del dueño (1 de noviembre de 2026); URL verificada el 5 de noviembre de 2026 |
+| F-15 | Controlador SITP | Notas por rol | Documento de evidencia | I-16 (fuera de aplicación) | Persistente | Observado («Guía Actividad 2, Ingeniería Aplicada», Equipo TORNS, 2026; 5 de noviembre de 2026) |
 | F-16 | Evidencia agregada | Resultados agregados | Visitantes y evaluadores, vía AP-01 | I-12 | Persistente | Observado |
 | F-17 | AP-03, lectura de D-04 | Identificador, archivo y nombre visible de cada fuente | AP-02 | I-01 | No | Observado |
 
@@ -94,7 +94,7 @@ El flujo comercial es el único que lleva datos personales de terceros hacia un 
 
 ![Flujo de evidencia FL-E](diagramas/E-04-FL-E-evidencia.png)
 
-En el flujo de evidencia se publica solo lo agregado. Las respuestas individuales de la encuesta y las notas de la entrevista no están en el repositorio (NO CONFIRMADO).
+En el flujo de evidencia se publica solo lo agregado. Las notas de la entrevista al controlador SITP, por rol, constan en «Guía Actividad 2, Ingeniería Aplicada» (Equipo TORNS, 2026). Las respuestas individuales de la encuesta no están en el repositorio (NO CONFIRMADO).
 
 ## 5. Problemas de información
 
@@ -164,9 +164,7 @@ La identificación del Responsable en el aviso y en la política depende de la f
 
 ## 7. Pendientes NO CONFIRMADO
 
-1. Resultados de las pruebas con las cámaras usb0 y usb1; las fechas quedaron declaradas por el dueño el 2 de noviembre de 2026 (16, 17, 18 y 20 de noviembre de 2025).
-2. Soporte de las respuestas individuales de la encuesta (el uso vigente de Google Forms quedó declarado por el dueño el 1 de noviembre de 2026).
-3. Contenido de label_counts más allá de la clase person.
-4. Contrato de transmisión con el proveedor de nube como Encargado (Decreto 1074 de 2015, arts. 2.2.2.25.5.1 y 2.2.2.25.5.2) para N-01 y las imágenes de personas, y Google como Encargado de la hoja de leads actual; Brasil no figura en la lista de países con nivel adecuado de protección de la SIC (Circular Externa 005 de 2017, modificada por la Circular Externa 002 de 2018).
-5. Obligación de inscripción de bases de datos y plazos de retención.
-6. Soporte documental de las notas de la entrevista.
+1. Contenido de label_counts más allá de la clase person.
+2. Contrato de transmisión con el proveedor de nube como Encargado (Decreto 1074 de 2015, arts. 2.2.2.25.5.1 y 2.2.2.25.5.2) para N-01 y las imágenes de personas, y Google como Encargado de la hoja de leads actual; Brasil no figura en la lista de países con nivel adecuado de protección de la SIC (Circular Externa 005 de 2017, modificada por la Circular Externa 002 de 2018).
+3. Obligación de inscripción de bases de datos y plazos de retención.
+4. Respuestas individuales de la encuesta.

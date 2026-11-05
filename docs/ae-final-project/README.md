@@ -6,7 +6,7 @@ LIRN es la firma. TORNS es el único producto. TORNS es un prototipo aplicado. N
 
 El documento final del taller es el informe único **Plan de Transformación Empresarial**:
 
-- Word: [informe/plan-transformacion-empresarial.docx](informe/plan-transformacion-empresarial.docx), generado desde el Markdown con 11 figuras.
+- Word: [informe/plan-transformacion-empresarial.docx](informe/plan-transformacion-empresarial.docx), generado desde el Markdown con 19 figuras (5 de noviembre de 2026, versión 1.1).
 - Markdown fuente: [informe/plan-transformacion-empresarial.md](informe/plan-transformacion-empresarial.md).
 
 Para regenerar el Word desde `informe/`: `pandoc plan-transformacion-empresarial.md --resource-path=. -o plan-transformacion-empresarial.docx` y fijar la propiedad de autor en Johel Santiago Arias.
@@ -23,7 +23,7 @@ Para regenerar el Word desde `informe/`: `pandoc plan-transformacion-empresarial
 | Procesos | [Fichas, guías e imágenes BPMN de P-01 a P-05](procesos/README.md) |
 | Registro | [Registro de empresa](registro-empresa.md) |
 
-La carpeta [proceso/](proceso/) guarda evidencia de control de calidad que no forma parte de la entrega: [M1-control-calidad](proceso/M1-control-calidad/) y el [inventario de pendientes NO CONFIRMADO](proceso/pendientes-no-confirmado.md).
+La carpeta [proceso/](proceso/) guarda evidencia de control de calidad que no forma parte de la entrega: [M1-control-calidad](proceso/M1-control-calidad/), el [inventario de pendientes NO CONFIRMADO](proceso/pendientes-no-confirmado.md) y la [evidencia del 5 de noviembre de 2026](proceso/evidencia-2026-11-05/).
 
 ## Secciones para reescritura de Santiago
 

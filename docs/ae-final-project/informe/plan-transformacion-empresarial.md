@@ -21,7 +21,7 @@ lang: es-CO
 | Marca | Significado |
 |---|---|
 | Observado | Hecho verificado en el código, la documentación o la evidencia del proyecto. |
-| Observado por declaración del dueño (1 de noviembre de 2026) u Observado por declaración del dueño (2 de noviembre de 2026) | Hecho declarado por el dueño de LIRN, sin otra evidencia documental. |
+| Observado por declaración del dueño (1, 2 o 5 de noviembre de 2026) | Hecho declarado por el dueño de LIRN, sin otra evidencia documental, o aportado el 5 de noviembre de 2026. |
 | Diseñado AS-IS | Modelado del estado actual hecho por el autor a partir de lo observado. |
 | Objetivo TO-BE | Estado futuro propuesto; no existe hoy. |
 | NO CONFIRMADO | Dato que no se ha podido verificar; no se rellena. |
@@ -48,7 +48,7 @@ Los Puntos 1 a 5 acompañan este informe como anexos de la entrega: «Arquitectu
 | Producto | TORNS: detección y conteo de pasajeros con YOLO11s (Ultralytics, s. f.) y recomendación determinista de despacho | Observado |
 | Clientes | Ninguno; no hay piloto ni contrato | Observado |
 | Caso de estudio | El sistema TransMilenio y el SITP de Bogotá se usan como caso de estudio, no como cliente | Observado |
-| Evidencia de mercado | Encuesta del 17 de agosto de 2026 (n=20, formulario anónimo en Google Forms, que sigue en uso) y entrevista a un controlador del SITP, citado por su rol. El 80 % dejó pasar buses llenos dentro del último mes, al 65 % le pasa varias veces por semana y el 40 % se identifica con el desbalance entre oferta y demanda (Equipo TORNS, 2026) | Observado (cifras agregadas); uso del formulario: Observado por declaración del dueño (1 de noviembre de 2026) |
+| Evidencia de mercado | Encuesta del 17 de agosto de 2026 (n=20, formulario anónimo en Google Forms, que sigue en uso: https://forms.gle/uEEiodW6xn7VL5K69) y entrevista a un controlador del SITP, citado por su rol. El 80 % dejó pasar buses llenos dentro del último mes, al 65 % le pasa varias veces por semana y el 40 % se identifica con el desbalance entre oferta y demanda (Equipo TORNS, 2026). La operación se describe como comunicación radial manual (TP 19, TQ 04, TP 69, TP 70, TP 59, TP 56, TP 29) | Observado (cifras agregadas y notas por rol en «Guía Actividad 2, Ingeniería Aplicada»); uso y URL del formulario: Observado por declaración del dueño (1 y 5 de noviembre de 2026) |
 
 **Misión y visión.** Las declaraciones estratégicas están aprobadas como línea base de gobierno (Observado, proceso P-01).
 
@@ -139,8 +139,8 @@ Fase C, datos. El entregable «Arquitectura de Datos (Punto 2)» contiene el inv
 |---|---|---|---|---|---|
 | D-01 | Lead (solicitud de contacto). Un lead no es un cliente | Hoja de cálculo de Google mediante Apps Script (según el registro) | Confidencial | Sí | Observado (formulario) / Observado por declaración del dueño (1 de noviembre de 2026): hoja y Apps Script en cuenta personal de Google |
 | D-02 | Evidencia de validación: encuesta del 17 de agosto de 2026 (n=20) | AP-13 Google Forms y resumen estático en el sitio | Interno (resumen público) | No en el consolidado | Observado (registro y sitio) / NO CONFIRMADO (respuestas individuales) |
-| D-03 | Evidencia de validación: entrevista a controlador SITP | Documento de evidencia | Interno | Sin dato personal identificable declarado | Observado (registro) / NO CONFIRMADO (soporte de las notas) |
-| D-04 | Fuente de video | Cuatro archivos mp4 de demostración, cámara USB o fuente RTSP | Interno | Posible (imagen de personas) | Observado (código); Observado por declaración del dueño (1 de noviembre de 2026): videos de Pexels; Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO |
+| D-03 | Evidencia de validación: entrevista a controlador SITP | Documento de evidencia «Guía Actividad 2, Ingeniería Aplicada» (Equipo TORNS, 2026) | Interno | Sin dato personal identificable declarado | Observado (notas por rol, 5 de noviembre de 2026) |
+| D-04 | Fuente de video | Cuatro archivos mp4 de demostración, cámara USB o fuente RTSP | Interno | Posible (imagen de personas) | Observado (código); Observado por declaración del dueño (1 de noviembre de 2026): videos de Pexels; Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; sin resultados documentados, Observado por declaración del dueño (5 de noviembre de 2026) |
 | D-05 | Fotograma procesado | Memoria y flujo MJPEG | Interno | Posible (imagen de personas) | Observado (código) |
 | D-06 | Métrica de detección | Memoria de AP-03 y WebSocket | Interno | No (agregado) | Observado (código) |
 | D-07 | Estación | Constantes en el código de AP-03 | Interno | No | Observado (código) / Diseñado AS-IS (datos de demostración) |
@@ -211,14 +211,14 @@ Fase C, aplicaciones. El entregable «Arquitectura de Aplicaciones (Punto 3)» i
 | AP-03 | Servicio de detección de pasajeros y plan de despacho, API (tro-backend) | Ejecuta la detección sobre video, publica métricas por WebSocket y aplica la regla determinista de despacho. | Consumido por AP-02; rol de Producto | Prototipo local | Observado |
 | AP-04 | Entrenamiento del modelo de detección (yolo-train-routes-optimization) | Prepara el conjunto de datos, entrena y exporta el modelo de detección de personas. | Rol de Producto y de Calidad (fundador) | En uso, ejecución local | Observado |
 | AP-05 | Modelo de detección (my_model/my_model.pt, en yolo-train-routes-optimization) | Artefacto de IA de una clase (person) consumido por AP-03 como archivo local | Consumido por AP-03 | Versionado | Observado |
-| AP-06 | Hoja de cálculo con Apps Script (hoja de Google; endpoint configurado en VITE_CONTACT_ENDPOINT) | Recibe y guarda los mensajes del formulario con las columnas timestamp, nombre, email, organizacion, mensaje y origen; la consulta solo el dueño. | Rol Comercial (fundador, único consultor) | En uso como sustituto de CRM, se retira con N-01 | Observado por declaración del dueño (1 de noviembre de 2026); código del script NO CONFIRMADO en repositorios |
+| AP-06 | Hoja de cálculo con Apps Script (hoja de Google; endpoint configurado en VITE_CONTACT_ENDPOINT) | Recibe y guarda los mensajes del formulario con las columnas timestamp, nombre, email, organizacion, mensaje y origen; la consulta solo el dueño. | Rol Comercial (fundador, único consultor) | En uso como sustituto de CRM, se retira con N-01 | Observado por declaración del dueño (1 y 5 de noviembre de 2026) |
 | AP-07 | GitHub: repositorios, Pages y Actions (github.com/5arSanti) | Control de versiones, pruebas y publicación del sitio | Rol de Producto (fundador) | En uso | Observado |
 | AP-08 | Label Studio (en Docker; exportaciones en mydata/) | Etiquetado de imágenes del conjunto de datos del modelo de visión. | Rol de Producto (fundador) | En uso | Observado (instrucciones y árbol); uso confirmado por el dueño (1 de noviembre de 2026) |
 | AP-09 | Lucidchart (SaaS) | Diagramación de arquitectura y procesos | Rol de Dirección (fundador) | En uso según el registro | Diseñado AS-IS |
 | AP-10 | SharePoint (Microsoft 365) | Almacenamiento de documentos de apoyo; no compromete la operación del producto | Rol de Dirección y Calidad (fundador) | Apoyo documental | Diseñado AS-IS |
 | AP-11 | Correo electrónico | Comunicación y resguardo de algunos documentos; no compromete la operación del producto. | Todos los roles (fundador) | Apoyo documental | Diseñado AS-IS |
 | AP-12 | Google Fonts (fonts.googleapis.com y fonts.gstatic.com, enlazados en AP-01) | Entrega la tipografía Manrope al navegador del visitante; al cargar el sitio, el navegador envía la IP del visitante a Google (flujo F-03 de Datos) | Visitantes externos (consumo indirecto) | En uso | Observado |
-| AP-13 | Google Forms (formulario de la encuesta de validación) | Recoge las respuestas de la encuesta de validación (flujo F-14 de Datos); formulario «Tu experiencia diaria en el transporte masivo de Bogotá». | Rol de Dirección y Producto (fundador) | En uso | Observado por declaración del dueño (1 de noviembre de 2026) |
+| AP-13 | Google Forms (formulario de la encuesta de validación) | Recoge las respuestas de la encuesta de validación (flujo F-14 de Datos); formulario «Tu experiencia diaria en el transporte masivo de Bogotá», https://forms.gle/uEEiodW6xn7VL5K69. | Rol de Dirección y Producto (fundador) | En uso | Observado por declaración del dueño (1 y 5 de noviembre de 2026) |
 
 ![Contexto de aplicaciones AS-IS](../ondas/M3-aplicaciones/diagramas/E6a-contexto-as-is.png)
 
@@ -243,7 +243,7 @@ Fase D. El entregable «Arquitectura Tecnológica (Punto 4)» contiene el invent
 | IT-EQ-01 | Servidores y equipos | Estación del fundador: Intel Core i5-10400 a 2,90 GHz, 48 GB de RAM, NVIDIA GeForce GTX 1050 Ti de 4 GB, 1,14 TB de almacenamiento con 975 GB usados (cerca del 85 %), Windows de 64 bits | Observado por declaración del dueño (1 de noviembre de 2026) |
 | IT-EQ-02 | Servidores y equipos | GPU de entrenamiento: La misma GTX 1050 Ti; la salida del cuaderno registra PyTorch 2.7.1 con CUDA 11.8 y Ultralytics 8.3.228 | Observado |
 | IT-EQ-03 | Servidores y equipos | Cámaras: Cámara integrada usb0 y cámara USB externa usb1 | Observado por declaración del dueño (1 de noviembre de 2026) |
-| IT-EQ-04 | Servidores y equipos | Pruebas con cámaras: Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1) | Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO |
+| IT-EQ-04 | Servidores y equipos | Pruebas con cámaras: Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1) | Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; sin resultados documentados, Observado por declaración del dueño (5 de noviembre de 2026) |
 | IT-EQ-05 | Servidores y equipos | Servidores de producción: No existen | Observado |
 | IT-EQ-06 | Servidores y equipos | GPU de producción: No existe | Observado |
 | IT-RD-01 | Redes | Red local de la estación: La consola llama a la API en localhost por defecto (http://localhost:8000/api/v1) | Observado |
@@ -272,7 +272,7 @@ Fase D. El entregable «Arquitectura Tecnológica (Punto 4)» contiene el invent
 
 ![Diagrama tecnológico AS-IS](../ondas/M4-tecnologia/diagramas/E4a-tecnologia-as-is.png)
 
-**Situación AS-IS.** Todo corre en una sola estación de trabajo, con disco cerca de su capacidad y sin respaldos ni separación de entornos. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Hoy no existen segmentación de red, firewall ni VPN. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Sobre las cámaras: Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO.
+**Situación AS-IS.** Todo corre en una sola estación de trabajo, con disco cerca de su capacidad y sin respaldos ni separación de entornos. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Hoy no existen segmentación de red, firewall ni VPN. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Sobre las cámaras: Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; sin resultados documentados, Observado por declaración del dueño (5 de noviembre de 2026).
 
 ![Diagrama tecnológico TO-BE](../ondas/M4-tecnologia/diagramas/E4b-tecnologia-to-be.png)
 
@@ -441,6 +441,8 @@ Dirección de Impuestos y Aduanas Nacionales. (2021, 11 de febrero). *Resolució
 Dirección de Impuestos y Aduanas Nacionales. (2023, 1 de noviembre). *Resolución 000165 de 2023, por la cual se desarrolla el sistema de facturación, los proveedores tecnológicos, se adopta la versión 1.9 del anexo técnico de factura electrónica de venta, se expide el anexo técnico 1.0 del documento equivalente electrónico, y se dictan otras disposiciones en materia del sistema de facturación*. https://www.dian.gov.co/normatividad/Normatividad/Resoluci%C3%B3n%20000165%20de%2001-11-2023.pdf
 
 Equipo TORNS. (2026). *Guía Actividad 2, Ingeniería Aplicada* [Documento interno no publicado].
+
+Equipo TORNS. (2026). *Tu experiencia diaria en el transporte masivo de Bogotá* [Formulario de encuesta]. Google Forms. https://forms.gle/uEEiodW6xn7VL5K69
 
 Google. (2026). *Accelerator-optimized VM pricing* [Página de precios de Google Cloud]. Recuperado el 2 de noviembre de 2026, de https://cloud.google.com/products/compute/pricing/accelerator-optimized
 

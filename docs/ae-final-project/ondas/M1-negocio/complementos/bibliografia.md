@@ -13,12 +13,12 @@ Borrador de apoyo. Formato APA 7 simplificado. Las URL se verificaron el 28 de o
 
 - LIRN. (2026). *Mapa de procesos de empresa LIRN (BPMN 2.0)* [Tablero]. Lucidchart. https://lucid.app/lucidchart/4bc5f4f1-c350-40a4-b752-63eb17d2cb77/edit (URL tomada del repositorio; no se abrió por requerir sesión)
 - Arias, J. (2026). *Repositorio público del proyecto TORNS (carpeta de documentación del taller)* [Repositorio]. GitHub. https://github.com/5arSanti/tro-launcher
-- Encuesta de validación del problema, 17 de agosto de 2026, n=20 (Google Forms). URL: NO CONFIRMADO. Santiago debe indicar si hay enlace público o si se cita como evidencia del equipo.
+- Encuesta de validación del problema, 17 de agosto de 2026, n=20 (Google Forms). URL: https://forms.gle/uEEiodW6xn7VL5K69 (verificada el 5 de noviembre de 2026; título «Tu experiencia diaria en el transporte masivo de Bogotá»).
 - Entrevista a controlador de SITP (se cita por rol, no por nombre). URL: no aplica.
 
-## Marco metodológico (para completar por Santiago)
+## Marco metodológico
 
-- The Open Group. (s. f.). *The TOGAF Standard, ADM*. URL y edición: NO CONFIRMADO. Santiago debe indicar la edición que usa el curso. No la fijo yo.
+- The Open Group. (2022). *The TOGAF Standard, 10th Edition*. https://www.opengroup.org/togaf Confirmado por el autor el 5 de noviembre de 2026.
 
 ## Observaciones para Santiago
 
