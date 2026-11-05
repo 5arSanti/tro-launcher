@@ -1,0 +1,17 @@
+# Onda M5. Transformación (fases E, F, G y H del ADM; Punto 5 del taller)
+
+Estado: cerrada. Entregable final del Punto 5, verificado por el Auditor e integrado en el capítulo 8 del informe. Sigue el spec y plan de M5 aprobado por Santiago. Insumos: entregables de Negocio (Punto 1), Datos (Punto 2), Aplicaciones (Punto 3) y Tecnología (Punto 4), fusionados.
+
+| N.º | Entregable | Fase ADM |
+|-----|------------|----------|
+| 00 | Resumen de la Arquitectura de Negocio TO-BE | E |
+| 01 | Análisis de Brechas consolidado | E |
+| 02 | Portafolio de Proyectos | E |
+| 03 | Matriz de Priorización | F |
+| 04 | Hoja de Ruta 0-1, 1-3 y 3-5 años (con diagrama) | F |
+| 05 | Indicadores de Éxito | H |
+| 06 | Registro de Requisitos de Arquitectura | E, F |
+| 07 | Gobierno de la implementación | G |
+| 08 | Gestión del cambio de la arquitectura | H |
+
+La onda M5 reemplazó el playbook M5-roadmap, retirado en la consolidación final. El informe único ya está armado.

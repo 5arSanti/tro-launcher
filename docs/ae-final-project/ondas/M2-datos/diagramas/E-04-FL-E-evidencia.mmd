@@ -1,0 +1,16 @@
+flowchart LR
+    ENC["Encuestados<br/>(n=20)"]
+    GF["Google Forms F-14<br/>(uso vigente NO CONFIRMADO)"]
+    RES["Resumen agregado<br/>de la encuesta"]
+    CTRL["Controlador SITP<br/>(por rol)"]
+    DOC["Documento de evidencia<br/>F-15 (soporte NO CONFIRMADO)"]
+    SITIO["Contenido estático de AP-01<br/>F-16"]
+    VIS["Visitante y evaluadores"]
+    ENC -->|"responde"| GF
+    GF -->|"agrega"| RES
+    RES -->|"publica agregado"| SITIO
+    CTRL -->|"notas por rol"| DOC
+    DOC -->|"resultados agregados"| SITIO
+    SITIO -->|"GitHub Pages"| VIS
+    style GF stroke-dasharray: 5 5
+    style DOC stroke-dasharray: 5 5

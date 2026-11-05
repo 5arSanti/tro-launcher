@@ -1,0 +1,22 @@
+flowchart LR
+  U[Visitante] --> W[AP-01 Sitio web comercial]
+  W -- "I-08 POST JSON a Apps Script" --> S[AP-06 Hoja con Apps Script]
+  S -. "I-09 sin respuesta: leads solo se recopilan" .-> N[Ningún canal de respuesta]
+  O[Fundador en rol de Operación] --> F[AP-02 Consola de operación]
+  F -- "I-01, I-04, I-05 REST" --> B[AP-03 Servicio de detección y despacho]
+  B -- "I-02 MJPEG" --> F
+  B -- "I-03 WebSocket JSON" --> F
+  M[AP-05 Modelo de detección] -- "I-06 archivo" --> B
+  V[Video mp4 de prueba de Pexels, cámara USB o RTSP] -- "I-07" --> B
+  L[AP-08 Label Studio] -- "I-10 exportación" --> T[AP-04 Entrenamiento]
+  T -- "I-11 copia manual" --> M
+  G[AP-07 GitHub Actions] -- "I-12 despliegue Pages" --> W
+  W -- "I-15 carga de fuentes: IP del visitante" --> GF[AP-12 Google Fonts]
+  E[Encuestados] -. "I-16" .-> GFo[AP-13 Google Forms: en uso]
+  B -.-> X[Centro de control: no existe]
+  classDef obs fill:#dbeafe,stroke:#1e3a8a;
+  classDef nc fill:#fef3c7,stroke:#92400e;
+  classDef gap fill:#fee2e2,stroke:#991b1b,stroke-dasharray:5 5;
+  class W,F,B,M,L,T,G,GF obs;
+  class S,V,GFo nc;
+  class X,N gap;

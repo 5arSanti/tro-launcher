@@ -1,0 +1,27 @@
+flowchart TB
+  subgraph LIRN["LIRN AS-IS (un integrante)"]
+    subgraph Comercial
+      AP01[AP-01 Sitio web comercial]
+      AP06[AP-06 Hoja con Apps Script]
+      AP12[AP-12 Google Fonts]
+    end
+    subgraph Producto["Producto TORNS (entorno local, sin despliegue)"]
+      AP02[AP-02 Consola de operación]
+      AP03[AP-03 Servicio de detección y despacho]
+      AP05[AP-05 Modelo de detección]
+      AP04[AP-04 Entrenamiento]
+      AP08[AP-08 Label Studio]
+    end
+    subgraph Apoyo
+      AP07[AP-07 GitHub]
+      AP09[AP-09 Lucidchart]
+      AP10[AP-10 SharePoint]
+      AP11[AP-11 Correo]
+      AP13[AP-13 Google Forms: NO CONFIRMADO]
+    end
+  end
+  EXT[Centro de control del operador: sin integración]
+  classDef gap fill:#fee2e2,stroke:#991b1b,stroke-dasharray:5 5;
+  classDef nc fill:#fef3c7,stroke:#92400e;
+  class EXT gap;
+  class AP13 nc;

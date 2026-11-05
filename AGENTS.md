@@ -17,11 +17,11 @@ TORNS es un prototipo aplicado. No es un piloto firmado. Transmilenio es caso de
 
 ## Equipo
 
-Equipo actual: **Johel Arias** (una persona).
+Equipo actual: **Johel Santiago Arias** (una persona).
 
 No hay plantilla, gerencias ocupadas ni años de empresa. Los dueños de proceso (Dirección, Comercial, Producto / Ingeniería, Operación, Calidad) son roles futuros del mapa ISO, no cargos actuales.
 
-La landing pública puede seguir mostrando tres nombres. Eso es copia publicada antigua. Para agentes y para el taller AE, el equipo es solo Johel Arias.
+La landing pública puede seguir mostrando tres nombres. Eso es copia publicada antigua. Para agentes y para el taller AE, el equipo es solo Johel Santiago Arias.
 
 ## Claims prohibidos
 
@@ -86,7 +86,7 @@ Tablero de empresa: `docs/ae-final-project/registro-empresa.md`.
 
 Marcas de hecho: Observado, Diseñado AS-IS, Objetivo TO-BE. Un Objetivo no se afirma como hoy. Si el hecho no está en este archivo ni en el registro, escribir `NO CONFIRMADO`.
 
-Hitos: M0 fundación (hecho). M1 negocio. M2 datos. M3 aplicaciones. M4 tecnología. M5 roadmap e informe único.
+Hitos: M0 fundación (hecho). M1 negocio (hecho, auditado). M2 datos (hecho, auditado). M3 aplicaciones (hecho, auditado). M4 tecnología (hecho). M5 transformación (borrador completo en revisión de Santiago; carpeta M5-transformacion) e informe único (pendiente).
 
 Cada hito M1 a M5 requiere spec y plan antes de redactar. El informe no cita archivos `.md`. Cita entregables por nombre y URL. Tono formal TOGAF, orientado a un decisor de negocio.
 

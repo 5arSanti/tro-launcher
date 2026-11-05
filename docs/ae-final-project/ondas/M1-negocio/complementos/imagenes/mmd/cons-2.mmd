@@ -1,0 +1,21 @@
+flowchart TB
+    subgraph DIR["Nivel directivo"]
+        A1["Dirección General<br/>Proceso: P-01<br/>Responsable AS-IS: Johel Santiago Arias<br/>Dotación separada: Objetivo TO-BE"]
+    end
+    subgraph MIS["Unidades misionales"]
+        A2["Área Comercial<br/>Proceso: P-02<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+        A3["Área de Producto e Ingeniería<br/>Proceso: P-03<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+        A4["Área de Operación<br/>Proceso: P-04<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+    end
+    subgraph APO["Unidad de apoyo"]
+        A5["Área de Calidad y Evidencia<br/>Proceso: P-05<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+    end
+    A1 -->|"Alcance de producto único y lista de no-claims"| A2
+    A1 -->|"Alcance técnico aprobado"| A3
+    A2 -->|"Interés comercial calificado"| A3
+    A2 -->|"Programación con interesado"| A4
+    A3 -->|"Acta de entrega de la solución de demostración"| A4
+    A4 -->|"Escalamiento de fallos técnicos"| A3
+    A4 -->|"Observaciones de sesión y alertas de claims"| A5
+    A5 -->|"No conformidades de mensajes y evidencia n=20"| A1
+    A5 -->|"No conformidades técnicas del prototipo"| A3

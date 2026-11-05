@@ -1,0 +1,133 @@
+erDiagram
+    organizacion {
+        id id PK
+        texto nombre
+        B2B tipo
+        texto segmento
+    }
+    contacto {
+        id id PK
+        id organizacion_id FK
+        texto nombre
+        texto correo
+        texto cargo
+    }
+    autorizacion_titular {
+        id id PK
+        id contacto_id FK
+        texto finalidad
+        texto version_aviso
+        fecha fecha
+        texto medio
+        texto estado
+    }
+    lead {
+        id id PK
+        id contacto_id FK
+        texto mensaje
+        texto canal_origen
+        texto estado
+        fecha fecha_atencion
+        texto responsable
+    }
+    solicitud_derechos {
+        id id PK
+        id contacto_id FK
+        consulta tipo
+        fecha fecha
+        texto estado
+    }
+    linea {
+        id id PK
+        texto nombre
+        texto sistema
+    }
+    estacion {
+        id id PK
+        id linea_id FK
+        texto nombre
+    }
+    fuente_video {
+        id id PK
+        id estacion_id FK
+        archivo tipo
+        texto autorizacion_captura
+    }
+    modelo_tren {
+        id id PK
+        texto nombre
+        entero vagones
+        entero capacidad_por_vagon
+    }
+    recomendacion_despacho {
+        id id PK
+        id observacion_id FK
+        id modeltren_id FK
+        entero trenes_requeridos
+        texto regla_aplicada
+    }
+    observacion_conteo {
+        id id PK
+        id fuente_id FK
+        fecha instante
+        entero person_count
+        id version_modelo_id FK
+    }
+    version_modelo {
+        id id PK
+        referencia peso
+        fecha fecha
+        texto metricas_evaluacion
+        texto conjunto_datos
+    }
+    cliente {
+        id id PK
+        id organizacion_id FK
+        fecha fecha_alta
+    }
+    contrato {
+        id id PK
+        id cliente_id FK
+        texto objeto
+        fecha vigencia
+    }
+    acta_piloto {
+        id id PK
+        id contrato_id FK
+        inicio tipo
+        fecha fecha
+        texto resultado
+    }
+    factura {
+        id id PK
+        id contrato_id FK
+        fecha fecha
+        decimal valor
+    }
+    colaborador {
+        id id PK
+        texto nombre
+        texto documento_identidad
+        fecha fecha_vinculacion
+    }
+    contrato_laboral {
+        id id PK
+        id colaborador_id FK
+        texto tipo
+        fecha inicio
+        fecha fin
+    }
+    contrato_laboral }o--|| colaborador : "colaborador_id"
+    contrato }o--|| cliente : "cliente_id"
+    acta_piloto }o--|| contrato : "contrato_id"
+    factura }o--|| contrato : "contrato_id (factura)"
+    contacto }o--|| organizacion : "organizacion_id"
+    autorizacion_titular }o--|| contacto : "contacto_id"
+    solicitud_derechos }o--|| contacto : "contacto_id"
+    lead }o--|| contacto : "contacto_id"
+    estacion }o--|| linea : "linea_id"
+    fuente_video }o--|| estacion : "estacion_id"
+    observacion_conteo }o--|| fuente_video : "fuente_id"
+    observacion_conteo }o--|| version_modelo : "version_modelo_id"
+    recomendacion_despacho }o--|| observacion_conteo : "observacion_id (IT-07)"
+    recomendacion_despacho }o--|| modelo_tren : "modeltren_id"

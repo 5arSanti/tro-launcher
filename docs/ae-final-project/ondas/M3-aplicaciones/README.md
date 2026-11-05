@@ -1,13 +1,11 @@
 # Onda M3. Arquitectura de Aplicaciones
 
-Estado: playbook. No redactar el Punto 3 hasta tener spec y plan de M3.
+Estado: cerrada. Entregable final del Punto 3, verificado por el Auditor e integrado en el capítulo 6 del informe.
 
-Leer antes: registro y mapa técnico de `AGENTS.md`.
+## Contenido
 
-## Entregables de la onda (cuando se ejecute)
+- `entregable-punto-3.md`: Punto 3 del taller (inventario, mapa de integraciones, problemas y propuesta de interoperabilidad).
+- `diagramas/`: fuentes Mermaid y PNG (E6a contexto AS-IS, E6b integraciones AS-IS, E6c contexto TO-BE, E6d integraciones TO-BE).
+- `tablas/`: inventario de aplicaciones y mapa de integraciones en CSV y XLSX.
 
-1. Inventario de aplicaciones y área usuaria
-2. Mapa de integraciones
-3. Problemas (Sheets como CRM, sin auth, stream acoplado)
-4. Propuesta de interoperabilidad TO-BE
-5. Actualizar sección 8 del registro
+La sección 8 del registro de empresa recoge las superficies de aplicaciones.

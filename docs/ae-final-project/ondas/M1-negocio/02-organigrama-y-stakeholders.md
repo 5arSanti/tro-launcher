@@ -11,7 +11,7 @@
 
 Siguiendo la separación metodológica de TOGAF entre la dotación real de personal (*headcount*) y las unidades funcionales que ejecutan los procesos de negocio, la estructura organizacional de LIRN se documenta mediante dos vistas complementarias.
 
-**Nota sobre la copia pública histórica (`Observado`):** La página pública `/torns` conserva en su banda informativa tres nombres propios correspondientes a la etapa académica inicial del proyecto. Para efectos del gobierno actual de la firma y de esta Arquitectura Empresarial, el equipo vigente de LIRN es exclusivamente **Johel Arias** (una persona). La actualización de esa banda pública se registra como brecha de alineación documental para el horizonte `Objetivo TO-BE`.
+**Nota sobre la copia pública histórica (`Observado`):** La página pública `/torns` conserva en su banda informativa tres nombres propios correspondientes a la etapa académica inicial del proyecto. Para efectos del gobierno actual de la firma y de esta Arquitectura Empresarial, el equipo vigente de LIRN es exclusivamente **Johel Santiago Arias** (una persona). La actualización de esa banda pública se registra como brecha de alineación documental para el horizonte `Objetivo TO-BE`.
 
 ### 3.1 Vista jerárquica AS-IS (Dotación actual real)
 
@@ -19,7 +19,7 @@ En su estado actual (`Observado` en equipo / `Diseñado AS-IS` en estructura soc
 
 ```mermaid
 flowchart TD
-    DG["<b>Dirección General de LIRN</b><br/>Titular actual: Johel Arias<br/><i>Marca: Observado / Diseñado AS-IS</i>"]
+    DG["<b>Dirección General de LIRN</b><br/>Titular actual: Johel Santiago Arias<br/><i>Marca: Observado / Diseñado AS-IS</i>"]
     
     R1["Función asumida 1:<br/>Dirección Estratégica (P-01)"]
     R2["Función asumida 2:<br/>Comercial y Partes Interesadas (P-02)"]
@@ -41,17 +41,17 @@ Para garantizar la ejecución ordenada del mapa de procesos ISO (`P-01` a `P-05`
 ```mermaid
 flowchart TB
     subgraph DIR["Nivel Directivo (Estratégico)"]
-        A1["<b>Dirección General</b><br/>Proceso: P-01 Dirección estratégica de LIRN<br/>Responsable AS-IS: Johel Arias<br/>Dotación separada: Objetivo TO-BE"]
+        A1["<b>Dirección General</b><br/>Proceso: P-01 Dirección estratégica de LIRN<br/>Responsable AS-IS: Johel Santiago Arias<br/>Dotación separada: Objetivo TO-BE"]
     end
 
     subgraph MIS["Unidades Misionales (Cadena de Valor)"]
-        A2["<b>Área Comercial</b><br/>Proceso: P-02 Relación comercial<br/>Responsable AS-IS: Johel Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
-        A3["<b>Área de Producto e Ingeniería</b><br/>Proceso: P-03 Realización de TORNS<br/>Responsable AS-IS: Johel Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
-        A4["<b>Área de Operación</b><br/>Proceso: P-04 Acompañamiento del prototipo<br/>Responsable AS-IS: Johel Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+        A2["<b>Área Comercial</b><br/>Proceso: P-02 Relación comercial<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+        A3["<b>Área de Producto e Ingeniería</b><br/>Proceso: P-03 Realización de TORNS<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+        A4["<b>Área de Operación</b><br/>Proceso: P-04 Acompañamiento del prototipo<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
     end
 
     subgraph APO["Unidad de Apoyo y Control"]
-        A5["<b>Área de Calidad y Evidencia</b><br/>Proceso: P-05 Evidencia, calidad y mejora<br/>Responsable AS-IS: Johel Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
+        A5["<b>Área de Calidad y Evidencia</b><br/>Proceso: P-05 Evidencia, calidad y mejora<br/>Responsable AS-IS: Johel Santiago Arias<br/>Gerencia ocupada: Objetivo TO-BE"]
     end
 
     A1 -->|"Alcance de producto único y lista de no-claims"| A2
@@ -69,11 +69,11 @@ flowchart TB
 
 | Área / Departamento funcional | Nivel organizacional | Proceso dueño | Responsable AS-IS (`Observado`) | Rol proyectado (`Objetivo TO-BE`) | Relaciones e intercambios con otras áreas |
 |---|---|---|---|---|---|
-| **Dirección General** | Dirección estratégica | `P-01` | Johel Arias | Director General (CEO) | Emite hacia **Comercial** y **Producto** el acta de producto único (TORNS) y la lista de claims prohibidos. Recibe de **Calidad** las no conformidades sobre mensajes públicos y la evidencia autorizada (`n=20`). |
-| **Área Comercial** | Gerencia / Departamento misional | `P-02` | Johel Arias | Líder Comercial B2B / B2G (suplente previsto en ficha: Dirección) | Recibe de **Dirección** las reglas de comunicación honesta. Captura solicitudes desde el canal público y transfiere a **Producto** y **Operación** las notas de interés calificado cuando un prospecto solicita ver el prototipo. |
-| **Área de Producto e Ingeniería** | Gerencia / Departamento misional | `P-03` | Johel Arias | Líder de Producto e Ingeniería IA/Backend (suplente previsto: Operación) | Recibe de **Dirección** el alcance aprobado y de **Comercial** el interés calificado. Prepara el modelo YOLO11s (`my_model.pt`), la API FastAPI y la interfaz de despacho, y los entrega mediante acta interna a **Operación**. Recibe de **Calidad** y **Operación** reportes de fallos técnicos. |
-| **Área de Operación** | Gerencia / Departamento misional | `P-04` | Johel Arias | Coordinador de Operaciones y Demostración (suplente previsto: Producto) | Recibe de **Producto** la solución de demostración verificada y de **Comercial** las solicitudes de acompañamiento. Ejecuta sesiones guiadas mostrando conteo y recomendación sin operar la red real. Escala fallos a **Producto** o desviaciones de alcance a **Calidad**. |
-| **Área de Calidad y Evidencia** | Departamento de apoyo | `P-05` | Johel Arias | Analista de Calidad y Cumplimiento (suplente previsto: Dirección) | Custodia la encuesta del 17 de agosto de 2026 (`n=20`) y las notas de la entrevista al controlador SITP. Audita los mensajes públicos y las sesiones de **Operación**; abre y cierra no conformidades que obligan a acciones correctivas en **Dirección** y **Producto**. |
+| **Dirección General** | Dirección estratégica | `P-01` | Johel Santiago Arias | Director General (CEO) | Emite hacia **Comercial** y **Producto** el acta de producto único (TORNS) y la lista de claims prohibidos. Recibe de **Calidad** las no conformidades sobre mensajes públicos y la evidencia autorizada (`n=20`). |
+| **Área Comercial** | Gerencia / Departamento misional | `P-02` | Johel Santiago Arias | Líder Comercial B2B / B2G (suplente previsto en ficha: Dirección) | Recibe de **Dirección** las reglas de comunicación honesta. Captura solicitudes desde el canal público y transfiere a **Producto** y **Operación** las notas de interés calificado cuando un prospecto solicita ver el prototipo. |
+| **Área de Producto e Ingeniería** | Gerencia / Departamento misional | `P-03` | Johel Santiago Arias | Líder de Producto e Ingeniería IA/Backend (suplente previsto: Operación) | Recibe de **Dirección** el alcance aprobado y de **Comercial** el interés calificado. Prepara el modelo YOLO11s (`my_model.pt`), la API FastAPI y la interfaz de despacho, y los entrega mediante acta interna a **Operación**. Recibe de **Calidad** y **Operación** reportes de fallos técnicos. |
+| **Área de Operación** | Gerencia / Departamento misional | `P-04` | Johel Santiago Arias | Coordinador de Operaciones y Demostración (suplente previsto: Producto) | Recibe de **Producto** la solución de demostración verificada y de **Comercial** las solicitudes de acompañamiento. Ejecuta sesiones guiadas mostrando conteo y recomendación sin operar la red real. Escala fallos a **Producto** o desviaciones de alcance a **Calidad**. |
+| **Área de Calidad y Evidencia** | Departamento de apoyo | `P-05` | Johel Santiago Arias | Analista de Calidad y Cumplimiento (suplente previsto: Dirección) | Custodia la encuesta del 17 de agosto de 2026 (`n=20`) y las notas de la entrevista al controlador SITP. Audita los mensajes públicos y las sesiones de **Operación**; abre y cierra no conformidades que obligan a acciones correctivas en **Dirección** y **Producto**. |
 
 ---
 
@@ -85,7 +85,7 @@ De acuerdo con TOGAF, las partes interesadas (*stakeholders*) comprenden a toda 
 
 | ID | Parte interesada (Stakeholder) | Categoría | Relación con LIRN y TORNS | Interés principal en la arquitectura | Nivel de influencia | Marca de hecho |
 |---|---|---|---|---|---|---|
-| **SH-01** | **Johel Arias (Fundador y Director General)** | Interna (Dirección, Comercial, Producto, Operación y Calidad) | Único integrante actual de la firma y autor técnico del prototipo y de los procesos. | Garantizar la viabilidad técnica de TORNS, el rigor de los no-claims y la preparación hacia un primer piloto pagado. | **Alta** | `Observado` / `Diseñado AS-IS` |
+| **SH-01** | **Johel Santiago Arias (Fundador y Director General)** | Interna (Dirección, Comercial, Producto, Operación y Calidad) | Único integrante actual de la firma y autor técnico del prototipo y de los procesos. | Garantizar la viabilidad técnica de TORNS, el rigor de los no-claims y la preparación hacia un primer piloto pagado. | **Alta** | `Observado` / `Diseñado AS-IS` |
 | **SH-02** | **Universidad Libre y docente evaluadora del taller AE** | Externa (Academia y gobierno metodológico) | Entorno académico que evalúa el Plan de Transformación Empresarial bajo TOGAF. | Coherencia metodológica entre las arquitecturas de Negocio, Datos, Aplicaciones, Tecnología y el Roadmap, con originalidad y trazabilidad verificable. | **Alta** | `Observado` |
 | **SH-03** | **Operadores concesionarios de transporte masivo (incluye rol de controlador operativo como el entrevistado del SITP)** | Externa (Segmento objetivo B2B, no clientes actuales) | Empresas que ejecutan rutas troncales o ferroviarias y sufren desajustes de frecuencia y multas operativas. | Disponer de conteo oportuno de demanda en estación y recomendaciones de despacho que reduzcan la coordinación reactiva por radio. | **Alta** (sobre requisitos de producto) / **Media** (en operación AS-IS sin contrato) | `Observado` (entrevista SITP) / `Diseñado AS-IS` (segmento) |
 | **SH-04** | **Administradores y supervisores de estaciones** | Externa (Segmento objetivo B2B secundario) | Personal encargado de vigilar la saturación de plataformas (código `TP 19`). | Alertas tempranas de acumulación de pasajeros en andenes y soporte visual mediante flujo de cámaras. | **Media** | `Diseñado AS-IS` |

@@ -1,0 +1,23 @@
+flowchart LR
+    subgraph EST["Proceso estratégico"]
+        P01["P-01 Dirección estratégica de LIRN"]
+    end
+    subgraph MIS["Procesos misionales"]
+        P02["P-02 Relación comercial y partes interesadas"]
+        P03["P-03 Realización del producto TORNS"]
+        P04["P-04 Acompañamiento al uso del prototipo"]
+    end
+    subgraph APO["Proceso de apoyo"]
+        P05["P-05 Evidencia, calidad y mejora"]
+    end
+    EXT1(["Visitante o interesado"]) -->|"Solicitud de contacto"| P02
+    P01 -->|"Alcance y lista de no-claims"| P02
+    P01 -->|"Alcance técnico de producto único"| P03
+    P02 -->|"Interés calificado"| P03
+    P02 -->|"Solicitud de sesión"| P04
+    P03 -->|"Solución de demostración verificada"| P04
+    P04 -->|"Demostración de demanda y oferta"| EXT1
+    P04 -->|"Observaciones y alertas"| P05
+    P03 -->|"Hallazgos técnicos"| P05
+    P05 -->|"Evidencia n=20 y no conformidades"| P01
+    P05 -->|"No conformidades técnicas"| P03

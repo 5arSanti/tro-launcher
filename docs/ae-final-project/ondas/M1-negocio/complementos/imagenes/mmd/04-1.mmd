@@ -1,0 +1,30 @@
+flowchart TB
+    subgraph DOM_NEG["1. Dominio de Negocio (AS-IS)"]
+        N_ORG["LIRN (proyectada LIRN S.A.S.) en Bogotá, sin registro ante Cámara de Comercio<br/>Actor único: Johel Santiago Arias en 5 áreas funcionales"]
+        N_PRO["Procesos P-01 (estratégico), P-02 a P-04 (misionales) y P-05 (apoyo)<br/>Servicios SN-01 (comercial), SN-02 (demostración) y SN-03 (calidad)"]
+        N_CAP["Capacidades activas: CAP-01 a CAP-06 y CAP-08 digital<br/>Capacidades ausentes: CAP-07 (red real), CAP-09 (finanzas) y CAP-10 (talento)"]
+    end
+
+    subgraph DOM_DAT["2. Dominio de Datos (AS-IS)"]
+        D_COM["Leads en Google Sheets (AI-01, Ley 1581)<br/>Evidencia n=20 y entrevista SITP (AI-02)"]
+        D_OPE["Videos MP4/USB/RTSP y conteo person_count en memoria (AI-03)<br/>Estaciones y trenes capacidades 5, 10 y 15 sin BD histórica"]
+        D_MOD["Pesos my_model.pt y dataset 3.694 train / 1.000 val (AI-04)<br/>Facturación y contratos inexistentes hoy (AI-07 en brecha)"]
+    end
+
+    subgraph DOM_APP["3. Dominio de Aplicaciones (AS-IS)"]
+        A_WEB["lirn-web-main (React + Vite)<br/>Home LIRN y /torns#contacto"]
+        A_FE["tro-frontend (React 19 + Vite)<br/>Inicio, Monitoreo, Cámaras, Optimización (sin auth)"]
+        A_BE["tro-backend (FastAPI /api/v1)<br/>Inferencia acoplada al stream MJPEG + WS + regla ⌈N/C⌉"]
+        A_TRN["yolo-train-routes-optimization + herramientas SaaS<br/>(Google Sheets, GitHub, Lucidchart, SharePoint; sin CRM ni ERP)"]
+    end
+
+    subgraph DOM_TEC["4. Dominio Tecnológico (AS-IS)"]
+        T_LOC["Estación de trabajo única del fundador + Docker local<br/>Sin servidores dedicados ni granja GPU de producción"]
+        T_MOD["Ultralytics YOLO11s (512 px, 60 épocas, umbral 0,5, recall 0,55)<br/>OpenCV local; GitHub Pages y Google Cloud externo sin SLA propio"]
+    end
+
+    DOM_NEG -->|"Demanda y gobierna información"| DOM_DAT
+    DOM_NEG -->|"Se ejecuta mediante"| DOM_APP
+    DOM_APP -->|"Procesa y expone"| DOM_DAT
+    DOM_TEC -->|"Soporta la ejecución de"| DOM_APP
+    DOM_TEC -->|"Aloja y procesa"| DOM_DAT

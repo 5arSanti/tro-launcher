@@ -1,0 +1,26 @@
+flowchart LR
+    subgraph EST["Procesos Estratégicos"]
+        P01["<b>P-01 Dirección estratégica de LIRN</b><br/>Producto único, misión, visión y control de no-claims"]
+    end
+
+    subgraph MIS["Procesos Misionales (Cadena de Valor)"]
+        P02["<b>P-02 Relación comercial y partes interesadas</b><br/>Recepción y calificación honesta de solicitudes"]
+        P03["<b>P-03 Realización del producto TORNS</b><br/>Inferencia de conteo y regla de despacho ⌈N/C⌉"]
+        P04["<b>P-04 Acompañamiento al uso del prototipo</b><br/>Sesiones guiadas de demostración sin operar en vivo"]
+    end
+
+    subgraph APO["Procesos de Apoyo"]
+        P05["<b>P-05 Evidencia, calidad y mejora</b><br/>Custodia de encuesta n=20, entrevista SITP y no conformidades"]
+    end
+
+    EXT1(["Visitante / Interesado<br/>B2B o B2G"]) -->|"Solicitud en /torns#contacto"| P02
+    P01 -->|"Alcance aprobado y lista de no-claims"| P02
+    P01 -->|"Alcance técnico de producto único"| P03
+    P02 -->|"Interés calificado"| P03
+    P02 -->|"Solicitud de sesión"| P04
+    P03 -->|"Solución de demostración verificada"| P04
+    P04 -->|"Demostración honesta de demanda y oferta"| EXT1
+    P04 -->|"Observaciones y alertas"| P05
+    P03 -->|"Hallazgos técnicos"| P05
+    P05 -->|"Evidencia autorizada (n=20) y no conformidades"| P01
+    P05 -->|"No conformidades técnicas"| P03

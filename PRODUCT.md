@@ -86,7 +86,7 @@ La documentación académica en `docs/torns-doc.md` describe un planteamiento pr
 
 ## Evidence on Hand
 
-**Equipo actual:** Johel Arias. Una persona. Los dueños de proceso son roles futuros, no gerencias ocupadas.
+**Equipo actual:** Johel Santiago Arias. Una persona. Los dueños de proceso son roles futuros, no gerencias ocupadas.
 
 **Autorizado en `/torns`:** el párrafo de problema de Transmilenio; la etiqueta “caso de estudio y prototipo aplicado”; la entrevista al controlador SITP; la encuesta del 17 de agosto de 2026 (n=20), con la leyenda de investigación del equipo. La banda pública “Quiénes somos” puede seguir mostrando tres nombres; eso no actualiza el equipo vigente. No es resultado de un operador. No es piloto firmado.
 

@@ -1,0 +1,38 @@
+flowchart LR
+    Visitante["Visitante del sitio"]
+    Lead["Lead<br/>(solicitud de contacto)"]
+    Evidencia["Evidencia de validación<br/>(encuesta, entrevista)"]
+    Producto["Producto TORNS<br/>(AP-01 a AP-04)"]
+    Estacion["Estación"]
+    Camara["Cámara"]
+    Fuente["Fuente de video"]
+    ModeloEnt["Modelo entrenado<br/>(pesos)"]
+    ModeloTren["Modelo de tren"]
+    Estado["Estado de estación"]
+    Medicion["Medición de conteo<br/>(último valor)"]
+    Dataset["Dataset anotado"]
+    Anotador["Cuenta de anotador"]
+    Plan["Plan de despacho<br/>(último por estación)"]
+    Cliente["Cliente"]
+    Contrato["Contrato"]
+    Factura["Factura"]
+    Proveedor["Proveedor comercial"]
+    Empleado["Empleado"]
+    Visitante -->|"envía"| Lead
+    Evidencia -->|"respalda"| Producto
+    Estacion -->|"tiene 1 a 1"| Camara
+    Camara -->|"mismo id 1 a 1"| Fuente
+    Fuente -->|"produce"| Medicion
+    ModeloEnt -->|"infiere"| Medicion
+    Medicion -->|"actualiza"| Estado
+    Estacion -->|"tiene 1 a 1 (PI-05)"| Estado
+    Estado -->|"conserva el último"| Plan
+    Plan -->|"recomienda"| ModeloTren
+    Estacion -->|"admite N a M"| ModeloTren
+    Dataset -->|"entrena"| ModeloEnt
+    Anotador -->|"etiqueta"| Dataset
+    style Cliente stroke-dasharray: 5 5
+    style Contrato stroke-dasharray: 5 5
+    style Factura stroke-dasharray: 5 5
+    style Proveedor stroke-dasharray: 5 5
+    style Empleado stroke-dasharray: 5 5

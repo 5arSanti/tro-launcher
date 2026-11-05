@@ -1,0 +1,58 @@
+flowchart LR
+  OPE["Operador de estación"]
+  VIS["Visitante o lead"]
+  subgraph PUB["Nodo público (Objetivo TO-BE)"]
+    WEB["AP-01 sitio comercial con fuente propia en lugar de AP-12"]
+    CRM["N-01 gestor de leads, reemplaza AP-06"]
+  end
+  subgraph IDP["Nodo de identidad (Objetivo TO-BE)"]
+    ID["N-02 proveedor de identidad y roles"]
+  end
+  subgraph APP["Nodo de aplicación de demostración (Objetivo TO-BE)"]
+    CON["AP-02 consola autenticada"]
+    DES["AP-03a API de despacho autenticada"]
+  end
+  subgraph INF["Nodo de inferencia con GPU (Objetivo TO-BE)"]
+    INFS["AP-03b servicio de inferencia continuo"]
+  end
+  Q["Cola de eventos IT-07 (Objetivo TO-BE, tecnología sin elegir)"]
+  subgraph DAT["Nodo de datos (Objetivo TO-BE)"]
+    DB["N-04 persistencia de conteos y despacho"]
+    REG["N-05 registro versionado del modelo"]
+    OBJ["Almacén de objetos con respaldo"]
+  end
+  subgraph LAB["Nodo de laboratorio aislado (Objetivo TO-BE)"]
+    TR["AP-04 entrenamiento y AP-08 etiquetado"]
+  end
+  subgraph SAAS["SaaS de apoyo (Objetivo TO-BE)"]
+    GH["AP-07 GitHub con espejo"]
+    LC["AP-09 Lucidchart"]
+    SP["AP-10 SharePoint"]
+    CO["AP-11 Correo"]
+    GFO["AP-13 Google Forms, en uso"]
+  end
+  subgraph ADM["Nodo SaaS administrativo (Objetivo TO-BE, condicional)"]
+    FAC["N-06 facturación, condicional a C-01"]
+    NOM["N-07 personal y nómina, condicional a C-01 y a personal"]
+  end
+  LEY["Leyenda: línea punteada = componente condicional"]
+  CAMS["Fuentes de video por estación"] --> INFS
+  VIS -->|HTTPS| WEB
+  OPE -->|HTTPS| CON
+  CON -->|HTTPS| DES
+  CON --> ID
+  DES --> ID
+  INFS -->|evento de conteo| Q
+  Q --> DES
+  Q --> DB
+  DES --> DB
+  REG --> INFS
+  TR --> REG
+  TR --> OBJ
+  WEB --> CRM
+  GH -->|publicación| WEB
+  SP -.->|respaldo documental| OBJ
+  DES -.->|condicional| FAC
+  OPE -.->|condicional| NOM
+  classDef condicional stroke-dasharray: 5 5,stroke-width:2px
+  class FAC,NOM condicional

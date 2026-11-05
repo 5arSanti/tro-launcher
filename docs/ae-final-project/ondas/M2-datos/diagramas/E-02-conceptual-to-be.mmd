@@ -1,0 +1,49 @@
+---
+title: "E-02 Modelo conceptual TO-BE (Objetivo TO-BE)"
+---
+flowchart LR
+    Leyenda["Leyenda<br/>Continuo: Objetivo TO-BE<br/>Punteado: condicional<br/>(P-08 y P-09)"]
+    Organizacion["Organización"]
+    Contacto["Contacto"]
+    Autorizacion["Autorización del titular"]
+    Solicitud["Solicitud de derechos"]
+    Lead["Lead"]
+    Cliente["Cliente<br/>(solo con contrato)"]
+    Contrato["Contrato"]
+    Acta["Acta del piloto"]
+    Factura["Factura"]
+    Colaborador["Colaborador"]
+    ContratoLab["Contrato laboral"]
+    Linea["Línea"]
+    Estacion["Estación"]
+    Fuente["Fuente de video<br/>(con autorización)"]
+    Observacion["Observación de conteo"]
+    Version["Versión de modelo"]
+    ModeloTren["Modelo de tren"]
+    Recom["Recomendación<br/>de despacho"]
+    Evidencia["Evidencia de validación"]
+    Producto["Producto TORNS<br/>(AP-01 a AP-04)"]
+    Organizacion -->|"agrupa"| Contacto
+    Contacto -->|"otorga"| Autorizacion
+    Contacto -->|"presenta"| Solicitud
+    Contacto -->|"origina"| Lead
+    Organizacion -.->|"puede ser"| Cliente
+    Cliente -.->|"firma"| Contrato
+    Contrato -.->|"genera"| Factura
+    Contrato -.->|"se documenta en"| Acta
+    Colaborador -.->|"suscribe"| ContratoLab
+    Linea -->|"agrupa"| Estacion
+    Estacion -->|"dispone de"| Fuente
+    Fuente -->|"produce"| Observacion
+    Version -->|"genera"| Observacion
+    Observacion -->|"origina"| Recom
+    ModeloTren -->|"se selecciona en"| Recom
+    Estacion -->|"admite"| ModeloTren
+    Evidencia -->|"respalda"| Producto
+    style Cliente stroke-dasharray: 5 5
+    style Contrato stroke-dasharray: 5 5
+    style Factura stroke-dasharray: 5 5
+    style Colaborador stroke-dasharray: 5 5
+    style ContratoLab stroke-dasharray: 5 5
+    style Acta stroke-dasharray: 5 5
+    style Leyenda fill:#f3f4f6,stroke:#9ca3af

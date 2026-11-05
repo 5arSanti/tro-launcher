@@ -1,0 +1,25 @@
+flowchart LR
+    CAM["Archivo mp4, cámara USB<br/>o fuente RTSP"]
+    BE["AP-03 Servicio de detección de pasajeros<br/>y plan de despacho (API)"]
+    DET["Detección clase person<br/>F-05"]
+    CNT["Conteo person_count<br/>(volátil)"]
+    FE["AP-02 Consola de operación<br/>de estaciones (navegador)"]
+    PLAN["Plan de despacho<br/>(último por estación)"]
+    EST["Estado de estación<br/>F-08 (volátil)"]
+    LS["AP-08 Label Studio<br/>(etiquetado) F-11"]
+    TRN["AP-04 Entrenamiento<br/>(best.pt)"]
+    MOD["AP-05 Modelo de detección<br/>(my_model.pt)"]
+    GH["Repositorio público<br/>en AP-07 GitHub"]
+    CAM -->|"F-04"| BE
+    BE -->|"fotograma"| DET
+    DET -->|"conteo"| CNT
+    CNT -->|"F-08"| EST
+    EST -->|"calcula"| PLAN
+    BE -->|"F-06 MJPEG y F-07 WebSocket"| FE
+    FE -.->|"F-10 POST despacho"| PLAN
+    PLAN -.->|"F-09 GET estado"| FE
+    LS -->|"F-11 exportación (I-10)"| TRN
+    TRN -.->|"I-11 copia manual"| MOD
+    BE -->|"F-17 catálogo"| FE
+    MOD -->|"F-12 lectura"| BE
+    MOD -.->|"F-13 código y pesos"| GH

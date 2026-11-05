@@ -1,0 +1,17 @@
+flowchart LR
+    VIS["Visitante"]
+    SITE["AP-01 Sitio web comercial de<br/>LIRN y TORNS (GitHub Pages)"]
+    FONT["Google Fonts<br/>(IP del visitante)"]
+    FORM["Formulario sin aviso<br/>ni autorización"]
+    AS["AP-06 Apps Script<br/>(cuenta personal, declarado)"]
+    HOJA["AP-06 Hoja de Google<br/>(cuenta personal, declarado)"]
+    FUND["Fundador"]
+    RESP["Respuesta al lead<br/>(Objetivo TO-BE; hoy no existe)"]
+    SITE -->|"F-03 recursos estáticos"| VIS
+    SITE -.->|"fuentes"| FONT
+    VIS -->|"completa"| FORM
+    FORM -->|"F-01 JSON texto plano"| AS
+    AS -->|"registra fila"| HOJA
+    HOJA -->|"F-02 manual"| FUND
+    FUND -.->|"responde (Objetivo TO-BE)"| RESP
+    RESP -.->|"llega al visitante (Objetivo TO-BE)"| VIS

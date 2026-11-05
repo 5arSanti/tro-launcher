@@ -26,8 +26,8 @@ mustExist("docs/ae-final-project/ondas/M1-negocio/README.md");
 mustExist("docs/ae-final-project/ondas/M2-datos/README.md");
 mustExist("docs/ae-final-project/ondas/M3-aplicaciones/README.md");
 mustExist("docs/ae-final-project/ondas/M4-tecnologia/README.md");
-mustExist("docs/ae-final-project/ondas/M5-roadmap/README.md");
-mustNotExist("docs/ae-final-project/informe");
+mustExist("docs/ae-final-project/ondas/M5-transformacion/README.md");
+mustExist("docs/ae-final-project/informe/plan-transformacion-empresarial.md");
 
 const registerNeedles = [
   "Identidad legal y de mercado",
@@ -42,7 +42,7 @@ const registerNeedles = [
   "Brechas y proyectos",
   "Glosario de términos bloqueados",
   "LIRN es la firma. TORNS es el único producto.",
-  "Equipo actual: Johel Arias.",
+  "Equipo actual: Johel Santiago Arias.",
   "TORNS es prototipo aplicado. No es piloto firmado.",
   "Transmilenio es caso de estudio, no cliente.",
   "Observado",
@@ -71,10 +71,6 @@ if (existsSync(join(root, "AGENTS.md"))) {
   }
 }
 
-if (existsSync(join(root, "docs/ae-final-project"))) {
-  const top = readdirSync(join(root, "docs/ae-final-project"));
-  if (top.includes("informe")) fail("informe/ should not exist yet");
-}
 
 if (failures.length) {
   console.error("FAIL:\n" + failures.map((item) => "- " + item).join("\n"));
