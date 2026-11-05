@@ -1,12 +1,10 @@
-# Apoyo de negocio al Roadmap de Transformación de LIRN (borrador)
+# Apoyo de negocio al Roadmap de Transformación de LIRN
 
-<!-- reescribir Santiago; lenguaje de proceso interno, no pasa al informe -->
-Versión 0.2, 1 de noviembre de 2026. Borrador de apoyo para el Roadmap de Transformación; Santiago redacta el texto final. Fuentes: TO-BE de negocio v0.2, matriz de trazabilidad OE-01 a OE-05, identificadores C-01 a C-08 y matriz capacidad, proceso y servicio de la Arquitectura de Negocio; inventario de datos D-01 a D-23 de la Arquitectura de Datos; inventario AP-01 a AP-13 y diferencias DF-01 a DF-10 de la Arquitectura de Aplicaciones. No se fijan cifras, costos, plazos ni metas numéricas: lo que el repositorio no contiene queda NO CONFIRMADO.
+Versión 0.2, 1 de noviembre de 2026. Anexo de trazabilidad entre las brechas de negocio y el Roadmap de Transformación. Fuentes: Arquitectura de Negocio TO-BE v0.2, matriz de trazabilidad OE-01 a OE-05, identificadores C-01 a C-08 y matriz capacidad, proceso y servicio de la Arquitectura de Negocio; inventario de datos D-01 a D-23 de la Arquitectura de Datos; inventario AP-01 a AP-13 y diferencias DF-01 a DF-10 de la Arquitectura de Aplicaciones. No se fijan cifras, costos, plazos ni metas numéricas. Lo que el repositorio no contiene queda NO CONFIRMADO.
 
 ## 1. Trazabilidad de brechas de negocio
 
-<!-- reescribir Santiago; lenguaje de proceso interno, no pasa al informe -->
-Las brechas G-N01 a G-N07 son de tipo Brecha. Su estado actual es Observado según el TO-BE de negocio; el enlace con objetivos, candidatos y referencias cruzadas es Diseñado AS-IS (derivado de las matrices existentes) y su cierre es Objetivo TO-BE.
+Las brechas G-N01 a G-N07 son de tipo Brecha. Su estado actual es Observado, según la Arquitectura de Negocio TO-BE. El enlace con objetivos, candidatos y referencias cruzadas es Diseñado AS-IS, derivado de las matrices existentes. Su cierre es Objetivo TO-BE.
 
 | Brecha | Estado actual (marca) | OE | Proceso, capacidad y servicio afectados | Candidato | Arquitectura de Datos | Arquitectura de Aplicaciones |
 |--------|-----------------------|----|------------------------------------------|-----------|-----------------------|------------------------------|
@@ -18,8 +16,7 @@ Las brechas G-N01 a G-N07 son de tipo Brecha. Su estado actual es Observado seg�
 | G-N06 CAP-07, CAP-09 y CAP-10 ausentes | Observado | OE-04, OE-05 | P-07 (CAP-07), P-08 (CAP-09) y P-09 (CAP-10) | C-06 | D-20, D-21, D-22 (Brecha) | AP-02 y AP-03a con autenticación (DF-05); DF-08: facturación (P-08; CAP-09) con N-06. Gestión de personal y nómina (P-09; CAP-10) con N-07, Objetivo TO-BE condicional a que haya personal que vincular. P-07 (CAP-07): sin aplicación asociada |
 | G-N07 Sin contratación ni piloto; sin respaldo y despliegue en un solo equipo | Observado; Observado por declaración del dueño (1 de noviembre de 2026) para el respaldo | OE-01, OE-03, OE-05 | P-06, P-04; CAP-03, CAP-06, CAP-08; SN-04 | C-08 y C-07 | D-18, D-22; D-14, D-15 | AP-07; entorno de piloto en la Arquitectura Tecnológica |
 
-<!-- reescribir Santiago; lenguaje de proceso interno, no pasa al informe -->
-El detalle de respaldo y entornos de G-N07 está en el entregable del Punto 4 (Arquitectura Tecnológica): una sola estación de trabajo, sin respaldos ni separación de entornos, y el disco cerca de su capacidad (RT-03).
+El detalle de respaldo y entornos de G-N07 consta en el entregable «Arquitectura Tecnológica (Punto 4)»: una sola estación de trabajo, sin respaldos ni separación de entornos, y el disco cerca de su capacidad (RT-03).
 
 ## 2. Propuesta de portafolio desde negocio
 
@@ -68,8 +65,7 @@ Aprobados por Santiago el 1 de noviembre de 2026. Marca: Objetivo TO-BE, porque 
 | SN-04 Piloto de medición de demanda en estación | Servicio pagado, acotado en tiempo y estaciones, con informe de resultados | Contrato de P-06; video de estación; modelo evaluado | Conteos, recomendaciones históricas e informe | CAP-04, CAP-05, CAP-06 | G-N04, G-N05, G-N07 | Informe entregado con métricas por estación y fecha y fuente trazable; precio, duración y número de estaciones NO CONFIRMADO |
 | SN-05 Soporte y mejora del servicio | Atiende incidencias y ajustes acordados con el operador | Incidencias del operador; resultados de SN-04 | Incidencias resueltas, versiones del modelo o de la regla registradas | CAP-06, CAP-08 | G-N07 | Cada incidencia tiene registro de apertura, respuesta y cierre |
 
-<!-- reescribir Santiago -->
-Con estos seis elementos, las actividades de la cadena de valor que hoy no tienen proceso (Observado) quedan cubiertas en el estado objetivo, y cada brecha de negocio tiene un candidato, un indicador y un criterio de aceptación (Objetivo TO-BE).
+Con estos seis elementos, las actividades de la cadena de valor que hoy no tienen proceso (Observado) quedan cubiertas en el estado objetivo. Cada brecha de negocio tiene un candidato, un indicador y un criterio de aceptación (Objetivo TO-BE).
 
 ## Datos NO CONFIRMADO
 1. Línea base numérica de todos los indicadores de proporción.

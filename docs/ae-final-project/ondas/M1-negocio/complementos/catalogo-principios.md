@@ -1,9 +1,7 @@
-# Catálogo de principios de arquitectura de negocio (borrador de apoyo)
+# Catálogo de principios de arquitectura de negocio
 
-Formato TOGAF: nombre, enunciado, justificación, implicaciones. Cada principio se ancla a un hecho existente en la fuente de verdad. Los enunciados son propuestas de diseño (Objetivo TO-BE como guía de decisión); los hechos citados como ancla llevan su marca. Santiago decide cuáles adopta y los redacta con voz propia.
+Formato TOGAF: nombre, enunciado, justificación e implicaciones. Cada principio se ancla a un hecho existente en la fuente de verdad. Los enunciados son propuestas de diseño (Objetivo TO-BE como guía de decisión). Los hechos citados como ancla llevan su marca.
 
-<!-- reescribir Santiago -->
-<!-- reescribir Santiago: enunciados PN-01 a PN-08 -->
 | ID | Nombre | Enunciado | Justificación (ancla) | Implicaciones | Marca del ancla |
 |----|--------|-----------|------------------------|---------------|-----------------|
 | PN-01 | Una firma, un producto | LIRN vende y TORNS opera. No se agrega un segundo producto sin revisión de dirección. | LIRN es la firma y TORNS es el único producto; el proceso P-01 devuelve al alcance si se propone un segundo producto. | Toda iniciativa del portafolio se evalúa contra el alcance de TORNS. Ninguna capacidad nueva se justifica por un producto distinto. | Observado |

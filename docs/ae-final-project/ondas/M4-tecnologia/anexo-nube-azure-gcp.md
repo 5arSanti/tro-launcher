@@ -196,7 +196,6 @@ Para que la VM de Azure tenga el 99,9 %, los discos del sistema operativo y de d
 
 Ambas regiones están en Brasil. Los datos personales que saldrían del país son N-01 y las imágenes de personas en el almacén de objetos y en la inferencia (D-04, D-05 y D-13 del inventario de datos).
 
-<!-- reescribir Santiago -->
 El proveedor de nube actúa como Encargado del Tratamiento por cuenta de LIRN, que es el Responsable. Por eso el caso típico es una transmisión internacional y no una transferencia. El Decreto 1377 de 2013 define la transferencia como el envío a un receptor que a su vez es Responsable (art. 3, num. 4), y la transmisión como la comunicación de datos para que un Encargado realice el Tratamiento por cuenta del Responsable (art. 3, num. 5). Según el art. 24, las transferencias internacionales deben observar el artículo 26 de la Ley 1581 de 2012 (num. 1). Las transmisiones internacionales entre Responsable y Encargado no necesitan informarse al Titular ni contar con su consentimiento cuando existe un contrato en los términos del art. 25 (num. 2). El art. 25 regula ese contrato de transmisión: alcance del tratamiento, actividades del Encargado y obligaciones mínimas de tratamiento según los principios, seguridad y confidencialidad. Fuente: Función Pública, https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=53646 (consulta 2 nov 2026). Que la transmisión con contrato proceda aunque el país no tenga nivel adecuado declarado se desprende de que el art. 24 remite al artículo 26 de la ley solo para transferencias; es una lectura del texto, no una disposición expresa. El Decreto 1377 de 2013 está compilado en el Decreto Único 1074 de 2015: el art. 24 corresponde al artículo 2.2.2.25.5.1 y el art. 25 al artículo 2.2.2.25.5.2, cuyos textos citan esa procedencia. Fuente: Normograma del Ministerio de Relaciones Exteriores, Decreto 1074 de 2015, https://www.cancilleria.gov.co/sites/default/files/Normograma/docs/decreto_1074_2015_pr026.htm (consulta 2 nov 2026). La página de Función Pública (norma 76608) no respondió a la consulta automática.
 
 Para la transferencia, el artículo 26 de la Ley 1581 de 2012 prohíbe enviar datos a países que no proporcionen niveles adecuados de protección, con las excepciones de los literales a) a f). Su Parágrafo 1 asigna a la Superintendencia de Industria y Comercio la declaración de conformidad, y el artículo 27 trata las normas corporativas vinculantes. Fuente: Función Pública, https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981 (consulta 2 nov 2026).
@@ -213,13 +212,11 @@ Objetivo TO-BE: cada estación tiene una pasarela RTSP local que publica el vide
 
 ## 10. Recomendación
 
-<!-- reescribir Santiago -->
-Objetivo TO-BE: se recomienda **GCP southamerica-east1** como opción preferente, sujeta a la decisión de Santiago. Criterios:
+Objetivo TO-BE: se recomienda GCP southamerica-east1 como opción preferente. La contratación no está firmada. Criterios:
 
 1. Costo: GCP es más barato en ambos escenarios (14 % en piloto y 8 % en escala), sobre todo por la VM con GPU y por la VPN sin gateway fijo. La ventaja se reduce cuando crece la salida a Internet, rubro en el que Azure es levemente más barato.
 2. Disponibilidad de GPU en la región: ambas ofrecen T4 en São Paulo. GCP documenta T4 en tres zonas, lo que facilita reubicar la carga ante falta de capacidad; la distribución zonal de Azure es NO CONFIRMADO.
 3. SLA: en las piezas comparables Azure publica niveles iguales o superiores: VPN (99,95 % frente a 99,9 %), secretos (99,99 % frente a 99,95 %) y base de datos sin HA (99,9 % en Azure; en GCP sin nivel declarado). En GPU, contenedores y objetos ambas quedan empatadas (99,9 %, 99,95 % y 99,9 %). Este criterio favorece levemente a Azure, aunque la diferencia no compensa el costo; si el SLA de la base de datos es requisito, en GCP hay que pasar a Cloud SQL con HA, que no está costeado. La cola y la identidad de Azure siguen NO CONFIRMADO.
 4. Ecosistema actual: el ecosistema Microsoft (SharePoint, Outlook) favorece a Azure para identidad corporativa; el ecosistema Google (Forms, Sheets, Fonts) favorece a GCP. El ecosistema no define la decisión.
 
-<!-- reescribir Santiago -->
-Si la organización prioriza la integración con Microsoft, Azure es una alternativa viable con un sobrecosto de unos 105 USD/mes en el piloto.
+Si la organización prioriza la integración con Microsoft, Azure es una alternativa viable, con un sobrecosto de unos 105 USD/mes en el escenario piloto. La decisión de contratación sigue pendiente.

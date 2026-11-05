@@ -13,8 +13,8 @@ lang: es-CO
 | Docente | Mgs. Maria del Pilar Niño Campos |
 | Autor | Johel Santiago Arias |
 | Organización analizada | LIRN (proyectada LIRN S.A.S.), producto TORNS |
-| Fecha | 2 de noviembre de 2026 |
-| Versión | 1.0 |
+| Fecha | 5 de noviembre de 2026 |
+| Versión | 1.1 |
 
 ## Marcas de evidencia
 
@@ -28,15 +28,13 @@ lang: es-CO
 
 # 2. Introducción
 
-<!-- reescribir Santiago -->
+Como autor y responsable único de LIRN presento este Plan de Transformación Empresarial. La firma tiene un solo producto: TORNS. TORNS es un prototipo aplicado. Cuenta personas en estación con visión por computador y recomienda al centro de control el tipo de vehículo y la cantidad de unidades. No es un piloto firmado. No hay cliente. Transmilenio es caso de estudio.
 
-LIRN es una microempresa de una sola persona que desarrolla TORNS, un prototipo que mide la demanda de pasajeros en estación con visión por computador y propone al centro de control un plan de despacho. Este informe integra los cinco puntos del taller final siguiendo el Método de Desarrollo de Arquitectura (ADM) de TOGAF (The Open Group, 2022): la visión y el negocio (fases A y B), los sistemas de información en datos y aplicaciones (fase C), la tecnología (fase D) y la transformación (fases E y F, con criterios de gobierno para G y H).
+El informe aplica el Método de Desarrollo de Arquitectura (ADM) de TOGAF (The Open Group, 2022) al estado real de la organización. Las fases A y B cubren la visión y el negocio. La fase C cubre datos y aplicaciones. La fase D cubre la tecnología. Las fases E y F cubren la transformación. Las fases G y H aportan el gobierno de la implementación y el cambio de la arquitectura.
 
-La pregunta que guía el documento es: ¿cómo ayuda la Arquitectura Empresarial propuesta a que la organización alcance sus objetivos estratégicos y sea más eficiente durante los próximos cinco años? El capítulo 9 la responde.
+La pregunta del taller es esta: ¿cómo ayuda la Arquitectura Empresarial propuesta a que la organización alcance sus objetivos estratégicos y sea más eficiente durante los próximos cinco años? El capítulo 9 responde con brechas, portafolio, hoja de ruta e indicadores. No responde con impacto comercial inventado.
 
-Los entregables de los Puntos 1 a 5 son anexos de este informe y forman parte de la entrega: «Arquitectura de Negocio (Punto 1)», «Arquitectura de Datos (Punto 2)», «Arquitectura de Aplicaciones (Punto 3)», «Arquitectura Tecnológica (Punto 4)» con su «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS», y «Arquitectura de Transformación (Punto 5)».
-
-<!-- reescribir Santiago -->
+Los Puntos 1 a 5 acompañan este informe como anexos de la entrega: «Arquitectura de Negocio (Punto 1)», «Arquitectura de Datos (Punto 2)», «Arquitectura de Aplicaciones (Punto 3)», «Arquitectura Tecnológica (Punto 4)» con el «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS», y «Arquitectura de Transformación (Punto 5)».
 
 # 3. Descripción de la organización
 
@@ -175,11 +173,7 @@ Los flujos son el técnico (FL-T: video, inferencia, conteo y plan), el comercia
 
 ![Flujo comercial FL-C](../ondas/M2-datos/diagramas/E-04-FL-C-comercial.png)
 
-<!-- reescribir Santiago -->
-
-**Problemas centrales.** Los conteos y planes no se guardan, por lo que no hay historial ni forma de medir. Marca: Observado. Los pesos del modelo, el dataset y los videos no tienen respaldo. Marca: Observado por declaración del dueño (1 de noviembre de 2026). Los leads se capturan sin política de tratamiento ni la autorización previa que exigen los artículos 5 a 7 del Decreto 1377 de 2013 (Presidencia de la República de Colombia, 2013). Marca: Observado por declaración del dueño (1 de noviembre de 2026). Las imágenes de personas en estación son datos personales (Ley 1581 de 2012, art. 3) y su transmisión a la nube requiere contrato con el Encargado.
-
-<!-- reescribir Santiago -->
+**Problemas centrales.** El dominio de datos no conserva memoria de negocio. Los conteos y los planes de despacho viven en memoria volátil. Al reiniciar el servicio se pierden. Sin historial no hay indicador ni auditoría. Marca: Observado. Los pesos del modelo, el dataset y los videos no tienen respaldo fuera de la estación de trabajo. Marca: Observado por declaración del dueño (1 de noviembre de 2026). El canal de contacto captura leads sin política de tratamiento ni autorización previa, en contra de lo que exigen los artículos 5 a 7 del Decreto 1377 de 2013 (Presidencia de la República de Colombia, 2013). Marca: Observado por declaración del dueño (1 de noviembre de 2026). Las imágenes de personas en estación son datos personales (Ley 1581 de 2012, art. 3). Si salen a la nube, hace falta un contrato con el Encargado antes de transmitirlas.
 
 **Problemas de información.**
 
@@ -282,18 +276,14 @@ Fase D. El entregable «Arquitectura Tecnológica (Punto 4)» contiene el invent
 
 ![Diagrama tecnológico TO-BE](../ondas/M4-tecnologia/diagramas/E4b-tecnologia-to-be.png)
 
-<!-- reescribir Santiago -->
-
-**Propuesta.** Cinco entornos (Desarrollo, Laboratorio, Demostración, Piloto y Público), almacén de objetos para modelos y videos, gestor de secretos, respaldo verificado y GPU bajo demanda para la inferencia. Azure y GCP se mantienen como alternativas de nube (Objetivo TO-BE). El anexo «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS» estima la operación en São Paulo (Azure Brazil South y GCP southamerica-east1), única ubicación donde ambas ofrecen la GPU T4, con precios de lista de pago por uso de la Azure Retail Prices API (Microsoft, 2026) y de las páginas de precios de Google Cloud (Google, 2026), consultados el 2 de noviembre de 2026. Es una estimación y no una cotización.
+**Propuesta.** El Objetivo TO-BE separa cinco entornos: Desarrollo, Laboratorio, Demostración, Piloto y Público. Añade almacén de objetos para modelos y videos, gestor de secretos, respaldo verificado y GPU bajo demanda para la inferencia. Azure y GCP siguen como alternativas de nube. El «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS» estima la operación en São Paulo (Azure Brazil South y GCP southamerica-east1), única ubicación donde ambas ofrecen la GPU T4. Los precios son de lista de pago por uso, tomados de la Azure Retail Prices API (Microsoft, 2026) y de las páginas de precios de Google Cloud (Google, 2026), consultados el 2 de noviembre de 2026. Es una estimación. No es una cotización.
 
 | Escenario | Azure (USD/mes) | GCP (USD/mes) | Diferencia |
 |---|---|---|---|
 | Piloto (1 a 3 cámaras) | 755,45 | 650,11 | GCP 105,34 menos (14 %) |
 | Escala (15 cámaras) | 3.096,77 | 2.864,32 | GCP 232,45 menos (8 %) |
 
-Fuente: anexo «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS». Los totales excluyen los rubros marcados NO CONFIRMADO y no aplican descuentos. El equipo recomienda GCP southamerica-east1 por costo y por disponibilidad de T4 en tres zonas; Azure publica niveles de SLA iguales o superiores en VPN, secretos y base de datos sin alta disponibilidad. Marca: Objetivo TO-BE; la decisión es de Santiago y sigue pendiente. En ambas nubes los datos personales saldrían a Brasil, por lo que antes de cargarlos debe firmarse el contrato de transmisión con el proveedor como Encargado (Presidencia de la República de Colombia, 2013); Brasil no figura en la lista de países con nivel adecuado de protección de la SIC (Circular Externa 005 de 2017, modificada por la Circular Externa 002 de 2018; Superintendencia de Industria y Comercio [SIC], 2017, 2018). Los nodos administrativos de facturación y nómina, condicionales a la formalización, se rigen por la Resolución 000165 de 2023 (Dirección de Impuestos y Aduanas Nacionales [DIAN], 2023), la Resolución 000013 de 2021 (DIAN, 2021), la Ley 100 de 1993 (Congreso de la República de Colombia, 1993) y el Decreto 1072 de 2015 (Presidencia de la República de Colombia, 2015).
-
-<!-- reescribir Santiago -->
+Fuente: «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS». Los totales excluyen los rubros marcados NO CONFIRMADO y no aplican descuentos. Por costo y por disponibilidad de T4 en tres zonas, la estimación favorece a GCP southamerica-east1. Azure publica niveles de SLA iguales o superiores en VPN, secretos y base de datos sin alta disponibilidad. Marca: Objetivo TO-BE. La contratación de nube no está firmada. En ambas nubes los datos personales saldrían a Brasil. Antes de cargarlos debe firmarse el contrato de transmisión con el proveedor como Encargado (Presidencia de la República de Colombia, 2013). Brasil no figura en la lista de países con nivel adecuado de protección de la SIC (Circular Externa 005 de 2017, modificada por la Circular Externa 002 de 2018; Superintendencia de Industria y Comercio [SIC], 2017, 2018). Los nodos administrativos de facturación y nómina, condicionales a la formalización, se rigen por la Resolución 000165 de 2023 (Dirección de Impuestos y Aduanas Nacionales [DIAN], 2023), la Resolución 000013 de 2021 (DIAN, 2021), la Ley 100 de 1993 (Congreso de la República de Colombia, 1993) y el Decreto 1072 de 2015 (Presidencia de la República de Colombia, 2015).
 
 **Riesgos principales.** Los entregables de Aplicaciones y Tecnología registran 20 riesgos; se resumen así:
 
@@ -326,11 +316,7 @@ Fases E y F del ADM. El detalle está en los entregables de la Arquitectura de T
 
 ## 8.1 Situación objetivo TO-BE
 
-<!-- reescribir Santiago -->
-
-LIRN, formalizada como S.A.S., ofrece TORNS a un operador B2B o una entidad B2G mediante un primer piloto pagado, con medición de demanda en estación, recomendación de despacho que decide el centro de control, datos personales tratados conforme a la ley y una operación que ya no depende de un solo equipo ni de una sola persona. Todo lo anterior es Objetivo TO-BE.
-
-<!-- reescribir Santiago -->
+El estado que se busca para LIRN es este. La firma queda constituida como S.A.S. TORNS se ofrece a un operador B2B o a una entidad B2G mediante un primer piloto pagado. La demanda se mide en estación. El centro de control recibe una recomendación y decide. Los datos personales se tratan según la Ley 1581 de 2012. La operación deja de depender de un solo equipo y de una sola persona. Nada de eso existe hoy. Es Objetivo TO-BE.
 
 ## 8.2 Análisis de brechas
 
@@ -422,33 +408,25 @@ Las metas no fijan cifras que no estén sustentadas. El recall de 0,55 correspon
 
 # 9. Conclusiones
 
-<!-- reescribir Santiago -->
+**Respuesta a la pregunta del taller.** La Arquitectura Empresarial propuesta ayuda a LIRN a alcanzar los cinco objetivos estratégicos en cinco años porque ordena el cambio según dependencias reales. Primero existe la firma y el tratamiento de datos. Después se puede medir. Después se puede cobrar. Al final se puede integrar el despacho con un operador. No se parte de una preferencia técnica.
 
-**Respuesta a la pregunta del taller.** La Arquitectura Empresarial propuesta ayuda a LIRN a alcanzar sus objetivos estratégicos en cinco años porque ordena la transformación según dependencias reales y no según preferencias técnicas.
+1. En el año 0 a 1, PY-07 reduce la dependencia de un solo equipo con respaldo y entornos separados. PY-01 y PY-03 dan existencia legal y un canal de leads conforme a la Ley 1581 de 2012. Sin eso ningún operador puede contratar a LIRN. Eso sostiene OE-02, OE-03 y OE-05.
+2. En el mismo horizonte, PY-04 persiste conteos y planes. PY-09 habilita facturar. El prototipo deja de ser solo una demostración en memoria. Eso sostiene OE-01 y OE-04.
+3. En el año 1 a 3, PY-05 desacopla la inferencia y evalúa el modelo con video de estación. Esa evidencia es la condición del primer piloto pagado (PY-08). El piloto sigue siendo Objetivo TO-BE.
+4. En el año 3 a 5, PY-06 lleva la recomendación al centro de control. El operador mantiene la decisión. Eso cierra CAP-07 sin fingir despacho en vivo hoy.
+5. La eficiencia se mide con IN-01 a IN-13. Las líneas base son observadas. Las metas sin dato quedan NO CONFIRMADO.
 
-1. En el primer año la arquitectura elimina los dos riesgos que hoy pueden detener la empresa: la dependencia de un solo equipo, con respaldo y entornos separados (PY-07), y la operación sin existencia legal ni tratamiento conforme de datos personales (PY-01 y PY-03). Sin esto ningún operador podría contratar a LIRN.
-2. En ese mismo primer año, el historial de conteos (PY-04) deja medir el prototipo y la facturación (PY-09) permite cobrar el futuro piloto.
-3. Entre el primer y el tercer año, la inferencia desacoplada (PY-05) hace medible el modelo con video real de estación, que es la condición para el primer piloto pagado (PY-08).
-4. Entre el tercer y el quinto año, la interoperabilidad con el centro de control (PY-06) lleva la recomendación de despacho al operador, que mantiene la decisión.
-5. La eficiencia se mide con los indicadores IN-01 a IN-13, que parten de líneas base observadas y no de cifras supuestas.
-
-La organización resultante sigue siendo pequeña, pero deja de depender de una sola máquina y de una sola persona, y cada paso queda trazado desde un objetivo OE hasta una brecha, un proyecto y un indicador.
-
-<!-- reescribir Santiago -->
+LIRN seguirá siendo una organización pequeña. Deja de depender de una sola máquina y de una sola persona. Cada paso queda trazado desde un objetivo estratégico hasta una brecha, un proyecto y un indicador.
 
 # 10. Recomendaciones
 
-<!-- reescribir Santiago -->
-
-1. Iniciar PY-01, la formalización ante la Cámara de Comercio y la DIAN, porque habilita casi todo el portafolio.
-2. Publicar la política y el aviso de tratamiento de datos antes de seguir recibiendo leads.
-3. Hacer y probar el respaldo de pesos, dataset y videos de inmediato.
-4. Conseguir video de estación con un acuerdo que respete la Ley 1581 de 2012 antes de anunciar cualquier métrica de desempeño.
-5. Mantener la regla de comunicar solo lo evidenciado (PN-02) y no presentar a TransMilenio como cliente.
-6. Decidir entre Azure y GCP con la estimación del anexo de nube del Punto 4 (GCP recomendado por el equipo; decisión de Santiago) y firmar el contrato de transmisión con el proveedor antes de cargar datos personales. <!-- reescribir Santiago -->
-7. Revisar la hoja de ruta cada año, según la fase H del ADM.
-
-<!-- reescribir Santiago -->
+1. Ejecutar PY-01 primero. Sin matrícula mercantil ni NIT no hay contrato, no hay factura y no hay Responsable del tratamiento identificable.
+2. Publicar la política y el aviso de tratamiento, y pedir autorización, antes de seguir recibiendo leads. El formulario actual no cumple los artículos 5 a 7 del Decreto 1377 de 2013.
+3. Respaldar pesos, dataset y videos fuera de la estación de trabajo y probar la restauración. El disco está cerca de su capacidad y no hay copia verificada.
+4. Acordar video de estación con un operador, con tratamiento conforme a la Ley 1581 de 2012, antes de publicar cualquier métrica de desempeño en campo. El recall 0,55 es de entrenamiento, no de estación.
+5. Comunicar solo lo evidenciado. Transmilenio es caso de estudio. Lead no es cliente. TORNS es prototipo aplicado. No es piloto firmado.
+6. Tomar la decisión de nube con el «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS». La estimación favorece a GCP southamerica-east1. La contratación no está firmada. Antes de cargar datos personales debe existir el contrato de transmisión con el proveedor como Encargado.
+7. Revisar la hoja de ruta cada año, según la fase H del ADM, y no adelantar PY-06 ni PY-08 mientras no existan PY-01, PY-03 y PY-07.
 
 # 11. Bibliografía
 

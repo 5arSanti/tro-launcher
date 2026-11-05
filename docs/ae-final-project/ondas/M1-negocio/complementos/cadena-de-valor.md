@@ -1,4 +1,4 @@
-# Cadena de valor de LIRN (borrador de apoyo, AS-IS con proyección TO-BE)
+# Cadena de valor de LIRN (AS-IS con proyección TO-BE)
 
 Actividades primarias tomadas de los tres procesos misionales (P-02, P-03, P-04) y de apoyo de P-01, P-05 y de la infraestructura observada. Lo que no existe hoy se marca Observado y se describe su ausencia.
 
@@ -28,12 +28,14 @@ flowchart TB
 Disposición: dos bloques apilados, apoyo arriba y primarias abajo. El resultado final (valor entregado, Objetivo TO-BE) se describe en la lectura, no como nodo, para reducir el ancho de la imagen.
 
 ## Lectura
-<!-- reescribir Santiago -->
-- Resultado declarado: oferta ajustada a la demanda medida en estación (Objetivo TO-BE, no entregado hoy).
-- B1 a B3 existen como proceso documentado (Observado o Diseñado AS-IS). B4 y B5 no existen: LIRN no tiene clientes ni pilotos (Observado) y se proyectan solo como TO-BE.
-- El valor que se declara como resultado final es objetivo. No se afirma como entregado hoy.
-- A5 y A6 no existen hoy, según el mapa de capacidades (Observado). En el TO-BE aprobado por Santiago el 1 de noviembre de 2026 los cubren P-08 y P-09, respectivamente (Objetivo TO-BE).
-- No hay cifras ni costos por actividad. Si el docente exige análisis de margen, queda NO CONFIRMADO.
+
+El resultado declarado de la cadena es la oferta ajustada a la demanda medida en estación. Esa entrega es Objetivo TO-BE. No se afirma como valor entregado hoy.
+
+Las actividades primarias B1 a B3 existen como proceso documentado (Observado o Diseñado AS-IS). B4 y B5 no existen: LIRN no tiene clientes ni pilotos (Observado) y se proyectan solo como Objetivo TO-BE.
+
+Las actividades de apoyo A5 y A6 no existen hoy, según el mapa de capacidades (Observado). En el TO-BE aprobado el 1 de noviembre de 2026 las cubren P-08 y P-09, respectivamente (Objetivo TO-BE).
+
+No hay cifras ni costos por actividad. Si el docente exige análisis de margen, el dato queda NO CONFIRMADO.
 
 ## Pendiente para Santiago
 Decidir si presentar la cadena como modelo de Porter (actividades primarias y de apoyo, como arriba) o como cadena de valor de los servicios SN-01 a SN-03. Se recomienda la primera porque el mapa de procesos ya tiene tipo estratégico, misional y de apoyo.

@@ -8,8 +8,7 @@ Las aplicaciones se nombran con los códigos del Inventario de aplicaciones de l
 
 ## 1. Alcance y punto de partida
 
-<!-- reescribir Santiago -->
-LIRN es una microempresa unipersonal sin clientes, contratos ni facturación (Observado, registro de la empresa). Su único producto, TORNS, es un prototipo que cuenta personas en video y calcula una recomendación de despacho de trenes. En consecuencia, la arquitectura de datos actual tiene dos zonas con naturaleza distinta: un frente comercial que recoge leads desde el sitio web y un frente técnico cuyo estado vive casi por completo en la memoria de AP-03 (Observado). Los datos administrativos que pide el enunciado (clientes, proveedores comerciales, facturación, empleados y contratos) no existen (Observado) y se documentan como hallazgos de tipo Brecha, no como tablas vacías.
+LIRN es una microempresa unipersonal sin clientes, contratos ni facturación (Observado, registro de empresa). Su único producto, TORNS, es un prototipo que cuenta personas en video y calcula una recomendación de despacho de trenes. La arquitectura de datos actual tiene dos zonas de naturaleza distinta: un frente comercial que recoge leads desde el sitio web y un frente técnico cuyo estado vive casi por completo en la memoria de AP-03 (Observado). Los datos administrativos que pide el enunciado (clientes, proveedores comerciales, facturación, empleados y contratos) no existen (Observado) y se documentan como hallazgos de tipo Brecha, no como tablas vacías.
 
 ## 2. Inventario de datos
 
@@ -31,8 +30,7 @@ El inventario identifica 23 conjuntos de datos (D-01 a D-23) y los ubica dentro 
 | Plan de despacho | D-11 | AI-03 | Existente | Último plan por estación, en memoria | Observado |
 | Evidencia | D-02, D-03 | AI-02 | Existente | Encuesta del 17 de agosto de 2026 (n=20) y entrevista a un controlador SITP, por rol | Observado (registro y documento interno no publicado «Guía Actividad 2, Ingeniería Aplicada», del Equipo TORNS, 2026; solo cifras agregadas) / NO CONFIRMADO (respuestas individuales y soporte de las notas) |
 
-<!-- reescribir Santiago -->
-Dos hallazgos del inventario condicionan el resto de la sección. Primero, la base SQLite de Label Studio (AP-08) está versionada en el repositorio público de AP-04 y contiene una cuenta de usuario con nombre, correo, teléfono y credencial (D-14, Observado; los valores no se reproducen). Segundo, el dataset de entrenamiento no está en el repositorio: las cifras de 3.694 imágenes de entrenamiento y 1.000 de validación constan en la salida del cuaderno de AP-04 (Observado), y su origen es el conjunto coco-person de Roboflow Universe con licencia MIT, entrenado el 15 de noviembre de 2025. Observado por declaración del dueño (1 de noviembre de 2026). Ese conjunto no contiene imágenes de estaciones, por lo que sus métricas no describen el desempeño en andén.
+Dos hallazgos del inventario condicionan el resto de esta sección. Primero, la base SQLite de Label Studio (AP-08) está versionada en el repositorio público de AP-04 y contiene una cuenta de usuario con nombre, correo, teléfono y credencial (D-14, Observado; los valores no se reproducen). Segundo, el dataset de entrenamiento no está en el repositorio: las cifras de 3.694 imágenes de entrenamiento y 1.000 de validación constan en la salida del cuaderno de AP-04 (Observado), y su origen es el conjunto coco-person de Roboflow Universe con licencia MIT, entrenado el 15 de noviembre de 2025, Observado por declaración del dueño (1 de noviembre de 2026). Ese conjunto no contiene imágenes de estaciones, de modo que sus métricas no describen el desempeño en andén.
 
 ## 3. Modelo de datos
 
@@ -40,15 +38,13 @@ Dos hallazgos del inventario condicionan el resto de la sección. Primero, la ba
 
 ![Modelo conceptual AS-IS](diagramas/E-02-conceptual-as-is.png)
 
-<!-- reescribir Santiago -->
-El modelo gira alrededor de la estación. Cada estación tiene una cámara, y la cámara comparte identificador con su fuente de video. La fuente produce mediciones de conteo a partir de los pesos del modelo; la medición actualiza el estado de la estación, y el estado conserva un único plan de despacho que recomienda un modelo de tren (Observado). En el frente comercial, el visitante envía leads sin control de duplicados. Cliente, Contrato, Factura, Proveedor comercial y Empleado se dibujan con trazo punteado porque no existen (Observado; tipo Brecha).
+El modelo conceptual gira alrededor de la estación. Cada estación tiene una cámara, y la cámara comparte identificador con su fuente de video. La fuente produce mediciones de conteo a partir de los pesos del modelo. La medición actualiza el estado de la estación, y el estado conserva un único plan de despacho que recomienda un modelo de tren (Observado). En el frente comercial, el visitante envía leads sin control de duplicados. Cliente, Contrato, Factura, Proveedor comercial y Empleado se dibujan con trazo punteado porque no existen (Observado; tipo Brecha).
 
 ### 3.2 Modelo lógico AS-IS
 
 ![Modelo lógico AS-IS](diagramas/E-03-logico-as-is.png)
 
-<!-- reescribir Santiago -->
-El modelo lógico se reconstruyó desde los esquemas de AP-03 y AP-01 porque el producto no tiene base de datos (Observado). Las relaciones existen solo por convención de identificador y no como claves foráneas. Tres rasgos lo definen: el plan de despacho se indexa por estación y guarda solo el último; la métrica de detección se indexa por video y guarda solo la última; y el estado inicial usa la clave de catálogo station_sur mientras la actualización por cámara usa station_sur_usb0, lo que crea dos registros para la misma estación (PI-05, Observado en una copia aislada del servicio). El esquema de la hoja de leads tiene las columnas timestamp, nombre, email, organizacion, mensaje y origen. Observado por declaración del dueño (1 de noviembre de 2026).
+El modelo lógico se reconstruyó desde los esquemas de AP-03 y AP-01 porque el producto no tiene base de datos (Observado). Las relaciones existen solo por convención de identificador y no como claves foráneas. Tres rasgos lo definen. El plan de despacho se indexa por estación y guarda solo el último. La métrica de detección se indexa por video y guarda solo la última. El estado inicial usa la clave de catálogo station_sur mientras la actualización por cámara usa station_sur_usb0, lo que crea dos registros para la misma estación (PI-05, Observado en una copia aislada del servicio). El esquema de la hoja de leads tiene las columnas timestamp, nombre, email, organizacion, mensaje y origen, Observado por declaración del dueño (1 de noviembre de 2026).
 
 ### 3.3 Modelo conceptual y lógico TO-BE
 
@@ -56,10 +52,12 @@ El modelo lógico se reconstruyó desde los esquemas de AP-03 y AP-01 porque el 
 
 ![Modelo lógico TO-BE](diagramas/E-03-logico-to-be.png)
 
-<!-- reescribir Santiago -->
-La propuesta (Objetivo TO-BE) no fija tecnología de base de datos. Separa el lead en organización, contacto, lead, autorización del titular y solicitud de derechos; normaliza línea, estación, fuente de video y modelo de tren; y convierte la medición y el plan en registros históricos. La observación de conteo la produce AP-03b, componente de inferencia continua, mediante el evento IT-07; la recomendación de despacho la produce AP-03a, la API de despacho, y referencia la observación de la que se deriva. Ambos componentes son la separación de AP-03 que propone la Arquitectura de Aplicaciones, los dos con marca Objetivo TO-BE: AP-03b como inferencia desacoplada de la consola y AP-03a como API de despacho. El evento IT-07 no transporta total_objects, que el modelo lógico conserva como dato derivado en observacion_conteo. La versión del modelo queda como entidad propia para trazar qué pesos produjeron cada conteo. Cliente, Contrato, Acta del piloto y Factura son entidades condicionales (Objetivo TO-BE): se dibujan con trazo punteado en el modelo conceptual TO-BE y se crean solo si la hoja de ruta incluye un piloto pagado. Están ligadas a P-08, Gestión financiera y facturación. Colaborador y Contrato laboral son también entidades condicionales (Objetivo TO-BE), ligadas a P-09, Gestión del talento humano, y se crean solo cuando haya personal que vincular. P-08 y P-09 fueron aprobados por Santiago el 1 de noviembre de 2026. Ambas entidades contienen datos personales; son sensibles los atributos de salud (Ley 1581 de 2012, art. 5); la afiliación a seguridad social es obligatoria para quien tenga contrato de trabajo y el empleador responde por el pago de los aportes (Ley 100 de 1993, arts. 15 y 22); para teletrabajadores, los aportes se pagan mediante PILA (Decreto 1072 de 2015, art. 2.2.1.5.7); su clasificación como dato sensible queda NO CONFIRMADO. Los identificadores de tablas y atributos se escriben sin tilde por convención técnica.
+La propuesta (Objetivo TO-BE) no fija tecnología de base de datos. Separa el lead en organización, contacto, lead, autorización del titular y solicitud de derechos. Normaliza línea, estación, fuente de video y modelo de tren. Convierte la medición y el plan en registros históricos.
 
-<!-- reescribir Santiago -->
+La observación de conteo la produce AP-03b, componente de inferencia continua, mediante el evento IT-07. La recomendación de despacho la produce AP-03a, la API de despacho, y referencia la observación de la que se deriva. Ambos componentes son la separación de AP-03 que propone la Arquitectura de Aplicaciones, los dos con marca Objetivo TO-BE: AP-03b como inferencia desacoplada de la consola y AP-03a como API de despacho. El evento IT-07 no transporta total_objects, que el modelo lógico conserva como dato derivado en observacion_conteo. La versión del modelo queda como entidad propia para trazar qué pesos produjeron cada conteo.
+
+Cliente, Contrato, Acta del piloto y Factura son entidades condicionales (Objetivo TO-BE): se dibujan con trazo punteado en el modelo conceptual TO-BE y se crean solo si la hoja de ruta incluye un piloto pagado. Están ligadas a P-08, Gestión financiera y facturación. Colaborador y Contrato laboral son también entidades condicionales (Objetivo TO-BE), ligadas a P-09, Gestión del talento humano, y se crean solo cuando haya personal que vincular. P-08 y P-09 fueron aprobados el 1 de noviembre de 2026. Ambas entidades contienen datos personales. Son sensibles los atributos de salud (Ley 1581 de 2012, art. 5). La afiliación a seguridad social es obligatoria para quien tenga contrato de trabajo y el empleador responde por el pago de los aportes (Ley 100 de 1993, arts. 15 y 22). Para teletrabajadores, los aportes se pagan mediante PILA (Decreto 1072 de 2015, art. 2.2.1.5.7). Su clasificación como dato sensible queda NO CONFIRMADO. Los identificadores de tablas y atributos se escriben sin tilde por convención técnica.
+
 Reglas de integridad propuestas (Objetivo TO-BE): un identificador de estación único en catálogo, estado e interfaz; cada fuente de video pertenece a una sola estación; y ninguna recomendación se calcula a partir de un conteo manual sin autenticación ni rango válido. El contenido de label_counts queda abierto hasta confirmar si incluye etiquetas distintas de person.
 
 ## 4. Flujos de información
@@ -88,17 +86,14 @@ Los flujos se agrupan en tres familias: técnico (FL-T, procesos P-03 y P-04), c
 
 ![Flujo técnico FL-T](diagramas/E-04-FL-T-tecnico.png)
 
-<!-- reescribir Santiago -->
 En el flujo técnico el dato nace como imagen y termina como número. AP-03 captura el fotograma, lo pasa por los pesos de AP-05, obtiene un conteo de personas y recalcula el plan de la estación asociada a la cámara. AP-02 recibe el video anotado, las métricas y el catálogo de fuentes, y puede forzar un plan con un conteo manual. Ningún resultado sobrevive a un reinicio del proceso (Observado). La cadena de entrenamiento es manual: AP-08 exporta etiquetas, AP-04 entrena y produce best.pt, y alguien copia ese archivo como my_model.pt para que AP-03 lo lea (Observado).
 
 ![Flujo comercial FL-C](diagramas/E-04-FL-C-comercial.png)
 
-<!-- reescribir Santiago -->
-El flujo comercial es el único que lleva datos personales de terceros hacia un proveedor externo. El formulario de AP-01 no muestra aviso ni casilla de autorización y envía el lead a AP-06 (Observado). El texto del formulario promete una respuesta por el mismo canal, pero hoy los leads solo se recopilan. Observado por declaración del dueño (1 de noviembre de 2026). Por eso la respuesta al lead aparece en el diagrama como Objetivo TO-BE y no como un flujo existente.
+El flujo comercial es el único que lleva datos personales de terceros hacia un proveedor externo. El formulario de AP-01 no muestra aviso ni casilla de autorización y envía el lead a AP-06 (Observado). El texto del formulario promete una respuesta por el mismo canal, pero hoy los leads solo se recopilan, Observado por declaración del dueño (1 de noviembre de 2026). Por eso la respuesta al lead aparece en el diagrama como Objetivo TO-BE y no como un flujo existente.
 
 ![Flujo de evidencia FL-E](diagramas/E-04-FL-E-evidencia.png)
 
-<!-- reescribir Santiago -->
 En el flujo de evidencia se publica solo lo agregado. Las respuestas individuales de la encuesta y las notas de la entrevista no están en el repositorio (NO CONFIRMADO).
 
 ## 5. Problemas de información

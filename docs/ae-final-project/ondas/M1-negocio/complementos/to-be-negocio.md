@@ -1,6 +1,6 @@
-# Arquitectura de Negocio TO-BE de LIRN (borrador de apoyo para el Punto 5)
+# Arquitectura de Negocio TO-BE de LIRN (apoyo para el Punto 5)
 
-Versión 0.2, 1 de noviembre de 2026 (cambios frente a 0.1 al final del documento). Borrador de apoyo; Santiago redacta el texto final. Todo lo descrito como estado futuro es Objetivo TO-BE. Los puntos de partida citan su marca AS-IS. No se fijan cifras, costos, fechas de mercado ni clientes: donde el taller pida una meta, queda NO CONFIRMADO hasta que el Roadmap de Transformación la defina.
+Versión 0.2, 1 de noviembre de 2026 (cambios frente a 0.1 al final del documento). Anexo de apoyo a la Arquitectura de Transformación. Todo lo descrito como estado futuro es Objetivo TO-BE. Los puntos de partida citan su marca AS-IS. No se fijan cifras, costos, fechas de mercado ni clientes. Donde el taller pida una meta, queda NO CONFIRMADO hasta que el Roadmap de Transformación la defina.
 
 Alcance según el enunciado del taller: capacidades, procesos, servicios, información y recursos tecnológicos del negocio TO-BE. Información y tecnología se describen aquí solo como requisito de negocio; el detalle está en la Arquitectura de Datos (Punto 2) y en la Arquitectura Tecnológica (Punto 4).
 
@@ -12,10 +12,9 @@ Nombres de superficies aprobados por Santiago: AP-01 Sitio web comercial de LIRN
 
 Punto de partida: misión y visión aprobadas (Observado); cero clientes y sin piloto (Observado); equipo de una persona (Observado).
 
-<!-- reescribir Santiago -->
-Estado objetivo: LIRN, formalizada como S.A.S., ofrece TORNS a un operador B2B o una entidad B2G bajo un primer piloto pagado, con medición de demanda en estación, recomendación de despacho que decide el centro de control, datos personales tratados bajo la Ley 1581 y evidencia trazable de resultados. Objetivo TO-BE, ligado a OE-05.
+Estado objetivo: LIRN, formalizada como S.A.S., ofrece TORNS a un operador B2B o una entidad B2G bajo un primer piloto pagado, con medición de demanda en estación, recomendación de despacho que decide el centro de control, datos personales tratados bajo la Ley 1581 y evidencia trazable de resultados. Marca: Objetivo TO-BE, ligado a OE-05.
 
-Principios que gobiernan el TO-BE: PN-01 a PN-08 del catálogo de principios (borrador). En especial PN-02 (afirmar solo lo evidenciado), PN-04 (la decisión de despacho es del operador) y PN-08 (crecer por capacidad).
+Los principios que gobiernan este estado objetivo son PN-01 a PN-08 del catálogo de principios. Gobiernan de manera particular PN-02 (afirmar solo lo evidenciado), PN-04 (la decisión de despacho es del operador) y PN-08 (crecer por capacidad).
 
 ## 2. Capacidades TO-BE
 
@@ -48,8 +47,7 @@ Se conservan P-01 a P-05 y se proponen procesos nuevos solo donde una capacidad 
 | P-08 Gestión financiera y facturación (aprobado por Santiago el 1 de noviembre de 2026) | Apoyo | Facturación electrónica, contabilidad y contratos comerciales. Entradas: NIT y matrícula de C-01 y contratos de P-06 | CAP-09 |
 | P-09 Gestión del talento humano (aprobado por Santiago el 1 de noviembre de 2026; resulta de separar P-08) | Apoyo | Vinculación, nómina, seguridad social y desvinculación (fuente normativa de seguridad social y afiliaciones NO CONFIRMADO); trata datos personales de empleados bajo la Ley 1581. Entradas: necesidad de personal y NIT de C-01 | CAP-10 |
 
-<!-- reescribir Santiago -->
-Cadena de valor TO-BE: las actividades primarias "Propuesta, contrato y piloto pagado" y "Soporte técnico y mejora con el operador", que hoy no tienen proceso (Observado), quedan cubiertas por P-06 y por P-04 extendido con SN-05, respectivamente (Objetivo TO-BE). P-07 habilita CAP-07; P-08 habilita CAP-09 y P-09 habilita CAP-10.
+En la cadena de valor TO-BE, las actividades primarias "Propuesta, contrato y piloto pagado" y "Soporte técnico y mejora con el operador", que hoy no tienen proceso (Observado), quedan cubiertas por P-06 y por P-04 extendido con SN-05, respectivamente (Objetivo TO-BE). P-07 habilita CAP-07. P-08 habilita CAP-09. P-09 habilita CAP-10.
 
 ## 4. Servicios de negocio TO-BE
 
@@ -63,8 +61,7 @@ Cadena de valor TO-BE: las actividades primarias "Propuesta, contrato y piloto p
 
 Sin precio, duración ni número de estaciones: NO CONFIRMADO, lo define el Roadmap de Transformación.
 
-<!-- reescribir Santiago -->
-Nota sobre el desempeño del modelo (Observado): el recall de 0,55 es la métrica de entrenamiento de la última época, medida sobre 1.000 imágenes de validación del COCO Person Dataset de Roboflow, sin imágenes de TransMilenio ni de estaciones; el entrenamiento se realizó el 15 de noviembre de 2025, Observado por declaración del dueño (1 de noviembre de 2026). No anticipa el desempeño en plataforma; por eso SN-04 y P-06 exigen la evaluación previa con video de estación.
+Nota sobre el desempeño del modelo (Observado): el recall de 0,55 es la métrica de entrenamiento de la última época, medida sobre 1.000 imágenes de validación del conjunto COCO Person Dataset de Roboflow, sin imágenes de TransMilenio ni de estaciones. El entrenamiento se realizó el 15 de noviembre de 2025, Observado por declaración del dueño (1 de noviembre de 2026). Esa métrica no anticipa el desempeño en andén. Por eso SN-04 y P-06 exigen la evaluación previa con video de estación.
 
 ## 5. Información requerida por el negocio TO-BE (insumo para la Arquitectura de Datos)
 
@@ -88,8 +85,7 @@ La selección y el diseño son de Aplicaciones y Tecnología; aquí solo se decl
 
 ## 7. Organización TO-BE
 
-<!-- reescribir Santiago -->
-Punto de partida: una persona, Johel Santiago Arias, autor único, cubre las cinco áreas funcionales (Diseñado AS-IS). Estado objetivo: las áreas existen como roles; un cargo nuevo solo se justifica por una capacidad ausente (CAP-07, CAP-09, CAP-10). No se fija número de personas ni fecha: NO CONFIRMADO.
+Punto de partida: una persona, Johel Santiago Arias, autor único, cubre las cinco áreas funcionales (Diseñado AS-IS). Estado objetivo: las áreas existen como roles. Un cargo nuevo solo se justifica por una capacidad ausente (CAP-07, CAP-09, CAP-10). No se fija número de personas ni fecha: NO CONFIRMADO.
 
 ## 8. Brechas de negocio AS-IS a TO-BE (insumo para el Gap Analysis del Roadmap de Transformación)
 

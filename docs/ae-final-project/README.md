@@ -27,61 +27,7 @@ La carpeta [proceso/](proceso/) guarda evidencia de control de calidad que no fo
 
 ## Secciones para reescritura de Santiago
 
-Secciones con prosa de borrador que Santiago reescribe con su voz:
-
-- Informe: capítulos 2 (Introducción), 9 (Conclusiones) y 10 (Recomendaciones), la sección 8.1 (Situación objetivo TO-BE), la prosa de nube del capítulo 7 y la recomendación 6. Cada bloque abre y cierra con una marca.
-- M5: [03-matriz-priorizacion](ondas/M5-transformacion/03-matriz-priorizacion.md) l.22 y [08-gestion-cambio](ondas/M5-transformacion/08-gestion-cambio.md) l.7.
-
-Marcas `reescribir Santiago` presentes en el repositorio (48, archivo:línea):
-
-- informe/plan-transformacion-empresarial.md:178
-- informe/plan-transformacion-empresarial.md:182
-- informe/plan-transformacion-empresarial.md:285
-- informe/plan-transformacion-empresarial.md:296
-- informe/plan-transformacion-empresarial.md:31
-- informe/plan-transformacion-empresarial.md:329
-- informe/plan-transformacion-empresarial.md:333
-- informe/plan-transformacion-empresarial.md:39
-- informe/plan-transformacion-empresarial.md:425
-- informe/plan-transformacion-empresarial.md:437
-- informe/plan-transformacion-empresarial.md:441
-- informe/plan-transformacion-empresarial.md:448
-- informe/plan-transformacion-empresarial.md:451
-- ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:21
-- ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:3
-- ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:71
-- ondas/M1-negocio/complementos/apoyo-roadmap-transformacion.md:8
-- ondas/M1-negocio/complementos/cadena-de-valor.md:31
-- ondas/M1-negocio/complementos/catalogo-principios.md:5
-- ondas/M1-negocio/complementos/catalogo-principios.md:6
-- ondas/M1-negocio/complementos/to-be-negocio.md:15
-- ondas/M1-negocio/complementos/to-be-negocio.md:51
-- ondas/M1-negocio/complementos/to-be-negocio.md:66
-- ondas/M1-negocio/complementos/to-be-negocio.md:91
-- ondas/M2-datos/entregable-punto-2.md:101
-- ondas/M2-datos/entregable-punto-2.md:11
-- ondas/M2-datos/entregable-punto-2.md:34
-- ondas/M2-datos/entregable-punto-2.md:43
-- ondas/M2-datos/entregable-punto-2.md:50
-- ondas/M2-datos/entregable-punto-2.md:59
-- ondas/M2-datos/entregable-punto-2.md:62
-- ondas/M2-datos/entregable-punto-2.md:91
-- ondas/M2-datos/entregable-punto-2.md:96
-- ondas/M3-aplicaciones/entregable-punto-3.md:103
-- ondas/M3-aplicaciones/entregable-punto-3.md:108
-- ondas/M3-aplicaciones/entregable-punto-3.md:12
-- ondas/M3-aplicaciones/entregable-punto-3.md:136
-- ondas/M3-aplicaciones/entregable-punto-3.md:169
-- ondas/M3-aplicaciones/entregable-punto-3.md:178
-- ondas/M3-aplicaciones/entregable-punto-3.md:33
-- ondas/M3-aplicaciones/entregable-punto-3.md:66
-- ondas/M3-aplicaciones/entregable-punto-3.md:80
-- ondas/M3-aplicaciones/entregable-punto-3.md:9
-- ondas/M4-tecnologia/anexo-nube-azure-gcp.md:199
-- ondas/M4-tecnologia/anexo-nube-azure-gcp.md:216
-- ondas/M4-tecnologia/anexo-nube-azure-gcp.md:224
-- ondas/M4-tecnologia/entregable-punto-4.md:159
-- ondas/M4-tecnologia/entregable-punto-4.md:7
+Las marcas `reescribir Santiago` del informe único (versión 1.1, 5 de noviembre de 2026) y de los anexos de M1 a M4 están cerradas. No quedan marcas de ese tipo en el repositorio.
 
 ## Fuente de coherencia
 

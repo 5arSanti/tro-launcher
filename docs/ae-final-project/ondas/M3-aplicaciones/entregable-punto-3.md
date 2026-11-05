@@ -6,11 +6,9 @@ Marcas usadas: **Observado** (presente en código, configuración o declaración
 
 ## 3.1 Contexto
 
-<!-- reescribir Santiago -->
-LIRN tiene un único integrante, Johel Santiago Arias, que ejerce los roles de Dirección, Comercial, Producto, Operación y Calidad (Observado). Por eso el área usuaria de cada aplicación se expresa como rol del fundador. Ninguna aplicación tiene usuarios de un operador de transporte, porque no existe piloto ni contrato (Observado).
+LIRN tiene un único integrante, Johel Santiago Arias, que ejerce los roles de Dirección, Comercial, Producto, Operación y Calidad (Observado). El área usuaria de cada aplicación se expresa, por eso, como rol del fundador. Ninguna aplicación tiene usuarios de un operador de transporte, porque no existe piloto ni contrato (Observado).
 
-<!-- reescribir Santiago -->
-Solo el sitio web comercial está publicado, mediante GitHub Pages. La consola de operación y el servicio de detección corren únicamente en el equipo local del fundador (Observado). Azure y GCP se mantienen como alternativas de despliegue, con decisión pendiente (Objetivo TO-BE; alternativas declaradas por el dueño el 1 de noviembre de 2026; la Arquitectura Tecnológica estima costos de lista para dos escenarios y recomienda GCP; la elección queda como decisión del dueño).
+Solo el sitio web comercial está publicado, mediante GitHub Pages. La consola de operación y el servicio de detección corren únicamente en el equipo local del fundador (Observado). Azure y GCP se mantienen como alternativas de despliegue, con decisión pendiente (Objetivo TO-BE; alternativas declaradas por el dueño el 1 de noviembre de 2026). La Arquitectura Tecnológica estima costos de lista para dos escenarios y recomienda GCP. La elección queda como decisión del dueño.
 
 ## 3.2 Inventario de aplicaciones
 
@@ -30,7 +28,6 @@ Solo el sitio web comercial está publicado, mediante GitHub Pages. La consola d
 | AP-12 | Google Fonts (fonts.googleapis.com y fonts.gstatic.com, enlazados en AP-01) | Entrega la tipografía Manrope al navegador del visitante; al cargar el sitio, el navegador envía la IP del visitante a Google (flujo F-03 de Datos) | Visitantes externos (consumo indirecto) | Tercero SaaS (Google), servicio externo | En uso | Observado |
 | AP-13 | Google Forms (formulario de la encuesta de validación) | Recoge las respuestas de la encuesta de validación (flujo F-14 de Datos); formulario «Tu experiencia diaria en el transporte masivo de Bogotá». Sigue en uso. Observado por declaración del dueño (1 de noviembre de 2026). El soporte de la entrevista (F-15) no está confirmado | Rol de Dirección y Producto (fundador) | Tercero SaaS (Google) | En uso | Observado por declaración del dueño (1 de noviembre de 2026) |
 
-<!-- reescribir Santiago -->
 Observaciones sobre el inventario:
 
 - El servicio de detección admite como fuente un archivo de video, una cámara USB o una URL RTSP (Observado en código). Se han hecho pruebas con cámaras USB integradas en portátiles (usb0) y con cámaras USB externas (usb1). Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO.
@@ -63,7 +60,6 @@ Observaciones sobre el inventario:
 
 ![Mapa de integraciones AS-IS](diagramas/E6b-integraciones-as-is.png)
 
-<!-- reescribir Santiago -->
 Lectura del mapa:
 
 - Ninguna integración conecta con un sistema de un operador de transporte. Las integraciones con terceros son comerciales o de apoyo: la hoja con Apps Script, Google Fonts y Google Forms. Marca: Observado; para Google Forms, Observado por declaración del dueño (1 de noviembre de 2026).
@@ -77,8 +73,7 @@ Lectura del mapa:
 
 ## 3.4 Problemas de aplicaciones
 
-<!-- reescribir Santiago -->
-Criterio de severidad: Alta si afecta el cumplimiento legal, la seguridad o la capacidad central de conteo y despacho; Media si limita la continuidad, el piloto o la integración; Baja si es de consistencia o deuda técnica sin efecto operativo. Los hallazgos se reportan en el AS-IS; este proyecto no modifica código. PR-08 y PR-12 se clasifican como Alta: PR-08 afecta el despacho, porque la consulta del plan devuelve "no encontrado" (problema de información PI-05 de la Arquitectura de Datos), y PR-12 es un problema de seguridad.
+Criterio de severidad: Alta si afecta el cumplimiento legal, la seguridad o la capacidad central de conteo y despacho; Media si limita la continuidad, el piloto o la integración; Baja si es de consistencia o deuda técnica sin efecto operativo. Los hallazgos se reportan en el AS-IS. Este proyecto no modifica código. PR-08 y PR-12 se clasifican como Alta. PR-08 afecta el despacho, porque la consulta del plan devuelve "no encontrado" (problema de información PI-05 de la Arquitectura de Datos). PR-12 es un problema de seguridad.
 
 | ID | Problema | Categoría | Aplicaciones | Marca | Severidad | Propuesta |
 |---|---|---|---|---|---|---|
@@ -100,13 +95,11 @@ Criterio de severidad: Alta si afecta el cumplimiento legal, la seguridad o la c
 | PR-16 | Cámaras físicas sin prueba documentada: el código soporta USB y RTSP, el dueño declara pruebas con usb0 (cámaras integradas en portátiles) y usb1 (cámaras USB externas) con fechas declaradas y sin resultados registrados | Evidencia (adicional) | AP-03 | Observado por declaración del dueño (2 de noviembre de 2026): pruebas con usb0 y usb1 los días 16, 17, 18 y 20 de noviembre de 2025, en varios portátiles y PC con cámaras externas; resultados NO CONFIRMADO | Media | Insumo para el Roadmap de Transformación (sesión de prueba documentada) |
 | PR-17 | Leads recopilados sin respuesta ni seguimiento: el interés recibido no se convierte en gestión comercial | Proceso manual inexistente (adicional) | AP-06 | Observado por declaración del dueño (1 de noviembre de 2026) | Media | N-01 |
 
-<!-- reescribir Santiago -->
 No se observan aplicaciones duplicadas. Lo que se duplica es el texto del producto, presente en el sitio y en la consola con mensajes distintos (PR-10).
 
 ## 3.5 Propuesta de interoperabilidad (Objetivo TO-BE)
 
-<!-- reescribir Santiago -->
-Todo este apartado es Objetivo TO-BE. Horizonte, prioridad y costo los define el Roadmap de Transformación con insumos de la Arquitectura Tecnológica; aquí no se fijan cifras.
+Todo este apartado es Objetivo TO-BE. Horizonte, prioridad y costo los define el Roadmap de Transformación con insumos de la Arquitectura Tecnológica. Aquí no se fijan cifras.
 
 ### Aplicaciones nuevas
 
@@ -133,8 +126,7 @@ Todo este apartado es Objetivo TO-BE. Horizonte, prioridad y costo los define el
 
 ### Partición del servicio de detección
 
-<!-- reescribir Santiago -->
-Hoy el servicio de detección entrega video, infiere y calcula el despacho dentro del mismo ciclo (Observado). Se propone separarlo en dos servicios lógicos; la Arquitectura Tecnológica decide cómo se despliegan.
+Hoy el servicio de detección entrega video, infiere y calcula el despacho dentro del mismo ciclo (Observado). Se propone separarlo en dos servicios lógicos. La Arquitectura Tecnológica decide cómo se despliegan.
 
 | Servicio TO-BE | Responsabilidad | Entradas | Salidas |
 |---|---|---|---|
@@ -166,8 +158,7 @@ Contrato entre ambos servicios (IT-07):
 
 ### Dependencias lógicas
 
-<!-- reescribir Santiago -->
-N-02 precede a IT-06. N-04 precede a cualquier análisis histórico. AP-03b precede al uso de varias cámaras. N-06 se implanta después de la formalización legal ante Cámara de Comercio y DIAN. N-07 se implanta solo cuando haya personal que vincular y después de la formalización legal (C-01). IT-06 solo procede con un operador real y un acuerdo firmado; hoy no hay piloto.
+N-02 precede a IT-06. N-04 precede a cualquier análisis histórico. AP-03b precede al uso de varias cámaras. N-06 se implanta después de la formalización legal ante Cámara de Comercio y DIAN. N-07 se implanta solo cuando haya personal que vincular y después de la formalización legal (C-01). IT-06 solo procede con un operador real y un acuerdo firmado. Hoy no hay piloto.
 
 ![Contexto de aplicaciones TO-BE](diagramas/E6c-contexto-to-be.png)
 
@@ -175,10 +166,11 @@ N-02 precede a IT-06. N-04 precede a cualquier análisis histórico. AP-03b prec
 
 ## 3.6 Relación con las demás arquitecturas
 
-<!-- reescribir Santiago -->
-- Negocio: la autenticación con roles de operador en la consola y en la API, el registro versionado del modelo y la facturación quedan recogidos como necesidades de aplicación en el TO-BE de negocio, con el registro versionado del modelo ligado a P-03 (CAP-04 y CAP-08), la facturación ligada a P-08 y CAP-09 (N-06) y la gestión de personal y nómina ligada a P-09 y CAP-10 (N-07), procesos aprobados por Santiago el 1 de noviembre de 2026.
-- Datos: los flujos F-01 a F-17 se cruzaron con este mapa. El evento IT-07 no transporta total_objects, porque es un dato derivado que el modelo lógico conserva en observacion_conteo.
-- Tecnología: la cola de IT-07, el proveedor de identidad y los entornos separados de AP-03a y AP-03b se definen en la Arquitectura Tecnológica.
+Negocio: la autenticación con roles de operador en la consola y en la API, el registro versionado del modelo y la facturación quedan recogidos como necesidades de aplicación en el TO-BE de negocio. El registro versionado del modelo se liga a P-03 (CAP-04 y CAP-08). La facturación se liga a P-08 y CAP-09 (N-06). La gestión de personal y nómina se liga a P-09 y CAP-10 (N-07). Esos procesos fueron aprobados el 1 de noviembre de 2026.
+
+Datos: los flujos F-01 a F-17 se cruzaron con este mapa. El evento IT-07 no transporta total_objects, porque es un dato derivado que el modelo lógico conserva en observacion_conteo.
+
+Tecnología: la cola de IT-07, el proveedor de identidad y los entornos separados de AP-03a y AP-03b se definen en la Arquitectura Tecnológica.
 
 ### Cierre de diferencias con otras arquitecturas
 

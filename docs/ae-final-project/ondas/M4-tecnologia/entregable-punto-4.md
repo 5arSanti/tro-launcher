@@ -4,7 +4,6 @@
 
 LIRN no opera servidores ni GPU de producción. TORNS es un prototipo que se ejecuta en la estación de trabajo del fundador y en servicios de terceros. Marca: Observado (el código no contiene despliegue de backend). La inexistencia de despliegues fuera de la estación y de respaldos: Observado por declaración del dueño (1 de noviembre de 2026).
 
-<!-- reescribir Santiago -->
 La Arquitectura Tecnológica traduce las necesidades de la Arquitectura de Aplicaciones y de la Arquitectura de Datos en nodos de despliegue, de modo que cada componente TO-BE tenga dónde ejecutarse, con qué seguridad y con qué respaldo. Marca: Objetivo TO-BE.
 
 ## 2. Inventario tecnológico AS-IS
@@ -156,7 +155,6 @@ Marca de toda la sección: Objetivo TO-BE.
 3. Autenticación entre AP-03b, la cola y AP-03a.
 4. Gestor de secretos, registro de accesos y retiro de datos personales de repositorios públicos conforme a la Ley 1581 de 2012.
 
-<!-- reescribir Santiago -->
 La propuesta prioriza que el prototipo deje de depender de una sola máquina y una sola persona, antes que ampliar capacidad. Marca: Objetivo TO-BE.
 
 ## 6. Tabla de entornos
