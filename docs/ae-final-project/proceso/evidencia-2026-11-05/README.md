@@ -13,7 +13,7 @@ No forma parte del informe único. Control de calidad del taller.
 
 Código aportado por el dueño el 5 de noviembre de 2026: `apps-script-contactos.gs`.
 
-Endpoint declarado: `https://script.google.com/macros/s/AKfycby3czXTEW_MbjC5j3x3yB9CQQa-jjkX42UA_KpH_T0GrLBaHk1wy3QeYCU2vy6fJ-Rt/exec`
+Receptor declarado: Apps Script configurado en `VITE_CONTACT_ENDPOINT`. La dirección del despliegue no se reproduce. Marca: Observado por declaración del dueño (5 de noviembre de 2026).
 
 Cotejo con `lirn-web-main/src/lib/submitContact.ts`: el cliente envía JSON en texto plano con `nombre`, `email`, `organizacion`, `mensaje` y `origen`; el script escribe las mismas columnas más `timestamp` en la hoja `Contactos`. El cliente trata HTTP 200 como éxito y no lee el cuerpo JSON.
 
@@ -40,3 +40,9 @@ El autor confirmó el 5 de noviembre de 2026 que el curso usa TOGAF Standard, 10
 ## 6. Cámaras USB
 
 El autor confirmó el 5 de noviembre de 2026 que no hay resultados documentados de las pruebas usb0 y usb1 de noviembre de 2025. Las fechas de prueba siguen Observadas por declaración del 2 de noviembre de 2026. No se afirma éxito ni fallo de detección.
+
+## 7. Estado integrado del 6 de noviembre de 2026
+
+- Foto de tarjeta de códigos: versión actual anonimizada mediante bloque opaco, integrada en el PR #30. Marca: Observado (archivo vigente).
+- Historial de Git: la foto original permanece accesible en revisiones anteriores. Santiago decidió expresamente conservar el historial el 6 de noviembre de 2026. Estado: riesgo aceptado por el dueño, no eliminado; no se reescribe Git. Marca: Observado por declaración del dueño (aceptación).
+- Apps Script: los controles del despliegue contra envíos indebidos, incluida la restricción de acceso, la limitación de frecuencia y la protección contra automatización, quedan NO CONFIRMADO. Retirar la dirección de la documentación no mitiga por sí solo el riesgo. En esta revisión no se hacen peticiones al receptor ni se cambian sus controles o despliegues.

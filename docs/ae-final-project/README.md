@@ -6,7 +6,7 @@ LIRN es la firma. TORNS es el único producto. TORNS es un prototipo aplicado. N
 
 El documento final del taller es el informe único **Plan de Transformación Empresarial**:
 
-- Word: [informe/plan-transformacion-empresarial.docx](informe/plan-transformacion-empresarial.docx), generado desde el Markdown con 19 figuras (5 de noviembre de 2026, versión 1.1).
+- Word: [informe/plan-transformacion-empresarial.docx](informe/plan-transformacion-empresarial.docx), generado desde el Markdown con 19 figuras (6 de noviembre de 2026, versión 1.2).
 - Markdown fuente: [informe/plan-transformacion-empresarial.md](informe/plan-transformacion-empresarial.md).
 
 Para regenerar el Word desde `informe/`: `pandoc plan-transformacion-empresarial.md --resource-path=. -o plan-transformacion-empresarial.docx` y fijar la propiedad de autor en Johel Santiago Arias.
@@ -27,7 +27,7 @@ La carpeta [proceso/](proceso/) guarda evidencia de control de calidad que no fo
 
 ## Secciones para reescritura de Santiago
 
-Las marcas `reescribir Santiago` del informe único (versión 1.1, 5 de noviembre de 2026) y de los anexos de M1 a M4 están cerradas. No quedan marcas de ese tipo en el repositorio.
+Las marcas `reescribir Santiago` del informe único (versión 1.2, 6 de noviembre de 2026) y de los anexos de M1 a M4 están cerradas. No quedan marcas de ese tipo en el repositorio.
 
 ## Fuente de coherencia
 

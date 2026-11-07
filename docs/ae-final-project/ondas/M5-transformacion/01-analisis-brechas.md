@@ -29,7 +29,7 @@
 | B-T05 | Tecnología | Publicación y leads en cuentas de GitHub y Google | Observado | Espejo de repositorios y N-01 | Plan de continuidad | RT-10 | Completo |
 | B-T06 | Tecnología | Disco de la única estación cerca de su capacidad y equipos obsoletos | Observado por declaración del dueño (1 de noviembre de 2026) | Almacén de objetos fuera de la estación y GPU bajo demanda | Retiro de duplicados y migración de artefactos | RT-03 y RT-13 | Completo |
 
-Totales: 26 brechas (Negocio 7, Datos 6, Aplicaciones 7, Tecnología 6). Los riesgos tecnológicos RT-01 a RT-13 quedan trazados a brechas de los cuatro dominios; las brechas B-T01 a B-T06 se trazan además a la tabla de entornos, a la cola IT-07 y al diagrama tecnológico TO-BE. IT-EQ-04: pruebas USB con fechas declaradas y sin resultados documentados (Observado por declaración del dueño, 5 de noviembre de 2026). Queda NO CONFIRMADO IT-RD-06 Segmentación, firewall o VPN (sin evidencia).
+Totales: 26 brechas (Negocio 7, Datos 6, Aplicaciones 7, Tecnología 6). Los riesgos tecnológicos RT-01 a RT-13 quedan trazados a brechas de los cuatro dominios; las brechas B-T01 a B-T06 se trazan además a la tabla de entornos, a la cola IT-07 y al diagrama tecnológico TO-BE. IT-EQ-04: pruebas USB con fechas declaradas y sin resultados documentados (Observado por declaración del dueño, 5 de noviembre de 2026). IT-RD-06: no existen segmentación, firewall ni VPN (Observado por declaración del dueño, 1 de noviembre de 2026, según el registro de empresa y el Punto 4).
 
 Correspondencia con las brechas de negocio del TO-BE de Negocio: B-N01 a B-N06 corresponden a G-N01 a G-N03, G-N05, G-N06 y G-N07; G-N04 se consolida en B-D01. B-N07 es una brecha adicional de M5.
 

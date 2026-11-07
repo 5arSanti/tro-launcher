@@ -91,7 +91,8 @@ function json_(payload) {
 Set the deploy URL in `lirn-web-main/.env.local` (never commit secrets):
 
 ```bash
-VITE_CONTACT_ENDPOINT=https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec
+# Receptor: Apps Script configurado en VITE_CONTACT_ENDPOINT
+VITE_CONTACT_ENDPOINT="<direccion-del-despliegue>"
 ```
 
 Rebuild or restart the dev server after changing env. The client helper `submitContact` sends:
