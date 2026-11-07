@@ -4,8 +4,8 @@ Base integrada: `d9f76c46ff5691dc46aa09abfb446408c30cd000` (PR #29 y #30), más 
 
 ## 1. Recuento y alcance
 
-- Antes: la cabecera histórica decía 218 apariciones y 202 pendientes; las filas reales eran **202: 173 pendientes y 29 cerradas**. No eran 202 pendientes vigentes.
-- Ahora: **178 filas de fuentes con limitaciones pendientes**, **9 cierres temáticos documentados**, **1 riesgo aceptado** y **1 decisión de selección aplazada**. Total de registros de seguimiento: **189**. Los cierres agrupan duplicados y no se comparan uno a uno con las 29 filas históricas.
+- Antes: el inventario anterior tenía **218 filas**; de ellas, **202 eran pendientes o cerradas (173 pendientes y 29 cerradas)** y 16 eran definiciones de la marca o títulos de sección. No eran 202 filas totales ni 202 pendientes vigentes.
+- Ahora: **178 filas de fuentes con limitaciones pendientes**, **9 cierres temáticos documentados**, **1 riesgo aceptado**, **1 exposición residual abierta** y **1 decisión de selección aplazada**. Total de registros de seguimiento: **190**. Los cierres agrupan duplicados y no se comparan uno a uno con las 29 filas históricas.
 - Control del barrido actual: **196 líneas con la marca**, **223 apariciones literales**; 178 líneas con limitaciones, 16 líneas de definición, regla o título y 2 antecedentes ya cerrados. Una línea puede contener varias marcas o varios hechos; las filas no equivalen a tareas únicas.
 - Cobertura: archivos de texto `.md`, `.csv`, `.mmd` y `.gs` en `docs/ae-final-project`, más `AGENTS.md`; se excluye este inventario para evitar recursión. Referencias relativas a `docs/ae-final-project`, salvo `AGENTS.md`, relativo a la raíz.
 - Los pendientes son limitaciones AS-IS o decisiones Objetivo TO-BE reconocidas, no solicitudes nuevas de evidencia ni afirmaciones de implementación. Se preservan las incertidumbres reales. La aceptación documental no requiere elegir nube ni resolver ahora la arquitectura futura.
@@ -33,6 +33,12 @@ Se retiran solicitudes de evidencia ya atendidas, incluidas las referencias anti
 |---|---|---|
 | `proceso/evidencia-2026-11-05/README.md:47` | Foto original en el historial de Git | Riesgo aceptado expresamente por Santiago el 6 de noviembre de 2026, no eliminado. No se reescribe el historial. La anonimización del archivo actual no impide recuperar el original en revisiones anteriores. |
 | `ondas/M4-tecnologia/anexo-nube-azure-gcp.md:215` | Selección de proveedor de nube | Azure y GCP siguen como alternativas Objetivo TO-BE. GCP es recomendación técnica del equipo. Selección pendiente, no aprobada, por decisión expresa del dueño; no es un bloqueo documental. |
+
+### Exposición residual abierta (no aceptada)
+
+| Referencia vigente | Asunto | Estado |
+|---|---|---|
+| `proceso/evidencia-2026-11-05/README.md:48` | Dirección histórica del receptor Apps Script (AP-06) en el historial de Git | Abierta. La dirección del despliegue sigue recuperable en una revisión anterior de la evidencia (commit b4f5ecb), aunque la versión vigente ya no la reproduce. No es un riesgo aceptado: la aceptación expresa del dueño del 6 de noviembre de 2026 cubre solo la foto original. Controles del despliegue (restricción de acceso, limitación de frecuencia, protección contra automatización): NO CONFIRMADO. Esta revisión no realiza escrituras de prueba ni rota el despliegue. La seguridad del canal no se presenta como cerrada; el tratamiento queda en PY-07 (Objetivo TO-BE). |
 
 ## 4. Limitaciones pendientes por referencia vigente
 
