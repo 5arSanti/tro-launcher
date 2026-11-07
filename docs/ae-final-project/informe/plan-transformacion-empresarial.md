@@ -420,7 +420,7 @@ LIRN seguirá siendo una organización pequeña. Deja de depender de una sola m�
 
 # 10. Recomendaciones
 
-1. Ejecutar PY-01 primero. Sin matrícula mercantil ni NIT no hay contrato ni factura. Mientras tanto, el Responsable del tratamiento es el fundador como persona natural, porque declara decidir sobre los datos (Ley 1581 de 2012, art. 3, lit. e); la constitución de la sociedad no le transfiere por sí sola los datos ya recolectados, y el cambio de Responsable debe definirse e informarse a los titulares.
+1. Ejecutar PY-01 primero. Sin matrícula mercantil ni NIT la futura sociedad no puede contratar ni facturar a su nombre; hoy esas actuaciones solo caben a nombre del fundador como persona natural. Mientras tanto, el Responsable del tratamiento es el fundador como persona natural, porque declara decidir sobre los datos (Ley 1581 de 2012, art. 3, lit. e); la constitución de la sociedad no le transfiere por sí sola los datos ya recolectados, y el cambio de Responsable debe definirse e informarse a los titulares.
 2. Publicar la política y el aviso de tratamiento, y pedir autorización, antes de seguir recibiendo leads. El formulario actual no cumple los artículos 5 a 7 del Decreto 1377 de 2013.
 3. Respaldar pesos, dataset y videos fuera de la estación de trabajo y probar la restauración. El disco está cerca de su capacidad y no hay copia verificada.
 4. Acordar video de estación con un operador, con tratamiento conforme a la Ley 1581 de 2012, antes de publicar cualquier métrica de desempeño en campo. El recall 0,55 es de entrenamiento, no de estación.
