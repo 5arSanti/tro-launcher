@@ -371,7 +371,7 @@ Se identifican 26 brechas en cuatro series: negocio (B-N), datos (B-D), aplicaci
 
 ## 8.4 Matriz de priorización
 
-Cada proyecto se valoró por impacto, complejidad y costo relativo, y por las dependencias que habilita. PY-01 tiene impacto alto y complejidad baja y habilita PY-03, PY-08, PY-09 y PY-10, por lo que va primero. PY-06 queda en prioridad 3 porque requiere un operador real. La matriz completa, con la justificación de cada valoración, está en el entregable «Matriz de priorización».
+Cada proyecto se valoró por impacto, complejidad y costo relativo, y por las dependencias que habilita. PY-01 tiene impacto alto y complejidad baja y habilita PY-08, PY-09 y PY-10, por lo que va primero. PY-06 queda en prioridad 3 porque requiere un operador real. La matriz completa, con la justificación de cada valoración, está en el entregable «Matriz de priorización».
 
 | Proyecto | Impacto | Complejidad | Costo relativo | Prioridad |
 |---|---|---|---|---|
