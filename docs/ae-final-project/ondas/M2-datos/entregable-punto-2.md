@@ -116,14 +116,14 @@ Cada problema se marca como hallazgo AS-IS. El estado futuro que lo cierra es Ob
 | Integridad y seguridad | PI-14. Despacho sin autenticación ni límite superior, CORS abierto | Un conteo falso altera el estado en memoria | Observado |
 | Información incompleta | PI-15. Encuesta sin soporte individual ni autorización visible | Registro de la empresa | NO CONFIRMADO |
 | Información incompleta | PI-16. El formulario promete respuesta, pero no se responde a los leads | Texto del formulario de AP-01 | Observado (texto) / Observado por declaración del dueño (1 de noviembre de 2026): sin respuesta |
-| Información incompleta | PI-17. Sin NIT ni matrícula; no hay registro ante Cámara de Comercio | No existe identificación legal; el aviso de privacidad no puede identificar al Responsable | Observado por declaración del dueño (2 de noviembre de 2026) |
+| Información incompleta | PI-17. Sin NIT ni matrícula; no hay registro ante Cámara de Comercio | No existe identificación legal de la sociedad; mientras no se constituya, el Responsable es el fundador como persona natural (Ley 1581 de 2012, art. 3, lit. e) y el aviso debe identificarlo así | Observado por declaración del dueño (2 de noviembre de 2026) |
 | Integridad y seguridad | PI-18. Sin despliegue fuera del equipo del fundador ni respaldos | No existe respaldo de datos; todo el dato operativo depende de un solo equipo | Observado por declaración del dueño (1 de noviembre de 2026) |
 
 Los problemas de aplicación DF-01 a DF-10 y la interfaz I-14, hacia un centro de control del operador que no existe (Observado), están descritos en el entregable de Arquitectura de Aplicaciones. Esta sección los complementa desde el dato y no los repite.
 
 ## 6. Clasificación de la información y Ley 1581 de 2012
 
-Se aplican los criterios de la Arquitectura de Negocio: seguridad corporativa en cuatro niveles (Público, Interno, Confidencial, Reservado) y dato personal en público, semiprivado, privado y sensible. LIRN actúa como Responsable del Tratamiento. Google aloja AP-06 en la cuenta personal del fundador sin contrato de encargo; su calificación como Encargado y la posible transferencia internacional quedan NO CONFIRMADO y se tratan como riesgo. La autorización, el aviso de privacidad y la política de tratamiento se contrastan además con el Decreto 1377 de 2013, compilado en el Decreto 1074 de 2015.
+Se aplican los criterios de la Arquitectura de Negocio: seguridad corporativa en cuatro niveles (Público, Interno, Confidencial, Reservado) y dato personal en público, semiprivado, privado y sensible. Hoy el Responsable del Tratamiento es el fundador como persona natural (Ley 1581 de 2012, art. 3, lit. e), porque LIRN no está constituida (Observado por declaración del dueño, 2 de noviembre de 2026). Google aloja AP-06 en la cuenta personal del fundador sin contrato de encargo; su calificación como Encargado y la posible transferencia internacional quedan NO CONFIRMADO y se tratan como riesgo. La autorización, el aviso de privacidad y la política de tratamiento se contrastan además con el Decreto 1377 de 2013, compilado en el Decreto 1074 de 2015.
 
 | Conjunto | Seguridad | Dato personal | Tratamiento | Marca |
 |---|---|---|---|---|
@@ -160,7 +160,7 @@ Los requisitos citados se definen así y se enlazan con los requisitos de la hoj
 | RD-07 | Usar un catálogo único de estaciones y cámaras con identificador estable y rotular los datos de demostración | PI-05, PI-06, PI-09 | Objetivo TO-BE |
 | RD-08 | Eliminar de los repositorios públicos los datos personales de herramientas de etiquetado y excluirlos por regla de versionado, evaluando el historial | PI-13 | Objetivo TO-BE |
 
-La identificación del Responsable en el aviso y en la política depende de la formalización registral, que no se ha ejecutado (PI-17). Los plazos de retención y la obligación de inscribir bases de datos ante la autoridad quedan NO CONFIRMADO y pasan como decisiones a la hoja de ruta.
+Mientras LIRN no se constituya, el aviso y la política identifican al fundador como Responsable (PI-17). La constitución de la sociedad no transfiere por sí sola la responsabilidad sobre los datos ya recolectados: el TO-BE debe definir quién decide su tratamiento y regularizar el cambio de Responsable informando a los titulares (Objetivo TO-BE). Los plazos de retención y la obligación de inscribir bases de datos ante la autoridad quedan NO CONFIRMADO y pasan como decisiones a la hoja de ruta.
 
 ## 7. Pendientes NO CONFIRMADO
 
