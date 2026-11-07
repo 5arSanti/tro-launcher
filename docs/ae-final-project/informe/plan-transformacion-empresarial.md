@@ -193,7 +193,7 @@ Los flujos son el técnico (FL-T: video, inferencia, conteo y plan), el comercia
 | PI-14 | Despacho sin autenticación ni límite superior, CORS abierto | Observado |
 | PI-15 | Encuesta sin soporte individual ni autorización visible | NO CONFIRMADO |
 | PI-16 | El formulario promete respuesta, pero no se responde a los leads | Observado (texto) / Observado por declaración del dueño (1 de noviembre de 2026): sin respuesta |
-| PI-17 | Sin NIT ni matrícula; no hay registro ante Cámara de Comercio | Observado por declaración del dueño (2 de noviembre de 2026) |
+| PI-17 | Sin NIT ni matrícula; no hay registro ante Cámara de Comercio. El fundador declara decidir sobre los leads, las imágenes y su tratamiento, por lo que hoy es el Responsable como persona natural (Ley 1581 de 2012, art. 3, lit. e) y el aviso debe identificarlo así | Observado por declaración del dueño (2 y 6 de noviembre de 2026); conclusión normativa del equipo sobre el Responsable |
 | PI-18 | Sin despliegue fuera del equipo del fundador ni respaldos | Observado por declaración del dueño (1 de noviembre de 2026) |
 
 **Propuesta.** Modelo TO-BE con persistencia de conteos y planes por estación y fecha, registro versionado del modelo, gestor de leads con autorización y entidades de piloto, factura y contrato.
@@ -355,7 +355,7 @@ Se identifican 26 brechas en cuatro series: negocio (B-N), datos (B-D), aplicaci
 
 | Proyecto | Nombre | Objetivo | Beneficio esperado | Prioridad |
 |---|---|---|---|---|
-| PY-01 | Formalización legal de LIRN S.A.S. | Obtener matrícula mercantil y NIT ante la Cámara de Comercio de Bogotá y la DIAN | Habilita contratar, facturar e identificar al Responsable del tratamiento de datos | 1 |
+| PY-01 | Formalización legal de LIRN S.A.S. | Obtener matrícula mercantil y NIT ante la Cámara de Comercio de Bogotá y la DIAN | Habilita contratar y facturar, y permite definir si la sociedad asume en adelante el rol de Responsable del tratamiento, informando a los titulares | 1 |
 | PY-02 | Alineación de la identidad pública de TORNS | Ajustar la banda pública de tres nombres y retirar residuos tro-* de los textos públicos | Comunicación coherente con el autor único | 2 |
 | PY-03 | Canal comercial conforme a la Ley 1581 | Publicar política y aviso, capturar autorización y reemplazar la hoja por un gestor de leads con respuesta | Cumplimiento legal y leads atendidos | 1 |
 | PY-04 | Historial de conteos y despacho | Persistir conteos, estado y planes por estación y fecha | Comparabilidad y auditoría de recomendaciones; base de indicadores | 2 |
@@ -420,7 +420,7 @@ LIRN seguirá siendo una organización pequeña. Deja de depender de una sola m�
 
 # 10. Recomendaciones
 
-1. Ejecutar PY-01 primero. Sin matrícula mercantil ni NIT no hay contrato, no hay factura y no hay Responsable del tratamiento identificable.
+1. Ejecutar PY-01 primero. Sin matrícula mercantil ni NIT no hay contrato ni factura. Mientras tanto, el Responsable del tratamiento es el fundador como persona natural, porque declara decidir sobre los datos (Ley 1581 de 2012, art. 3, lit. e); la constitución de la sociedad no le transfiere por sí sola los datos ya recolectados, y el cambio de Responsable debe definirse e informarse a los titulares.
 2. Publicar la política y el aviso de tratamiento, y pedir autorización, antes de seguir recibiendo leads. El formulario actual no cumple los artículos 5 a 7 del Decreto 1377 de 2013.
 3. Respaldar pesos, dataset y videos fuera de la estación de trabajo y probar la restauración. El disco está cerca de su capacidad y no hay copia verificada.
 4. Acordar video de estación con un operador, con tratamiento conforme a la Ley 1581 de 2012, antes de publicar cualquier métrica de desempeño en campo. El recall 0,55 es de entrenamiento, no de estación.
