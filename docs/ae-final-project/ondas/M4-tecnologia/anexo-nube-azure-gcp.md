@@ -212,7 +212,7 @@ Objetivo TO-BE: cada estación tiene una pasarela RTSP local que publica el vide
 
 ## 10. Recomendación
 
-Objetivo TO-BE: se recomienda GCP southamerica-east1 como opción preferente. La contratación no está firmada. Criterios:
+Objetivo TO-BE: Azure y GCP permanecen como alternativas, sin selección aprobada. GCP southamerica-east1 es la recomendación técnica del equipo, no la elección del dueño. Observado por declaración del dueño (6 de noviembre de 2026): Santiago decide no elegir proveedor todavía; la selección queda pendiente. La contratación no está firmada. Criterios de la recomendación técnica:
 
 1. Costo: GCP es más barato en ambos escenarios (14 % en piloto y 8 % en escala), sobre todo por la VM con GPU y por la VPN sin gateway fijo. La ventaja se reduce cuando crece la salida a Internet, rubro en el que Azure es levemente más barato.
 2. Disponibilidad de GPU en la región: ambas ofrecen T4 en São Paulo. GCP documenta T4 en tres zonas, lo que facilita reubicar la carga ante falta de capacidad; la distribución zonal de Azure es NO CONFIRMADO.

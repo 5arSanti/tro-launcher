@@ -8,7 +8,7 @@ Punto de partida (Observado): un autor único, Johel Santiago Arias, decide y ej
 |-----|-----------------|-----------|
 | Patrocinador y autoridad de arquitectura | Aprueba proyectos, cambios al registro y excepciones | Santiago (Observado) |
 | Revisión de calidad | Verifica conformidad de cada entregable antes de cerrar un proyecto | Rol Calidad (P-05) |
-| Responsable del tratamiento de datos | Responde por la Ley 1581 | NO CONFIRMADO hasta PY-01 |
+| Responsable del tratamiento de datos | Responde por la Ley 1581 | Johel Santiago Arias como persona natural, por decidir sobre los leads, las imágenes y su tratamiento (Observado por declaración del dueño, 6 de noviembre de 2026; conclusión normativa del equipo, Ley 1581 de 2012, art. 3, lit. e). PY-01 no transfiere por sí solo la responsabilidad a la futura sociedad |
 
 ## 2. Revisión de conformidad
 

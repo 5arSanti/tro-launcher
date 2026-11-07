@@ -13,22 +13,23 @@ lang: es-CO
 | Docente | Mgs. Maria del Pilar Niño Campos |
 | Autor | Johel Santiago Arias |
 | Organización analizada | LIRN (proyectada LIRN S.A.S.), producto TORNS |
-| Fecha | 5 de noviembre de 2026 |
-| Versión | 1.1 |
+| Fecha | 6 de noviembre de 2026 |
+| Versión | 1.2 |
 
 ## Marcas de evidencia
 
 | Marca | Significado |
 |---|---|
 | Observado | Hecho verificado en el código, la documentación o la evidencia del proyecto. |
-| Observado por declaración del dueño (1, 2 o 5 de noviembre de 2026) | Hecho declarado por el dueño de LIRN, sin otra evidencia documental, o aportado el 5 de noviembre de 2026. |
+| Observado (evidencia aportada el 5 de noviembre de 2026) | Hecho cotejado con el código, las notas o las fotografías aportadas; su alcance se limita a lo que muestran esos soportes. |
+| Observado por declaración del dueño (1, 2, 5 o 6 de noviembre de 2026) | Hecho declarado por el dueño de LIRN; no equivale a verificación documental independiente. |
 | Diseñado AS-IS | Modelado del estado actual hecho por el autor a partir de lo observado. |
 | Objetivo TO-BE | Estado futuro propuesto; no existe hoy. |
 | NO CONFIRMADO | Dato que no se ha podido verificar; no se rellena. |
 
 # 2. Introducción
 
-Como autor y responsable único de LIRN presento este Plan de Transformación Empresarial. La firma tiene un solo producto: TORNS. TORNS es un prototipo aplicado. Cuenta personas en estación con visión por computador y recomienda al centro de control el tipo de vehículo y la cantidad de unidades. No es un piloto firmado. No hay cliente. Transmilenio es caso de estudio.
+Como autor y responsable único de LIRN presento este Plan de Transformación Empresarial. La firma tiene un solo producto: TORNS. TORNS es un prototipo aplicado. Cuenta personas en estación con visión por computador y recomienda al centro de control el tipo de vehículo y la cantidad de unidades. No es un piloto firmado. No hay cliente. TransMilenio es caso de estudio.
 
 El informe aplica el Método de Desarrollo de Arquitectura (ADM) de TOGAF (The Open Group, 2022) al estado real de la organización. Las fases A y B cubren la visión y el negocio. La fase C cubre datos y aplicaciones. La fase D cubre la tecnología. Las fases E y F cubren la transformación. Las fases G y H aportan el gobierno de la implementación y el cambio de la arquitectura.
 
@@ -211,7 +212,7 @@ Fase C, aplicaciones. El entregable «Arquitectura de Aplicaciones (Punto 3)» i
 | AP-03 | Servicio de detección de pasajeros y plan de despacho, API (tro-backend) | Ejecuta la detección sobre video, publica métricas por WebSocket y aplica la regla determinista de despacho. | Consumido por AP-02; rol de Producto | Prototipo local | Observado |
 | AP-04 | Entrenamiento del modelo de detección (yolo-train-routes-optimization) | Prepara el conjunto de datos, entrena y exporta el modelo de detección de personas. | Rol de Producto y de Calidad (fundador) | En uso, ejecución local | Observado |
 | AP-05 | Modelo de detección (my_model/my_model.pt, en yolo-train-routes-optimization) | Artefacto de IA de una clase (person) consumido por AP-03 como archivo local | Consumido por AP-03 | Versionado | Observado |
-| AP-06 | Hoja de cálculo con Apps Script (hoja de Google; endpoint configurado en VITE_CONTACT_ENDPOINT) | Recibe y guarda los mensajes del formulario con las columnas timestamp, nombre, email, organizacion, mensaje y origen; la consulta solo el dueño. | Rol Comercial (fundador, único consultor) | En uso como sustituto de CRM, se retira con N-01 | Observado por declaración del dueño (1 y 5 de noviembre de 2026) |
+| AP-06 | Hoja de cálculo con Apps Script (hoja de Google; receptor: Apps Script configurado en VITE_CONTACT_ENDPOINT) | Recibe y guarda los mensajes del formulario con las columnas timestamp, nombre, email, organizacion, mensaje y origen; la consulta solo el dueño. | Rol Comercial (fundador, único consultor) | En uso como sustituto de CRM, se retira con N-01 | Observado por declaración del dueño (1 y 5 de noviembre de 2026) |
 | AP-07 | GitHub: repositorios, Pages y Actions (github.com/5arSanti) | Control de versiones, pruebas y publicación del sitio | Rol de Producto (fundador) | En uso | Observado |
 | AP-08 | Label Studio (en Docker; exportaciones en mydata/) | Etiquetado de imágenes del conjunto de datos del modelo de visión. | Rol de Producto (fundador) | En uso | Observado (instrucciones y árbol); uso confirmado por el dueño (1 de noviembre de 2026) |
 | AP-09 | Lucidchart (SaaS) | Diagramación de arquitectura y procesos | Rol de Dirección (fundador) | En uso según el registro | Diseñado AS-IS |
@@ -221,6 +222,8 @@ Fase C, aplicaciones. El entregable «Arquitectura de Aplicaciones (Punto 3)» i
 | AP-13 | Google Forms (formulario de la encuesta de validación) | Recoge las respuestas de la encuesta de validación (flujo F-14 de Datos); formulario «Tu experiencia diaria en el transporte masivo de Bogotá», https://forms.gle/uEEiodW6xn7VL5K69. | Rol de Dirección y Producto (fundador) | En uso | Observado por declaración del dueño (1 y 5 de noviembre de 2026) |
 
 ![Contexto de aplicaciones AS-IS](../ondas/M3-aplicaciones/diagramas/E6a-contexto-as-is.png)
+
+**Riesgo del canal comercial.** El receptor es Apps Script configurado en VITE_CONTACT_ENDPOINT; su dirección no se reproduce. El código aportado permite observar que ALLOWED_ORIGIN no se aplica y que el cliente interpreta HTTP 200 como éxito sin leer el cuerpo de la respuesta. Marca: Observado (evidencia aportada el 5 de noviembre de 2026). Los controles del despliegue contra envíos indebidos, incluida la restricción de acceso, la limitación de frecuencia y la protección contra automatización, quedan NO CONFIRMADO. La omisión de la dirección no cierra el riesgo ni demuestra controles implementados. Esta revisión no realiza peticiones al receptor ni modifica el despliegue.
 
 **Situación AS-IS.** AP-01 Sitio web comercial de LIRN y TORNS, AP-02 Consola de operación de estaciones y AP-03 Servicio de detección de pasajeros y plan de despacho funcionan como prototipo; AP-02 y AP-03 no tienen autenticación; la inferencia está acoplada a la apertura del flujo de video; una hoja de cálculo con Apps Script (AP-06) sustituye al CRM; no hay integración con ningún centro de control ni aplicación de facturación.
 
@@ -276,7 +279,7 @@ Fase D. El entregable «Arquitectura Tecnológica (Punto 4)» contiene el invent
 
 ![Diagrama tecnológico TO-BE](../ondas/M4-tecnologia/diagramas/E4b-tecnologia-to-be.png)
 
-**Propuesta.** El Objetivo TO-BE separa cinco entornos: Desarrollo, Laboratorio, Demostración, Piloto y Público. Añade almacén de objetos para modelos y videos, gestor de secretos, respaldo verificado y GPU bajo demanda para la inferencia. Azure y GCP siguen como alternativas de nube. El «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS» estima la operación en São Paulo (Azure Brazil South y GCP southamerica-east1), única ubicación donde ambas ofrecen la GPU T4. Los precios son de lista de pago por uso, tomados de la Azure Retail Prices API (Microsoft, 2026) y de las páginas de precios de Google Cloud (Google, 2026), consultados el 2 de noviembre de 2026. Es una estimación. No es una cotización.
+**Propuesta.** El Objetivo TO-BE separa cinco entornos: Desarrollo, Laboratorio, Demostración, Piloto y Público. Añade almacén de objetos para modelos y videos, gestor de secretos, respaldo verificado y GPU bajo demanda para la inferencia. Azure y GCP siguen como alternativas Objetivo TO-BE, sin selección aprobada. Por decisión expresa del dueño del 6 de noviembre de 2026, la elección de proveedor permanece pendiente. GCP es la recomendación técnica del equipo, no una decisión de contratación. El «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS» estima la operación en São Paulo (Azure Brazil South y GCP southamerica-east1), única ubicación donde ambas ofrecen la GPU T4. Los precios son de lista de pago por uso, tomados de la Azure Retail Prices API (Microsoft, 2026) y de las páginas de precios de Google Cloud (Google, 2026), consultados el 2 de noviembre de 2026. Es una estimación. No es una cotización.
 
 | Escenario | Azure (USD/mes) | GCP (USD/mes) | Diferencia |
 |---|---|---|---|
@@ -424,8 +427,8 @@ LIRN seguirá siendo una organización pequeña. Deja de depender de una sola m�
 2. Publicar la política y el aviso de tratamiento, y pedir autorización, antes de seguir recibiendo leads. El formulario actual no cumple los artículos 5 a 7 del Decreto 1377 de 2013.
 3. Respaldar pesos, dataset y videos fuera de la estación de trabajo y probar la restauración. El disco está cerca de su capacidad y no hay copia verificada.
 4. Acordar video de estación con un operador, con tratamiento conforme a la Ley 1581 de 2012, antes de publicar cualquier métrica de desempeño en campo. El recall 0,55 es de entrenamiento, no de estación.
-5. Comunicar solo lo evidenciado. Transmilenio es caso de estudio. Lead no es cliente. TORNS es prototipo aplicado. No es piloto firmado.
-6. Tomar la decisión de nube con el «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS». La estimación favorece a GCP southamerica-east1. La contratación no está firmada. Antes de cargar datos personales debe existir el contrato de transmisión con el proveedor como Encargado.
+5. Comunicar solo lo evidenciado. TransMilenio es caso de estudio. Lead no es cliente. TORNS es prototipo aplicado. No es piloto firmado.
+6. Mantener Azure y GCP como alternativas Objetivo TO-BE, sin selección aprobada por decisión del dueño (6 de noviembre de 2026). Para una evaluación futura, consultar el «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS». La estimación sustenta la recomendación técnica del equipo por GCP southamerica-east1, no una selección aprobada. La contratación no está firmada. Antes de cargar datos personales debe existir el contrato de transmisión con el proveedor como Encargado.
 7. Revisar la hoja de ruta cada año, según la fase H del ADM, y no adelantar PY-06 ni PY-08 mientras no existan PY-01, PY-03 y PY-07.
 
 # 11. Bibliografía
@@ -450,6 +453,8 @@ Microsoft. (2026). *Azure Retail Prices API* [Interfaz de precios de lista]. Rec
 
 Object Management Group. (2014). *Business Process Model and Notation (BPMN), Version 2.0.2*. https://www.omg.org/spec/BPMN/2.0.2/
 
+The Open Group. (2022). *The TOGAF Standard, 10th Edition*. https://www.opengroup.org/togaf
+
 Presidencia de la República de Colombia. (2013, 27 de junio). *Decreto 1377 de 2013, por el cual se reglamenta parcialmente la Ley 1581 de 2012*. Función Pública, Gestor Normativo. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=53646
 
 Presidencia de la República de Colombia. (2015, 26 de mayo). *Decreto 1072 de 2015, Decreto Único Reglamentario del Sector Trabajo*. Función Pública, Gestor Normativo. https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72173
@@ -459,7 +464,5 @@ Presidencia de la República de Colombia. (2019, 5 de junio). *Decreto 957 de 20
 Superintendencia de Industria y Comercio. (2017, 10 de agosto). *Circular Externa 005 de 2017, adicionar un Capítulo Tercero al Título V de la Circular Única*. Diario Oficial 50.321. https://sedeelectronica.sic.gov.co/transparencia/normativa/circular-05-12
 
 Superintendencia de Industria y Comercio. (2018, 23 de marzo). *Circular Externa 002 de 2018, por medio de la cual se modifica el numeral 3.2 del Capítulo Tercero del Título V de la Circular Única*. Diario Oficial 50.544. https://sedeelectronica.sic.gov.co/transparencia/normativa/circular-02-14
-
-The Open Group. (2022). *The TOGAF Standard, 10th Edition*. https://www.opengroup.org/togaf
 
 Ultralytics. (s. f.). *Ultralytics YOLO11* [Documentación]. Recuperado el 1 de noviembre de 2026, de https://docs.ultralytics.com/models/yolo11/
