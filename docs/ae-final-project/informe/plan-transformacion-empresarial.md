@@ -13,8 +13,8 @@ lang: es-CO
 | Docente | Mgs. Maria del Pilar Niño Campos |
 | Autor | Johel Santiago Arias |
 | Organización analizada | LIRN (proyectada LIRN S.A.S.), producto TORNS |
-| Fecha | 6 de noviembre de 2026 |
-| Versión | 1.2 |
+| Fecha | 15 de noviembre de 2026 |
+| Versión | 1.3 |
 
 ## Marcas de evidencia
 
@@ -49,7 +49,7 @@ Los Puntos 1 a 5 acompañan este informe como anexos de la entrega: «Arquitectu
 | Producto | TORNS: detección y conteo de pasajeros con YOLO11s (Ultralytics, s. f.) y recomendación determinista de despacho | Observado |
 | Clientes | Ninguno; no hay piloto ni contrato | Observado |
 | Caso de estudio | El sistema TransMilenio y el SITP de Bogotá se usan como caso de estudio, no como cliente | Observado |
-| Evidencia de mercado | Encuesta del 17 de agosto de 2026 (n=20, formulario anónimo en Google Forms, que sigue en uso: https://forms.gle/uEEiodW6xn7VL5K69) y entrevista a un controlador del SITP, citado por su rol. El 80 % dejó pasar buses llenos dentro del último mes, al 65 % le pasa varias veces por semana y el 40 % se identifica con el desbalance entre oferta y demanda (Equipo TORNS, 2026). La operación se describe como comunicación radial manual (TP 19, TQ 04, TP 69, TP 70, TP 59, TP 56, TP 29) | Observado (cifras agregadas y notas por rol en «Guía Actividad 2, Ingeniería Aplicada»); uso y URL del formulario: Observado por declaración del dueño (1 y 5 de noviembre de 2026) |
+| Evidencia de mercado | Encuesta del 17 de agosto de 2026 (n=20, formulario anónimo en Google Forms, que sigue en uso: https://forms.gle/uEEiodW6xn7VL5K69) y entrevista a un controlador del SITP, citado por su rol. El 80 % dejó pasar buses llenos dentro del último mes, al 65 % le pasa varias veces por semana y el 40 % se identifica con el desbalance entre oferta y demanda (Equipo TORNS, 2026). La operación se describe como comunicación radial manual (TP 19, TQ 04, TP 69, TP 70, TP 59, TP 56, TP 29, TQ 02) | Observado (cifras agregadas y notas por rol en «Guía Actividad 2, Ingeniería Aplicada»); uso y URL del formulario: Observado por declaración del dueño (1 y 5 de noviembre de 2026) |
 
 **Misión y visión.** Las declaraciones estratégicas están aprobadas como línea base de gobierno (Observado, proceso P-01).
 
@@ -67,9 +67,9 @@ Los objetivos estratégicos OE-01 a OE-05 están en el entregable «Arquitectura
 
 Fase B del ADM. El entregable «Arquitectura de Negocio (Punto 1)» documenta el organigrama, los activos de información AI-01 a AI-07, el mapa de procesos BPMN 2.0 (Object Management Group, 2014), el mapa de capacidades y las partes interesadas.
 
-**Estructura.** La Dirección General concentra las cinco unidades funcionales, una por proceso. Ver «Organigrama: vista jerárquica de la planta actual».
+**Estructura.** La Dirección General concentra las cinco unidades funcionales, una por proceso. Hoy las cinco las ejerce una sola persona; las unidades son roles, no cargos ocupados. Ver «Organigrama: Dirección General y unidades funcionales».
 
-![Organigrama: vista jerárquica de la planta actual](../ondas/M1-negocio/complementos/imagenes/png/02-1.png)
+![Organigrama: Dirección General y unidades funcionales (roles que hoy ejerce una persona)](../ondas/M1-negocio/complementos/imagenes/png/02-1.png)
 
 **Procesos.** Cinco procesos AS-IS: P-01 Dirección estratégica de LIRN (estratégico), P-02 Relación comercial y partes interesadas, P-03 Realización del producto TORNS y P-04 Acompañamiento al uso del prototipo (misionales), y P-05 Evidencia, calidad y mejora (apoyo). Se muestran la cadena de valor y los diagramas BPMN de los cinco procesos.
 
@@ -95,7 +95,20 @@ Fase B del ADM. El entregable «Arquitectura de Negocio (Punto 1)» documenta el
 
 ![Diagrama BPMN P-05 Evidencia, calidad y mejora](../procesos/imagenes/5.%20Proceso%205%20-%20Apoyo.jpeg)
 
-**Capacidades.** De diez capacidades, CAP-04 Detección y conteo y CAP-05 Recomendación de despacho son funcionales en prototipo; CAP-07 Integración en vivo con el operador, CAP-09 Gestión financiera y facturación y CAP-10 Gestión de talento humano están ausentes y son brechas hacia el Objetivo TO-BE.
+**Capacidades.** De diez capacidades, CAP-04 Detección y conteo y CAP-05 Recomendación de despacho son funcionales en prototipo; CAP-07 Integración en vivo con el operador, CAP-09 Gestión financiera y facturación y CAP-10 Gestión de talento humano están ausentes y son brechas hacia el Objetivo TO-BE. Las cinco capacidades que nombra el enunciado corresponden a CAP-03 (ventas), CAP-06 (atención al cliente), CAP-09 (gestión financiera), CAP-08 (gestión de inventarios) y CAP-10 (talento humano).
+
+| Código | Capacidad | Categoría | Estado AS-IS | Proceso | Marca |
+|---|---|---|---|---|---|
+| CAP-01 | Dirección de producto único y gobierno de marca | Estratégica | Presente (básica) | P-01 | Observado |
+| CAP-02 | Gestión de evidencia, calidad y cumplimiento normativo | Apoyo | Presente (básica) | P-05 | Observado |
+| CAP-03 | Ventas: captación y calificación de interés B2B y B2G | Misional | Presente (incipiente, manual en hoja de cálculo) | P-02 | Observado / Diseñado AS-IS |
+| CAP-04 | Detección y conteo de demanda en estación | Misional, núcleo técnico | Presente (funcional en prototipo) | P-03 | Observado |
+| CAP-05 | Recomendación de oferta y cálculo de despacho | Misional, núcleo técnico | Presente (funcional en prototipo) | P-03 | Observado |
+| CAP-06 | Atención al cliente: acompañamiento al interesado en el prototipo | Misional | Presente, acotada a demostraciones | P-04 | Observado / Diseñado AS-IS |
+| CAP-07 | Integración y despacho en vivo con el centro de control | Misional futura | Ausente | Ninguno | Observado (ausencia) |
+| CAP-08 | Gestión de inventarios: catálogo de fuentes digitales y modelos | Apoyo | Parcial (digital presente, físico ausente) | P-03 | Observado |
+| CAP-09 | Gestión financiera, contable y facturación | Apoyo | Ausente | Ninguno | Observado (ausencia) |
+| CAP-10 | Gestión de talento humano | Apoyo | Ausente como proceso formal | Ninguno | Observado (ausencia) |
 
 **Activos de información.** Siete activos, desde el registro de leads (AI-01), que contiene datos personales sujetos a la Ley 1581 de 2012 (Congreso de la República de Colombia, 2012), hasta facturación y contratos (AI-07), hoy inexistente.
 
@@ -130,11 +143,22 @@ Lectura de poder e interés:
 
 **Hallazgo principal.** Toda la operación descansa en una persona y en un equipo de cómputo. El negocio TO-BE agrega P-06 Piloto, P-07 Integración con el centro de control, P-08 Gestión financiera y P-09 Talento humano, este último condicional a que exista personal que vincular.
 
+## 4.1 Arquitectura de Negocio (AS-IS)
+
+<!-- Santiago: redactar con tu voz media página que integre los cuatro dominios del estado actual (negocio, datos, aplicaciones y tecnología) y cómo apoyan hoy la misión. Fuente: anexo «Documento: Arquitectura de Negocio (AS-IS)», secciones 2 a 7. Este comentario no aparece en el Word. -->
+
+| Dominio | Estado actual | Marca |
+|---|---|---|
+| Negocio | Una persona ejerce las cinco unidades funcionales; cinco procesos P-01 a P-05; sin clientes, contratos ni piloto; CAP-07, CAP-09 y CAP-10 ausentes | Observado |
+| Datos | Conteos y planes solo en memoria; leads en una hoja de cálculo personal sin autorización de tratamiento; sin respaldos | Observado / Observado por declaración del dueño (1 de noviembre de 2026) |
+| Aplicaciones | Sitio comercial publicado; consola y servicio de detección como prototipo local sin autenticación; hoja de cálculo como sustituto de CRM; sin integración con un centro de control | Observado |
+| Tecnología | Una sola estación de trabajo con disco cerca de su capacidad; sin servidores, base de datos ni GPU de producción; sin segmentación, firewall ni VPN | Observado / Observado por declaración del dueño (1 de noviembre de 2026) |
+
 # 5. Arquitectura de Datos
 
 Fase C, datos. El entregable «Arquitectura de Datos (Punto 2)» contiene el inventario D-01 a D-23, los modelos conceptual y lógico AS-IS y TO-BE, tres flujos de información y los problemas PI-01 a PI-18.
 
-**Inventario de datos.**
+**Inventario de datos.** Las seis categorías del enunciado corresponden a: clientes D-18; productos D-12, D-13, D-14, D-16 y D-17; proveedores D-19; facturación D-20; empleados D-21; contratos D-22.
 
 | Código | Conjunto de datos | Origen o sistema | Clasificación | Dato personal | Marca |
 |---|---|---|---|---|---|
@@ -150,7 +174,7 @@ Fase C, datos. El entregable «Arquitectura de Datos (Punto 2)» contiene el inv
 | D-10 | Estado de estación | Memoria del proceso | Interno | No | Observado (código) |
 | D-11 | Plan de despacho | Memoria y respuesta de la API | Interno | No | Observado (código) |
 | D-12 | Modelo entrenado (pesos) | Archivo de pesos en el repositorio de AP-04 | Reservado | No | Observado (código) |
-| D-13 | Dataset y anotaciones | Carpeta de la herramienta de etiquetado dentro del repositorio de AP-04 | Reservado | Posible (imágenes) | Observado (código y cuaderno de entrenamiento: 3.694 imágenes de entrenamiento y 1.000 de validación; el dataset no existe en el repositorio) / Observado por declaración del dueño (1 de noviembre de 2026): origen coco-person de Roboflow Universe, licencia MIT y fecha de entrenamiento |
+| D-13 | Dataset y anotaciones | Anotaciones y exportes en la carpeta de la herramienta de etiquetado del repositorio de AP-04; el dataset de entrenamiento queda fuera del repositorio | Reservado | Posible (imágenes) | Observado (código y cuaderno de entrenamiento: 3.694 imágenes de entrenamiento y 1.000 de validación; el dataset de entrenamiento no está en el repositorio) / Observado por declaración del dueño (1 de noviembre de 2026): origen coco-person de Roboflow Universe, licencia MIT y fecha de entrenamiento |
 | D-14 | Cuenta de anotador y credenciales de la herramienta de etiquetado | Base SQLite dentro del repositorio público | Confidencial | Sí | Observado (código) |
 | D-15 | Registros de ejecución | Salida estándar del proceso | Interno | No en el contenido observado | Observado (código) / NO CONFIRMADO (retención) |
 | D-16 | Código fuente de AP-01 a AP-04 | GitHub (repositorio público) | Interno o Reservado | No | Observado (registro y repositorio) |
@@ -174,34 +198,58 @@ Los flujos son el técnico (FL-T: video, inferencia, conteo y plan), el comercia
 
 ![Flujo comercial FL-C](../ondas/M2-datos/diagramas/E-04-FL-C-comercial.png)
 
+![Flujo de evidencia FL-E](../ondas/M2-datos/diagramas/E-04-FL-E-evidencia.png)
+
+**Origen y destino de los flujos.** Todos los flujos son Observado. F-04, F-11, F-14 y F-15 combinan el código con la declaración del dueño; el detalle está en la matriz de flujos E-04 del entregable «Arquitectura de Datos (Punto 2)».
+
+| Id | Flujo | Tipo | Origen | Dato | Destino | Dato personal |
+|---|---|---|---|---|---|---|
+| F-01 | Interés comercial | FL-C | Visitante en AP-01 | Nombre, correo, organización, mensaje, origen | AP-06 Hoja de cálculo con Apps Script | Sí |
+| F-02 | Atención al lead | FL-C | AP-06 | Lead | Sin respuesta al lead | Sí |
+| F-03 | Carga del sitio | FL-C | GitHub Pages | Recursos estáticos | Navegador del visitante; la IP llega a AP-12 Google Fonts | IP del visitante |
+| F-04 | Captura de video | FL-T | Archivo mp4, cámara USB o fuente RTSP | Fotogramas | Memoria de AP-03 | Posible (imagen de personas) |
+| F-05 | Detección | FL-T | Memoria de AP-03 | Fotograma y cajas de la clase person | Resumen de conteo | No se almacena |
+| F-06 | Flujo MJPEG | FL-T | AP-03 | Fotograma anotado | AP-02 en el navegador del operador | Posible (imagen) |
+| F-07 | Métricas | FL-T | AP-03 | Métrica de detección | AP-02 en el navegador del operador | No |
+| F-08 | Actualización de estación | FL-T | Proceso de streaming de AP-03 | Conteo por cámara | Estado de estación en memoria | No |
+| F-09 | Consulta de estado | FL-T | AP-02 | Solicitud | Estado y último plan | No |
+| F-10 | Despacho manual | FL-T | AP-02 | Conteo y estación o cámara | Plan de despacho | No |
+| F-11 | Entrenamiento | FL-T | Imágenes anotadas en AP-08 Label Studio | Dataset | Pesos entrenados en AP-04 | Posible (imágenes) |
+| F-12 | Inferencia con pesos | FL-T | AP-05 Modelo de detección | Archivo de pesos | AP-03 | No |
+| F-13 | Publicación de código | FL-T | Estación de trabajo del fundador | Código y artefactos | Repositorio público en AP-07 GitHub | Sí (PI-13) |
+| F-14 | Encuesta de validación | FL-E | Encuestados (n=20) | Respuestas | Resumen agregado de la encuesta | Declarado sin identificación |
+| F-15 | Entrevista de validación | FL-E | Controlador SITP, por rol | Notas de la entrevista | Documento de evidencia (P-05) | Sin dato identificable declarado |
+| F-16 | Publicación de evidencia | FL-E | Documento de evidencia y resumen de encuesta | Resultados agregados | Visitantes del sitio y evaluadores | No |
+| F-17 | Catálogo de fuentes de video | FL-T | AP-03 | Identificador y nombre de cada video o cámara | AP-02 | No |
+
 **Problemas centrales.** El dominio de datos no conserva memoria de negocio. Los conteos y los planes de despacho viven en memoria volátil. Al reiniciar el servicio se pierden. Sin historial no hay indicador ni auditoría. Marca: Observado. Los pesos del modelo, el dataset y los videos no tienen respaldo fuera de la estación de trabajo. Marca: Observado por declaración del dueño (1 de noviembre de 2026). El canal de contacto captura leads sin política de tratamiento ni autorización previa, en contra de lo que exigen los artículos 5 a 7 del Decreto 1377 de 2013 (Presidencia de la República de Colombia, 2013). Marca: Observado por declaración del dueño (1 de noviembre de 2026). Las imágenes de personas en estación son datos personales (Ley 1581 de 2012, art. 3). Si salen a la nube, hace falta un contrato con el Encargado antes de transmitirlas.
 
 **Problemas de información.**
 
-| Código | Problema | Marca |
-|---|---|---|
-| PI-01 | Sin historial de conteos ni de planes | Observado |
-| PI-02 | Lead sin estado, responsable ni autorización | Observado |
-| PI-03 | Sin diccionario de datos, propietario ni retención | Observado |
-| PI-04 | Dataset fuera del repositorio | Observado / Observado por declaración del dueño (1 de noviembre de 2026): origen |
-| PI-05 | Clave de estación distinta entre catálogo y estado | Observado (copia aislada) |
-| PI-06 | Estación con cámara usb1 sin fuente publicada | Observado |
-| PI-07 | Nombres heredados y banda pública | Observado |
-| PI-08 y PI-09 | Comentario de "densidad" y datos de demostración sin rótulo | Observado |
-| PI-10 | Videos duplicados entre AP-03 y AP-04, dos estados por estación y leads sin control de duplicados | Observado / NO CONFIRMADO (duplicados en la hoja) |
-| PI-11 y PI-12 | Hoja de leads, encuesta, diagramas y documentos en servicios separados sin catálogo | Observado |
-| PI-13 | Datos personales de AP-08 en repositorio público | Observado |
-| PI-14 | Despacho sin autenticación ni límite superior, CORS abierto | Observado |
-| PI-15 | Encuesta sin soporte individual ni autorización visible | NO CONFIRMADO |
-| PI-16 | El formulario promete respuesta, pero no se responde a los leads | Observado (texto) / Observado por declaración del dueño (1 de noviembre de 2026): sin respuesta |
-| PI-17 | Sin NIT ni matrícula; no hay registro ante Cámara de Comercio. El fundador declara decidir sobre los leads, las imágenes y su tratamiento, por lo que hoy es el Responsable como persona natural (Ley 1581 de 2012, art. 3, lit. e) y el aviso debe identificarlo así | Observado por declaración del dueño (2 y 6 de noviembre de 2026); conclusión normativa del equipo sobre el Responsable |
-| PI-18 | Sin despliegue fuera del equipo del fundador ni respaldos | Observado por declaración del dueño (1 de noviembre de 2026) |
+| Código | Categoría | Problema | Marca |
+|---|---|---|---|
+| PI-01 | Información incompleta | Sin historial de conteos ni de planes | Observado |
+| PI-02 | Información incompleta | Lead sin estado, responsable ni autorización | Observado |
+| PI-03 | Información incompleta | Sin diccionario de datos, propietario ni retención | Observado |
+| PI-04 | Información incompleta | Dataset fuera del repositorio | Observado / Observado por declaración del dueño (1 de noviembre de 2026): origen |
+| PI-05 | Información inconsistente | Clave de estación distinta entre catálogo y estado | Observado (copia aislada) |
+| PI-06 | Información inconsistente | Estación con cámara usb1 sin fuente publicada | Observado |
+| PI-07 | Información inconsistente | Nombres heredados y banda pública | Observado |
+| PI-08 y PI-09 | Información inconsistente | Comentario de "densidad" y datos de demostración sin rótulo | Observado |
+| PI-10 | Duplicidad de datos | Videos duplicados entre AP-03 y AP-04, dos estados por estación y leads sin control de duplicados | Observado / NO CONFIRMADO (duplicados en la hoja) |
+| PI-11 y PI-12 | Archivos aislados | Hoja de leads, encuesta, diagramas y documentos en servicios separados sin catálogo | Observado |
+| PI-13 | Archivos aislados | Datos personales de AP-08 en repositorio público | Observado |
+| PI-14 | Integridad y seguridad | Despacho sin autenticación ni límite superior, CORS abierto | Observado |
+| PI-15 | Información incompleta | Encuesta sin soporte individual ni autorización visible | NO CONFIRMADO |
+| PI-16 | Información incompleta | El formulario promete respuesta, pero no se responde a los leads | Observado (texto) / Observado por declaración del dueño (1 de noviembre de 2026): sin respuesta |
+| PI-17 | Información incompleta | Sin NIT ni matrícula; no hay registro ante Cámara de Comercio. El fundador declara decidir sobre los leads, las imágenes y su tratamiento, por lo que hoy es el Responsable como persona natural (Ley 1581 de 2012, art. 3, lit. e) y el aviso debe identificarlo así | Observado por declaración del dueño (2 y 6 de noviembre de 2026); conclusión normativa del equipo sobre el Responsable |
+| PI-18 | Integridad y seguridad | Sin despliegue fuera del equipo del fundador ni respaldos | Observado por declaración del dueño (1 de noviembre de 2026) |
 
 **Propuesta.** Modelo TO-BE con persistencia de conteos y planes por estación y fecha, registro versionado del modelo, gestor de leads con autorización y entidades de piloto, factura y contrato.
 
 # 6. Arquitectura de Aplicaciones
 
-Fase C, aplicaciones. El entregable «Arquitectura de Aplicaciones (Punto 3)» inventaría AP-01 a AP-13, mapea las integraciones, registra los problemas PR-01 a PR-17 y los riesgos RA-01 a RA-07, y propone la interoperabilidad con las aplicaciones nuevas N-01 a N-07 y las interfaces IT-01, IT-02, IT-04, IT-05, IT-06 e IT-07.
+Fase C, aplicaciones. El entregable «Arquitectura de Aplicaciones (Punto 3)» inventaría AP-01 a AP-13, mapea las integraciones, registra los problemas PR-01 a PR-17 y los elementos a retirar o corregir RA-01 a RA-07, y propone la interoperabilidad con las aplicaciones nuevas N-01 a N-07 y las interfaces IT-01, IT-02, IT-04, IT-05, IT-06 e IT-07.
 
 **Inventario de aplicaciones.** Inventario resumido; el detalle con evidencia y marcas está en el inventario de aplicaciones E1.
 
@@ -229,11 +277,91 @@ Fase C, aplicaciones. El entregable «Arquitectura de Aplicaciones (Punto 3)» i
 
 ![Integraciones AS-IS](../ondas/M3-aplicaciones/diagramas/E6b-integraciones-as-is.png)
 
+**Mapa de integraciones.** Todas las integraciones son Observado; I-07, I-09 e I-16 combinan el código con la declaración del dueño.
+
+| ID | Origen | Destino | Tipo de intercambio | Datos intercambiados | Autenticación |
+|---|---|---|---|---|---|
+| I-01 | AP-02 | AP-03 | REST, JSON | Lista de videos y cámaras | Ausente |
+| I-02 | AP-03 | AP-02 | Flujo de video MJPEG | Fotograma anotado | Ausente |
+| I-03 | AP-03 | AP-02 | WebSocket, JSON | Conteo de personas y métricas de detección | Ausente |
+| I-04 | AP-02 | AP-03 | REST, JSON | Trenes, estaciones, estado y plan de despacho | Ausente |
+| I-05 | AP-02 | AP-03 | REST (sondeo) | Estado de salud | Ausente |
+| I-06 | AP-05 | AP-03 | Archivo | Pesos del modelo | No aplica |
+| I-07 | Fuente de video (archivo, cámara USB o RTSP) | AP-03 | Captura con OpenCV | Fotogramas | No aplica |
+| I-08 | AP-01 | AP-06 | HTTP hacia Apps Script; éxito por HTTP 200 sin confirmación | Datos del formulario de contacto | Ausente |
+| I-09 | AP-06 | Ninguno | Sin integración; los leads no se responden | Lead | No aplica |
+| I-10 | AP-08 | AP-04 | Archivo | Anotaciones e imágenes | No aplica |
+| I-11 | AP-04 | AP-05 | Archivo, copia manual | Pesos del modelo | No aplica |
+| I-12 | AP-07 | AP-01 | CI/CD con GitHub Actions | Sitio compilado | Token de la plataforma |
+| I-13 | AP-01 a AP-05 | AP-07 | Control de versiones, Git sobre HTTPS | Código y artefactos | Cuenta de GitHub |
+| I-14 | AP-03 | Centro de control del operador | No existe | No aplica | No aplica |
+| I-15 | AP-01 (navegador del visitante) | AP-12 | Recurso externo HTTPS | IP del visitante hacia Google; tipografía hacia el navegador | No aplica |
+| I-16 | Encuestados | AP-13 | Formulario SaaS | Respuestas de la encuesta | Cuenta de Google del dueño |
+
+**Problemas identificados.** No se observan aplicaciones duplicadas. Lo que se duplica es el texto del producto, presente en el sitio y en la consola con mensajes distintos (PR-10). Severidad Alta si afecta el cumplimiento legal, la seguridad o la capacidad central de conteo y despacho; Media si limita la continuidad, el piloto o la integración; Baja si es de consistencia o deuda técnica.
+
+| ID | Problema | Categoría | Severidad |
+|---|---|---|---|
+| PR-01 | La hoja de cálculo actúa como sustituto de CRM, sin acuse, reintento ni cola | Dependencia de hoja de cálculo; falta de integración | Media |
+| PR-02 | El formulario recopila datos personales sin política de tratamiento ni autorización | Seguridad y cumplimiento | Alta |
+| PR-03 | API y consola sin autenticación; CORS abierto con credenciales | Seguridad | Alta |
+| PR-04 | Inferencia ligada al flujo de video: sin cliente no hay conteo | Falta de integración (acoplamiento) | Alta |
+| PR-05 | Conteos, estado y planes solo en memoria | Falta de persistencia | Alta |
+| PR-06 | Sin integración con el centro de control del operador | Falta de integración | Media |
+| PR-07 | Modelo copiado a mano; deriva de versiones entre entrenamiento y API | Falta de integración (empaquetado); proceso manual | Media |
+| PR-08 | Identificadores de estación inconsistentes | Defecto de aplicación | Alta |
+| PR-09 | Identidad TRO residual en nombres y contenedores | Consistencia de identidad | Baja |
+| PR-10 | Textos sin respaldo en sitio y consola | Consistencia de identidad | Baja |
+| PR-11 | Middleware no activado y detecciones simuladas | Deuda técnica | Baja |
+| PR-12 | Backend sin pruebas; imagen con configuración de desarrollo | Calidad y seguridad | Alta |
+| PR-13 | Sin despliegue fuera del equipo local ni entorno de piloto | Falta de plataforma | Media |
+| PR-14 | Herramientas personales sin gobierno; base de Label Studio con datos personales en repositorio público | Dependencia de herramientas externas | Alta |
+| PR-15 | Sin aplicación de facturación y contabilidad | Capacidad ausente | Baja (Media con piloto contratado) |
+| PR-16 | Cámaras físicas sin resultados de prueba documentados | Evidencia | Media |
+| PR-17 | Leads recopilados sin respuesta ni seguimiento | Proceso manual inexistente | Media |
+
 ![Contexto de aplicaciones TO-BE](../ondas/M3-aplicaciones/diagramas/E6c-contexto-to-be.png)
 
 ![Integraciones TO-BE](../ondas/M3-aplicaciones/diagramas/E6d-integraciones-to-be.png)
 
 **Propuesta.** AP-06, la hoja de cálculo que hace de CRM, se elimina y la reemplaza el gestor de leads N-01 con autorización de tratamiento (RA-01). AP-03 se divide en AP-03a, API de despacho, y AP-03b, servicio de inferencia; se añaden identidad y roles (N-02), persistencia (N-04), registro de modelos (N-05) y facturación (N-06). Estas dos últimas responden a la necesidad DF-08 de la Arquitectura de Datos: el registro versionado del modelo y la facturación como necesidades de aplicación. La interfaz con el centro de control (IT-06) entrega una recomendación; la decisión de despacho sigue siendo del operador (principio PN-04).
+
+Todas las tablas siguientes son Objetivo TO-BE.
+
+**Nuevas aplicaciones.**
+
+| ID | Aplicación propuesta | Problema que atiende | Dependencia |
+|---|---|---|---|
+| N-01 | Gestor de leads o CRM ligero con base de datos integrada | PR-01, PR-02, PR-17 | Modelo de lead y autorización de la Arquitectura de Datos |
+| N-02 | Identidad y control de acceso de usuarios (consola y API) | PR-03 | Proveedor de identidad de la Arquitectura Tecnológica |
+| N-03 (AP-03b) | Servicio de inferencia desacoplado de la entrega de video | PR-04 | Cómputo de la Arquitectura Tecnológica |
+| N-04 | Persistencia de conteos, estado y planes de despacho | PR-05 | Modelo lógico de datos y base de datos |
+| N-05 | Registro versionado del modelo | PR-07 | Arquitectura Tecnológica |
+| N-06 | Facturación electrónica y contabilidad mínima (SaaS) | PR-15 | Formalización ante Cámara de Comercio y DIAN |
+| N-07 | Gestión de personal y nómina (SaaS) | Necesidad TO-BE; hoy no hay personal | Formalización y personal que vincular |
+
+**Integraciones recomendadas.**
+
+| ID | Origen | Destino | Tipo | Problema |
+|---|---|---|---|---|
+| IT-01 | AP-01 | N-01 | API REST con acuse de recibo y registro de consentimiento | PR-01, PR-02 |
+| IT-02 | AP-02, AP-03a | N-02 | Autenticación con roles; CORS restringido | PR-03 |
+| IT-04 | AP-03a | N-04 | Persistencia de planes y estados | PR-05 |
+| IT-05 | AP-04 | N-05, AP-03b | Publicación de modelo versionado con metadatos | PR-07 |
+| IT-06 | AP-03a | Centro de control del operador | Recomendación autenticada; el operador decide | PR-06 |
+| IT-07 | AP-03b | AP-03a y N-04 | Asíncrona por evento de conteo; tecnología de cola NO CONFIRMADO | PR-04 |
+
+**Aplicaciones y elementos a retirar o corregir.**
+
+| ID | Elemento | Motivo | Reemplazo |
+|---|---|---|---|
+| RA-01 | Rol de la hoja de cálculo como CRM (AP-06) | Dependencia de hoja, sin control | N-01 |
+| RA-02 | Identidad TRO residual | Regla de identidad | Nombres TORNS |
+| RA-03 | Textos sin respaldo en consola y sitio | Afirmaciones no evidenciadas | Textos alineados con lo observado |
+| RA-04 | Identificadores de estación inconsistentes | Defecto | Identificador único por estación |
+| RA-05 | Middleware no activado y detecciones simuladas | Código sin uso | Activar o eliminar |
+| RA-06 | Base de Label Studio en repositorio público | Exposición de datos personales | Almacenamiento privado |
+| RA-07 | Carga de Google Fonts desde servidores de Google | Transfiere la IP del visitante sin aviso | Tipografía alojada en el sitio o mención en el aviso |
 
 # 7. Arquitectura Tecnológica
 
@@ -279,6 +407,15 @@ Fase D. El entregable «Arquitectura Tecnológica (Punto 4)» contiene el invent
 
 ![Diagrama tecnológico TO-BE](../ondas/M4-tecnologia/diagramas/E4b-tecnologia-to-be.png)
 
+**Propuesta por eje del enunciado.** Marca de toda la tabla: Objetivo TO-BE.
+
+| Eje | Mejoras |
+|---|---|
+| Modernización | Partición de AP-03 en AP-03a (API de despacho) y AP-03b (inferencia continua); imagen de ejecución mínima sin depurador; pruebas e integración continua para backend y consola; persistencia N-04 |
+| Virtualización | Contenedores separados para AP-03a, AP-03b, laboratorio y demostración; entorno de entrenamiento y etiquetado reproducible |
+| Servicios cloud | Nodos de aplicación, datos e identidad alojables en nube; GPU bajo demanda; almacén de objetos versionado para pesos, videos y exportes |
+| Seguridad | Autenticación con roles (N-02); orígenes permitidos explícitos y cifrado de video, métricas y eventos; autenticación entre servicios; gestor de secretos; retiro de datos personales de repositorios públicos |
+
 **Propuesta.** El Objetivo TO-BE separa cinco entornos: Desarrollo, Laboratorio, Demostración, Piloto y Público. Añade almacén de objetos para modelos y videos, gestor de secretos, respaldo verificado y GPU bajo demanda para la inferencia. Azure y GCP siguen como alternativas Objetivo TO-BE, sin selección aprobada. Por decisión expresa del dueño del 6 de noviembre de 2026, la elección de proveedor permanece pendiente. GCP es la recomendación técnica del equipo, no una decisión de contratación. El «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS» estima la operación en São Paulo (Azure Brazil South y GCP southamerica-east1), única ubicación donde ambas ofrecen la GPU T4. Los precios son de lista de pago por uso, tomados de la Azure Retail Prices API (Microsoft, 2026) y de las páginas de precios de Google Cloud (Google, 2026), consultados el 2 de noviembre de 2026. Es una estimación. No es una cotización.
 
 | Escenario | Azure (USD/mes) | GCP (USD/mes) | Diferencia |
@@ -288,7 +425,7 @@ Fase D. El entregable «Arquitectura Tecnológica (Punto 4)» contiene el invent
 
 Fuente: «Anexo Punto 4. Comparativo de nube Azure y GCP para TORNS». Los totales excluyen los rubros marcados NO CONFIRMADO y no aplican descuentos. Por costo y por disponibilidad de T4 en tres zonas, la estimación favorece a GCP southamerica-east1. Azure publica niveles de SLA iguales o superiores en VPN, secretos y base de datos sin alta disponibilidad. Marca: Objetivo TO-BE. La contratación de nube no está firmada. En ambas nubes los datos personales saldrían a Brasil. Antes de cargarlos debe firmarse el contrato de transmisión con el proveedor como Encargado (Presidencia de la República de Colombia, 2013). Brasil no figura en la lista de países con nivel adecuado de protección de la SIC (Circular Externa 005 de 2017, modificada por la Circular Externa 002 de 2018; Superintendencia de Industria y Comercio [SIC], 2017, 2018). Los nodos administrativos de facturación y nómina, condicionales a la formalización, se rigen por la Resolución 000165 de 2023 (Dirección de Impuestos y Aduanas Nacionales [DIAN], 2023), la Resolución 000013 de 2021 (DIAN, 2021), la Ley 100 de 1993 (Congreso de la República de Colombia, 1993) y el Decreto 1072 de 2015 (Presidencia de la República de Colombia, 2015).
 
-**Riesgos principales.** Los entregables de Aplicaciones y Tecnología registran 20 riesgos; se resumen así:
+**Riesgos principales.** Los entregables de Aplicaciones y Tecnología registran 20 riesgos: los siete elementos a retirar o corregir de Aplicaciones (RA) y los trece riesgos tecnológicos (RT). Los cuatro tipos del enunciado corresponden a RT-13 (equipos obsoletos), RT-02 (falta de respaldo), RT-05, RT-06 y RT-12 (seguridad) y RT-10 (dependencia de un proveedor).
 
 | Riesgo | Descripción breve |
 |---|---|
@@ -321,9 +458,24 @@ Fases E y F del ADM. El detalle está en los entregables de la Arquitectura de T
 
 El estado que se busca para LIRN es este. La firma queda constituida como S.A.S. TORNS se ofrece a un operador B2B o a una entidad B2G mediante un primer piloto pagado. La demanda se mide en estación. El centro de control recibe una recomendación y decide. Los datos personales se tratan según la Ley 1581 de 2012. La operación deja de depender de un solo equipo y de una sola persona. Nada de eso existe hoy. Es Objetivo TO-BE.
 
+<!-- Santiago: ampliar con tu voz a una o dos páginas el documento «Arquitectura de Negocio (TO-BE)»: visión, capacidades, procesos P-06 a P-09, servicios SN-04 y SN-05, información, recursos tecnológicos y organización. Fuente: anexo «Arquitectura de Negocio TO-BE de LIRN», secciones 1 a 7. Este comentario no aparece en el Word. -->
+
+| Elemento | Punto de partida | Estado objetivo (Objetivo TO-BE) |
+|---|---|---|
+| Visión | Cero clientes, sin piloto, una persona (Observado) | LIRN formalizada como S.A.S. ofrece TORNS bajo un primer piloto pagado con un operador B2B o una entidad B2G; el centro de control decide el despacho |
+| Capacidades | CAP-07, CAP-09 y CAP-10 ausentes (Observado) | CAP-01 a CAP-10 con proceso y responsable |
+| Procesos | P-01 a P-05 (Observado en imágenes BPMN) | Se conservan P-01 a P-05 y se agregan P-06 Contratación y piloto, P-07 Integración con el centro de control, P-08 Gestión financiera y facturación y P-09 Gestión del talento humano, este último condicional |
+| Servicios | SN-01 a SN-03 (Observado) | Se agregan SN-04 Piloto de medición de demanda en estación y SN-05 Soporte y mejora del servicio. Precio, duración y número de estaciones de SN-04: NO CONFIRMADO |
+| Información | Conteos en memoria; leads en hoja personal (Observado) | Historial de conteos y recomendaciones; leads con autorización Ley 1581; contratos, facturas y nómina como activos gobernados |
+| Aplicaciones | Prototipo local sin autenticación; hoja de cálculo como CRM (Observado) | N-01 a N-07 e interfaces IT-01 a IT-07, según el capítulo 6 |
+| Tecnología | Una estación de trabajo, sin respaldos ni entornos separados (Observado por declaración del dueño, 1 de noviembre de 2026) | Cinco entornos, almacén de objetos, gestor de secretos, respaldo verificado y GPU bajo demanda, según el capítulo 7 |
+| Organización | Un autor único cubre las cinco áreas (Diseñado AS-IS) | Las áreas existen como roles; un cargo nuevo solo se justifica por una capacidad ausente. Número de personas y fecha: NO CONFIRMADO |
+
+Principios rectores: PN-02 (afirmar solo lo evidenciado), PN-04 (la decisión de despacho es del operador) y PN-08 (crecer por capacidad).
+
 ## 8.2 Análisis de brechas
 
-Se identifican 26 brechas en cuatro series: negocio (B-N), datos (B-D), aplicaciones (B-A) y tecnología (B-T). Las más críticas son la falta de formalización legal (B-N01), el formulario sin autorización de tratamiento (B-D02), la ausencia de respaldos (B-D06) y el disco casi lleno con equipos obsoletos en la única estación (B-T06).
+Se identifican 26 brechas en cuatro series: negocio (B-N), datos (B-D), aplicaciones (B-A) y tecnología (B-T). Las más críticas son la falta de formalización legal (B-N01), el formulario sin autorización de tratamiento (B-D02), la ausencia de respaldos (B-D06) y el disco casi lleno con equipos obsoletos en la única estación (B-T06). Las brechas de negocio B-N01 a B-N07 consolidan las G-N01 a G-N07 del TO-BE de negocio; la trazabilidad completa está en el entregable «Análisis de brechas».
 
 | ID | Qué existe hoy | Marca | Qué hace falta | Qué debe cambiar |
 |---|---|---|---|---|
@@ -399,13 +551,23 @@ Cada proyecto se valoró por impacto, complejidad y costo relativo, y por las de
 
 ## 8.6 Indicadores de éxito
 
-| Categoría | Indicadores |
-|---|---|
-| Reducción de tiempos | IN-01 primera respuesta a un lead; IN-02 restauración tras pérdida del equipo; IN-03 espera en andén durante el piloto |
-| Disminución de costos | IN-04 pasos manuales para publicar el modelo; IN-05 despachos sin respaldo de demanda observada |
-| Incremento de ventas | IN-06 conversión de leads; IN-07 piloto pagado firmado; IN-08 pilotos facturados |
-| Satisfacción de usuarios | IN-09 satisfacción del controlador; IN-10 solicitudes de titulares atendidas en plazo |
-| Calidad técnica | IN-11 recall en video de estación; IN-12 coincidencia con la decisión del operador; IN-13 activos con respaldo verificado |
+La línea base es Observado cuando la ausencia está documentada y NO CONFIRMADO cuando no hay medición. Toda meta es Objetivo TO-BE y cualitativa; el valor numérico se fija con datos reales.
+
+| ID | Tipo | Indicador | Fórmula | Línea base | Meta (Objetivo TO-BE) | Proyecto |
+|---|---|---|---|---|---|---|
+| IN-01 | Reducción de tiempos | Primera respuesta a un lead | Promedio de (fecha de respuesta menos fecha de recepción) por periodo | Los leads no se responden (Observado por declaración del dueño, 1 de noviembre de 2026) | Todo lead con respuesta registrada | PY-03 |
+| IN-02 | Reducción de tiempos | Restauración tras pérdida del equipo | Tiempo entre la falla simulada y el servicio restaurado | No hay respaldo (Observado por declaración del dueño, 1 de noviembre de 2026) | Restauración documentada y probada | PY-07 |
+| IN-03 | Reducción de tiempos | Espera en andén durante el piloto | Promedio de espera medida con el operador, antes y después | NO CONFIRMADO | Reducción acordada con el operador | PY-08 |
+| IN-04 | Disminución de costos | Pasos manuales para publicar el modelo | Número de pasos manuales por publicación | El modelo se copia a mano (Observado) | Publicación sin pasos manuales | PY-05 |
+| IN-05 | Disminución de costos | Despachos sin respaldo de demanda observada | Despachos sin recomendación asociada / despachos totales | NO CONFIRMADO; requiere piloto | Reducción acordada con el operador | PY-08, PY-04 |
+| IN-06 | Incremento de ventas | Conversión de leads | Leads con propuesta / leads con autorización | Cero propuestas (Observado) | Conversión registrada y creciente | PY-03 |
+| IN-07 | Incremento de ventas | Piloto pagado firmado | Sí o no (acta de inicio con contrato) | No existe (Observado) | Al menos un piloto en el horizonte de 1 a 3 años | PY-08 |
+| IN-08 | Incremento de ventas | Pilotos facturados | Facturas electrónicas emitidas / pilotos ejecutados | No hay facturación (Observado) | Todo piloto facturado | PY-09 |
+| IN-09 | Satisfacción de usuarios | Satisfacción del controlador | Valoración en encuesta de cierre del piloto | NO CONFIRMADO | Valoración favorable registrada en acta | PY-08 |
+| IN-10 | Satisfacción de usuarios | Solicitudes de titulares atendidas en plazo | Solicitudes atendidas en plazo / solicitudes recibidas | NO CONFIRMADO (no hay canal) | Totalidad dentro del plazo legal | PY-03 |
+| IN-11 | Calidad técnica | Recall en video de estación | Verdaderos positivos / (verdaderos positivos + falsos negativos) | NO CONFIRMADO en estación | Medido y reportado con fuente y alcance | PY-05 |
+| IN-12 | Calidad técnica | Coincidencia con la decisión del operador | Recomendaciones coincidentes / recomendaciones emitidas | NO CONFIRMADO; requiere piloto | Medida y revisada con el operador | PY-06, PY-04 |
+| IN-13 | Calidad técnica | Activos críticos con respaldo verificado | Activos con restauración probada / activos críticos | Sin respaldos (Observado) | Totalidad de activos críticos | PY-07 |
 
 Las metas no fijan cifras que no estén sustentadas. El recall de 0,55 corresponde a la última época del entrenamiento del 15 de noviembre de 2025 (precisión 0,73, mAP50 0,64), no a operación; IN-11 mide el recall sobre video real de estación, que hoy no existe.
 

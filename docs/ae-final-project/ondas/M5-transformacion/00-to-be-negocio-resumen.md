@@ -1,6 +1,6 @@
 # Resumen de la Arquitectura de Negocio TO-BE
 
-Este resumen no reescribe la Arquitectura de Negocio TO-BE elaborada por el Arquitecto de Negocio; la referencia por nombre. Todo estado futuro es Objetivo TO-BE.
+Este resumen no reescribe la Arquitectura de Negocio TO-BE elaborada en el Punto 1; la referencia por nombre. Todo estado futuro es Objetivo TO-BE.
 
 | Elemento | Punto de partida (marca) | Estado objetivo (Objetivo TO-BE) |
 |----------|--------------------------|----------------------------------|

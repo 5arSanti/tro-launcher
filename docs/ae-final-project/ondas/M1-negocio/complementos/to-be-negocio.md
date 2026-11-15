@@ -99,7 +99,7 @@ Punto de partida: una persona, Johel Santiago Arias, autor único, cubre las cin
 | G-N06 | Brecha | CAP-07, CAP-09 y CAP-10 ausentes (Observado) | Capacidades con proceso (P-07, P-08, P-09) | C-06: Capacidades ausentes |
 | G-N07 | Brecha | Sin proceso de contratación ni piloto (Observado). Riesgo de continuidad: no hay copias de respaldo y todo se despliega solo en el equipo de Santiago, Observado por declaración del dueño (1 de noviembre de 2026), con detalle en la Arquitectura Tecnológica | P-06 y SN-04, con respaldo y entorno de piloto separado | C-08 y C-07: Primer piloto pagado; respaldo y separación de entornos |
 
-## Pendientes para Santiago
+## Pendientes del autor
 1. Resuelto: P-06 a P-09, SN-04 y SN-05 aprobados por Santiago el 1 de noviembre de 2026; P-09 resulta de separar P-08.
 2. Confirmar que el piloto pagado es el único hito comercial del horizonte TO-BE.
 3. Metas, plazos y costos: NO CONFIRMADO, se definen en el Roadmap de Transformación.

@@ -138,7 +138,7 @@ La estructura se documenta en dos vistas. La primera muestra la dotación real. 
 
 La página pública del producto conserva tres nombres de la etapa académica inicial. Para el gobierno actual de la firma, el equipo vigente es exclusivamente Johel Santiago Arias. La actualización de esa banda pública queda registrada como brecha de alineación documental.
 
-#### Vista jerárquica de la planta actual
+#### Vista jerárquica: Dirección General y unidades funcionales (roles que hoy ejerce una persona)
 
 ```mermaid
 flowchart TD
