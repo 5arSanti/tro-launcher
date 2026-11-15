@@ -12,6 +12,8 @@ El documento final del taller es el informe único **Plan de Transformación Emp
 
 Para regenerar el Word desde `informe/`: `pandoc plan-transformacion-empresarial.md --resource-path=.:.. --toc --toc-depth=3 --reference-doc=plantilla-estilos.docx -o plan-transformacion-empresarial.docx` y fijar la propiedad de autor en Johel Santiago Arias. La plantilla define los títulos de nivel 1 a 3 y los bordes de las tablas.
 
+Versión con la plantilla oficial del curso (portada, encabezado con logo, capítulos autonumerados, tabla de contenido, tabla de tablas y tabla de ilustraciones): desde `informe/`, `python3 generar-docx-plantilla.py <ruta-a-pandoc>` produce `plan-transformacion-empresarial-plantilla.docx` a partir de `plantilla-proyecto-final.docx`. Al abrirlo en Word, aceptar la actualización de campos (o seleccionar todo y pulsar F9) para llenar las tres listas y la numeración de leyendas.
+
 ## Material de trabajo por onda
 
 Fuentes de las que se consolidó el informe. No forman parte de la entrega ni se citan en ella.
