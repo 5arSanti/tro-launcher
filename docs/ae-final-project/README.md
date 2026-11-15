@@ -6,7 +6,7 @@ LIRN es la firma. TORNS es el único producto. TORNS es un prototipo aplicado. N
 
 El documento final del taller es el informe único **Plan de Transformación Empresarial**. Es autocontenido: no remite a otros entregables. Lo acompañan solo cinco anexos en hoja de cálculo.
 
-- Word: [informe/plan-transformacion-empresarial.docx](informe/plan-transformacion-empresarial.docx), generado desde el Markdown con 29 tablas y 20 ilustraciones numeradas, tabla de contenido, glosario y relación de anexos (15 de noviembre de 2026, versión 1.5).
+- Word: [informe/plan-transformacion-empresarial.docx](informe/plan-transformacion-empresarial.docx), generado desde el Markdown con 28 tablas y 20 ilustraciones numeradas, tabla de contenido, glosario y relación de anexos (15 de noviembre de 2026, versión 1.6).
 - Markdown fuente: [informe/plan-transformacion-empresarial.md](informe/plan-transformacion-empresarial.md).
 - Anexos A a E en [informe/anexos/](informe/anexos/): inventario de datos, matriz de flujos, inventario de aplicaciones, mapa de integraciones y comparativo de nube Azure y GCP. Se generan desde los CSV de las ondas M2, M3 y M4; si cambia un CSV, se regenera el anexo.
 
