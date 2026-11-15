@@ -4,16 +4,19 @@ LIRN es la firma. TORNS es el único producto. TORNS es un prototipo aplicado. N
 
 ## Documento final para revisar
 
-El documento final del taller es el informe único **Plan de Transformación Empresarial**:
+El documento final del taller es el informe único **Plan de Transformación Empresarial**. Es autocontenido: no remite a otros entregables. Lo acompañan solo cinco anexos en hoja de cálculo.
 
-- Word: [informe/plan-transformacion-empresarial.docx](informe/plan-transformacion-empresarial.docx), generado desde el Markdown con 20 figuras (15 de noviembre de 2026, versión 1.3).
+- Word: [informe/plan-transformacion-empresarial.docx](informe/plan-transformacion-empresarial.docx), generado desde el Markdown con 29 tablas y 20 ilustraciones numeradas, tabla de contenido, glosario y relación de anexos (15 de noviembre de 2026, versión 1.5).
 - Markdown fuente: [informe/plan-transformacion-empresarial.md](informe/plan-transformacion-empresarial.md).
+- Anexos A a E en [informe/anexos/](informe/anexos/): inventario de datos, matriz de flujos, inventario de aplicaciones, mapa de integraciones y comparativo de nube Azure y GCP. Se generan desde los CSV de las ondas M2, M3 y M4; si cambia un CSV, se regenera el anexo.
 
-Para regenerar el Word desde `informe/`: `pandoc plan-transformacion-empresarial.md --resource-path=. -o plan-transformacion-empresarial.docx` y fijar la propiedad de autor en Johel Santiago Arias.
+Para regenerar el Word desde `informe/`: `pandoc plan-transformacion-empresarial.md --resource-path=.:.. --toc --toc-depth=3 --reference-doc=plantilla-estilos.docx -o plan-transformacion-empresarial.docx` y fijar la propiedad de autor en Johel Santiago Arias. La plantilla define los títulos de nivel 1 a 3 y los bordes de las tablas.
 
-## Anexos por onda
+## Material de trabajo por onda
 
-| Onda | Anexo |
+Fuentes de las que se consolidó el informe. No forman parte de la entrega ni se citan en ella.
+
+| Onda | Fuente |
 |------|-------|
 | M1 | [Entregable Punto 1. Arquitectura de Negocio](ondas/M1-negocio/entregable-punto-1.md), con apartados 01 a 04 y [complementos](ondas/M1-negocio/complementos/) |
 | M2 | [Entregable Punto 2. Arquitectura de Datos](ondas/M2-datos/entregable-punto-2.md), con [tablas](ondas/M2-datos/tablas/) y [diagramas](ondas/M2-datos/diagramas/) |
@@ -67,23 +70,25 @@ Si un hecho no está en esta tabla ni en el registro, se escribe `NO CONFIRMADO`
 | M4 | Punto 4. Arquitectura Tecnológica | `ondas/M4-tecnologia/` | Inventario, diagrama, riesgos y propuesta |
 | M5 | Punto 5 y entrega | `ondas/M5-transformacion/` | TO-BE, brechas, portafolio, priorización, hoja de ruta, indicadores, informe único y pregunta final |
 
-Los hitos M0 a M5 están cerrados; cada entregable se integró en el informe (M1 en el capítulo 4, M2 en el 5, M3 en el 6, M4 en el 7 y M5 en el 8). El registro está actualizado. Lo bloqueado no se contradice.
+Los hitos M0 a M5 están cerrados; cada entregable se integró en el informe (M1 en el capítulo 3, M2 en el 4, M3 en el 5, M4 en el 6 y M5 en el 7). El registro está actualizado. Lo bloqueado no se contradice.
 
 ## Estructura del informe único
 
-1. Portada
-2. Introducción
-3. Descripción de la organización
-4. Arquitectura de Negocio
-5. Arquitectura de Datos
-6. Arquitectura de Aplicaciones
-7. Arquitectura Tecnológica
-8. Roadmap de Transformación
-9. Conclusiones
-10. Recomendaciones
-11. Bibliografía
+Portada y tabla de contenido, sin número. Luego:
 
-La pregunta final de análisis se responde en el capítulo 9.
+1. Capítulo 1. Introducción
+2. Capítulo 2. Descripción de la organización
+3. Capítulo 3. Arquitectura de Negocio
+4. Capítulo 4. Arquitectura de Datos
+5. Capítulo 5. Arquitectura de Aplicaciones
+6. Capítulo 6. Arquitectura Tecnológica
+7. Capítulo 7. Roadmap de Transformación (fases E a H: brechas, portafolio, hoja de ruta, indicadores, requisitos, gobierno y gestión del cambio)
+8. Capítulo 8. Conclusiones
+9. Capítulo 9. Recomendaciones
+
+Cierran el documento el Glosario, la Bibliografía y los Anexos, sin número. Tablas e ilustraciones llevan título y nota en formato APA 7 («Tabla N» e «Ilustración N»).
+
+La pregunta final de análisis se responde en el capítulo 8.
 
 Citas del informe: nombre del entregable y URL. Nunca una ruta `.md` del repositorio.
 
