@@ -1,8 +1,9 @@
 # Guion oral: Plan de LIRN
 
-Duración máxima: **4 minutos**.  
 Tono: formal, directo, una sola voz. Analogía: planos de una obra.  
-Uso: defensa oral y lectura en `/plan`. Los códigos del taller no se dicen.
+Los códigos del taller no se dicen; van al margen.
+
+Hay dos piezas. La primera dura **4 minutos** y es la que sostiene `/plan`. La segunda dura **menos de 3 minutos** y sirve para una conversación sobre el taller: qué se hizo, el AS-IS, el TO-BE y los cinco puntos.
 
 | Escena | Reloj | Riel |
 |--------|-------|------|
@@ -55,3 +56,47 @@ Margen: PY-01 Formalización legal; PY-03 Canal comercial; PY-07 Seguridad y res
 Al final, LIRN seguirá siendo una empresa pequeña; no debería, sin embargo, depender de un solo computador ni de una sola persona. Cada paso, además, se puede seguir desde el objetivo que lo motiva hasta el proyecto que lo cumple.
 
 Margen: OE-01 a OE-05 Objetivos estratégicos.
+
+---
+
+# Pieza 2. El taller, en conversación (máximo 3:00)
+
+Uso: oral, si preguntan por el método, el AS-IS, el TO-BE o los cinco puntos. No entra al reloj de `/plan`. Ritmo guía: ~140 palabras por minuto.
+
+| Beat | Reloj | Palabras guía |
+|------|-------|---------------|
+| Encuadre | 0:00–0:29 | 68 |
+| Qué hay hoy | 0:29–1:09 | 93 |
+| Los cinco puntos | 1:09–2:10 | 143 |
+| Lo que se quiere y el orden | 2:10–2:42 | 75 |
+| Respuesta | 2:42–2:55 | 30 |
+
+## 8. Encuadre (0:00–0:29)
+
+El taller pidió aplicar TOGAF a una organización real y diseñar una arquitectura que apoye sus objetivos. La organización es LIRN; el único producto es TORNS. El método es como los planos de una obra: primero el AS-IS, lo que existe; después el TO-BE, lo que se quiere levantar; y al final el orden de la obra. El resultado es un informe único: el Plan de Transformación Empresarial.
+
+Margen: ADM de TOGAF; Puntos 1 a 5.
+
+## 9. Qué hay hoy (0:29–1:09)
+
+Hoy el terreno es estrecho. LIRN aún no está constituida y la conforma una sola persona, su fundador. TORNS es un prototipo aplicado: toma video, cuenta personas y recomienda despacho; no es un piloto firmado y no hay clientes. TransMilenio y el SITP sirven como caso de estudio. Cinco procesos cubren dirección, contacto, producto, acompañamiento y evidencia. El software, además, vive en cuatro superficies, en un solo computador. El conteo se pierde al apagar. No hay respaldo. El video puede incluir imagen de personas y todavía no hay una política de datos publicada.
+
+Margen: Observado; P-01 a P-05.
+
+## 10. Los cinco puntos (1:09–2:10)
+
+Con ese terreno se recorrieron los cinco puntos del taller. En negocio se fijaron misión, visión y cinco objetivos, un organigrama de una persona, el mapa de procesos y las capacidades que existen y las que faltan. En datos se inventarió lo que circula: leads, encuesta, video, conteos y código; y se vio el problema: memoria volátil y una hoja de cálculo suelta. En aplicaciones se describieron las cuatro superficies y se constató que no hay CRM ni ERP, y que abrir el video dispara la inferencia. En tecnología se documentó la estación de trabajo, las páginas públicas, una GPU obsoleta y un disco cerca de su capacidad; la nube quedó como alternativa, no como decisión tomada. En transformación se cruzó el AS-IS con el TO-BE, se nombraron veintiséis brechas y se armó el portafolio y la hoja de ruta a cinco años.
+
+Margen: Punto 1 negocio; Punto 2 datos; Punto 3 aplicaciones; Punto 4 tecnología; Punto 5 roadmap.
+
+## 11. Lo que se quiere y el orden (2:10–2:42)
+
+El edificio que se quiere no es una empresa grande. Es una firma pequeña que ya no dependa de un solo computador ni de una sola persona. Por eso el orden es estricto. En el primer año: formalizar, abrir un canal honesto y respaldar lo crítico. Entre el primero y el tercero: video real de estación y un primer piloto pagado. Entre el tercero y el quinto: llevar la recomendación al operador, con decisión humana.
+
+Margen: PY-01; PY-03; PY-07; PY-05; PY-08; PY-06.
+
+## 12. Respuesta (2:42–2:55)
+
+Así, la arquitectura ayuda porque cada objetivo tiene un proyecto y un horizonte. No hay un impacto comercial que afirmar. Hay un camino: mostrar, cobrar y, solo al final, conectar.
+
+Margen: pregunta del taller; OE-01 a OE-05.
