@@ -2,13 +2,13 @@
 
 Fecha: 2026-11-24  
 Estado: aprobado  
-Alcance: guion oral/lectura de máximo 4 minutos y una ruta nueva en `lirn-web-main` que lo sostiene. No reemplaza el home ni `/torns`.
+Alcance: guion oral/lectura y una ruta nueva en `lirn-web-main` que lo sostiene. No reemplaza el home ni `/torns`.
 
 ## Objetivo
 
-Explicar a alto nivel quién es LIRN, qué es TORNS y cómo se proyecta la firma a cinco años según el Plan de Transformación Empresarial. El mismo recorido sirve para una defensa oral y para un visitante que entra en silencio.
+Explicar a alto nivel quién es LIRN, qué es TORNS, qué hizo el taller (AS-IS, TO-BE, cinco puntos) y cómo se proyecta la firma a cinco años según el Plan de Transformación Empresarial. El mismo recorido sirve para una defensa oral y para un visitante que entra en silencio.
 
-Éxito: Santiago puede narrar las siete escenas en no más de 4:00. Un visitante puede pausar, saltar capítulos y leer el mismo texto. Nadie sale creyendo que hay cliente, piloto firmado o impacto comercial medido.
+Éxito: Santiago puede narrar las nueve escenas en 5:14. Un visitante puede pausar, saltar capítulos y leer el mismo texto. Nadie sale creyendo que hay cliente, piloto firmado o impacto comercial medido.
 
 ## Decisiones aprobadas
 
@@ -30,7 +30,7 @@ Explicar a alto nivel quién es LIRN, qué es TORNS y cómo se proyecta la firma
 
 ## Guion canónico
 
-Duración total: 4:00. Ritmo de lectura: ~140 palabras por minuto. Una sola voz, español, formal y directo. Sin guion largo. Sin «el dueño decidió».
+Duración total: 5:14. Ritmo de lectura: ~140 palabras por minuto. Una sola voz, español, formal y directo. Sin guion largo. Sin «el dueño decidió».
 
 | # | Id | Escena | Reloj | Palabras guía | Etiqueta de riel |
 |---|----|--------|-------|---------------|------------------|
@@ -38,9 +38,11 @@ Duración total: 4:00. Ritmo de lectura: ~140 palabras por minuto. Una sola voz,
 | 2 | `desajuste` | Desajuste | 0:28–1:00 | 75 | Desajuste |
 | 3 | `producto` | Qué hace | 1:00–1:42 | 95 | Producto |
 | 4 | `limite` | Qué no es | 1:42–2:10 | 70 | Límite |
-| 5 | `planos` | Planos | 2:10–2:48 | 90 | Planos |
-| 6 | `ruta` | Cinco años | 2:48–3:40 | 120 | Ruta |
-| 7 | `cierre` | Cierre | 3:40–4:00 | 50 | Cierre |
+| 5 | `planos` | El taller | 2:10–2:39 | 68 | Taller |
+| 6 | `hoy` | Qué hay hoy | 2:39–3:19 | 93 | Hoy |
+| 7 | `puntos` | Los cinco puntos | 3:19–4:20 | 143 | Puntos |
+| 8 | `ruta` | Cinco años | 4:20–4:52 | 75 | Ruta |
+| 9 | `cierre` | Cierre | 4:52–5:14 | 50 | Cierre |
 
 ### Texto hablado / leído
 
@@ -54,11 +56,15 @@ Fuente: `PLAN_BEATS` en `lirn-web-main/src/content/plan.ts`. Si divergen, manda 
 
 **Qué no es.** Conviene decir, entonces, lo que no es. No es un piloto firmado ni hay clientes. Tampoco optimiza todas las rutas de la ciudad ni predice la demanda histórica: cuenta personas y aplica una regla de despacho. Aun así, el prototipo existe y se puede consultar, porque el sitio, la página del producto y el código están publicados.
 
-**Planos.** Para pasar de prototipo a empresa se usó arquitectura empresarial. El método, en ese sentido, es como los planos de una obra: primero se dibuja lo que existe; después, lo que se quiere levantar; y, al final, el orden en que conviene construirlo. Hoy LIRN cabe en un computador y en una persona. Eso, por ahora, es el terreno, no el edificio.
+**El taller.** El taller pidió aplicar TOGAF a una organización real y diseñar una arquitectura que apoye sus objetivos. La organización es LIRN; el único producto es TORNS. El método es como los planos de una obra: primero el AS-IS, lo que existe; después el TO-BE, lo que se quiere levantar; y al final el orden de la obra. El resultado es un informe único: el Plan de Transformación Empresarial.
 
-**Cinco años.** El cambio, por tanto, va en un orden. Primero la empresa tiene que existir y tratar bien los datos de las personas. Solo entonces puede medir con rigor y no perder el conteo al apagar. Después puede cobrar por lo que mide. Únicamente al final tiene sentido conectarse con el control de un tercero. Así, en el primer año corresponde formalizar, abrir un canal honesto y respaldar lo crítico. Entre el primero y el tercero entra el video real de estación y un primer piloto pagado. Entre el tercero y el quinto, por último, llevar la recomendación al operador.
+**Qué hay hoy.** Hoy el terreno es estrecho. LIRN aún no está constituida y la conforma una sola persona, su fundador. TORNS es un prototipo aplicado: toma video, cuenta personas y recomienda despacho. No es un piloto firmado y no hay clientes. TransMilenio y el SITP sirven como caso de estudio. Cinco procesos cubren dirección, contacto, producto, acompañamiento y evidencia. El software, además, vive en cuatro superficies, en un solo computador. El conteo se pierde al apagar. No hay respaldo. El video puede incluir imagen de personas y todavía no hay una política de datos publicada.
 
-**Cierre.** Al final, LIRN seguirá siendo una empresa pequeña; no debería, sin embargo, depender de un solo computador ni de una sola persona. Cada paso, además, se puede seguir desde el objetivo que lo motiva hasta el proyecto que lo cumple.
+**Los cinco puntos.** Con ese terreno se recorrieron los cinco puntos del taller. En negocio se fijaron misión, visión y cinco objetivos, un organigrama de una persona, el mapa de procesos y las capacidades que existen y las que faltan. En datos se inventarió lo que circula: leads, encuesta, video, conteos y código; y se vio el problema: memoria volátil y una hoja de cálculo suelta. En aplicaciones se describieron las cuatro superficies y se constató que no hay CRM ni ERP, y que abrir el video dispara la inferencia. En tecnología se documentó la estación de trabajo, las páginas públicas, una GPU obsoleta y un disco cerca de su capacidad; la nube quedó como alternativa, no como decisión tomada. En transformación se cruzó el AS-IS con el TO-BE, se nombraron veintiséis brechas y se armó el portafolio y la hoja de ruta a cinco años.
+
+**Cinco años.** El edificio que se quiere no es una empresa grande. Es una firma pequeña que ya no dependa de un solo computador ni de una sola persona. Por eso el orden es estricto. En el primer año: formalizar, abrir un canal honesto y respaldar lo crítico. Entre el primero y el tercero: video real de estación y un primer piloto pagado. Entre el tercero y el quinto: llevar la recomendación al operador, con decisión humana.
+
+**Cierre.** Así, la arquitectura ayuda porque cada objetivo tiene un proyecto y un horizonte. No hay un impacto comercial que afirmar. Hay un camino: mostrar, cobrar y, solo al final, conectar. LIRN seguirá siendo una empresa pequeña; no debería, sin embargo, depender de un solo computador ni de una sola persona.
 
 ### Códigos al margen (no se dicen)
 
@@ -68,9 +74,11 @@ Fuente: `PLAN_BEATS` en `lirn-web-main/src/content/plan.ts`. Si divergen, manda 
 | Desajuste | Caso de estudio |
 | Producto | `CAP-04` Detección y conteo; `CAP-05` Recomendación de despacho |
 | Límite | Prototipo, no piloto |
-| Planos | ADM de TOGAF |
-| Ruta | `PY-01` Formalización legal; `PY-03` Canal comercial; `PY-07` Seguridad y respaldo; `PY-04` Historial de conteos; `PY-05` Video de estación; `PY-08` Primer piloto pagado; `PY-06` Integración con el centro de control |
-| Cierre | `OE-01` a `OE-05` |
+| El taller | ADM de TOGAF; Puntos 1 a 5 |
+| Qué hay hoy | Observado; P-01 a P-05 |
+| Los cinco puntos | Punto 1 Negocio; Punto 2 Datos; Punto 3 Aplicaciones; Punto 4 Tecnología; Punto 5 Roadmap |
+| Ruta | `PY-01` Formalización legal; `PY-03` Canal comercial; `PY-07` Seguridad y respaldo; `PY-05` Video de estación; `PY-08` Primer piloto pagado; `PY-06` Integración con el centro de control |
+| Cierre | Pregunta del taller; `OE-01` a `OE-05` |
 
 El texto de cada escena en pantalla es el bloque hablado, en medida máxima de 65ch. No se resume a un titular huérfano.
 
@@ -78,7 +86,7 @@ El texto de cada escena en pantalla es el bloque hablado, en medida máxima de 6
 
 Ruta: `/plan`. Título de nav: Plan. Orden: Empresa, Plan, TORNS, Contacto.
 
-Una escena a pantalla por vez. Riel superior con los siete ids. Controles inferiores: Anterior, Reproducir/Pausa, Siguiente, barra de 4:00. Teclado: flechas y espacio. Hash por escena (`/plan#ruta`).
+Una escena a pantalla por vez. Riel superior con los nueve ids. Controles inferiores: Anterior, Reproducir/Pausa, Siguiente, barra de 5:14. Teclado: flechas y espacio. Hash por escena (`/plan#ruta`).
 
 ### Composición por escena
 
@@ -86,9 +94,11 @@ Una escena a pantalla por vez. Riel superior con los siete ids. Controles inferi
 2. **Desajuste.** Foto de andén monocroma, recorte LIRN. Columna «horario» frente a columna «quien espera». Línea de señal `#00A8FF` que no calza con la foto.
 3. **Producto.** Tres nodos: cámara, conteo, recomendación. Se encienden en orden. Velo TORNS pastel (air / panel), no un fill de página. Endoso «TORNS by LIRN».
 4. **Límite.** Tres tarjetas: no es piloto; no hay clientes; no es un optimizador de toda la red. Entran una tras otra.
-5. **Planos.** Rejilla. Capa «terreno» (hoy) y capa «edificio» (objetivo) que se dibuja encima.
-6. **Ruta.** Línea 0–1 / 1–3 / 3–5 años. El tramo activo se llena con azul de señal. Hitos con código + nombre.
-7. **Cierre.** Wordmark. Frase final. CTA Ver TORNS (`/torns`) y Hablemos (`/torns#contacto`).
+5. **El taller.** Rejilla. Capa «AS-IS» (hoy) y capa «TO-BE» (objetivo) que se dibuja encima.
+6. **Hoy.** Cuatro tarjetas: una persona; un computador; prototipo, no piloto; sin respaldo.
+7. **Puntos.** Cinco nodos numerados: negocio, datos, aplicaciones, tecnología, transformación.
+8. **Ruta.** Línea 0–1 / 1–3 / 3–5 años. El tramo activo se llena con azul de señal. Hitos con código + nombre.
+9. **Cierre.** Wordmark. Frase final. CTA Ver TORNS (`/torns`) y Hablemos (`/torns#contacto`).
 
 Fotografía: assets existentes de estación (`StationPhoto`). No se distorsiona ni recolorea el logo oficial.
 
@@ -102,17 +112,17 @@ Piezas:
 |-------|-----|
 | `pages/PlanPage.tsx` | Escena activa, riel, controles, live region |
 | `hooks/usePlanPlayback.ts` | Índice, playing, tiempo de escena, fin sin loop |
-| `components/PlanRail.tsx` | Siete capítulos |
+| `components/PlanRail.tsx` | Nueve capítulos |
 | `components/PlanStage.tsx` | Cambia el visual según `kind` |
 | `StageSlide` | Transición existente |
-| `components/PlanControls.tsx` | Anterior, Reproducir/Pausa, Siguiente y barra de 4:00. `StageControls` de `/torns` no se modifica |
+| `components/PlanControls.tsx` | Anterior, Reproducir/Pausa, Siguiente y barra de 5:14. `StageControls` de `/torns` no se modifica |
 | `App.tsx` | Ruta `/plan` |
 | `SiteNav.tsx` | Enlace Plan |
 | `styles/site.css` | Bloque `.page-plan` con tokens LIRN |
 
 Guion en repo: `docs/presentations/lirn-plan-guion-4min.md`, escrito a mano junto a `plan.ts` con el mismo texto. Si alguna vez divergen, manda `plan.ts` y se corrige el markdown.
 
-Duraciones `durationMs`: Firma 28000; Desajuste 32000; Producto 42000; Límite 28000; Planos 38000; Ruta 52000; Cierre 20000. Suma 240000.
+Duraciones `durationMs`: Firma 28000; Desajuste 32000; Producto 42000; Límite 28000; El taller 29000; Hoy 40000; Puntos 61000; Ruta 32000; Cierre 22000. Suma 314000.
 
 `usePlanPlayback`:
 
@@ -139,12 +149,12 @@ La vista y el markdown no contienen: cliente firmado, contrato, alianza, piloto 
 
 ## Pruebas
 
-- `plan.ts`: el texto canónico está, los `durationMs` suman 240000, cada código lleva nombre, y un assert rechaza las frases prohibidas.
+- `plan.ts`: el texto canónico está, los `durationMs` suman 314000, cada código lleva nombre, y un assert rechaza las frases prohibidas.
 - `usePlanPlayback`: avanza, pausa al saltar, no hace loop, y con movimiento reducido no autoplay.
-- `PlanPage`: las siete escenas se pueden alcanzar; Cierre tiene los dos CTA; hay `aria-live` para el texto de escena.
+- `PlanPage`: las nueve escenas se pueden alcanzar; Cierre tiene los dos CTA; hay `aria-live` para el texto de escena.
 - `App` / nav: `/plan` existe; el enlace Plan apunta ahí; home y `/torns` conservan su copy actual.
 - Manual: desktop y un viewport estrecho; teclado; `prefers-reduced-motion`.
 
 ## Criterio de cierre
 
-La ruta `/plan` se puede recorrer en 4:00 en autoplay y a mano. El guion en pantalla coincide con `docs/presentations/lirn-plan-guion-4min.md`. La imagen es LIRN. Un evaluador reconoce la proyección del taller sin ver un claim inventado.
+La ruta `/plan` se puede recorrer en 5:14 en autoplay y a mano. El guion en pantalla coincide con `docs/presentations/lirn-plan-guion-4min.md`. La imagen es LIRN. Un evaluador reconoce AS-IS, TO-BE y los cinco puntos del taller sin ver un claim inventado.
